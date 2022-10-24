@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface CredentialLibraryVaultConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The credential mapping override.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault#credential_mapping_overrides CredentialLibraryVault#credential_mapping_overrides}
+  */
+  readonly credentialMappingOverrides?: { [key: string]: string };
+  /**
   * The ID of the credential store that this library belongs to.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/credential_library_vault#credential_store_id CredentialLibraryVault#credential_store_id}
@@ -77,7 +83,7 @@ export class CredentialLibraryVault extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_credential_library_vault',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.0',
+        providerVersion: '1.1.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -88,6 +94,7 @@ export class CredentialLibraryVault extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._credentialMappingOverrides = config.credentialMappingOverrides;
     this._credentialStoreId = config.credentialStoreId;
     this._credentialType = config.credentialType;
     this._description = config.description;
@@ -100,6 +107,22 @@ export class CredentialLibraryVault extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // credential_mapping_overrides - computed: false, optional: true, required: false
+  private _credentialMappingOverrides?: { [key: string]: string }; 
+  public get credentialMappingOverrides() {
+    return this.getStringMapAttribute('credential_mapping_overrides');
+  }
+  public set credentialMappingOverrides(value: { [key: string]: string }) {
+    this._credentialMappingOverrides = value;
+  }
+  public resetCredentialMappingOverrides() {
+    this._credentialMappingOverrides = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get credentialMappingOverridesInput() {
+    return this._credentialMappingOverrides;
+  }
 
   // credential_store_id - computed: false, optional: false, required: true
   private _credentialStoreId?: string; 
@@ -218,6 +241,7 @@ export class CredentialLibraryVault extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      credential_mapping_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(this._credentialMappingOverrides),
       credential_store_id: cdktf.stringToTerraform(this._credentialStoreId),
       credential_type: cdktf.stringToTerraform(this._credentialType),
       description: cdktf.stringToTerraform(this._description),

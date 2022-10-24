@@ -71,7 +71,7 @@ export class AuthMethodPassword extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_auth_method_password',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.0',
+        providerVersion: '1.1.2',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
