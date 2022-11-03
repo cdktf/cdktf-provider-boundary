@@ -11,7 +11,7 @@ const actions = require("@actions/core");
 
 // set by the projen file that generates this script
 const CONSTRAINT = "~> 1.0";
-const FQ_PROVIDER_NAME = "boundary";
+const FQ_PROVIDER_NAME = "hashicorp/boundary";
 
 (async function main() {
   if (await newerMatchingProviderVersionExists()) {
