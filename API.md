@@ -286,6 +286,8 @@ public resetPassword(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.account.Account.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.account.Account.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.account.Account.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -318,6 +320,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.account.Account.isTerraformElement"></a>
+
+```typescript
+import { account } from '@cdktf/provider-boundary'
+
+account.Account.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.account.Account.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.account.Account.isTerraformResource"></a>
+
+```typescript
+import { account } from '@cdktf/provider-boundary'
+
+account.Account.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.account.Account.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -929,6 +959,8 @@ public resetSubject(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.accountOidc.AccountOidc.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.accountOidc.AccountOidc.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.accountOidc.AccountOidc.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -961,6 +993,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.accountOidc.AccountOidc.isTerraformElement"></a>
+
+```typescript
+import { accountOidc } from '@cdktf/provider-boundary'
+
+accountOidc.AccountOidc.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.accountOidc.AccountOidc.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.accountOidc.AccountOidc.isTerraformResource"></a>
+
+```typescript
+import { accountOidc } from '@cdktf/provider-boundary'
+
+accountOidc.AccountOidc.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.accountOidc.AccountOidc.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1550,6 +1610,8 @@ public resetPassword(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPassword.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPassword.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPassword.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -1582,6 +1644,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.accountPassword.AccountPassword.isTerraformElement"></a>
+
+```typescript
+import { accountPassword } from '@cdktf/provider-boundary'
+
+accountPassword.AccountPassword.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.accountPassword.AccountPassword.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.accountPassword.AccountPassword.isTerraformResource"></a>
+
+```typescript
+import { accountPassword } from '@cdktf/provider-boundary'
+
+accountPassword.AccountPassword.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.accountPassword.AccountPassword.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2193,6 +2283,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -2225,6 +2317,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.authMethod.AuthMethod.isTerraformElement"></a>
+
+```typescript
+import { authMethod } from '@cdktf/provider-boundary'
+
+authMethod.AuthMethod.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.authMethod.AuthMethod.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.authMethod.AuthMethod.isTerraformResource"></a>
+
+```typescript
+import { authMethod } from '@cdktf/provider-boundary'
+
+authMethod.AuthMethod.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.authMethod.AuthMethod.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2934,6 +3054,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -2966,6 +3088,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.isTerraformElement"></a>
+
+```typescript
+import { authMethodOidc } from '@cdktf/provider-boundary'
+
+authMethodOidc.AuthMethodOidc.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.isTerraformResource"></a>
+
+```typescript
+import { authMethodOidc } from '@cdktf/provider-boundary'
+
+authMethodOidc.AuthMethodOidc.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3870,6 +4020,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -3902,6 +4054,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.isTerraformElement"></a>
+
+```typescript
+import { authMethodPassword } from '@cdktf/provider-boundary'
+
+authMethodPassword.AuthMethodPassword.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.isTerraformResource"></a>
+
+```typescript
+import { authMethodPassword } from '@cdktf/provider-boundary'
+
+authMethodPassword.AuthMethodPassword.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4411,6 +4591,8 @@ public resetToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
 
 ---
 
@@ -4443,6 +4625,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformElement"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-boundary'
+
+provider.BoundaryProvider.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformProvider"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-boundary'
+
+provider.BoundaryProvider.isTerraformProvider(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -5029,6 +5239,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.credentialJson.CredentialJson.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.credentialJson.CredentialJson.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialJson.CredentialJson.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -5061,6 +5273,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.credentialJson.CredentialJson.isTerraformElement"></a>
+
+```typescript
+import { credentialJson } from '@cdktf/provider-boundary'
+
+credentialJson.CredentialJson.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialJson.CredentialJson.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.credentialJson.CredentialJson.isTerraformResource"></a>
+
+```typescript
+import { credentialJson } from '@cdktf/provider-boundary'
+
+credentialJson.CredentialJson.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialJson.CredentialJson.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -5653,6 +5893,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -5685,6 +5927,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.isTerraformElement"></a>
+
+```typescript
+import { credentialLibraryVault } from '@cdktf/provider-boundary'
+
+credentialLibraryVault.CredentialLibraryVault.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.isTerraformResource"></a>
+
+```typescript
+import { credentialLibraryVault } from '@cdktf/provider-boundary'
+
+credentialLibraryVault.CredentialLibraryVault.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6333,6 +6603,8 @@ public resetPrivateKeyPassphrase(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -6365,6 +6637,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformElement"></a>
+
+```typescript
+import { credentialSshPrivateKey } from '@cdktf/provider-boundary'
+
+credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformResource"></a>
+
+```typescript
+import { credentialSshPrivateKey } from '@cdktf/provider-boundary'
+
+credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6984,6 +7284,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -7016,6 +7318,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.isTerraformElement"></a>
+
+```typescript
+import { credentialStoreStatic } from '@cdktf/provider-boundary'
+
+credentialStoreStatic.CredentialStoreStatic.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.isTerraformResource"></a>
+
+```typescript
+import { credentialStoreStatic } from '@cdktf/provider-boundary'
+
+credentialStoreStatic.CredentialStoreStatic.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -7589,6 +7919,8 @@ public resetTlsSkipVerify(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -7621,6 +7953,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.isTerraformElement"></a>
+
+```typescript
+import { credentialStoreVault } from '@cdktf/provider-boundary'
+
+credentialStoreVault.CredentialStoreVault.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.isTerraformResource"></a>
+
+```typescript
+import { credentialStoreVault } from '@cdktf/provider-boundary'
+
+credentialStoreVault.CredentialStoreVault.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8350,6 +8710,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -8382,6 +8744,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isTerraformElement"></a>
+
+```typescript
+import { credentialUsernamePassword } from '@cdktf/provider-boundary'
+
+credentialUsernamePassword.CredentialUsernamePassword.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isTerraformResource"></a>
+
+```typescript
+import { credentialUsernamePassword } from '@cdktf/provider-boundary'
+
+credentialUsernamePassword.CredentialUsernamePassword.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8975,6 +9365,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.group.Group.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.group.Group.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.group.Group.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -9007,6 +9399,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.group.Group.isTerraformElement"></a>
+
+```typescript
+import { group } from '@cdktf/provider-boundary'
+
+group.Group.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.group.Group.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.group.Group.isTerraformResource"></a>
+
+```typescript
+import { group } from '@cdktf/provider-boundary'
+
+group.Group.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.group.Group.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -9567,6 +9987,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.host.Host.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.host.Host.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.host.Host.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -9599,6 +10021,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.host.Host.isTerraformElement"></a>
+
+```typescript
+import { host } from '@cdktf/provider-boundary'
+
+host.Host.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.host.Host.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.host.Host.isTerraformResource"></a>
+
+```typescript
+import { host } from '@cdktf/provider-boundary'
+
+host.Host.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.host.Host.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10174,6 +10624,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -10206,6 +10658,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.isTerraformElement"></a>
+
+```typescript
+import { hostCatalog } from '@cdktf/provider-boundary'
+
+hostCatalog.HostCatalog.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.isTerraformResource"></a>
+
+```typescript
+import { hostCatalog } from '@cdktf/provider-boundary'
+
+hostCatalog.HostCatalog.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10815,6 +11295,8 @@ public resetSecretsJson(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -10847,6 +11329,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.isTerraformElement"></a>
+
+```typescript
+import { hostCatalogPlugin } from '@cdktf/provider-boundary'
+
+hostCatalogPlugin.HostCatalogPlugin.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.isTerraformResource"></a>
+
+```typescript
+import { hostCatalogPlugin } from '@cdktf/provider-boundary'
+
+hostCatalogPlugin.HostCatalogPlugin.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -11554,6 +12064,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -11586,6 +12098,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.isTerraformElement"></a>
+
+```typescript
+import { hostCatalogStatic } from '@cdktf/provider-boundary'
+
+hostCatalogStatic.HostCatalogStatic.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.isTerraformResource"></a>
+
+```typescript
+import { hostCatalogStatic } from '@cdktf/provider-boundary'
+
+hostCatalogStatic.HostCatalogStatic.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -12124,6 +12664,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.hostSet.HostSet.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.hostSet.HostSet.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostSet.HostSet.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -12156,6 +12698,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.hostSet.HostSet.isTerraformElement"></a>
+
+```typescript
+import { hostSet } from '@cdktf/provider-boundary'
+
+hostSet.HostSet.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostSet.HostSet.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.hostSet.HostSet.isTerraformResource"></a>
+
+```typescript
+import { hostSet } from '@cdktf/provider-boundary'
+
+hostSet.HostSet.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostSet.HostSet.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -12759,6 +13329,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -12791,6 +13363,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.isTerraformElement"></a>
+
+```typescript
+import { hostSetPlugin } from '@cdktf/provider-boundary'
+
+hostSetPlugin.HostSetPlugin.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.isTerraformResource"></a>
+
+```typescript
+import { hostSetPlugin } from '@cdktf/provider-boundary'
+
+hostSetPlugin.HostSetPlugin.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -13424,6 +14024,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -13456,6 +14058,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.isTerraformElement"></a>
+
+```typescript
+import { hostSetStatic } from '@cdktf/provider-boundary'
+
+hostSetStatic.HostSetStatic.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.isTerraformResource"></a>
+
+```typescript
+import { hostSetStatic } from '@cdktf/provider-boundary'
+
+hostSetStatic.HostSetStatic.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -14045,6 +14675,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -14077,6 +14709,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.hostStatic.HostStatic.isTerraformElement"></a>
+
+```typescript
+import { hostStatic } from '@cdktf/provider-boundary'
+
+hostStatic.HostStatic.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostStatic.HostStatic.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.hostStatic.HostStatic.isTerraformResource"></a>
+
+```typescript
+import { hostStatic } from '@cdktf/provider-boundary'
+
+hostStatic.HostStatic.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.hostStatic.HostStatic.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -14652,6 +15312,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -14684,6 +15346,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.isTerraformElement"></a>
+
+```typescript
+import { managedGroup } from '@cdktf/provider-boundary'
+
+managedGroup.ManagedGroup.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.isTerraformResource"></a>
+
+```typescript
+import { managedGroup } from '@cdktf/provider-boundary'
+
+managedGroup.ManagedGroup.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15258,6 +15948,8 @@ public resetPrincipalIds(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.role.Role.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.role.Role.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.role.Role.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -15290,6 +15982,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.role.Role.isTerraformElement"></a>
+
+```typescript
+import { role } from '@cdktf/provider-boundary'
+
+role.Role.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.role.Role.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.role.Role.isTerraformResource"></a>
+
+```typescript
+import { role } from '@cdktf/provider-boundary'
+
+role.Role.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.role.Role.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15908,6 +16628,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -15940,6 +16662,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.scope.Scope.isTerraformElement"></a>
+
+```typescript
+import { scope } from '@cdktf/provider-boundary'
+
+scope.Scope.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.scope.Scope.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.scope.Scope.isTerraformResource"></a>
+
+```typescript
+import { scope } from '@cdktf/provider-boundary'
+
+scope.Scope.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.scope.Scope.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -16586,6 +17336,8 @@ public resetWorkerFilter(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.target.Target.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.target.Target.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -16618,6 +17370,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.target.Target.isTerraformElement"></a>
+
+```typescript
+import { target } from '@cdktf/provider-boundary'
+
+target.Target.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.target.Target.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.target.Target.isTerraformResource"></a>
+
+```typescript
+import { target } from '@cdktf/provider-boundary'
+
+target.Target.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.target.Target.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -17332,6 +18112,8 @@ public resetName(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.user.User.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-boundary.user.User.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.user.User.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -17364,6 +18146,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-boundary.user.User.isTerraformElement"></a>
+
+```typescript
+import { user } from '@cdktf/provider-boundary'
+
+user.User.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.user.User.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-boundary.user.User.isTerraformResource"></a>
+
+```typescript
+import { user } from '@cdktf/provider-boundary'
+
+user.User.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-boundary.user.User.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
