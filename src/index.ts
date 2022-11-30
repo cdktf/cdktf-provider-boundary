@@ -25,5 +25,6 @@ export * as role from './role';
 export * as scope from './scope';
 export * as target from './target';
 export * as user from './user';
+export * as worker from './worker';
 export * as provider from './provider';
 

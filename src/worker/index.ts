@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/boundary/r/host_catalog
+// https://www.terraform.io/docs/providers/boundary/r/worker
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,57 +6,57 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface HostCatalogConfig extends cdktf.TerraformMetaArguments {
+export interface WorkerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The host catalog description.
+  * The description for the worker.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog#description HostCatalog#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/worker#description Worker#description}
   */
   readonly description?: string;
   /**
-  * The host catalog name. Defaults to the resource name.
+  * The name for the worker.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog#name HostCatalog#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/worker#name Worker#name}
   */
   readonly name?: string;
   /**
-  * The scope ID in which the resource is created.
+  * The scope for the worker.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog#scope_id HostCatalog#scope_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/worker#scope_id Worker#scope_id}
   */
   readonly scopeId: string;
   /**
-  * The host catalog type. Only `static` is supported.
+  * The worker authentication token required to register the worker for the worker-led authentication flow. Leaving this blank will result in a controller generated token.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog#type HostCatalog#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
   */
-  readonly type: string;
+  readonly workerGeneratedAuthToken?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog boundary_host_catalog}
+* Represents a {@link https://www.terraform.io/docs/providers/boundary/r/worker boundary_worker}
 */
-export class HostCatalog extends cdktf.TerraformResource {
+export class Worker extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "boundary_host_catalog";
+  public static readonly tfResourceType = "boundary_worker";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog boundary_host_catalog} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/boundary/r/worker boundary_worker} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options HostCatalogConfig
+  * @param options WorkerConfig
   */
-  public constructor(scope: Construct, id: string, config: HostCatalogConfig) {
+  public constructor(scope: Construct, id: string, config: WorkerConfig) {
     super(scope, id, {
-      terraformResourceType: 'boundary_host_catalog',
+      terraformResourceType: 'boundary_worker',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
         providerVersion: '1.1.3',
@@ -73,12 +73,27 @@ export class HostCatalog extends cdktf.TerraformResource {
     this._description = config.description;
     this._name = config.name;
     this._scopeId = config.scopeId;
-    this._type = config.type;
+    this._workerGeneratedAuthToken = config.workerGeneratedAuthToken;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // address - computed: true, optional: false, required: false
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+
+  // authorized_actions - computed: true, optional: false, required: false
+  public get authorizedActions() {
+    return this.getListAttribute('authorized_actions');
+  }
+
+  // controller_generated_activation_token - computed: true, optional: false, required: false
+  public get controllerGeneratedActivationToken() {
+    return this.getStringAttribute('controller_generated_activation_token');
+  }
 
   // description - computed: false, optional: true, required: false
   private _description?: string; 
@@ -117,6 +132,11 @@ export class HostCatalog extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // release_version - computed: true, optional: false, required: false
+  public get releaseVersion() {
+    return this.getNumberAttribute('release_version');
+  }
+
   // scope_id - computed: false, optional: false, required: true
   private _scopeId?: string; 
   public get scopeId() {
@@ -130,17 +150,20 @@ export class HostCatalog extends cdktf.TerraformResource {
     return this._scopeId;
   }
 
-  // type - computed: false, optional: false, required: true
-  private _type?: string; 
-  public get type() {
-    return this.getStringAttribute('type');
+  // worker_generated_auth_token - computed: false, optional: true, required: false
+  private _workerGeneratedAuthToken?: string; 
+  public get workerGeneratedAuthToken() {
+    return this.getStringAttribute('worker_generated_auth_token');
   }
-  public set type(value: string) {
-    this._type = value;
+  public set workerGeneratedAuthToken(value: string) {
+    this._workerGeneratedAuthToken = value;
+  }
+  public resetWorkerGeneratedAuthToken() {
+    this._workerGeneratedAuthToken = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type;
+  public get workerGeneratedAuthTokenInput() {
+    return this._workerGeneratedAuthToken;
   }
 
   // =========
@@ -152,7 +175,7 @@ export class HostCatalog extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       scope_id: cdktf.stringToTerraform(this._scopeId),
-      type: cdktf.stringToTerraform(this._type),
+      worker_generated_auth_token: cdktf.stringToTerraform(this._workerGeneratedAuthToken),
     };
   }
 }

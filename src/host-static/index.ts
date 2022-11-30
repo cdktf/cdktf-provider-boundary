@@ -63,7 +63,7 @@ export class HostStatic extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_host_static',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.2',
+        providerVersion: '1.1.3',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

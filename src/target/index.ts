@@ -97,7 +97,7 @@ export class Target extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_target',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.2',
+        providerVersion: '1.1.3',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
