@@ -89,7 +89,7 @@ export class BoundaryProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'boundary',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.3',
+        providerVersion: '1.1.4',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'boundary'

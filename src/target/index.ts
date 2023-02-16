@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface TargetConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#address Target#address}
+  */
+  readonly address?: string;
+  /**
   * A list of brokered credential source ID's.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
@@ -26,11 +32,23 @@ export interface TargetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
-  * A list of host source ID's.
+  * Boolean expression to filter the workers used to access this target
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#egress_worker_filter Target#egress_worker_filter}
+  */
+  readonly egressWorkerFilter?: string;
+  /**
+  * A list of host source ID's. Cannot be used alongside address.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#host_source_ids Target#host_source_ids}
   */
   readonly hostSourceIds?: string[];
+  /**
+  * HCP Only. Boolean expression to filter the workers a user will connect to when initiating a session against this target
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/target#ingress_worker_filter Target#ingress_worker_filter}
+  */
+  readonly ingressWorkerFilter?: string;
   /**
   * A list of injected application credential source ID's.
   * 
@@ -97,7 +115,7 @@ export class Target extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_target',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.3',
+        providerVersion: '1.1.4',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -108,10 +126,13 @@ export class Target extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._address = config.address;
     this._brokeredCredentialSourceIds = config.brokeredCredentialSourceIds;
     this._defaultPort = config.defaultPort;
     this._description = config.description;
+    this._egressWorkerFilter = config.egressWorkerFilter;
     this._hostSourceIds = config.hostSourceIds;
+    this._ingressWorkerFilter = config.ingressWorkerFilter;
     this._injectedApplicationCredentialSourceIds = config.injectedApplicationCredentialSourceIds;
     this._name = config.name;
     this._scopeId = config.scopeId;
@@ -124,6 +145,22 @@ export class Target extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // address - computed: false, optional: true, required: false
+  private _address?: string; 
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string) {
+    this._address = value;
+  }
+  public resetAddress() {
+    this._address = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address;
+  }
 
   // brokered_credential_source_ids - computed: false, optional: true, required: false
   private _brokeredCredentialSourceIds?: string[]; 
@@ -173,6 +210,22 @@ export class Target extends cdktf.TerraformResource {
     return this._description;
   }
 
+  // egress_worker_filter - computed: false, optional: true, required: false
+  private _egressWorkerFilter?: string; 
+  public get egressWorkerFilter() {
+    return this.getStringAttribute('egress_worker_filter');
+  }
+  public set egressWorkerFilter(value: string) {
+    this._egressWorkerFilter = value;
+  }
+  public resetEgressWorkerFilter() {
+    this._egressWorkerFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get egressWorkerFilterInput() {
+    return this._egressWorkerFilter;
+  }
+
   // host_source_ids - computed: false, optional: true, required: false
   private _hostSourceIds?: string[]; 
   public get hostSourceIds() {
@@ -192,6 +245,22 @@ export class Target extends cdktf.TerraformResource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // ingress_worker_filter - computed: false, optional: true, required: false
+  private _ingressWorkerFilter?: string; 
+  public get ingressWorkerFilter() {
+    return this.getStringAttribute('ingress_worker_filter');
+  }
+  public set ingressWorkerFilter(value: string) {
+    this._ingressWorkerFilter = value;
+  }
+  public resetIngressWorkerFilter() {
+    this._ingressWorkerFilter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ingressWorkerFilterInput() {
+    return this._ingressWorkerFilter;
   }
 
   // injected_application_credential_source_ids - computed: false, optional: true, required: false
@@ -306,10 +375,13 @@ export class Target extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      address: cdktf.stringToTerraform(this._address),
       brokered_credential_source_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._brokeredCredentialSourceIds),
       default_port: cdktf.numberToTerraform(this._defaultPort),
       description: cdktf.stringToTerraform(this._description),
+      egress_worker_filter: cdktf.stringToTerraform(this._egressWorkerFilter),
       host_source_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hostSourceIds),
+      ingress_worker_filter: cdktf.stringToTerraform(this._ingressWorkerFilter),
       injected_application_credential_source_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._injectedApplicationCredentialSourceIds),
       name: cdktf.stringToTerraform(this._name),
       scope_id: cdktf.stringToTerraform(this._scopeId),

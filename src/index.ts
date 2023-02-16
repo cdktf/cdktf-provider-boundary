@@ -7,6 +7,7 @@ export * as authMethodOidc from './auth-method-oidc';
 export * as authMethodPassword from './auth-method-password';
 export * as credentialJson from './credential-json';
 export * as credentialLibraryVault from './credential-library-vault';
+export * as credentialLibraryVaultSshCertificate from './credential-library-vault-ssh-certificate';
 export * as credentialSshPrivateKey from './credential-ssh-private-key';
 export * as credentialStoreStatic from './credential-store-static';
 export * as credentialStoreVault from './credential-store-vault';

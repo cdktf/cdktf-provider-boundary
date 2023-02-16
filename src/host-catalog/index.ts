@@ -59,7 +59,7 @@ export class HostCatalog extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_host_catalog',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.3',
+        providerVersion: '1.1.4',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
