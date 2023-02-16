@@ -71,7 +71,7 @@ export class CredentialSshPrivateKey extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_credential_ssh_private_key',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.3',
+        providerVersion: '1.1.4',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

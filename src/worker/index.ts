@@ -20,11 +20,11 @@ export interface WorkerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name?: string;
   /**
-  * The scope for the worker.
+  * The scope for the worker. Defaults to `global`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/worker#scope_id Worker#scope_id}
   */
-  readonly scopeId: string;
+  readonly scopeId?: string;
   /**
   * The worker authentication token required to register the worker for the worker-led authentication flow. Leaving this blank will result in a controller generated token.
   * 
@@ -52,14 +52,14 @@ export class Worker extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options WorkerConfig
+  * @param options WorkerConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: WorkerConfig) {
+  public constructor(scope: Construct, id: string, config: WorkerConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'boundary_worker',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.3',
+        providerVersion: '1.1.4',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
@@ -137,13 +137,16 @@ export class Worker extends cdktf.TerraformResource {
     return this.getNumberAttribute('release_version');
   }
 
-  // scope_id - computed: false, optional: false, required: true
+  // scope_id - computed: false, optional: true, required: false
   private _scopeId?: string; 
   public get scopeId() {
     return this.getStringAttribute('scope_id');
   }
   public set scopeId(value: string) {
     this._scopeId = value;
+  }
+  public resetScopeId() {
+    this._scopeId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get scopeIdInput() {
