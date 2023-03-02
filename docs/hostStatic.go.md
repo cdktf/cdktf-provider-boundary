@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/boundary/r/host_stat
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostStatic.HostStatic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hoststatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/hoststatic"
 
 hoststatic.NewHostStatic(scope Construct, id *string, config HostStaticConfig) HostStatic
 ```
@@ -294,7 +294,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.hostStatic.HostStatic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hoststatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/hoststatic"
 
 hoststatic.HostStatic_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.hostStatic.HostStatic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hoststatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/hoststatic"
 
 hoststatic.HostStatic_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ hoststatic.HostStatic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.hostStatic.HostStatic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hoststatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/hoststatic"
 
 hoststatic.HostStatic_IsTerraformResource(x interface{}) *bool
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.hostStatic.HostStaticConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hoststatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/hoststatic"
 
 &hoststatic.HostStaticConfig {
 	Connection: interface{},
