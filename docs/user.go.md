@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/boundary/r/user boun
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/user"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -287,7 +287,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/user"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/user"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/user"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/user"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/user"
 
 &user.UserConfig {
 	Connection: interface{},
