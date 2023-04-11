@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/boundary/r/account_p
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.accountPassword.AccountPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/accountpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword"
 
 accountpassword.NewAccountPassword(scope Construct, id *string, config AccountPasswordConfig) AccountPassword
 ```
@@ -294,7 +294,7 @@ func ResetPassword()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.accountPassword.AccountPassword.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/accountpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword"
 
 accountpassword.AccountPassword_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.accountPassword.AccountPassword.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/accountpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword"
 
 accountpassword.AccountPassword_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ accountpassword.AccountPassword_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.accountPassword.AccountPassword.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/accountpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword"
 
 accountpassword.AccountPassword_IsTerraformResource(x interface{}) *bool
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v3/accountpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword"
 
 &accountpassword.AccountPasswordConfig {
 	Connection: interface{},
