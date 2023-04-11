@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/boundary/r/credentia
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorevault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialstorevault"
 
 credentialstorevault.NewCredentialStoreVault(scope Construct, id *string, config CredentialStoreVaultConfig) CredentialStoreVault
 ```
@@ -322,7 +322,7 @@ func ResetTlsSkipVerify()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorevault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialstorevault"
 
 credentialstorevault.CredentialStoreVault_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorevault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialstorevault"
 
 credentialstorevault.CredentialStoreVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ credentialstorevault.CredentialStoreVault_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorevault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialstorevault"
 
 credentialstorevault.CredentialStoreVault_IsTerraformResource(x interface{}) *bool
 ```
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorevault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialstorevault"
 
 &credentialstorevault.CredentialStoreVaultConfig {
 	Connection: interface{},

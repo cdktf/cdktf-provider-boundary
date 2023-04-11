@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/boundary/r/scope bou
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.scope.Scope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/scope"
 
 scope.NewScope(scope Construct, id *string, config ScopeConfig) Scope
 ```
@@ -301,7 +301,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.scope.Scope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/scope"
 
 scope.Scope_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.scope.Scope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/scope"
 
 scope.Scope_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ scope.Scope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.scope.Scope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/scope"
 
 scope.Scope_IsTerraformResource(x interface{}) *bool
 ```
@@ -689,7 +689,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.scope.ScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/scope"
 
 &scope.ScopeConfig {
 	Connection: interface{},
