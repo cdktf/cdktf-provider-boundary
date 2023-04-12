@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/boundary/r/credentia
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialusernamepassword"
 
 credentialusernamepassword.NewCredentialUsernamePassword(scope Construct, id *string, config CredentialUsernamePasswordConfig) CredentialUsernamePassword
 ```
@@ -280,7 +280,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialusernamepassword"
 
 credentialusernamepassword.CredentialUsernamePassword_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialusernamepassword"
 
 credentialusernamepassword.CredentialUsernamePassword_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ credentialusernamepassword.CredentialUsernamePassword_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialusernamepassword"
 
 credentialusernamepassword.CredentialUsernamePassword_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePasswordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentialusernamepassword"
 
 &credentialusernamepassword.CredentialUsernamePasswordConfig {
 	Connection: interface{},
