@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/boundary/r/credentia
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 credentiallibraryvaultsshcertificate.NewCredentialLibraryVaultSshCertificate(scope Construct, id *string, config CredentialLibraryVaultSshCertificateConfig) CredentialLibraryVaultSshCertificate
 ```
@@ -322,7 +322,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificate_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 &credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificateConfig {
 	Connection: interface{},
