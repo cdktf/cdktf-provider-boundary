@@ -1,6 +1,6 @@
 # `boundary_auth_method`
 
-Refer to the Terraform Registory for docs: [`boundary_auth_method`](https://www.terraform.io/docs/providers/boundary/r/auth_method).
+Refer to the Terraform Registory for docs: [`boundary_auth_method`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method).
 
 # `authMethod` Submodule <a name="`authMethod` Submodule" id="@cdktf/provider-boundary.authMethod"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_auth_method`](https://www.
 
 ### AuthMethod <a name="AuthMethod" id="@cdktf/provider-boundary.authMethod.AuthMethod"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/auth_method boundary_auth_method}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method boundary_auth_method}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.authMethod.AuthMethod.Initializer"></a>
 
@@ -367,7 +367,7 @@ AuthMethod.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethod.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -474,10 +474,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.authMethod.AuthMethod.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -690,7 +690,7 @@ using HashiCorp.Cdktf.Providers.Boundary;
 
 new AuthMethodConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -710,7 +710,7 @@ new AuthMethodConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethodConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethodConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethodConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethodConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethodConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethod.AuthMethodConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -738,10 +738,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.authMethod.AuthMethodConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -805,7 +805,7 @@ public string ScopeId { get; set; }
 
 The scope ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method#scope_id AuthMethod#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#scope_id AuthMethod#scope_id}
 
 ---
 
@@ -819,7 +819,7 @@ public string Type { get; set; }
 
 The resource type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method#type AuthMethod#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#type AuthMethod#type}
 
 ---
 
@@ -833,7 +833,7 @@ public string Description { get; set; }
 
 The auth method description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method#description AuthMethod#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#description AuthMethod#description}
 
 ---
 
@@ -847,7 +847,7 @@ public double MinLoginNameLength { get; set; }
 
 The minimum login name length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method#min_login_name_length AuthMethod#min_login_name_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#min_login_name_length AuthMethod#min_login_name_length}
 
 ---
 
@@ -861,7 +861,7 @@ public double MinPasswordLength { get; set; }
 
 The minimum password length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method#min_password_length AuthMethod#min_password_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#min_password_length AuthMethod#min_password_length}
 
 ---
 
@@ -875,7 +875,7 @@ public string Name { get; set; }
 
 The auth method name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method#name AuthMethod#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#name AuthMethod#name}
 
 ---
 

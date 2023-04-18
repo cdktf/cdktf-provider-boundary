@@ -1,6 +1,6 @@
 # `boundary_role`
 
-Refer to the Terraform Registory for docs: [`boundary_role`](https://www.terraform.io/docs/providers/boundary/r/role).
+Refer to the Terraform Registory for docs: [`boundary_role`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role).
 
 # `role` Submodule <a name="`role` Submodule" id="@cdktf/provider-boundary.role"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_role`](https://www.terrafo
 
 ### Role <a name="Role" id="@cdktf/provider-boundary.role.Role"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/role boundary_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role boundary_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.role.Role.Initializer"></a>
 
@@ -374,7 +374,7 @@ role.Role_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.role.Role.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.role.Role.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -481,10 +481,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.role.Role.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -697,7 +697,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/role"
 
 &role.RoleConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -717,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/role"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -725,7 +725,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/role"
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.scopeId">ScopeId</a></code> | <code>*string</code> | The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.description">Description</a></code> | <code>*string</code> | The role description. |
-| <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantScopeId">GrantScopeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#grant_scope_id Role#grant_scope_id}. |
+| <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantScopeId">GrantScopeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#grant_scope_id Role#grant_scope_id}. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantStrings">GrantStrings</a></code> | <code>*[]*string</code> | A list of stringified grants for the role. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.name">Name</a></code> | <code>*string</code> | The role name. Defaults to the resource name. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.principalIds">PrincipalIds</a></code> | <code>*[]*string</code> | A list of principal (user or group) IDs to add as principals on the role. |
@@ -745,10 +745,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.role.RoleConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -812,7 +812,7 @@ ScopeId *string
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#scope_id Role#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#scope_id Role#scope_id}
 
 ---
 
@@ -826,7 +826,7 @@ Description *string
 
 The role description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#description Role#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#description Role#description}
 
 ---
 
@@ -838,7 +838,7 @@ GrantScopeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#grant_scope_id Role#grant_scope_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#grant_scope_id Role#grant_scope_id}.
 
 ---
 
@@ -852,7 +852,7 @@ GrantStrings *[]*string
 
 A list of stringified grants for the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#grant_strings Role#grant_strings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#grant_strings Role#grant_strings}
 
 ---
 
@@ -866,7 +866,7 @@ Name *string
 
 The role name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#name Role#name}
 
 ---
 
@@ -880,7 +880,7 @@ PrincipalIds *[]*string
 
 A list of principal (user or group) IDs to add as principals on the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#principal_ids Role#principal_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#principal_ids Role#principal_ids}
 
 ---
 

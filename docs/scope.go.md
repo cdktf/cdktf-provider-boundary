@@ -1,6 +1,6 @@
 # `boundary_scope`
 
-Refer to the Terraform Registory for docs: [`boundary_scope`](https://www.terraform.io/docs/providers/boundary/r/scope).
+Refer to the Terraform Registory for docs: [`boundary_scope`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope).
 
 # `scope` Submodule <a name="`scope` Submodule" id="@cdktf/provider-boundary.scope"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_scope`](https://www.terraf
 
 ### Scope <a name="Scope" id="@cdktf/provider-boundary.scope.Scope"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/scope boundary_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope boundary_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.scope.Scope.Initializer"></a>
 
@@ -374,7 +374,7 @@ scope.Scope_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -481,10 +481,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.scope.Scope.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -697,7 +697,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/scope"
 
 &scope.ScopeConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -717,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/scope"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -745,10 +745,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.scope.ScopeConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -812,7 +812,7 @@ ScopeId *string
 
 The scope ID containing the sub scope resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#scope_id Scope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#scope_id Scope#scope_id}
 
 ---
 
@@ -828,7 +828,7 @@ If set, when a new scope is created, the provider will not disable the functiona
 
 Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#auto_create_admin_role Scope#auto_create_admin_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
 
 ---
 
@@ -844,7 +844,7 @@ Only relevant when creating an org scope.
 
 If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives listing of scopes and auth methods and the ability to authenticate to the anonymous user. Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#auto_create_default_role Scope#auto_create_default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
 
 ---
 
@@ -858,7 +858,7 @@ Description *string
 
 The scope description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#description Scope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#description Scope#description}
 
 ---
 
@@ -872,7 +872,7 @@ GlobalScope interface{}
 
 Indicates that the scope containing this value is the global scope, which triggers some specialized behavior to allow it to be imported and managed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#global_scope Scope#global_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#global_scope Scope#global_scope}
 
 ---
 
@@ -886,7 +886,7 @@ Name *string
 
 The scope name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#name Scope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#name Scope#name}
 
 ---
 

@@ -1,6 +1,6 @@
 # `boundary_host_static`
 
-Refer to the Terraform Registory for docs: [`boundary_host_static`](https://www.terraform.io/docs/providers/boundary/r/host_static).
+Refer to the Terraform Registory for docs: [`boundary_host_static`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_static).
 
 # `hostStatic` Submodule <a name="`hostStatic` Submodule" id="@cdktf/provider-boundary.hostStatic"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_host_static`](https://www.
 
 ### HostStatic <a name="HostStatic" id="@cdktf/provider-boundary.hostStatic.HostStatic"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/host_static boundary_host_static}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_static boundary_host_static}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostStatic.HostStatic.Initializer"></a>
 
@@ -367,7 +367,7 @@ hoststatic.HostStatic_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -472,10 +472,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.hostStatic.HostStatic.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -668,7 +668,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/hoststatic"
 
 &hoststatic.HostStaticConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -687,13 +687,13 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/hoststatic"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.hostCatalogId">HostCatalogId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_static#host_catalog_id HostStatic#host_catalog_id}. |
+| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.hostCatalogId">HostCatalogId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}. |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.address">Address</a></code> | <code>*string</code> | The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name. |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.description">Description</a></code> | <code>*string</code> | The host description. |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.name">Name</a></code> | <code>*string</code> | The host name. Defaults to the resource name. |
@@ -714,10 +714,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -779,7 +779,7 @@ HostCatalogId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_static#host_catalog_id HostStatic#host_catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}.
 
 ---
 
@@ -793,7 +793,7 @@ Address *string
 
 The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_static#address HostStatic#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_static#address HostStatic#address}
 
 ---
 
@@ -807,7 +807,7 @@ Description *string
 
 The host description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_static#description HostStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_static#description HostStatic#description}
 
 ---
 
@@ -821,7 +821,7 @@ Name *string
 
 The host name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_static#name HostStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_static#name HostStatic#name}
 
 ---
 
@@ -835,7 +835,7 @@ Type *string
 
 The type of host.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_static#type HostStatic#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_static#type HostStatic#type}
 
 ---
 

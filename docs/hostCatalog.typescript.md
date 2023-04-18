@@ -1,6 +1,6 @@
 # `boundary_host_catalog`
 
-Refer to the Terraform Registory for docs: [`boundary_host_catalog`](https://www.terraform.io/docs/providers/boundary/r/host_catalog).
+Refer to the Terraform Registory for docs: [`boundary_host_catalog`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_catalog).
 
 # `hostCatalog` Submodule <a name="`hostCatalog` Submodule" id="@cdktf/provider-boundary.hostCatalog"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_host_catalog`](https://www
 
 ### HostCatalog <a name="HostCatalog" id="@cdktf/provider-boundary.hostCatalog.HostCatalog"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog boundary_host_catalog}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_catalog boundary_host_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.Initializer"></a>
 
@@ -353,7 +353,7 @@ hostCatalog.HostCatalog.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalog.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -456,10 +456,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -638,7 +638,7 @@ const hostCatalogConfig: hostCatalog.HostCatalogConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalogConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalogConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalogConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalogConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalogConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalog.HostCatalogConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -664,10 +664,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.hostCatalog.HostCatalogConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -731,7 +731,7 @@ public readonly scopeId: string;
 
 The scope ID in which the resource is created.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog#scope_id HostCatalog#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_catalog#scope_id HostCatalog#scope_id}
 
 ---
 
@@ -745,7 +745,7 @@ public readonly type: string;
 
 The host catalog type. Only `static` is supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog#type HostCatalog#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_catalog#type HostCatalog#type}
 
 ---
 
@@ -759,7 +759,7 @@ public readonly description: string;
 
 The host catalog description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog#description HostCatalog#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_catalog#description HostCatalog#description}
 
 ---
 
@@ -773,7 +773,7 @@ public readonly name: string;
 
 The host catalog name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_catalog#name HostCatalog#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_catalog#name HostCatalog#name}
 
 ---
 

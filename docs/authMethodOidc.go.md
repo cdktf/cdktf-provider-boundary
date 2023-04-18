@@ -1,6 +1,6 @@
 # `boundary_auth_method_oidc`
 
-Refer to the Terraform Registory for docs: [`boundary_auth_method_oidc`](https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc).
+Refer to the Terraform Registory for docs: [`boundary_auth_method_oidc`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc).
 
 # `authMethodOidc` Submodule <a name="`authMethodOidc` Submodule" id="@cdktf/provider-boundary.authMethodOidc"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_auth_method_oidc`](https:/
 
 ### AuthMethodOidc <a name="AuthMethodOidc" id="@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc boundary_auth_method_oidc}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc boundary_auth_method_oidc}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.Initializer"></a>
 
@@ -465,7 +465,7 @@ authmethodoidc.AuthMethodOidc_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -598,10 +598,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.authMethodOidc.AuthMethodOidc.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1074,7 +1074,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/authmethodoidc"
 
 &authmethodoidc.AuthMethodOidcConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -1107,7 +1107,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/authmethodoidc"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidcConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidcConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidcConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidcConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidcConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodOidc.AuthMethodOidcConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1148,10 +1148,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.authMethodOidc.AuthMethodOidcConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1215,7 +1215,7 @@ ScopeId *string
 
 The scope ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#scope_id AuthMethodOidc#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#scope_id AuthMethodOidc#scope_id}
 
 ---
 
@@ -1229,7 +1229,7 @@ AccountClaimMaps *[]*string
 
 Account claim maps for the to_claim of sub.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#account_claim_maps AuthMethodOidc#account_claim_maps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#account_claim_maps AuthMethodOidc#account_claim_maps}
 
 ---
 
@@ -1243,7 +1243,7 @@ AllowedAudiences *[]*string
 
 Audiences for which the provider responses will be allowed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#allowed_audiences AuthMethodOidc#allowed_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#allowed_audiences AuthMethodOidc#allowed_audiences}
 
 ---
 
@@ -1259,7 +1259,7 @@ The API prefix to use when generating callback URLs for the provider.
 
 Should be set to an address at which the provider can reach back to the controller.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#api_url_prefix AuthMethodOidc#api_url_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#api_url_prefix AuthMethodOidc#api_url_prefix}
 
 ---
 
@@ -1273,7 +1273,7 @@ CallbackUrl *string
 
 The URL that should be provided to the IdP for callbacks.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#callback_url AuthMethodOidc#callback_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#callback_url AuthMethodOidc#callback_url}
 
 ---
 
@@ -1287,7 +1287,7 @@ ClaimsScopes *[]*string
 
 Claims scopes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#claims_scopes AuthMethodOidc#claims_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#claims_scopes AuthMethodOidc#claims_scopes}
 
 ---
 
@@ -1301,7 +1301,7 @@ ClientId *string
 
 The client ID assigned to this auth method from the provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#client_id AuthMethodOidc#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#client_id AuthMethodOidc#client_id}
 
 ---
 
@@ -1317,7 +1317,7 @@ The secret key assigned to this auth method from the provider.
 
 Once set, only the hash will be kept and the original value can be removed from configuration.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#client_secret AuthMethodOidc#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#client_secret AuthMethodOidc#client_secret}
 
 ---
 
@@ -1331,7 +1331,7 @@ ClientSecretHmac *string
 
 The HMAC of the client secret returned by the Boundary controller, which is used for comparison after initial setting of the value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#client_secret_hmac AuthMethodOidc#client_secret_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#client_secret_hmac AuthMethodOidc#client_secret_hmac}
 
 ---
 
@@ -1345,7 +1345,7 @@ Description *string
 
 The auth method description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#description AuthMethodOidc#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#description AuthMethodOidc#description}
 
 ---
 
@@ -1361,7 +1361,7 @@ Disables validation logic ensuring that the OIDC provider's information from its
 
 The validation is only performed at create or update time.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#disable_discovered_config_validation AuthMethodOidc#disable_discovered_config_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#disable_discovered_config_validation AuthMethodOidc#disable_discovered_config_validation}
 
 ---
 
@@ -1375,7 +1375,7 @@ IdpCaCerts *[]*string
 
 A list of CA certificates to trust when validating the IdP's token signatures.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#idp_ca_certs AuthMethodOidc#idp_ca_certs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#idp_ca_certs AuthMethodOidc#idp_ca_certs}
 
 ---
 
@@ -1391,7 +1391,7 @@ When true, makes this auth method the primary auth method for the scope in which
 
 The primary auth method for a scope means the the user will be automatically created when they login using an OIDC account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#is_primary_for_scope AuthMethodOidc#is_primary_for_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#is_primary_for_scope AuthMethodOidc#is_primary_for_scope}
 
 ---
 
@@ -1405,7 +1405,7 @@ Issuer *string
 
 The issuer corresponding to the provider, which must match the issuer field in generated tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#issuer AuthMethodOidc#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#issuer AuthMethodOidc#issuer}
 
 ---
 
@@ -1419,7 +1419,7 @@ MaxAge *f64
 
 The max age to provide to the provider, indicating how much time is allowed to have passed since the last authentication before the user is challenged again.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#max_age AuthMethodOidc#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#max_age AuthMethodOidc#max_age}
 
 ---
 
@@ -1433,7 +1433,7 @@ Name *string
 
 The auth method name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#name AuthMethodOidc#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#name AuthMethodOidc#name}
 
 ---
 
@@ -1447,7 +1447,7 @@ SigningAlgorithms *[]*string
 
 Allowed signing algorithms for the provider's issued tokens.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#signing_algorithms AuthMethodOidc#signing_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#signing_algorithms AuthMethodOidc#signing_algorithms}
 
 ---
 
@@ -1461,7 +1461,7 @@ State *string
 
 Can be one of 'inactive', 'active-private', or 'active-public'. Currently automatically set to active-public.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#state AuthMethodOidc#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#state AuthMethodOidc#state}
 
 ---
 
@@ -1475,7 +1475,7 @@ Type *string
 
 The type of auth method; hardcoded.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc#type AuthMethodOidc#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_oidc#type AuthMethodOidc#type}
 
 ---
 

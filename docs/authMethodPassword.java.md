@@ -1,6 +1,6 @@
 # `boundary_auth_method_password`
 
-Refer to the Terraform Registory for docs: [`boundary_auth_method_password`](https://www.terraform.io/docs/providers/boundary/r/auth_method_password).
+Refer to the Terraform Registory for docs: [`boundary_auth_method_password`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password).
 
 # `authMethodPassword` Submodule <a name="`authMethodPassword` Submodule" id="@cdktf/provider-boundary.authMethodPassword"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_auth_method_password`](htt
 
 ### AuthMethodPassword <a name="AuthMethodPassword" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password boundary_auth_method_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password boundary_auth_method_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer"></a>
 
@@ -19,6 +19,7 @@ AuthMethodPassword.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -40,7 +41,7 @@ AuthMethodPassword.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -81,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -121,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The scope ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#scope_id AuthMethodPassword#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#scope_id AuthMethodPassword#scope_id}
 
 ---
 
@@ -131,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/bound
 
 The auth method description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#description AuthMethodPassword#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#description AuthMethodPassword#description}
 
 ---
 
@@ -141,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/bound
 
 The minimum login name length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
 
 ---
 
@@ -151,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/bound
 
 The minimum password length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
 
 ---
 
@@ -161,7 +162,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/bound
 
 The auth method name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#name AuthMethodPassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#name AuthMethodPassword#name}
 
 ---
 
@@ -171,7 +172,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/bound
 
 The resource type, hardcoded per resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#type AuthMethodPassword#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#type AuthMethodPassword#type}
 
 ---
 
@@ -499,7 +500,7 @@ AuthMethodPassword.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -606,10 +607,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -824,6 +825,7 @@ AuthMethodPasswordConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -845,7 +847,7 @@ AuthMethodPasswordConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPasswordConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPasswordConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPasswordConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPasswordConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPasswordConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodPassword.AuthMethodPasswordConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -873,10 +875,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPasswordConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -940,7 +942,7 @@ public java.lang.String getScopeId();
 
 The scope ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#scope_id AuthMethodPassword#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#scope_id AuthMethodPassword#scope_id}
 
 ---
 
@@ -954,7 +956,7 @@ public java.lang.String getDescription();
 
 The auth method description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#description AuthMethodPassword#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#description AuthMethodPassword#description}
 
 ---
 
@@ -968,7 +970,7 @@ public java.lang.Number getMinLoginNameLength();
 
 The minimum login name length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
 
 ---
 
@@ -982,7 +984,7 @@ public java.lang.Number getMinPasswordLength();
 
 The minimum password length.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
 
 ---
 
@@ -996,7 +998,7 @@ public java.lang.String getName();
 
 The auth method name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#name AuthMethodPassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#name AuthMethodPassword#name}
 
 ---
 
@@ -1010,7 +1012,7 @@ public java.lang.String getType();
 
 The resource type, hardcoded per resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/auth_method_password#type AuthMethodPassword#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method_password#type AuthMethodPassword#type}
 
 ---
 

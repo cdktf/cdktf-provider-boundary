@@ -1,6 +1,6 @@
 # `boundary_managed_group`
 
-Refer to the Terraform Registory for docs: [`boundary_managed_group`](https://www.terraform.io/docs/providers/boundary/r/managed_group).
+Refer to the Terraform Registory for docs: [`boundary_managed_group`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/managed_group).
 
 # `managedGroup` Submodule <a name="`managedGroup` Submodule" id="@cdktf/provider-boundary.managedGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_managed_group`](https://ww
 
 ### ManagedGroup <a name="ManagedGroup" id="@cdktf/provider-boundary.managedGroup.ManagedGroup"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/managed_group boundary_managed_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/managed_group boundary_managed_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.Initializer"></a>
 
@@ -353,7 +353,7 @@ managedgroup.ManagedGroup_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroup.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -456,10 +456,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -632,7 +632,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/managedgroup"
 
 &managedgroup.ManagedGroupConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -650,7 +650,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/managedgroup"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroupConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroupConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroupConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroupConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroupConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.managedGroup.ManagedGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -676,10 +676,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.managedGroup.ManagedGroupConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -743,7 +743,7 @@ AuthMethodId *string
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/managed_group#auth_method_id ManagedGroup#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/managed_group#auth_method_id ManagedGroup#auth_method_id}
 
 ---
 
@@ -757,7 +757,7 @@ Filter *string
 
 Boolean expression to filter the workers for this managed group.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/managed_group#filter ManagedGroup#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/managed_group#filter ManagedGroup#filter}
 
 ---
 
@@ -771,7 +771,7 @@ Description *string
 
 The managed group description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/managed_group#description ManagedGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/managed_group#description ManagedGroup#description}
 
 ---
 
@@ -785,7 +785,7 @@ Name *string
 
 The managed group name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/managed_group#name ManagedGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/managed_group#name ManagedGroup#name}
 
 ---
 

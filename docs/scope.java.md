@@ -1,6 +1,6 @@
 # `boundary_scope`
 
-Refer to the Terraform Registory for docs: [`boundary_scope`](https://www.terraform.io/docs/providers/boundary/r/scope).
+Refer to the Terraform Registory for docs: [`boundary_scope`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope).
 
 # `scope` Submodule <a name="`scope` Submodule" id="@cdktf/provider-boundary.scope"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_scope`](https://www.terraf
 
 ### Scope <a name="Scope" id="@cdktf/provider-boundary.scope.Scope"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/scope boundary_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope boundary_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.scope.Scope.Initializer"></a>
 
@@ -19,6 +19,7 @@ Scope.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -43,7 +44,7 @@ Scope.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -84,7 +85,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.scope.Scope.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -124,7 +125,7 @@ Must be unique amongst siblings in the same scope
 
 The scope ID containing the sub scope resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#scope_id Scope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#scope_id Scope#scope_id}
 
 ---
 
@@ -136,7 +137,7 @@ If set, when a new scope is created, the provider will not disable the functiona
 
 Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#auto_create_admin_role Scope#auto_create_admin_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
 
 ---
 
@@ -148,7 +149,7 @@ Only relevant when creating an org scope.
 
 If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives listing of scopes and auth methods and the ability to authenticate to the anonymous user. Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#auto_create_default_role Scope#auto_create_default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
 
 ---
 
@@ -158,7 +159,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/bound
 
 The scope description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#description Scope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#description Scope#description}
 
 ---
 
@@ -168,7 +169,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/bound
 
 Indicates that the scope containing this value is the global scope, which triggers some specialized behavior to allow it to be imported and managed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#global_scope Scope#global_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#global_scope Scope#global_scope}
 
 ---
 
@@ -178,7 +179,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/bound
 
 The scope name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#name Scope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#name Scope#name}
 
 ---
 
@@ -506,7 +507,7 @@ Scope.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -613,10 +614,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.scope.Scope.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -831,6 +832,7 @@ ScopeConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -855,7 +857,7 @@ ScopeConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -883,10 +885,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.scope.ScopeConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -950,7 +952,7 @@ public java.lang.String getScopeId();
 
 The scope ID containing the sub scope resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#scope_id Scope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#scope_id Scope#scope_id}
 
 ---
 
@@ -966,7 +968,7 @@ If set, when a new scope is created, the provider will not disable the functiona
 
 Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#auto_create_admin_role Scope#auto_create_admin_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
 
 ---
 
@@ -982,7 +984,7 @@ Only relevant when creating an org scope.
 
 If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives listing of scopes and auth methods and the ability to authenticate to the anonymous user. Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#auto_create_default_role Scope#auto_create_default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
 
 ---
 
@@ -996,7 +998,7 @@ public java.lang.String getDescription();
 
 The scope description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#description Scope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#description Scope#description}
 
 ---
 
@@ -1010,7 +1012,7 @@ public java.lang.Object getGlobalScope();
 
 Indicates that the scope containing this value is the global scope, which triggers some specialized behavior to allow it to be imported and managed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#global_scope Scope#global_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#global_scope Scope#global_scope}
 
 ---
 
@@ -1024,7 +1026,7 @@ public java.lang.String getName();
 
 The scope name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/scope#name Scope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/scope#name Scope#name}
 
 ---
 

@@ -1,6 +1,6 @@
 # `boundary_host_set_static`
 
-Refer to the Terraform Registory for docs: [`boundary_host_set_static`](https://www.terraform.io/docs/providers/boundary/r/host_set_static).
+Refer to the Terraform Registory for docs: [`boundary_host_set_static`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_static).
 
 # `hostSetStatic` Submodule <a name="`hostSetStatic` Submodule" id="@cdktf/provider-boundary.hostSetStatic"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_host_set_static`](https://
 
 ### HostSetStatic <a name="HostSetStatic" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/host_set_static boundary_host_set_static}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_static boundary_host_set_static}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.Initializer"></a>
 
@@ -367,7 +367,7 @@ hostSetStatic.HostSetStatic.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStatic.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -472,10 +472,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -674,7 +674,7 @@ const hostSetStaticConfig: hostSetStatic.HostSetStaticConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStaticConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStaticConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStaticConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStaticConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStaticConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostSetStatic.HostSetStaticConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -701,10 +701,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.hostSetStatic.HostSetStaticConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -768,7 +768,7 @@ public readonly hostCatalogId: string;
 
 The catalog for the host set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_static#host_catalog_id HostSetStatic#host_catalog_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_static#host_catalog_id HostSetStatic#host_catalog_id}
 
 ---
 
@@ -782,7 +782,7 @@ public readonly description: string;
 
 The host set description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_static#description HostSetStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_static#description HostSetStatic#description}
 
 ---
 
@@ -796,7 +796,7 @@ public readonly hostIds: string[];
 
 The list of host IDs contained in this set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_static#host_ids HostSetStatic#host_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_static#host_ids HostSetStatic#host_ids}
 
 ---
 
@@ -810,7 +810,7 @@ public readonly name: string;
 
 The host set name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_static#name HostSetStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_static#name HostSetStatic#name}
 
 ---
 
@@ -824,7 +824,7 @@ public readonly type: string;
 
 The type of host set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_static#type HostSetStatic#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_static#type HostSetStatic#type}
 
 ---
 

@@ -1,6 +1,6 @@
 # `boundary_role`
 
-Refer to the Terraform Registory for docs: [`boundary_role`](https://www.terraform.io/docs/providers/boundary/r/role).
+Refer to the Terraform Registory for docs: [`boundary_role`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role).
 
 # `role` Submodule <a name="`role` Submodule" id="@cdktf/provider-boundary.role"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_role`](https://www.terrafo
 
 ### Role <a name="Role" id="@cdktf/provider-boundary.role.Role"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/boundary/r/role boundary_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role boundary_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.role.Role.Initializer"></a>
 
@@ -374,7 +374,7 @@ role.Role.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.role.Role.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.role.Role.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -481,10 +481,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.role.Role.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -703,7 +703,7 @@ const roleConfig: role.RoleConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -711,7 +711,7 @@ const roleConfig: role.RoleConfig = { ... }
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.scopeId">scopeId</a></code> | <code>string</code> | The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.description">description</a></code> | <code>string</code> | The role description. |
-| <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantScopeId">grantScopeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#grant_scope_id Role#grant_scope_id}. |
+| <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantScopeId">grantScopeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#grant_scope_id Role#grant_scope_id}. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantStrings">grantStrings</a></code> | <code>string[]</code> | A list of stringified grants for the role. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.name">name</a></code> | <code>string</code> | The role name. Defaults to the resource name. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.principalIds">principalIds</a></code> | <code>string[]</code> | A list of principal (user or group) IDs to add as principals on the role. |
@@ -731,10 +731,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.role.RoleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -798,7 +798,7 @@ public readonly scopeId: string;
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#scope_id Role#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#scope_id Role#scope_id}
 
 ---
 
@@ -812,7 +812,7 @@ public readonly description: string;
 
 The role description.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#description Role#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#description Role#description}
 
 ---
 
@@ -824,7 +824,7 @@ public readonly grantScopeId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#grant_scope_id Role#grant_scope_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#grant_scope_id Role#grant_scope_id}.
 
 ---
 
@@ -838,7 +838,7 @@ public readonly grantStrings: string[];
 
 A list of stringified grants for the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#grant_strings Role#grant_strings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#grant_strings Role#grant_strings}
 
 ---
 
@@ -852,7 +852,7 @@ public readonly name: string;
 
 The role name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#name Role#name}
 
 ---
 
@@ -866,7 +866,7 @@ public readonly principalIds: string[];
 
 A list of principal (user or group) IDs to add as principals on the role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#principal_ids Role#principal_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#principal_ids Role#principal_ids}
 
 ---
 
