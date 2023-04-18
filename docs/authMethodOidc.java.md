@@ -1,3 +1,7 @@
+# `boundary_auth_method_oidc`
+
+Refer to the Terraform Registory for docs: [`boundary_auth_method_oidc`](https://www.terraform.io/docs/providers/boundary/r/auth_method_oidc).
+
 # `authMethodOidc` Submodule <a name="`authMethodOidc` Submodule" id="@cdktf/provider-boundary.authMethodOidc"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

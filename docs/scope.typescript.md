@@ -1,3 +1,7 @@
+# `boundary_scope`
+
+Refer to the Terraform Registory for docs: [`boundary_scope`](https://www.terraform.io/docs/providers/boundary/r/scope).
+
 # `scope` Submodule <a name="`scope` Submodule" id="@cdktf/provider-boundary.scope"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

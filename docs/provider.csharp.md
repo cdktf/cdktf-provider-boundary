@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`boundary`](https://www.terraform.io/docs/providers/boundary).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-boundary.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
