@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.provider.BoundaryProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/provider"
 
 provider.NewBoundaryProvider(scope Construct, id *string, config BoundaryProviderConfig) BoundaryProvider
 ```
@@ -196,7 +196,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.provider.BoundaryProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/provider"
 
 provider.BoundaryProvider_IsConstruct(x interface{}) *bool
 ```
@@ -228,7 +228,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/provider"
 
 provider.BoundaryProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -242,7 +242,7 @@ provider.BoundaryProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/provider"
 
 provider.BoundaryProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.provider.BoundaryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/provider"
 
 &provider.BoundaryProviderConfig {
 	Addr: *string,
