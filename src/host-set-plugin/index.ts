@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/boundary/r/host_set_plugin
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_plugin
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,49 +10,49 @@ export interface HostSetPluginConfig extends cdktf.TerraformMetaArguments {
   /**
   * The attributes for the host set. Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" or remove the block to clear all attributes in the host set.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_plugin#attributes_json HostSetPlugin#attributes_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_plugin#attributes_json HostSetPlugin#attributes_json}
   */
   readonly attributesJson?: string;
   /**
   * The host set description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_plugin#description HostSetPlugin#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_plugin#description HostSetPlugin#description}
   */
   readonly description?: string;
   /**
   * The catalog for the host set.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_plugin#host_catalog_id HostSetPlugin#host_catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_plugin#host_catalog_id HostSetPlugin#host_catalog_id}
   */
   readonly hostCatalogId: string;
   /**
   * The host set name. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_plugin#name HostSetPlugin#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_plugin#name HostSetPlugin#name}
   */
   readonly name?: string;
   /**
   * The ordered list of preferred endpoints.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_plugin#preferred_endpoints HostSetPlugin#preferred_endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_plugin#preferred_endpoints HostSetPlugin#preferred_endpoints}
   */
   readonly preferredEndpoints?: string[];
   /**
   * The value to set for the sync interval seconds.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_plugin#sync_interval_seconds HostSetPlugin#sync_interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_plugin#sync_interval_seconds HostSetPlugin#sync_interval_seconds}
   */
   readonly syncIntervalSeconds?: number;
   /**
   * The type of host set
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host_set_plugin#type HostSetPlugin#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_plugin#type HostSetPlugin#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/boundary/r/host_set_plugin boundary_host_set_plugin}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_plugin boundary_host_set_plugin}
 */
 export class HostSetPlugin extends cdktf.TerraformResource {
 
@@ -66,7 +66,7 @@ export class HostSetPlugin extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/boundary/r/host_set_plugin boundary_host_set_plugin} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host_set_plugin boundary_host_set_plugin} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/boundary/r/host
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,35 +10,35 @@ export interface HostConfig extends cdktf.TerraformMetaArguments {
   /**
   * The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host#address Host#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host#address Host#address}
   */
   readonly address?: string;
   /**
   * The host description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host#description Host#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host#description Host#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host#host_catalog_id Host#host_catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host#host_catalog_id Host#host_catalog_id}
   */
   readonly hostCatalogId: string;
   /**
   * The host name. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host#name Host#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host#name Host#name}
   */
   readonly name?: string;
   /**
   * The type of host
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/host#type Host#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host#type Host#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/boundary/r/host boundary_host}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host boundary_host}
 */
 export class Host extends cdktf.TerraformResource {
 
@@ -52,7 +52,7 @@ export class Host extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/boundary/r/host boundary_host} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/host boundary_host} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

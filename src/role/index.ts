@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/boundary/r/role
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,41 +10,41 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The role description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#description Role#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#description Role#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#grant_scope_id Role#grant_scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#grant_scope_id Role#grant_scope_id}
   */
   readonly grantScopeId?: string;
   /**
   *  A list of stringified grants for the role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#grant_strings Role#grant_strings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#grant_strings Role#grant_strings}
   */
   readonly grantStrings?: string[];
   /**
   * The role name. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#name Role#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#name Role#name}
   */
   readonly name?: string;
   /**
   * A list of principal (user or group) IDs to add as principals on the role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#principal_ids Role#principal_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#principal_ids Role#principal_ids}
   */
   readonly principalIds?: string[];
   /**
   * The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/boundary/r/role#scope_id Role#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role#scope_id Role#scope_id}
   */
   readonly scopeId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/boundary/r/role boundary_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role boundary_role}
 */
 export class Role extends cdktf.TerraformResource {
 
@@ -58,7 +58,7 @@ export class Role extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/boundary/r/role boundary_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/role boundary_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
