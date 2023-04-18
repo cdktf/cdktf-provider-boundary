@@ -1,3 +1,7 @@
+# `boundary_target`
+
+Refer to the Terraform Registory for docs: [`boundary_target`](https://www.terraform.io/docs/providers/boundary/r/target).
+
 # `target` Submodule <a name="`target` Submodule" id="@cdktf/provider-boundary.target"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

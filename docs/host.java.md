@@ -1,3 +1,7 @@
+# `boundary_host`
+
+Refer to the Terraform Registory for docs: [`boundary_host`](https://www.terraform.io/docs/providers/boundary/r/host).
+
 # `host` Submodule <a name="`host` Submodule" id="@cdktf/provider-boundary.host"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
