@@ -1,6 +1,6 @@
 # `boundary_credential_store_vault`
 
-Refer to the Terraform Registory for docs: [`boundary_credential_store_vault`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault).
+Refer to the Terraform Registory for docs: [`boundary_credential_store_vault`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault).
 
 # `credentialStoreVault` Submodule <a name="`credentialStoreVault` Submodule" id="@cdktf/provider-boundary.credentialStoreVault"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_credential_store_vault`](h
 
 ### CredentialStoreVault <a name="CredentialStoreVault" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault boundary_credential_store_vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault boundary_credential_store_vault}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.resetTlsServerName">resetTlsServerName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.resetTlsSkipVerify">resetTlsSkipVerify</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.resetWorkerFilter">resetWorkerFilter</a></code> | *No description.* |
 
 ---
 
@@ -313,6 +314,12 @@ public resetTlsServerName(): void
 public resetTlsSkipVerify(): void
 ```
 
+##### `resetWorkerFilter` <a name="resetWorkerFilter" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.resetWorkerFilter"></a>
+
+```typescript
+public resetWorkerFilter(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -415,6 +422,7 @@ credentialStoreVault.CredentialStoreVault.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.tlsServerNameInput">tlsServerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.tlsSkipVerifyInput">tlsSkipVerifyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.tokenInput">tokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.workerFilterInput">workerFilterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.address">address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.caCert">caCert</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.clientCertificate">clientCertificate</a></code> | <code>string</code> | *No description.* |
@@ -426,6 +434,7 @@ credentialStoreVault.CredentialStoreVault.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.tlsServerName">tlsServerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.tlsSkipVerify">tlsSkipVerify</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.token">token</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.workerFilter">workerFilter</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -711,6 +720,16 @@ public readonly tokenInput: string;
 
 ---
 
+##### `workerFilterInput`<sup>Optional</sup> <a name="workerFilterInput" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.workerFilterInput"></a>
+
+```typescript
+public readonly workerFilterInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `address`<sup>Required</sup> <a name="address" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.address"></a>
 
 ```typescript
@@ -821,6 +840,16 @@ public readonly token: string;
 
 ---
 
+##### `workerFilter`<sup>Required</sup> <a name="workerFilter" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVault.property.workerFilter"></a>
+
+```typescript
+public readonly workerFilter: string;
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -873,6 +902,7 @@ const credentialStoreVaultConfig: credentialStoreVault.CredentialStoreVaultConfi
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVaultConfig.property.namespace">namespace</a></code> | <code>string</code> | The namespace within Vault to use. |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVaultConfig.property.tlsServerName">tlsServerName</a></code> | <code>string</code> | Name to use as the SNI host when connecting to Vault via TLS. |
 | <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVaultConfig.property.tlsSkipVerify">tlsSkipVerify</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not to skip TLS verification. |
+| <code><a href="#@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVaultConfig.property.workerFilter">workerFilter</a></code> | <code>string</code> | HCP Only. |
 
 ---
 
@@ -956,7 +986,7 @@ public readonly address: string;
 
 The address to Vault server. This should be a complete URL such as 'https://127.0.0.1:8200'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#address CredentialStoreVault#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#address CredentialStoreVault#address}
 
 ---
 
@@ -970,7 +1000,7 @@ public readonly scopeId: string;
 
 The scope for this credential store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#scope_id CredentialStoreVault#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#scope_id CredentialStoreVault#scope_id}
 
 ---
 
@@ -984,7 +1014,7 @@ public readonly token: string;
 
 A token used for accessing Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#token CredentialStoreVault#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#token CredentialStoreVault#token}
 
 ---
 
@@ -998,7 +1028,7 @@ public readonly caCert: string;
 
 A PEM-encoded CA certificate to verify the Vault server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#ca_cert CredentialStoreVault#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#ca_cert CredentialStoreVault#ca_cert}
 
 ---
 
@@ -1012,7 +1042,7 @@ public readonly clientCertificate: string;
 
 A PEM-encoded client certificate to use for TLS authentication to the Vault server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#client_certificate CredentialStoreVault#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#client_certificate CredentialStoreVault#client_certificate}
 
 ---
 
@@ -1026,7 +1056,7 @@ public readonly clientCertificateKey: string;
 
 A PEM-encoded private key matching the client certificate from 'client_certificate'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#client_certificate_key CredentialStoreVault#client_certificate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#client_certificate_key CredentialStoreVault#client_certificate_key}
 
 ---
 
@@ -1040,7 +1070,7 @@ public readonly description: string;
 
 The Vault credential store description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#description CredentialStoreVault#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#description CredentialStoreVault#description}
 
 ---
 
@@ -1054,7 +1084,7 @@ public readonly name: string;
 
 The Vault credential store name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#name CredentialStoreVault#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#name CredentialStoreVault#name}
 
 ---
 
@@ -1068,7 +1098,7 @@ public readonly namespace: string;
 
 The namespace within Vault to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#namespace CredentialStoreVault#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#namespace CredentialStoreVault#namespace}
 
 ---
 
@@ -1082,7 +1112,7 @@ public readonly tlsServerName: string;
 
 Name to use as the SNI host when connecting to Vault via TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#tls_server_name CredentialStoreVault#tls_server_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#tls_server_name CredentialStoreVault#tls_server_name}
 
 ---
 
@@ -1096,7 +1126,23 @@ public readonly tlsSkipVerify: boolean | IResolvable;
 
 Whether or not to skip TLS verification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_vault#tls_skip_verify CredentialStoreVault#tls_skip_verify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#tls_skip_verify CredentialStoreVault#tls_skip_verify}
+
+---
+
+##### `workerFilter`<sup>Optional</sup> <a name="workerFilter" id="@cdktf/provider-boundary.credentialStoreVault.CredentialStoreVaultConfig.property.workerFilter"></a>
+
+```typescript
+public readonly workerFilter: string;
+```
+
+- *Type:* string
+
+HCP Only.
+
+A filter used to control which PKI workers can handle Vault requests. This allows the use of private Vault instances with Boundary.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_vault#worker_filter CredentialStoreVault#worker_filter}
 
 ---
 
