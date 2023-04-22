@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,43 +10,43 @@ export interface AuthMethodConfig extends cdktf.TerraformMetaArguments {
   /**
   * The auth method description.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#description AuthMethod#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method#description AuthMethod#description}
   */
   readonly description?: string;
   /**
   * The minimum login name length.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#min_login_name_length AuthMethod#min_login_name_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method#min_login_name_length AuthMethod#min_login_name_length}
   */
   readonly minLoginNameLength?: number;
   /**
   * The minimum password length.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#min_password_length AuthMethod#min_password_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method#min_password_length AuthMethod#min_password_length}
   */
   readonly minPasswordLength?: number;
   /**
   * The auth method name. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#name AuthMethod#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method#name AuthMethod#name}
   */
   readonly name?: string;
   /**
   * The scope ID.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#scope_id AuthMethod#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method#scope_id AuthMethod#scope_id}
   */
   readonly scopeId: string;
   /**
   * The resource type.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method#type AuthMethod#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method#type AuthMethod#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method boundary_auth_method}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method boundary_auth_method}
 */
 export class AuthMethod extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class AuthMethod extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/auth_method boundary_auth_method} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/auth_method boundary_auth_method} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class AuthMethod extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_auth_method',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.4',
+        providerVersion: '1.1.5',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

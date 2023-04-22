@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_static
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_static
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface CredentialStoreStaticConfig extends cdktf.TerraformMetaArgument
   /**
   * The static credential store description.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_static#description CredentialStoreStatic#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_static#description CredentialStoreStatic#description}
   */
   readonly description?: string;
   /**
   * The static credential store name. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_static#name CredentialStoreStatic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_static#name CredentialStoreStatic#name}
   */
   readonly name?: string;
   /**
   * The scope for this credential store.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
   */
   readonly scopeId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_static boundary_credential_store_static}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_static boundary_credential_store_static}
 */
 export class CredentialStoreStatic extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class CredentialStoreStatic extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.4/docs/resources/credential_store_static boundary_credential_store_static} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/credential_store_static boundary_credential_store_static} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -53,7 +53,7 @@ export class CredentialStoreStatic extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_credential_store_static',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.4',
+        providerVersion: '1.1.5',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
