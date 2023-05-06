@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`boundary`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs).
+Refer to the Terraform Registory for docs: [`boundary`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-boundary.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary`](https://registry.terrafo
 
 ### BoundaryProvider <a name="BoundaryProvider" id="@cdktf/provider-boundary.provider.BoundaryProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs boundary}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs boundary}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.provider.BoundaryProvider.Initializer"></a>
 
@@ -23,6 +23,7 @@ BoundaryProvider.Builder.create(Construct scope, java.lang.String id)
 //  .passwordAuthMethodPassword(java.lang.String)
 //  .pluginExecutionDir(java.lang.String)
 //  .recoveryKmsHcl(java.lang.String)
+//  .scopeId(java.lang.String)
 //  .tlsInsecure(java.lang.Boolean)
 //  .tlsInsecure(IResolvable)
 //  .token(java.lang.String)
@@ -40,6 +41,7 @@ BoundaryProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.passwordAuthMethodPassword">passwordAuthMethodPassword</a></code> | <code>java.lang.String</code> | The auth method password for password-style auth methods. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.pluginExecutionDir">pluginExecutionDir</a></code> | <code>java.lang.String</code> | Specifies a directory that the Boundary provider can use to write and execute its built-in plugins. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.recoveryKmsHcl">recoveryKmsHcl</a></code> | <code>java.lang.String</code> | Can be a heredoc string or a path on disk. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The scope ID for the default auth method. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.tlsInsecure">tlsInsecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true, does not validate the Boundary API endpoint certificate. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | The Boundary token to use, as a string or path on disk containing just the string. |
 
@@ -69,7 +71,7 @@ Must be unique amongst siblings in the same scope
 
 The base url of the Boundary API, e.g. "http://127.0.0.1:9200". If not set, it will be read from the "BOUNDARY_ADDR" env var.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#addr BoundaryProvider#addr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#addr BoundaryProvider#addr}
 
 ---
 
@@ -79,7 +81,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#alias BoundaryProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#alias BoundaryProvider#alias}
 
 ---
 
@@ -89,7 +91,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The auth method ID e.g. ampw_1234567890.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#auth_method_id BoundaryProvider#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#auth_method_id BoundaryProvider#auth_method_id}
 
 ---
 
@@ -99,7 +101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The auth method login name for password-style auth methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#password_auth_method_login_name BoundaryProvider#password_auth_method_login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#password_auth_method_login_name BoundaryProvider#password_auth_method_login_name}
 
 ---
 
@@ -109,7 +111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The auth method password for password-style auth methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#password_auth_method_password BoundaryProvider#password_auth_method_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#password_auth_method_password BoundaryProvider#password_auth_method_password}
 
 ---
 
@@ -119,7 +121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a directory that the Boundary provider can use to write and execute its built-in plugins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#plugin_execution_dir BoundaryProvider#plugin_execution_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#plugin_execution_dir BoundaryProvider#plugin_execution_dir}
 
 ---
 
@@ -131,7 +133,17 @@ Can be a heredoc string or a path on disk.
 
 If set, the string/file will be parsed as HCL and used with the recovery KMS mechanism. While this is set, it will override any other authentication information; the KMS mechanism will always be used. See Boundary's KMS docs for examples: https://boundaryproject.io/docs/configuration/kms
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#recovery_kms_hcl BoundaryProvider#recovery_kms_hcl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#recovery_kms_hcl BoundaryProvider#recovery_kms_hcl}
+
+---
+
+##### `scopeId`<sup>Optional</sup> <a name="scopeId" id="@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.scopeId"></a>
+
+- *Type:* java.lang.String
+
+The scope ID for the default auth method.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#scope_id BoundaryProvider#scope_id}
 
 ---
 
@@ -141,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 When set to true, does not validate the Boundary API endpoint certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#tls_insecure BoundaryProvider#tls_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#tls_insecure BoundaryProvider#tls_insecure}
 
 ---
 
@@ -153,7 +165,7 @@ The Boundary token to use, as a string or path on disk containing just the strin
 
 If set, the token read here will be used in place of authenticating with the auth method specified in "auth_method_id", although the recovery KMS mechanism will still override this. Can also be set with the BOUNDARY_TOKEN environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#token BoundaryProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#token BoundaryProvider#token}
 
 ---
 
@@ -173,6 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetPasswordAuthMethodPassword">resetPasswordAuthMethodPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetPluginExecutionDir">resetPluginExecutionDir</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetRecoveryKmsHcl">resetRecoveryKmsHcl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetScopeId">resetScopeId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetTlsInsecure">resetTlsInsecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetToken">resetToken</a></code> | *No description.* |
 
@@ -278,6 +291,12 @@ public void resetPluginExecutionDir()
 public void resetRecoveryKmsHcl()
 ```
 
+##### `resetScopeId` <a name="resetScopeId" id="@cdktf/provider-boundary.provider.BoundaryProvider.resetScopeId"></a>
+
+```java
+public void resetScopeId()
+```
+
 ##### `resetTlsInsecure` <a name="resetTlsInsecure" id="@cdktf/provider-boundary.provider.BoundaryProvider.resetTlsInsecure"></a>
 
 ```java
@@ -380,6 +399,7 @@ BoundaryProvider.isTerraformProvider(java.lang.Object x)
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.passwordAuthMethodPasswordInput">passwordAuthMethodPasswordInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.pluginExecutionDirInput">pluginExecutionDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.recoveryKmsHclInput">recoveryKmsHclInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.scopeIdInput">scopeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput">tlsInsecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.addr">addr</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -388,6 +408,7 @@ BoundaryProvider.isTerraformProvider(java.lang.Object x)
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.passwordAuthMethodPassword">passwordAuthMethodPassword</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.pluginExecutionDir">pluginExecutionDir</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.recoveryKmsHcl">recoveryKmsHcl</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.scopeId">scopeId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure">tlsInsecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -555,6 +576,16 @@ public java.lang.String getRecoveryKmsHclInput();
 
 ---
 
+##### `scopeIdInput`<sup>Optional</sup> <a name="scopeIdInput" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.scopeIdInput"></a>
+
+```java
+public java.lang.String getScopeIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `tlsInsecureInput`<sup>Optional</sup> <a name="tlsInsecureInput" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput"></a>
 
 ```java
@@ -635,6 +666,16 @@ public java.lang.String getRecoveryKmsHcl();
 
 ---
 
+##### `scopeId`<sup>Optional</sup> <a name="scopeId" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.scopeId"></a>
+
+```java
+public java.lang.String getScopeId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `tlsInsecure`<sup>Optional</sup> <a name="tlsInsecure" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure"></a>
 
 ```java
@@ -690,6 +731,7 @@ BoundaryProviderConfig.builder()
 //  .passwordAuthMethodPassword(java.lang.String)
 //  .pluginExecutionDir(java.lang.String)
 //  .recoveryKmsHcl(java.lang.String)
+//  .scopeId(java.lang.String)
 //  .tlsInsecure(java.lang.Boolean)
 //  .tlsInsecure(IResolvable)
 //  .token(java.lang.String)
@@ -707,6 +749,7 @@ BoundaryProviderConfig.builder()
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.passwordAuthMethodPassword">passwordAuthMethodPassword</a></code> | <code>java.lang.String</code> | The auth method password for password-style auth methods. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.pluginExecutionDir">pluginExecutionDir</a></code> | <code>java.lang.String</code> | Specifies a directory that the Boundary provider can use to write and execute its built-in plugins. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.recoveryKmsHcl">recoveryKmsHcl</a></code> | <code>java.lang.String</code> | Can be a heredoc string or a path on disk. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The scope ID for the default auth method. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.tlsInsecure">tlsInsecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true, does not validate the Boundary API endpoint certificate. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | The Boundary token to use, as a string or path on disk containing just the string. |
 
@@ -722,7 +765,7 @@ public java.lang.String getAddr();
 
 The base url of the Boundary API, e.g. "http://127.0.0.1:9200". If not set, it will be read from the "BOUNDARY_ADDR" env var.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#addr BoundaryProvider#addr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#addr BoundaryProvider#addr}
 
 ---
 
@@ -736,7 +779,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#alias BoundaryProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#alias BoundaryProvider#alias}
 
 ---
 
@@ -750,7 +793,7 @@ public java.lang.String getAuthMethodId();
 
 The auth method ID e.g. ampw_1234567890.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#auth_method_id BoundaryProvider#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#auth_method_id BoundaryProvider#auth_method_id}
 
 ---
 
@@ -764,7 +807,7 @@ public java.lang.String getPasswordAuthMethodLoginName();
 
 The auth method login name for password-style auth methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#password_auth_method_login_name BoundaryProvider#password_auth_method_login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#password_auth_method_login_name BoundaryProvider#password_auth_method_login_name}
 
 ---
 
@@ -778,7 +821,7 @@ public java.lang.String getPasswordAuthMethodPassword();
 
 The auth method password for password-style auth methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#password_auth_method_password BoundaryProvider#password_auth_method_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#password_auth_method_password BoundaryProvider#password_auth_method_password}
 
 ---
 
@@ -792,7 +835,7 @@ public java.lang.String getPluginExecutionDir();
 
 Specifies a directory that the Boundary provider can use to write and execute its built-in plugins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#plugin_execution_dir BoundaryProvider#plugin_execution_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#plugin_execution_dir BoundaryProvider#plugin_execution_dir}
 
 ---
 
@@ -808,7 +851,21 @@ Can be a heredoc string or a path on disk.
 
 If set, the string/file will be parsed as HCL and used with the recovery KMS mechanism. While this is set, it will override any other authentication information; the KMS mechanism will always be used. See Boundary's KMS docs for examples: https://boundaryproject.io/docs/configuration/kms
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#recovery_kms_hcl BoundaryProvider#recovery_kms_hcl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#recovery_kms_hcl BoundaryProvider#recovery_kms_hcl}
+
+---
+
+##### `scopeId`<sup>Optional</sup> <a name="scopeId" id="@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.scopeId"></a>
+
+```java
+public java.lang.String getScopeId();
+```
+
+- *Type:* java.lang.String
+
+The scope ID for the default auth method.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#scope_id BoundaryProvider#scope_id}
 
 ---
 
@@ -822,7 +879,7 @@ public java.lang.Object getTlsInsecure();
 
 When set to true, does not validate the Boundary API endpoint certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#tls_insecure BoundaryProvider#tls_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#tls_insecure BoundaryProvider#tls_insecure}
 
 ---
 
@@ -838,7 +895,7 @@ The Boundary token to use, as a string or path on disk containing just the strin
 
 If set, the token read here will be used in place of authenticating with the auth method specified in "auth_method_id", although the recovery KMS mechanism will still override this. Can also be set with the BOUNDARY_TOKEN environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs#token BoundaryProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs#token BoundaryProvider#token}
 
 ---
 

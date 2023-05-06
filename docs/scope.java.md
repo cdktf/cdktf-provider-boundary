@@ -1,6 +1,6 @@
 # `boundary_scope`
 
-Refer to the Terraform Registory for docs: [`boundary_scope`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope).
+Refer to the Terraform Registory for docs: [`boundary_scope`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope).
 
 # `scope` Submodule <a name="`scope` Submodule" id="@cdktf/provider-boundary.scope"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_scope`](https://registry.t
 
 ### Scope <a name="Scope" id="@cdktf/provider-boundary.scope.Scope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope boundary_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope boundary_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.scope.Scope.Initializer"></a>
 
@@ -125,7 +125,7 @@ Must be unique amongst siblings in the same scope
 
 The scope ID containing the sub scope resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#scope_id Scope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#scope_id Scope#scope_id}
 
 ---
 
@@ -137,7 +137,7 @@ If set, when a new scope is created, the provider will not disable the functiona
 
 Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
 
 ---
 
@@ -149,7 +149,7 @@ Only relevant when creating an org scope.
 
 If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives listing of scopes and auth methods and the ability to authenticate to the anonymous user. Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The scope description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#description Scope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#description Scope#description}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates that the scope containing this value is the global scope, which triggers some specialized behavior to allow it to be imported and managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#global_scope Scope#global_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#global_scope Scope#global_scope}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The scope name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#name Scope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#name Scope#name}
 
 ---
 
@@ -952,7 +952,7 @@ public java.lang.String getScopeId();
 
 The scope ID containing the sub scope resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#scope_id Scope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#scope_id Scope#scope_id}
 
 ---
 
@@ -968,7 +968,7 @@ If set, when a new scope is created, the provider will not disable the functiona
 
 Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
 
 ---
 
@@ -984,7 +984,7 @@ Only relevant when creating an org scope.
 
 If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives listing of scopes and auth methods and the ability to authenticate to the anonymous user. Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
 
 ---
 
@@ -998,7 +998,7 @@ public java.lang.String getDescription();
 
 The scope description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#description Scope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#description Scope#description}
 
 ---
 
@@ -1012,7 +1012,7 @@ public java.lang.Object getGlobalScope();
 
 Indicates that the scope containing this value is the global scope, which triggers some specialized behavior to allow it to be imported and managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#global_scope Scope#global_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#global_scope Scope#global_scope}
 
 ---
 
@@ -1026,7 +1026,7 @@ public java.lang.String getName();
 
 The scope name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.5/docs/resources/scope#name Scope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.6/docs/resources/scope#name Scope#name}
 
 ---
 
