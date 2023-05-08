@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/hostsetplugin"
 
 hostsetplugin.NewHostSetPlugin(scope Construct, id *string, config HostSetPluginConfig) HostSetPlugin
 ```
@@ -312,7 +312,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/hostsetplugin"
 
 hostsetplugin.HostSetPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/hostsetplugin"
 
 hostsetplugin.HostSetPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ hostsetplugin.HostSetPlugin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/hostsetplugin"
 
 hostsetplugin.HostSetPlugin_IsTerraformResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/hostsetplugin"
 
 &hostsetplugin.HostSetPluginConfig {
 	Connection: interface{},
