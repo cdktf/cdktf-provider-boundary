@@ -2,9 +2,11 @@
 
 The following submodules are available:
 - [account](./account.python.md)
+- [accountLdap](./accountLdap.python.md)
 - [accountOidc](./accountOidc.python.md)
 - [accountPassword](./accountPassword.python.md)
 - [authMethod](./authMethod.python.md)
+- [authMethodLdap](./authMethodLdap.python.md)
 - [authMethodOidc](./authMethodOidc.python.md)
 - [authMethodPassword](./authMethodPassword.python.md)
 - [credentialJson](./credentialJson.python.md)
@@ -24,6 +26,7 @@ The following submodules are available:
 - [hostSetStatic](./hostSetStatic.python.md)
 - [hostStatic](./hostStatic.python.md)
 - [managedGroup](./managedGroup.python.md)
+- [managedGroupLdap](./managedGroupLdap.python.md)
 - [provider](./provider.python.md)
 - [role](./role.python.md)
 - [scope](./scope.python.md)

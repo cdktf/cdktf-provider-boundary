@@ -2,9 +2,11 @@
 
 The following submodules are available:
 - [account](./account.csharp.md)
+- [accountLdap](./accountLdap.csharp.md)
 - [accountOidc](./accountOidc.csharp.md)
 - [accountPassword](./accountPassword.csharp.md)
 - [authMethod](./authMethod.csharp.md)
+- [authMethodLdap](./authMethodLdap.csharp.md)
 - [authMethodOidc](./authMethodOidc.csharp.md)
 - [authMethodPassword](./authMethodPassword.csharp.md)
 - [credentialJson](./credentialJson.csharp.md)
@@ -24,6 +26,7 @@ The following submodules are available:
 - [hostSetStatic](./hostSetStatic.csharp.md)
 - [hostStatic](./hostStatic.csharp.md)
 - [managedGroup](./managedGroup.csharp.md)
+- [managedGroupLdap](./managedGroupLdap.csharp.md)
 - [provider](./provider.csharp.md)
 - [role](./role.csharp.md)
 - [scope](./scope.csharp.md)

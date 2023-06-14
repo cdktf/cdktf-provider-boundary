@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`boundary`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs).
+Refer to the Terraform Registory for docs: [`boundary`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-boundary.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary`](https://registry.terrafo
 
 ### BoundaryProvider <a name="BoundaryProvider" id="@cdktf/provider-boundary.provider.BoundaryProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs boundary}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs boundary}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.provider.BoundaryProvider.Initializer"></a>
 
@@ -62,6 +62,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetAlias">ResetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetAuthMethodId">ResetAuthMethodId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetAuthMethodLoginName">ResetAuthMethodLoginName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetAuthMethodPassword">ResetAuthMethodPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetPasswordAuthMethodLoginName">ResetPasswordAuthMethodLoginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetPasswordAuthMethodPassword">ResetPasswordAuthMethodPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetPluginExecutionDir">ResetPluginExecutionDir</a></code> | *No description.* |
@@ -146,6 +148,18 @@ func ResetAlias()
 
 ```go
 func ResetAuthMethodId()
+```
+
+##### `ResetAuthMethodLoginName` <a name="ResetAuthMethodLoginName" id="@cdktf/provider-boundary.provider.BoundaryProvider.resetAuthMethodLoginName"></a>
+
+```go
+func ResetAuthMethodLoginName()
+```
+
+##### `ResetAuthMethodPassword` <a name="ResetAuthMethodPassword" id="@cdktf/provider-boundary.provider.BoundaryProvider.resetAuthMethodPassword"></a>
+
+```go
+func ResetAuthMethodPassword()
 ```
 
 ##### `ResetPasswordAuthMethodLoginName` <a name="ResetPasswordAuthMethodLoginName" id="@cdktf/provider-boundary.provider.BoundaryProvider.resetPasswordAuthMethodLoginName"></a>
@@ -276,6 +290,8 @@ provider.BoundaryProvider_IsTerraformProvider(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.addrInput">AddrInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodIdInput">AuthMethodIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodLoginNameInput">AuthMethodLoginNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodPasswordInput">AuthMethodPasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.passwordAuthMethodLoginNameInput">PasswordAuthMethodLoginNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.passwordAuthMethodPasswordInput">PasswordAuthMethodPasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.pluginExecutionDirInput">PluginExecutionDirInput</a></code> | <code>*string</code> | *No description.* |
@@ -285,6 +301,8 @@ provider.BoundaryProvider_IsTerraformProvider(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tokenInput">TokenInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.addr">Addr</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodId">AuthMethodId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodLoginName">AuthMethodLoginName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodPassword">AuthMethodPassword</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.passwordAuthMethodLoginName">PasswordAuthMethodLoginName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.passwordAuthMethodPassword">PasswordAuthMethodPassword</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.pluginExecutionDir">PluginExecutionDir</a></code> | <code>*string</code> | *No description.* |
@@ -417,6 +435,26 @@ func AuthMethodIdInput() *string
 
 ---
 
+##### `AuthMethodLoginNameInput`<sup>Optional</sup> <a name="AuthMethodLoginNameInput" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodLoginNameInput"></a>
+
+```go
+func AuthMethodLoginNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AuthMethodPasswordInput`<sup>Optional</sup> <a name="AuthMethodPasswordInput" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodPasswordInput"></a>
+
+```go
+func AuthMethodPasswordInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `PasswordAuthMethodLoginNameInput`<sup>Optional</sup> <a name="PasswordAuthMethodLoginNameInput" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.passwordAuthMethodLoginNameInput"></a>
 
 ```go
@@ -501,6 +539,26 @@ func Addr() *string
 
 ```go
 func AuthMethodId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AuthMethodLoginName`<sup>Optional</sup> <a name="AuthMethodLoginName" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodLoginName"></a>
+
+```go
+func AuthMethodLoginName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AuthMethodPassword`<sup>Optional</sup> <a name="AuthMethodPassword" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodPassword"></a>
+
+```go
+func AuthMethodPassword() *string
 ```
 
 - *Type:* *string
@@ -608,6 +666,8 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/provider"
 	Addr: *string,
 	Alias: *string,
 	AuthMethodId: *string,
+	AuthMethodLoginName: *string,
+	AuthMethodPassword: *string,
 	PasswordAuthMethodLoginName: *string,
 	PasswordAuthMethodPassword: *string,
 	PluginExecutionDir: *string,
@@ -624,7 +684,9 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/provider"
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.addr">Addr</a></code> | <code>*string</code> | The base url of the Boundary API, e.g. "http://127.0.0.1:9200". If not set, it will be read from the "BOUNDARY_ADDR" env var. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.authMethodId">AuthMethodId</a></code> | <code>*string</code> | The auth method ID e.g. ampw_1234567890. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.authMethodId">AuthMethodId</a></code> | <code>*string</code> | The auth method ID e.g. ampw_1234567890. If not set, the default auth method for the given scope ID will be used. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.authMethodLoginName">AuthMethodLoginName</a></code> | <code>*string</code> | The auth method login name for password-style or ldap-style auth methods. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.authMethodPassword">AuthMethodPassword</a></code> | <code>*string</code> | The auth method password for password-style or ldap-style auth methods. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.passwordAuthMethodLoginName">PasswordAuthMethodLoginName</a></code> | <code>*string</code> | The auth method login name for password-style auth methods. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.passwordAuthMethodPassword">PasswordAuthMethodPassword</a></code> | <code>*string</code> | The auth method password for password-style auth methods. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.pluginExecutionDir">PluginExecutionDir</a></code> | <code>*string</code> | Specifies a directory that the Boundary provider can use to write and execute its built-in plugins. |
@@ -645,7 +707,7 @@ Addr *string
 
 The base url of the Boundary API, e.g. "http://127.0.0.1:9200". If not set, it will be read from the "BOUNDARY_ADDR" env var.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#addr BoundaryProvider#addr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#addr BoundaryProvider#addr}
 
 ---
 
@@ -659,7 +721,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#alias BoundaryProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#alias BoundaryProvider#alias}
 
 ---
 
@@ -671,9 +733,37 @@ AuthMethodId *string
 
 - *Type:* *string
 
-The auth method ID e.g. ampw_1234567890.
+The auth method ID e.g. ampw_1234567890. If not set, the default auth method for the given scope ID will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#auth_method_id BoundaryProvider#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#auth_method_id BoundaryProvider#auth_method_id}
+
+---
+
+##### `AuthMethodLoginName`<sup>Optional</sup> <a name="AuthMethodLoginName" id="@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.authMethodLoginName"></a>
+
+```go
+AuthMethodLoginName *string
+```
+
+- *Type:* *string
+
+The auth method login name for password-style or ldap-style auth methods.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#auth_method_login_name BoundaryProvider#auth_method_login_name}
+
+---
+
+##### `AuthMethodPassword`<sup>Optional</sup> <a name="AuthMethodPassword" id="@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.authMethodPassword"></a>
+
+```go
+AuthMethodPassword *string
+```
+
+- *Type:* *string
+
+The auth method password for password-style or ldap-style auth methods.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#auth_method_password BoundaryProvider#auth_method_password}
 
 ---
 
@@ -687,7 +777,7 @@ PasswordAuthMethodLoginName *string
 
 The auth method login name for password-style auth methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#password_auth_method_login_name BoundaryProvider#password_auth_method_login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#password_auth_method_login_name BoundaryProvider#password_auth_method_login_name}
 
 ---
 
@@ -701,7 +791,7 @@ PasswordAuthMethodPassword *string
 
 The auth method password for password-style auth methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#password_auth_method_password BoundaryProvider#password_auth_method_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#password_auth_method_password BoundaryProvider#password_auth_method_password}
 
 ---
 
@@ -715,7 +805,7 @@ PluginExecutionDir *string
 
 Specifies a directory that the Boundary provider can use to write and execute its built-in plugins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#plugin_execution_dir BoundaryProvider#plugin_execution_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#plugin_execution_dir BoundaryProvider#plugin_execution_dir}
 
 ---
 
@@ -731,7 +821,7 @@ Can be a heredoc string or a path on disk.
 
 If set, the string/file will be parsed as HCL and used with the recovery KMS mechanism. While this is set, it will override any other authentication information; the KMS mechanism will always be used. See Boundary's KMS docs for examples: https://boundaryproject.io/docs/configuration/kms
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#recovery_kms_hcl BoundaryProvider#recovery_kms_hcl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#recovery_kms_hcl BoundaryProvider#recovery_kms_hcl}
 
 ---
 
@@ -745,7 +835,7 @@ ScopeId *string
 
 The scope ID for the default auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#scope_id BoundaryProvider#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#scope_id BoundaryProvider#scope_id}
 
 ---
 
@@ -759,7 +849,7 @@ TlsInsecure interface{}
 
 When set to true, does not validate the Boundary API endpoint certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#tls_insecure BoundaryProvider#tls_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#tls_insecure BoundaryProvider#tls_insecure}
 
 ---
 
@@ -775,7 +865,7 @@ The Boundary token to use, as a string or path on disk containing just the strin
 
 If set, the token read here will be used in place of authenticating with the auth method specified in "auth_method_id", although the recovery KMS mechanism will still override this. Can also be set with the BOUNDARY_TOKEN environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#token BoundaryProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#token BoundaryProvider#token}
 
 ---
 

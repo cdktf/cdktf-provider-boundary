@@ -1,3 +1,3 @@
 # `boundary_target`
 
-Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target).
+Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target).

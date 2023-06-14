@@ -1,6 +1,6 @@
 # `boundary_target`
 
-Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target).
+Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target).
 
 # `target` Submodule <a name="`target` Submodule" id="@cdktf/provider-boundary.target"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.
 
 ### Target <a name="Target" id="@cdktf/provider-boundary.target.Target"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target boundary_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target boundary_target}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.target.Target.Initializer"></a>
 
@@ -31,6 +31,7 @@ Target.Builder.create(Construct scope, java.lang.String id)
     .type(java.lang.String)
 //  .address(java.lang.String)
 //  .brokeredCredentialSourceIds(java.util.List<java.lang.String>)
+//  .defaultClientPort(java.lang.Number)
 //  .defaultPort(java.lang.Number)
 //  .description(java.lang.String)
 //  .egressWorkerFilter(java.lang.String)
@@ -59,6 +60,7 @@ Target.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The target resource type. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.address">address</a></code> | <code>java.lang.String</code> | Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.brokeredCredentialSourceIds">brokeredCredentialSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of brokered credential source ID's. |
+| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.defaultClientPort">defaultClientPort</a></code> | <code>java.lang.Number</code> | The default client port for this target. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.defaultPort">defaultPort</a></code> | <code>java.lang.Number</code> | The default port for this target. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The target description. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.egressWorkerFilter">egressWorkerFilter</a></code> | <code>java.lang.String</code> | Boolean expression to filter the workers used to access this target. |
@@ -66,8 +68,8 @@ Target.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.ingressWorkerFilter">ingressWorkerFilter</a></code> | <code>java.lang.String</code> | HCP Only. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.injectedApplicationCredentialSourceIds">injectedApplicationCredentialSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of injected application credential source ID's. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The target name. Defaults to the resource name. |
-| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.sessionConnectionLimit">sessionConnectionLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_connection_limit Target#session_connection_limit}. |
-| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.sessionMaxSeconds">sessionMaxSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_max_seconds Target#session_max_seconds}. |
+| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.sessionConnectionLimit">sessionConnectionLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_connection_limit Target#session_connection_limit}. |
+| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.sessionMaxSeconds">sessionMaxSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_max_seconds Target#session_max_seconds}. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.workerFilter">workerFilter</a></code> | <code>java.lang.String</code> | Boolean expression to filter the workers for this target. |
 
 ---
@@ -138,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#scope_id Target#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#scope_id Target#scope_id}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The target resource type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#type Target#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#type Target#type}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#address Target#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#address Target#address}
 
 ---
 
@@ -168,7 +170,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of brokered credential source ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
+
+---
+
+##### `defaultClientPort`<sup>Optional</sup> <a name="defaultClientPort" id="@cdktf/provider-boundary.target.Target.Initializer.parameter.defaultClientPort"></a>
+
+- *Type:* java.lang.Number
+
+The default client port for this target.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#default_client_port Target#default_client_port}
 
 ---
 
@@ -178,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The default port for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#default_port Target#default_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#default_port Target#default_port}
 
 ---
 
@@ -188,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The target description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#description Target#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#description Target#description}
 
 ---
 
@@ -198,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Boolean expression to filter the workers used to access this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
 
 ---
 
@@ -208,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of host source ID's. Cannot be used alongside address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#host_source_ids Target#host_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#host_source_ids Target#host_source_ids}
 
 ---
 
@@ -220,7 +232,7 @@ HCP Only.
 
 Boolean expression to filter the workers a user will connect to when initiating a session against this target
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
 
 ---
 
@@ -230,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of injected application credential source ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
 
 ---
 
@@ -240,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The target name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#name Target#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#name Target#name}
 
 ---
 
@@ -248,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_connection_limit Target#session_connection_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_connection_limit Target#session_connection_limit}.
 
 ---
 
@@ -256,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_max_seconds Target#session_max_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_max_seconds Target#session_max_seconds}.
 
 ---
 
@@ -266,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Boolean expression to filter the workers for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#worker_filter Target#worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#worker_filter Target#worker_filter}
 
 ---
 
@@ -292,6 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-boundary.target.Target.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetAddress">resetAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetBrokeredCredentialSourceIds">resetBrokeredCredentialSourceIds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.resetDefaultClientPort">resetDefaultClientPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetDefaultPort">resetDefaultPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetEgressWorkerFilter">resetEgressWorkerFilter</a></code> | *No description.* |
@@ -501,6 +514,12 @@ public void resetAddress()
 public void resetBrokeredCredentialSourceIds()
 ```
 
+##### `resetDefaultClientPort` <a name="resetDefaultClientPort" id="@cdktf/provider-boundary.target.Target.resetDefaultClientPort"></a>
+
+```java
+public void resetDefaultClientPort()
+```
+
 ##### `resetDefaultPort` <a name="resetDefaultPort" id="@cdktf/provider-boundary.target.Target.resetDefaultPort"></a>
 
 ```java
@@ -652,6 +671,7 @@ Target.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.addressInput">addressInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.brokeredCredentialSourceIdsInput">brokeredCredentialSourceIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultClientPortInput">defaultClientPortInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultPortInput">defaultPortInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.egressWorkerFilterInput">egressWorkerFilterInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -666,6 +686,7 @@ Target.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.workerFilterInput">workerFilterInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.address">address</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.brokeredCredentialSourceIds">brokeredCredentialSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultClientPort">defaultClientPort</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultPort">defaultPort</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.egressWorkerFilter">egressWorkerFilter</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -853,6 +874,16 @@ public java.util.List<java.lang.String> getBrokeredCredentialSourceIdsInput();
 
 ---
 
+##### `defaultClientPortInput`<sup>Optional</sup> <a name="defaultClientPortInput" id="@cdktf/provider-boundary.target.Target.property.defaultClientPortInput"></a>
+
+```java
+public java.lang.Number getDefaultClientPortInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `defaultPortInput`<sup>Optional</sup> <a name="defaultPortInput" id="@cdktf/provider-boundary.target.Target.property.defaultPortInput"></a>
 
 ```java
@@ -990,6 +1021,16 @@ public java.util.List<java.lang.String> getBrokeredCredentialSourceIds();
 ```
 
 - *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `defaultClientPort`<sup>Required</sup> <a name="defaultClientPort" id="@cdktf/provider-boundary.target.Target.property.defaultClientPort"></a>
+
+```java
+public java.lang.Number getDefaultClientPort();
+```
+
+- *Type:* java.lang.Number
 
 ---
 
@@ -1156,6 +1197,7 @@ TargetConfig.builder()
     .type(java.lang.String)
 //  .address(java.lang.String)
 //  .brokeredCredentialSourceIds(java.util.List<java.lang.String>)
+//  .defaultClientPort(java.lang.Number)
 //  .defaultPort(java.lang.Number)
 //  .description(java.lang.String)
 //  .egressWorkerFilter(java.lang.String)
@@ -1184,6 +1226,7 @@ TargetConfig.builder()
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.type">type</a></code> | <code>java.lang.String</code> | The target resource type. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.address">address</a></code> | <code>java.lang.String</code> | Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.brokeredCredentialSourceIds">brokeredCredentialSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of brokered credential source ID's. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.defaultClientPort">defaultClientPort</a></code> | <code>java.lang.Number</code> | The default client port for this target. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.defaultPort">defaultPort</a></code> | <code>java.lang.Number</code> | The default port for this target. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.description">description</a></code> | <code>java.lang.String</code> | The target description. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.egressWorkerFilter">egressWorkerFilter</a></code> | <code>java.lang.String</code> | Boolean expression to filter the workers used to access this target. |
@@ -1191,8 +1234,8 @@ TargetConfig.builder()
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.ingressWorkerFilter">ingressWorkerFilter</a></code> | <code>java.lang.String</code> | HCP Only. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.injectedApplicationCredentialSourceIds">injectedApplicationCredentialSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of injected application credential source ID's. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.name">name</a></code> | <code>java.lang.String</code> | The target name. Defaults to the resource name. |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionConnectionLimit">sessionConnectionLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_connection_limit Target#session_connection_limit}. |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionMaxSeconds">sessionMaxSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_max_seconds Target#session_max_seconds}. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionConnectionLimit">sessionConnectionLimit</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_connection_limit Target#session_connection_limit}. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionMaxSeconds">sessionMaxSeconds</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_max_seconds Target#session_max_seconds}. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.workerFilter">workerFilter</a></code> | <code>java.lang.String</code> | Boolean expression to filter the workers for this target. |
 
 ---
@@ -1277,7 +1320,7 @@ public java.lang.String getScopeId();
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#scope_id Target#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#scope_id Target#scope_id}
 
 ---
 
@@ -1291,7 +1334,7 @@ public java.lang.String getType();
 
 The target resource type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#type Target#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#type Target#type}
 
 ---
 
@@ -1305,7 +1348,7 @@ public java.lang.String getAddress();
 
 Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#address Target#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#address Target#address}
 
 ---
 
@@ -1319,7 +1362,21 @@ public java.util.List<java.lang.String> getBrokeredCredentialSourceIds();
 
 A list of brokered credential source ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
+
+---
+
+##### `defaultClientPort`<sup>Optional</sup> <a name="defaultClientPort" id="@cdktf/provider-boundary.target.TargetConfig.property.defaultClientPort"></a>
+
+```java
+public java.lang.Number getDefaultClientPort();
+```
+
+- *Type:* java.lang.Number
+
+The default client port for this target.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#default_client_port Target#default_client_port}
 
 ---
 
@@ -1333,7 +1390,7 @@ public java.lang.Number getDefaultPort();
 
 The default port for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#default_port Target#default_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#default_port Target#default_port}
 
 ---
 
@@ -1347,7 +1404,7 @@ public java.lang.String getDescription();
 
 The target description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#description Target#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#description Target#description}
 
 ---
 
@@ -1361,7 +1418,7 @@ public java.lang.String getEgressWorkerFilter();
 
 Boolean expression to filter the workers used to access this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
 
 ---
 
@@ -1375,7 +1432,7 @@ public java.util.List<java.lang.String> getHostSourceIds();
 
 A list of host source ID's. Cannot be used alongside address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#host_source_ids Target#host_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#host_source_ids Target#host_source_ids}
 
 ---
 
@@ -1391,7 +1448,7 @@ HCP Only.
 
 Boolean expression to filter the workers a user will connect to when initiating a session against this target
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
 
 ---
 
@@ -1405,7 +1462,7 @@ public java.util.List<java.lang.String> getInjectedApplicationCredentialSourceId
 
 A list of injected application credential source ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
 
 ---
 
@@ -1419,7 +1476,7 @@ public java.lang.String getName();
 
 The target name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#name Target#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#name Target#name}
 
 ---
 
@@ -1431,7 +1488,7 @@ public java.lang.Number getSessionConnectionLimit();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_connection_limit Target#session_connection_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_connection_limit Target#session_connection_limit}.
 
 ---
 
@@ -1443,7 +1500,7 @@ public java.lang.Number getSessionMaxSeconds();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_max_seconds Target#session_max_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_max_seconds Target#session_max_seconds}.
 
 ---
 
@@ -1457,7 +1514,7 @@ public java.lang.String getWorkerFilter();
 
 Boolean expression to filter the workers for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#worker_filter Target#worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#worker_filter Target#worker_filter}
 
 ---
 

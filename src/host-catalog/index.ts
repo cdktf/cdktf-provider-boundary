@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface HostCatalogConfig extends cdktf.TerraformMetaArguments {
   /**
   * The host catalog description.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog#description HostCatalog#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog#description HostCatalog#description}
   */
   readonly description?: string;
   /**
   * The host catalog name. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog#name HostCatalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog#name HostCatalog#name}
   */
   readonly name?: string;
   /**
   * The scope ID in which the resource is created.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog#scope_id HostCatalog#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog#scope_id HostCatalog#scope_id}
   */
   readonly scopeId: string;
   /**
   * The host catalog type. Only `static` is supported.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog#type HostCatalog#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog#type HostCatalog#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog boundary_host_catalog}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog boundary_host_catalog}
 */
 export class HostCatalog extends cdktf.TerraformResource {
 
@@ -53,7 +53,7 @@ export class HostCatalog extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog boundary_host_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog boundary_host_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class HostCatalog extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_host_catalog',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.7',
+        providerVersion: '1.1.8',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `boundary_role`
 
-Refer to the Terraform Registory for docs: [`boundary_role`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/role).
+Refer to the Terraform Registory for docs: [`boundary_role`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/role).

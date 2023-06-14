@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_static
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_static
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface HostStaticConfig extends cdktf.TerraformMetaArguments {
   /**
   * The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_static#address HostStatic#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_static#address HostStatic#address}
   */
   readonly address?: string;
   /**
   * The host description.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_static#description HostStatic#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_static#description HostStatic#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}
   */
   readonly hostCatalogId: string;
   /**
   * The host name. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_static#name HostStatic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_static#name HostStatic#name}
   */
   readonly name?: string;
   /**
   * The type of host
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_static#type HostStatic#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_static#type HostStatic#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_static boundary_host_static}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_static boundary_host_static}
 */
 export class HostStatic extends cdktf.TerraformResource {
 
@@ -57,7 +57,7 @@ export class HostStatic extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_static boundary_host_static} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_static boundary_host_static} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class HostStatic extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_host_static',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.7',
+        providerVersion: '1.1.8',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

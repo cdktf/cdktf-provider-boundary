@@ -1,6 +1,6 @@
 # `boundary_target`
 
-Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target).
+Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target).
 
 # `target` Submodule <a name="`target` Submodule" id="@cdktf/provider-boundary.target"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.
 
 ### Target <a name="Target" id="@cdktf/provider-boundary.target.Target"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target boundary_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target boundary_target}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.target.Target.Initializer"></a>
 
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.target.Target.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetAddress">ResetAddress</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetBrokeredCredentialSourceIds">ResetBrokeredCredentialSourceIds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.resetDefaultClientPort">ResetDefaultClientPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetDefaultPort">ResetDefaultPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetEgressWorkerFilter">ResetEgressWorkerFilter</a></code> | *No description.* |
@@ -281,6 +282,12 @@ func ResetAddress()
 func ResetBrokeredCredentialSourceIds()
 ```
 
+##### `ResetDefaultClientPort` <a name="ResetDefaultClientPort" id="@cdktf/provider-boundary.target.Target.resetDefaultClientPort"></a>
+
+```go
+func ResetDefaultClientPort()
+```
+
 ##### `ResetDefaultPort` <a name="ResetDefaultPort" id="@cdktf/provider-boundary.target.Target.resetDefaultPort"></a>
 
 ```go
@@ -432,6 +439,7 @@ target.Target_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.addressInput">AddressInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.brokeredCredentialSourceIdsInput">BrokeredCredentialSourceIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultClientPortInput">DefaultClientPortInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultPortInput">DefaultPortInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.egressWorkerFilterInput">EgressWorkerFilterInput</a></code> | <code>*string</code> | *No description.* |
@@ -446,6 +454,7 @@ target.Target_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.workerFilterInput">WorkerFilterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.address">Address</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.brokeredCredentialSourceIds">BrokeredCredentialSourceIds</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultClientPort">DefaultClientPort</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultPort">DefaultPort</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.egressWorkerFilter">EgressWorkerFilter</a></code> | <code>*string</code> | *No description.* |
@@ -633,6 +642,16 @@ func BrokeredCredentialSourceIdsInput() *[]*string
 
 ---
 
+##### `DefaultClientPortInput`<sup>Optional</sup> <a name="DefaultClientPortInput" id="@cdktf/provider-boundary.target.Target.property.defaultClientPortInput"></a>
+
+```go
+func DefaultClientPortInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `DefaultPortInput`<sup>Optional</sup> <a name="DefaultPortInput" id="@cdktf/provider-boundary.target.Target.property.defaultPortInput"></a>
 
 ```go
@@ -770,6 +789,16 @@ func BrokeredCredentialSourceIds() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `DefaultClientPort`<sup>Required</sup> <a name="DefaultClientPort" id="@cdktf/provider-boundary.target.Target.property.defaultClientPort"></a>
+
+```go
+func DefaultClientPort() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -932,6 +961,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/target"
 	Type: *string,
 	Address: *string,
 	BrokeredCredentialSourceIds: *[]*string,
+	DefaultClientPort: *f64,
 	DefaultPort: *f64,
 	Description: *string,
 	EgressWorkerFilter: *string,
@@ -960,6 +990,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/target"
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.type">Type</a></code> | <code>*string</code> | The target resource type. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.address">Address</a></code> | <code>*string</code> | Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.brokeredCredentialSourceIds">BrokeredCredentialSourceIds</a></code> | <code>*[]*string</code> | A list of brokered credential source ID's. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.defaultClientPort">DefaultClientPort</a></code> | <code>*f64</code> | The default client port for this target. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.defaultPort">DefaultPort</a></code> | <code>*f64</code> | The default port for this target. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.description">Description</a></code> | <code>*string</code> | The target description. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.egressWorkerFilter">EgressWorkerFilter</a></code> | <code>*string</code> | Boolean expression to filter the workers used to access this target. |
@@ -967,8 +998,8 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/target"
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.ingressWorkerFilter">IngressWorkerFilter</a></code> | <code>*string</code> | HCP Only. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.injectedApplicationCredentialSourceIds">InjectedApplicationCredentialSourceIds</a></code> | <code>*[]*string</code> | A list of injected application credential source ID's. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.name">Name</a></code> | <code>*string</code> | The target name. Defaults to the resource name. |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionConnectionLimit">SessionConnectionLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_connection_limit Target#session_connection_limit}. |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionMaxSeconds">SessionMaxSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_max_seconds Target#session_max_seconds}. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionConnectionLimit">SessionConnectionLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_connection_limit Target#session_connection_limit}. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionMaxSeconds">SessionMaxSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_max_seconds Target#session_max_seconds}. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.workerFilter">WorkerFilter</a></code> | <code>*string</code> | Boolean expression to filter the workers for this target. |
 
 ---
@@ -1053,7 +1084,7 @@ ScopeId *string
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#scope_id Target#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#scope_id Target#scope_id}
 
 ---
 
@@ -1067,7 +1098,7 @@ Type *string
 
 The target resource type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#type Target#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#type Target#type}
 
 ---
 
@@ -1081,7 +1112,7 @@ Address *string
 
 Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#address Target#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#address Target#address}
 
 ---
 
@@ -1095,7 +1126,21 @@ BrokeredCredentialSourceIds *[]*string
 
 A list of brokered credential source ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
+
+---
+
+##### `DefaultClientPort`<sup>Optional</sup> <a name="DefaultClientPort" id="@cdktf/provider-boundary.target.TargetConfig.property.defaultClientPort"></a>
+
+```go
+DefaultClientPort *f64
+```
+
+- *Type:* *f64
+
+The default client port for this target.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#default_client_port Target#default_client_port}
 
 ---
 
@@ -1109,7 +1154,7 @@ DefaultPort *f64
 
 The default port for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#default_port Target#default_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#default_port Target#default_port}
 
 ---
 
@@ -1123,7 +1168,7 @@ Description *string
 
 The target description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#description Target#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#description Target#description}
 
 ---
 
@@ -1137,7 +1182,7 @@ EgressWorkerFilter *string
 
 Boolean expression to filter the workers used to access this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
 
 ---
 
@@ -1151,7 +1196,7 @@ HostSourceIds *[]*string
 
 A list of host source ID's. Cannot be used alongside address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#host_source_ids Target#host_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#host_source_ids Target#host_source_ids}
 
 ---
 
@@ -1167,7 +1212,7 @@ HCP Only.
 
 Boolean expression to filter the workers a user will connect to when initiating a session against this target
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
 
 ---
 
@@ -1181,7 +1226,7 @@ InjectedApplicationCredentialSourceIds *[]*string
 
 A list of injected application credential source ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
 
 ---
 
@@ -1195,7 +1240,7 @@ Name *string
 
 The target name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#name Target#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#name Target#name}
 
 ---
 
@@ -1207,7 +1252,7 @@ SessionConnectionLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_connection_limit Target#session_connection_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_connection_limit Target#session_connection_limit}.
 
 ---
 
@@ -1219,7 +1264,7 @@ SessionMaxSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#session_max_seconds Target#session_max_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_max_seconds Target#session_max_seconds}.
 
 ---
 
@@ -1233,7 +1278,7 @@ WorkerFilter *string
 
 Boolean expression to filter the workers for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/target#worker_filter Target#worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#worker_filter Target#worker_filter}
 
 ---
 

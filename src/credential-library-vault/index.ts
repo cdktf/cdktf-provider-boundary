@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +15,55 @@ export interface CredentialLibraryVaultConfig extends cdktf.TerraformMetaArgumen
   /**
   * The credential mapping override.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault#credential_mapping_overrides CredentialLibraryVault#credential_mapping_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault#credential_mapping_overrides CredentialLibraryVault#credential_mapping_overrides}
   */
   readonly credentialMappingOverrides?: { [key: string]: string };
   /**
   * The ID of the credential store that this library belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault#credential_store_id CredentialLibraryVault#credential_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault#credential_store_id CredentialLibraryVault#credential_store_id}
   */
   readonly credentialStoreId: string;
   /**
   * The type of credential the library generates. Cannot be updated on an existing resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault#credential_type CredentialLibraryVault#credential_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault#credential_type CredentialLibraryVault#credential_type}
   */
   readonly credentialType?: string;
   /**
   * The Vault credential library description.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault#description CredentialLibraryVault#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault#description CredentialLibraryVault#description}
   */
   readonly description?: string;
   /**
   * The HTTP method the library uses when requesting credentials from Vault. Defaults to 'GET'
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault#http_method CredentialLibraryVault#http_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault#http_method CredentialLibraryVault#http_method}
   */
   readonly httpMethod?: string;
   /**
   * The body of the HTTP request the library sends to Vault when requesting credentials. Only valid if `http_method` is set to `POST`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault#http_request_body CredentialLibraryVault#http_request_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault#http_request_body CredentialLibraryVault#http_request_body}
   */
   readonly httpRequestBody?: string;
   /**
   * The Vault credential library name. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault#name CredentialLibraryVault#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault#name CredentialLibraryVault#name}
   */
   readonly name?: string;
   /**
   * The path in Vault to request credentials from.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault#path CredentialLibraryVault#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault#path CredentialLibraryVault#path}
   */
   readonly path: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault boundary_credential_library_vault}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault boundary_credential_library_vault}
 */
 export class CredentialLibraryVault extends cdktf.TerraformResource {
 
@@ -77,7 +77,7 @@ export class CredentialLibraryVault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_library_vault boundary_credential_library_vault} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_library_vault boundary_credential_library_vault} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -88,7 +88,7 @@ export class CredentialLibraryVault extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_credential_library_vault',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.7',
+        providerVersion: '1.1.8',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

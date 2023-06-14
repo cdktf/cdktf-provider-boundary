@@ -1,6 +1,6 @@
 # `boundary_credential_username_password`
 
-Refer to the Terraform Registory for docs: [`boundary_credential_username_password`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password).
+Refer to the Terraform Registory for docs: [`boundary_credential_username_password`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password).
 
 # `credentialUsernamePassword` Submodule <a name="`credentialUsernamePassword` Submodule" id="@cdktf/provider-boundary.credentialUsernamePassword"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_credential_username_passwo
 
 ### CredentialUsernamePassword <a name="CredentialUsernamePassword" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password boundary_credential_username_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password boundary_credential_username_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.Initializer"></a>
 
@@ -765,7 +765,7 @@ public readonly credentialStoreId: string;
 
 The credential store in which to save this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
 
 ---
 
@@ -779,7 +779,7 @@ public readonly password: string;
 
 The password of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
 
 ---
 
@@ -793,7 +793,7 @@ public readonly username: string;
 
 The username of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
 
 ---
 
@@ -807,7 +807,7 @@ public readonly description: string;
 
 The description of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
 
 ---
 
@@ -821,7 +821,7 @@ public readonly name: string;
 
 The name of this username/password credential. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
 
 ---
 

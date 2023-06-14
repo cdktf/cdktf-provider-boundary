@@ -2,9 +2,11 @@
 
 The following submodules are available:
 - [account](./account.typescript.md)
+- [accountLdap](./accountLdap.typescript.md)
 - [accountOidc](./accountOidc.typescript.md)
 - [accountPassword](./accountPassword.typescript.md)
 - [authMethod](./authMethod.typescript.md)
+- [authMethodLdap](./authMethodLdap.typescript.md)
 - [authMethodOidc](./authMethodOidc.typescript.md)
 - [authMethodPassword](./authMethodPassword.typescript.md)
 - [credentialJson](./credentialJson.typescript.md)
@@ -24,6 +26,7 @@ The following submodules are available:
 - [hostSetStatic](./hostSetStatic.typescript.md)
 - [hostStatic](./hostStatic.typescript.md)
 - [managedGroup](./managedGroup.typescript.md)
+- [managedGroupLdap](./managedGroupLdap.typescript.md)
 - [provider](./provider.typescript.md)
 - [role](./role.typescript.md)
 - [scope](./scope.typescript.md)

@@ -1,6 +1,6 @@
 # `boundary_auth_method_password`
 
-Refer to the Terraform Registory for docs: [`boundary_auth_method_password`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/auth_method_password).
+Refer to the Terraform Registory for docs: [`boundary_auth_method_password`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_password).
 
 # `authMethodPassword` Submodule <a name="`authMethodPassword` Submodule" id="@cdktf/provider-boundary.authMethodPassword"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_auth_method_password`](htt
 
 ### AuthMethodPassword <a name="AuthMethodPassword" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/auth_method_password boundary_auth_method_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_password boundary_auth_method_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer"></a>
 
@@ -798,7 +798,7 @@ public readonly scopeId: string;
 
 The scope ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/auth_method_password#scope_id AuthMethodPassword#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_password#scope_id AuthMethodPassword#scope_id}
 
 ---
 
@@ -812,7 +812,7 @@ public readonly description: string;
 
 The auth method description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/auth_method_password#description AuthMethodPassword#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_password#description AuthMethodPassword#description}
 
 ---
 
@@ -826,7 +826,7 @@ public readonly minLoginNameLength: number;
 
 The minimum login name length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
 
 ---
 
@@ -840,7 +840,7 @@ public readonly minPasswordLength: number;
 
 The minimum password length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
 
 ---
 
@@ -854,7 +854,7 @@ public readonly name: string;
 
 The auth method name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/auth_method_password#name AuthMethodPassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_password#name AuthMethodPassword#name}
 
 ---
 
@@ -868,7 +868,7 @@ public readonly type: string;
 
 The resource type, hardcoded per resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/auth_method_password#type AuthMethodPassword#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/auth_method_password#type AuthMethodPassword#type}
 
 ---
 
