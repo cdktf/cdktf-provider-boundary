@@ -1,6 +1,6 @@
 # `boundary_group`
 
-Refer to the Terraform Registory for docs: [`boundary_group`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/group).
+Refer to the Terraform Registory for docs: [`boundary_group`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/group).
 
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-boundary.group"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`boundary_group`](https://registry.t
 
 ### Group <a name="Group" id="@cdktf/provider-boundary.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/group boundary_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/group boundary_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.group.Group.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/group"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/group"
 
 group.NewGroup(scope Construct, id *string, config GroupConfig) Group
 ```
@@ -291,7 +291,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.group.Group.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/group"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/group"
 
 group.Group_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.group.Group.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/group"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/group"
 
 group.Group_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ group.Group_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.group.Group.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/group"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/group"
 
 group.Group_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.group.GroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/group"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/group"
 
 &group.GroupConfig {
 	Connection: interface{},
@@ -750,7 +750,7 @@ ScopeId *string
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/group#scope_id Group#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/group#scope_id Group#scope_id}
 
 ---
 
@@ -764,7 +764,7 @@ Description *string
 
 The group description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/group#description Group#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/group#description Group#description}
 
 ---
 
@@ -778,7 +778,7 @@ MemberIds *[]*string
 
 Resource IDs for group members, these are most likely boundary users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/group#member_ids Group#member_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/group#member_ids Group#member_ids}
 
 ---
 
@@ -792,7 +792,7 @@ Name *string
 
 The group name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/group#name Group#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/group#name Group#name}
 
 ---
 

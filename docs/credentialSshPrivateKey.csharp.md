@@ -1,6 +1,6 @@
 # `boundary_credential_ssh_private_key`
 
-Refer to the Terraform Registory for docs: [`boundary_credential_ssh_private_key`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key).
+Refer to the Terraform Registory for docs: [`boundary_credential_ssh_private_key`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key).
 
 # `credentialSshPrivateKey` Submodule <a name="`credentialSshPrivateKey` Submodule" id="@cdktf/provider-boundary.credentialSshPrivateKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_credential_ssh_private_key
 
 ### CredentialSshPrivateKey <a name="CredentialSshPrivateKey" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.Initializer"></a>
 
@@ -820,7 +820,7 @@ public string CredentialStoreId { get; set; }
 
 ID of the credential store this credential belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#credential_store_id CredentialSshPrivateKey#credential_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#credential_store_id CredentialSshPrivateKey#credential_store_id}
 
 ---
 
@@ -834,7 +834,7 @@ public string PrivateKey { get; set; }
 
 The private key associated with the credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#private_key CredentialSshPrivateKey#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#private_key CredentialSshPrivateKey#private_key}
 
 ---
 
@@ -848,7 +848,7 @@ public string Username { get; set; }
 
 The username associated with the credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#username CredentialSshPrivateKey#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#username CredentialSshPrivateKey#username}
 
 ---
 
@@ -862,7 +862,7 @@ public string Description { get; set; }
 
 The description of the credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#description CredentialSshPrivateKey#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#description CredentialSshPrivateKey#description}
 
 ---
 
@@ -876,7 +876,7 @@ public string Name { get; set; }
 
 The name of the credential. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#name CredentialSshPrivateKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#name CredentialSshPrivateKey#name}
 
 ---
 
@@ -890,7 +890,7 @@ public string PrivateKeyPassphrase { get; set; }
 
 The passphrase of the private key associated with the credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#private_key_passphrase CredentialSshPrivateKey#private_key_passphrase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#private_key_passphrase CredentialSshPrivateKey#private_key_passphrase}
 
 ---
 

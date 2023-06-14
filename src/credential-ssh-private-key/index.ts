@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +10,43 @@ export interface CredentialSshPrivateKeyConfig extends cdktf.TerraformMetaArgume
   /**
   * ID of the credential store this credential belongs to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#credential_store_id CredentialSshPrivateKey#credential_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#credential_store_id CredentialSshPrivateKey#credential_store_id}
   */
   readonly credentialStoreId: string;
   /**
   * The description of the credential.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#description CredentialSshPrivateKey#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#description CredentialSshPrivateKey#description}
   */
   readonly description?: string;
   /**
   * The name of the credential. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#name CredentialSshPrivateKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#name CredentialSshPrivateKey#name}
   */
   readonly name?: string;
   /**
   * The private key associated with the credential.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#private_key CredentialSshPrivateKey#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#private_key CredentialSshPrivateKey#private_key}
   */
   readonly privateKey: string;
   /**
   * The passphrase of the private key associated with the credential.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#private_key_passphrase CredentialSshPrivateKey#private_key_passphrase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#private_key_passphrase CredentialSshPrivateKey#private_key_passphrase}
   */
   readonly privateKeyPassphrase?: string;
   /**
   * The username associated with the credential.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key#username CredentialSshPrivateKey#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key#username CredentialSshPrivateKey#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key}
 */
 export class CredentialSshPrivateKey extends cdktf.TerraformResource {
 
@@ -65,7 +60,7 @@ export class CredentialSshPrivateKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +71,7 @@ export class CredentialSshPrivateKey extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_credential_ssh_private_key',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.7',
+        providerVersion: '1.1.8',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

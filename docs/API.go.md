@@ -2,9 +2,11 @@
 
 The following submodules are available:
 - [account](./account.go.md)
+- [accountLdap](./accountLdap.go.md)
 - [accountOidc](./accountOidc.go.md)
 - [accountPassword](./accountPassword.go.md)
 - [authMethod](./authMethod.go.md)
+- [authMethodLdap](./authMethodLdap.go.md)
 - [authMethodOidc](./authMethodOidc.go.md)
 - [authMethodPassword](./authMethodPassword.go.md)
 - [credentialJson](./credentialJson.go.md)
@@ -24,6 +26,7 @@ The following submodules are available:
 - [hostSetStatic](./hostSetStatic.go.md)
 - [hostStatic](./hostStatic.go.md)
 - [managedGroup](./managedGroup.go.md)
+- [managedGroupLdap](./managedGroupLdap.go.md)
 - [provider](./provider.go.md)
 - [role](./role.go.md)
 - [scope](./scope.go.md)

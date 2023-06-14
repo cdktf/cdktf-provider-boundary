@@ -1,6 +1,6 @@
 # `boundary_account_password`
 
-Refer to the Terraform Registory for docs: [`boundary_account_password`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password).
+Refer to the Terraform Registory for docs: [`boundary_account_password`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password).
 
 # `accountPassword` Submodule <a name="`accountPassword` Submodule" id="@cdktf/provider-boundary.accountPassword"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`boundary_account_password`](https:/
 
 ### AccountPassword <a name="AccountPassword" id="@cdktf/provider-boundary.accountPassword.AccountPassword"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password boundary_account_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password boundary_account_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.accountPassword.AccountPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/accountpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword"
 
 accountpassword.NewAccountPassword(scope Construct, id *string, config AccountPasswordConfig) AccountPassword
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPassword.resetLoginName">ResetLoginName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPassword.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPassword.resetPassword">ResetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPassword.resetType">ResetType</a></code> | *No description.* |
 
 ---
 
@@ -285,6 +286,12 @@ func ResetName()
 func ResetPassword()
 ```
 
+##### `ResetType` <a name="ResetType" id="@cdktf/provider-boundary.accountPassword.AccountPassword.resetType"></a>
+
+```go
+func ResetType()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -298,7 +305,7 @@ func ResetPassword()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.accountPassword.AccountPassword.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/accountpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword"
 
 accountpassword.AccountPassword_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.accountPassword.AccountPassword.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/accountpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword"
 
 accountpassword.AccountPassword_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +351,7 @@ accountpassword.AccountPassword_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.accountPassword.AccountPassword.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/accountpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword"
 
 accountpassword.AccountPassword_IsTerraformResource(x interface{}) *bool
 ```
@@ -686,7 +693,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/accountpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountpassword"
 
 &accountpassword.AccountPasswordConfig {
 	Connection: interface{},
@@ -697,11 +704,11 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/accountpassword"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AuthMethodId: *string,
-	Type: *string,
 	Description: *string,
 	LoginName: *string,
 	Name: *string,
 	Password: *string,
+	Type: *string,
 }
 ```
 
@@ -717,11 +724,11 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v4/accountpassword"
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.authMethodId">AuthMethodId</a></code> | <code>*string</code> | The resource ID for the auth method. |
-| <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.type">Type</a></code> | <code>*string</code> | The resource type. |
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.description">Description</a></code> | <code>*string</code> | The account description. |
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.loginName">LoginName</a></code> | <code>*string</code> | The login name for this account. |
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.name">Name</a></code> | <code>*string</code> | The account name. Defaults to the resource name. |
 | <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.password">Password</a></code> | <code>*string</code> | The account password. Only set on create, changes will not be reflected when updating account. |
+| <code><a href="#@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.type">Type</a></code> | <code>*string</code> | The resource type. |
 
 ---
 
@@ -805,21 +812,7 @@ AuthMethodId *string
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password#auth_method_id AccountPassword#auth_method_id}
-
----
-
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.type"></a>
-
-```go
-Type *string
-```
-
-- *Type:* *string
-
-The resource type.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password#type AccountPassword#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password#auth_method_id AccountPassword#auth_method_id}
 
 ---
 
@@ -833,7 +826,7 @@ Description *string
 
 The account description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password#description AccountPassword#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password#description AccountPassword#description}
 
 ---
 
@@ -847,7 +840,7 @@ LoginName *string
 
 The login name for this account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password#login_name AccountPassword#login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password#login_name AccountPassword#login_name}
 
 ---
 
@@ -861,7 +854,7 @@ Name *string
 
 The account name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password#name AccountPassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password#name AccountPassword#name}
 
 ---
 
@@ -875,7 +868,21 @@ Password *string
 
 The account password. Only set on create, changes will not be reflected when updating account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/account_password#password AccountPassword#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password#password AccountPassword#password}
+
+---
+
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-boundary.accountPassword.AccountPasswordConfig.property.type"></a>
+
+```go
+Type *string
+```
+
+- *Type:* *string
+
+The resource type.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_password#type AccountPassword#type}
 
 ---
 

@@ -1,6 +1,6 @@
 # `boundary_credential_username_password`
 
-Refer to the Terraform Registory for docs: [`boundary_credential_username_password`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password).
+Refer to the Terraform Registory for docs: [`boundary_credential_username_password`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password).
 
 # `credentialUsernamePassword` Submodule <a name="`credentialUsernamePassword` Submodule" id="@cdktf/provider-boundary.credentialUsernamePassword"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_credential_username_passwo
 
 ### CredentialUsernamePassword <a name="CredentialUsernamePassword" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password boundary_credential_username_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password boundary_credential_username_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The credential store in which to save this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The password of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The username of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of this username/password credential. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
 
 ---
 
@@ -921,7 +921,7 @@ credential_store_id: str
 
 The credential store in which to save this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
 
 ---
 
@@ -935,7 +935,7 @@ password: str
 
 The password of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
 
 ---
 
@@ -949,7 +949,7 @@ username: str
 
 The username of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
 
 ---
 
@@ -963,7 +963,7 @@ description: str
 
 The description of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
 
 ---
 
@@ -977,7 +977,7 @@ name: str
 
 The name of this username/password credential. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
 
 ---
 

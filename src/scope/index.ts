@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/scope
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +10,43 @@ export interface ScopeConfig extends cdktf.TerraformMetaArguments {
   /**
   * If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives permissions to manage the scope to the provider's user. Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
   */
   readonly autoCreateAdminRole?: boolean | cdktf.IResolvable;
   /**
   * Only relevant when creating an org scope. If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives listing of scopes and auth methods and the ability to authenticate to the anonymous user. Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
   */
   readonly autoCreateDefaultRole?: boolean | cdktf.IResolvable;
   /**
   * The scope description.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/scope#description Scope#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/scope#description Scope#description}
   */
   readonly description?: string;
   /**
   * Indicates that the scope containing this value is the global scope, which triggers some specialized behavior to allow it to be imported and managed.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/scope#global_scope Scope#global_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/scope#global_scope Scope#global_scope}
   */
   readonly globalScope?: boolean | cdktf.IResolvable;
   /**
   * The scope name. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/scope#name Scope#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/scope#name Scope#name}
   */
   readonly name?: string;
   /**
   * The scope ID containing the sub scope resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/scope#scope_id Scope#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/scope#scope_id Scope#scope_id}
   */
   readonly scopeId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/scope boundary_scope}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/scope boundary_scope}
 */
 export class Scope extends cdktf.TerraformResource {
 
@@ -65,7 +60,7 @@ export class Scope extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/scope boundary_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/scope boundary_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +71,7 @@ export class Scope extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_scope',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.7',
+        providerVersion: '1.1.8',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

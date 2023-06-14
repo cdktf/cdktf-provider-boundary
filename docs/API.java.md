@@ -2,9 +2,11 @@
 
 The following submodules are available:
 - [account](./account.java.md)
+- [accountLdap](./accountLdap.java.md)
 - [accountOidc](./accountOidc.java.md)
 - [accountPassword](./accountPassword.java.md)
 - [authMethod](./authMethod.java.md)
+- [authMethodLdap](./authMethodLdap.java.md)
 - [authMethodOidc](./authMethodOidc.java.md)
 - [authMethodPassword](./authMethodPassword.java.md)
 - [credentialJson](./credentialJson.java.md)
@@ -24,6 +26,7 @@ The following submodules are available:
 - [hostSetStatic](./hostSetStatic.java.md)
 - [hostStatic](./hostStatic.java.md)
 - [managedGroup](./managedGroup.java.md)
+- [managedGroupLdap](./managedGroupLdap.java.md)
 - [provider](./provider.java.md)
 - [role](./role.java.md)
 - [scope](./scope.java.md)

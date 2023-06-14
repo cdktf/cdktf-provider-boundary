@@ -1,6 +1,6 @@
 # `boundary_host_catalog`
 
-Refer to the Terraform Registory for docs: [`boundary_host_catalog`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog).
+Refer to the Terraform Registory for docs: [`boundary_host_catalog`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog).
 
 # `hostCatalog` Submodule <a name="`hostCatalog` Submodule" id="@cdktf/provider-boundary.hostCatalog"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_host_catalog`](https://reg
 
 ### HostCatalog <a name="HostCatalog" id="@cdktf/provider-boundary.hostCatalog.HostCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog boundary_host_catalog}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog boundary_host_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.Initializer"></a>
 
@@ -743,7 +743,7 @@ public string ScopeId { get; set; }
 
 The scope ID in which the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog#scope_id HostCatalog#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog#scope_id HostCatalog#scope_id}
 
 ---
 
@@ -757,7 +757,7 @@ public string Type { get; set; }
 
 The host catalog type. Only `static` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog#type HostCatalog#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog#type HostCatalog#type}
 
 ---
 
@@ -771,7 +771,7 @@ public string Description { get; set; }
 
 The host catalog description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog#description HostCatalog#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog#description HostCatalog#description}
 
 ---
 
@@ -785,7 +785,7 @@ public string Name { get; set; }
 
 The host catalog name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs/resources/host_catalog#name HostCatalog#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/host_catalog#name HostCatalog#name}
 
 ---
 

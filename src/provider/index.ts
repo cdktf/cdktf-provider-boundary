@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,67 +10,79 @@ export interface BoundaryProviderConfig {
   /**
   * The base url of the Boundary API, e.g. "http://127.0.0.1:9200". If not set, it will be read from the "BOUNDARY_ADDR" env var.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#addr BoundaryProvider#addr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#addr BoundaryProvider#addr}
   */
   readonly addr: string;
   /**
-  * The auth method ID e.g. ampw_1234567890
+  * The auth method ID e.g. ampw_1234567890. If not set, the default auth method for the given scope ID will be used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#auth_method_id BoundaryProvider#auth_method_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#auth_method_id BoundaryProvider#auth_method_id}
   */
   readonly authMethodId?: string;
   /**
+  * The auth method login name for password-style or ldap-style auth methods
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#auth_method_login_name BoundaryProvider#auth_method_login_name}
+  */
+  readonly authMethodLoginName?: string;
+  /**
+  * The auth method password for password-style or ldap-style auth methods
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#auth_method_password BoundaryProvider#auth_method_password}
+  */
+  readonly authMethodPassword?: string;
+  /**
   * The auth method login name for password-style auth methods
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#password_auth_method_login_name BoundaryProvider#password_auth_method_login_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#password_auth_method_login_name BoundaryProvider#password_auth_method_login_name}
   */
   readonly passwordAuthMethodLoginName?: string;
   /**
   * The auth method password for password-style auth methods
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#password_auth_method_password BoundaryProvider#password_auth_method_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#password_auth_method_password BoundaryProvider#password_auth_method_password}
   */
   readonly passwordAuthMethodPassword?: string;
   /**
   * Specifies a directory that the Boundary provider can use to write and execute its built-in plugins.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#plugin_execution_dir BoundaryProvider#plugin_execution_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#plugin_execution_dir BoundaryProvider#plugin_execution_dir}
   */
   readonly pluginExecutionDir?: string;
   /**
   * Can be a heredoc string or a path on disk. If set, the string/file will be parsed as HCL and used with the recovery KMS mechanism. While this is set, it will override any other authentication information; the KMS mechanism will always be used. See Boundary's KMS docs for examples: https://boundaryproject.io/docs/configuration/kms
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#recovery_kms_hcl BoundaryProvider#recovery_kms_hcl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#recovery_kms_hcl BoundaryProvider#recovery_kms_hcl}
   */
   readonly recoveryKmsHcl?: string;
   /**
   * The scope ID for the default auth method.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#scope_id BoundaryProvider#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#scope_id BoundaryProvider#scope_id}
   */
   readonly scopeId?: string;
   /**
   * When set to true, does not validate the Boundary API endpoint certificate
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#tls_insecure BoundaryProvider#tls_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#tls_insecure BoundaryProvider#tls_insecure}
   */
   readonly tlsInsecure?: boolean | cdktf.IResolvable;
   /**
   * The Boundary token to use, as a string or path on disk containing just the string. If set, the token read here will be used in place of authenticating with the auth method specified in "auth_method_id", although the recovery KMS mechanism will still override this. Can also be set with the BOUNDARY_TOKEN environment variable.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#token BoundaryProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#token BoundaryProvider#token}
   */
   readonly token?: string;
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs#alias BoundaryProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs#alias BoundaryProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs boundary}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs boundary}
 */
 export class BoundaryProvider extends cdktf.TerraformProvider {
 
@@ -89,7 +96,7 @@ export class BoundaryProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.7/docs boundary} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs boundary} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -100,13 +107,15 @@ export class BoundaryProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'boundary',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.7',
+        providerVersion: '1.1.8',
         providerVersionConstraint: '~> 1.0'
       },
       terraformProviderSource: 'boundary'
     });
     this._addr = config.addr;
     this._authMethodId = config.authMethodId;
+    this._authMethodLoginName = config.authMethodLoginName;
+    this._authMethodPassword = config.authMethodPassword;
     this._passwordAuthMethodLoginName = config.passwordAuthMethodLoginName;
     this._passwordAuthMethodPassword = config.passwordAuthMethodPassword;
     this._pluginExecutionDir = config.pluginExecutionDir;
@@ -148,6 +157,38 @@ export class BoundaryProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get authMethodIdInput() {
     return this._authMethodId;
+  }
+
+  // auth_method_login_name - computed: false, optional: true, required: false
+  private _authMethodLoginName?: string; 
+  public get authMethodLoginName() {
+    return this._authMethodLoginName;
+  }
+  public set authMethodLoginName(value: string | undefined) {
+    this._authMethodLoginName = value;
+  }
+  public resetAuthMethodLoginName() {
+    this._authMethodLoginName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authMethodLoginNameInput() {
+    return this._authMethodLoginName;
+  }
+
+  // auth_method_password - computed: false, optional: true, required: false
+  private _authMethodPassword?: string; 
+  public get authMethodPassword() {
+    return this._authMethodPassword;
+  }
+  public set authMethodPassword(value: string | undefined) {
+    this._authMethodPassword = value;
+  }
+  public resetAuthMethodPassword() {
+    this._authMethodPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authMethodPasswordInput() {
+    return this._authMethodPassword;
   }
 
   // password_auth_method_login_name - computed: false, optional: true, required: false
@@ -286,6 +327,8 @@ export class BoundaryProvider extends cdktf.TerraformProvider {
     return {
       addr: cdktf.stringToTerraform(this._addr),
       auth_method_id: cdktf.stringToTerraform(this._authMethodId),
+      auth_method_login_name: cdktf.stringToTerraform(this._authMethodLoginName),
+      auth_method_password: cdktf.stringToTerraform(this._authMethodPassword),
       password_auth_method_login_name: cdktf.stringToTerraform(this._passwordAuthMethodLoginName),
       password_auth_method_password: cdktf.stringToTerraform(this._passwordAuthMethodPassword),
       plugin_execution_dir: cdktf.stringToTerraform(this._pluginExecutionDir),
