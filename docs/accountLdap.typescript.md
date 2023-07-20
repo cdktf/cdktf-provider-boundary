@@ -1,6 +1,6 @@
 # `boundary_account_ldap`
 
-Refer to the Terraform Registory for docs: [`boundary_account_ldap`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_ldap).
+Refer to the Terraform Registory for docs: [`boundary_account_ldap`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap).
 
 # `accountLdap` Submodule <a name="`accountLdap` Submodule" id="@cdktf/provider-boundary.accountLdap"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_account_ldap`](https://reg
 
 ### AccountLdap <a name="AccountLdap" id="@cdktf/provider-boundary.accountLdap.AccountLdap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_ldap boundary_account_ldap}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap boundary_account_ldap}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.accountLdap.AccountLdap.Initializer"></a>
 
@@ -768,7 +768,7 @@ public readonly authMethodId: string;
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_ldap#auth_method_id AccountLdap#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap#auth_method_id AccountLdap#auth_method_id}
 
 ---
 
@@ -782,7 +782,7 @@ public readonly description: string;
 
 The account description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_ldap#description AccountLdap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap#description AccountLdap#description}
 
 ---
 
@@ -796,7 +796,7 @@ public readonly loginName: string;
 
 The login name for this account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_ldap#login_name AccountLdap#login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap#login_name AccountLdap#login_name}
 
 ---
 
@@ -810,7 +810,7 @@ public readonly name: string;
 
 The account name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_ldap#name AccountLdap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap#name AccountLdap#name}
 
 ---
 
@@ -824,7 +824,7 @@ public readonly type: string;
 
 The resource type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account_ldap#type AccountLdap#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap#type AccountLdap#type}
 
 ---
 

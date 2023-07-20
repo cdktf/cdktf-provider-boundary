@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface AccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID for the auth method.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account#auth_method_id Account#auth_method_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#auth_method_id Account#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The account description.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account#description Account#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#description Account#description}
   */
   readonly description?: string;
   /**
   * The login name for this account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account#login_name Account#login_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#login_name Account#login_name}
   */
   readonly loginName?: string;
   /**
   * The account name. Defaults to the resource name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account#name Account#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#name Account#name}
   */
   readonly name?: string;
   /**
   * The account password. Only set on create, changes will not be reflected when updating account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account#password Account#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#password Account#password}
   */
   readonly password?: string;
   /**
   * The resource type.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account#type Account#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#type Account#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account boundary_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account boundary_account}
 */
 export class Account extends cdktf.TerraformResource {
 
@@ -65,7 +65,7 @@ export class Account extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/account boundary_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account boundary_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -76,7 +76,7 @@ export class Account extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_account',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.8',
+        providerVersion: '1.1.9',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

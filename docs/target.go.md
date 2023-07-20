@@ -1,6 +1,6 @@
 # `boundary_target`
 
-Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target).
+Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target).
 
 # `target` Submodule <a name="`target` Submodule" id="@cdktf/provider-boundary.target"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.
 
 ### Target <a name="Target" id="@cdktf/provider-boundary.target.Target"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target boundary_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target boundary_target}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.target.Target.Initializer"></a>
 
@@ -76,12 +76,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetDefaultPort">ResetDefaultPort</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetEgressWorkerFilter">ResetEgressWorkerFilter</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.resetEnableSessionRecording">ResetEnableSessionRecording</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetHostSourceIds">ResetHostSourceIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetIngressWorkerFilter">ResetIngressWorkerFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetInjectedApplicationCredentialSourceIds">ResetInjectedApplicationCredentialSourceIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetSessionConnectionLimit">ResetSessionConnectionLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetSessionMaxSeconds">ResetSessionMaxSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.resetStorageBucketId">ResetStorageBucketId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.resetWorkerFilter">ResetWorkerFilter</a></code> | *No description.* |
 
 ---
@@ -306,6 +308,12 @@ func ResetDescription()
 func ResetEgressWorkerFilter()
 ```
 
+##### `ResetEnableSessionRecording` <a name="ResetEnableSessionRecording" id="@cdktf/provider-boundary.target.Target.resetEnableSessionRecording"></a>
+
+```go
+func ResetEnableSessionRecording()
+```
+
 ##### `ResetHostSourceIds` <a name="ResetHostSourceIds" id="@cdktf/provider-boundary.target.Target.resetHostSourceIds"></a>
 
 ```go
@@ -340,6 +348,12 @@ func ResetSessionConnectionLimit()
 
 ```go
 func ResetSessionMaxSeconds()
+```
+
+##### `ResetStorageBucketId` <a name="ResetStorageBucketId" id="@cdktf/provider-boundary.target.Target.resetStorageBucketId"></a>
+
+```go
+func ResetStorageBucketId()
 ```
 
 ##### `ResetWorkerFilter` <a name="ResetWorkerFilter" id="@cdktf/provider-boundary.target.Target.resetWorkerFilter"></a>
@@ -443,6 +457,7 @@ target.Target_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultPortInput">DefaultPortInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.egressWorkerFilterInput">EgressWorkerFilterInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.enableSessionRecordingInput">EnableSessionRecordingInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.hostSourceIdsInput">HostSourceIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.ingressWorkerFilterInput">IngressWorkerFilterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.injectedApplicationCredentialSourceIdsInput">InjectedApplicationCredentialSourceIdsInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -450,6 +465,7 @@ target.Target_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.scopeIdInput">ScopeIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.sessionConnectionLimitInput">SessionConnectionLimitInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.sessionMaxSecondsInput">SessionMaxSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.storageBucketIdInput">StorageBucketIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.workerFilterInput">WorkerFilterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.address">Address</a></code> | <code>*string</code> | *No description.* |
@@ -458,6 +474,7 @@ target.Target_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultPort">DefaultPort</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.egressWorkerFilter">EgressWorkerFilter</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.enableSessionRecording">EnableSessionRecording</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.hostSourceIds">HostSourceIds</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.ingressWorkerFilter">IngressWorkerFilter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.injectedApplicationCredentialSourceIds">InjectedApplicationCredentialSourceIds</a></code> | <code>*[]*string</code> | *No description.* |
@@ -465,6 +482,7 @@ target.Target_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.scopeId">ScopeId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.sessionConnectionLimit">SessionConnectionLimit</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.sessionMaxSeconds">SessionMaxSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.storageBucketId">StorageBucketId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.workerFilter">WorkerFilter</a></code> | <code>*string</code> | *No description.* |
 
@@ -682,6 +700,16 @@ func EgressWorkerFilterInput() *string
 
 ---
 
+##### `EnableSessionRecordingInput`<sup>Optional</sup> <a name="EnableSessionRecordingInput" id="@cdktf/provider-boundary.target.Target.property.enableSessionRecordingInput"></a>
+
+```go
+func EnableSessionRecordingInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `HostSourceIdsInput`<sup>Optional</sup> <a name="HostSourceIdsInput" id="@cdktf/provider-boundary.target.Target.property.hostSourceIdsInput"></a>
 
 ```go
@@ -749,6 +777,16 @@ func SessionMaxSecondsInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `StorageBucketIdInput`<sup>Optional</sup> <a name="StorageBucketIdInput" id="@cdktf/provider-boundary.target.Target.property.storageBucketIdInput"></a>
+
+```go
+func StorageBucketIdInput() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -832,6 +870,16 @@ func EgressWorkerFilter() *string
 
 ---
 
+##### `EnableSessionRecording`<sup>Required</sup> <a name="EnableSessionRecording" id="@cdktf/provider-boundary.target.Target.property.enableSessionRecording"></a>
+
+```go
+func EnableSessionRecording() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `HostSourceIds`<sup>Required</sup> <a name="HostSourceIds" id="@cdktf/provider-boundary.target.Target.property.hostSourceIds"></a>
 
 ```go
@@ -902,6 +950,16 @@ func SessionMaxSeconds() *f64
 
 ---
 
+##### `StorageBucketId`<sup>Required</sup> <a name="StorageBucketId" id="@cdktf/provider-boundary.target.Target.property.storageBucketId"></a>
+
+```go
+func StorageBucketId() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-boundary.target.Target.property.type"></a>
 
 ```go
@@ -965,12 +1023,14 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/target"
 	DefaultPort: *f64,
 	Description: *string,
 	EgressWorkerFilter: *string,
+	EnableSessionRecording: interface{},
 	HostSourceIds: *[]*string,
 	IngressWorkerFilter: *string,
 	InjectedApplicationCredentialSourceIds: *[]*string,
 	Name: *string,
 	SessionConnectionLimit: *f64,
 	SessionMaxSeconds: *f64,
+	StorageBucketId: *string,
 	WorkerFilter: *string,
 }
 ```
@@ -994,12 +1054,14 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/target"
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.defaultPort">DefaultPort</a></code> | <code>*f64</code> | The default port for this target. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.description">Description</a></code> | <code>*string</code> | The target description. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.egressWorkerFilter">EgressWorkerFilter</a></code> | <code>*string</code> | Boolean expression to filter the workers used to access this target. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.enableSessionRecording">EnableSessionRecording</a></code> | <code>interface{}</code> | HCP/Ent Only. Enable sessions recording for this target. Only applicable for SSH targets. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.hostSourceIds">HostSourceIds</a></code> | <code>*[]*string</code> | A list of host source ID's. Cannot be used alongside address. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.ingressWorkerFilter">IngressWorkerFilter</a></code> | <code>*string</code> | HCP Only. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.injectedApplicationCredentialSourceIds">InjectedApplicationCredentialSourceIds</a></code> | <code>*[]*string</code> | A list of injected application credential source ID's. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.name">Name</a></code> | <code>*string</code> | The target name. Defaults to the resource name. |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionConnectionLimit">SessionConnectionLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_connection_limit Target#session_connection_limit}. |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionMaxSeconds">SessionMaxSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_max_seconds Target#session_max_seconds}. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionConnectionLimit">SessionConnectionLimit</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#session_connection_limit Target#session_connection_limit}. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionMaxSeconds">SessionMaxSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#session_max_seconds Target#session_max_seconds}. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.storageBucketId">StorageBucketId</a></code> | <code>*string</code> | HCP/Ent Only. Storage bucket for this target. Only applicable for SSH targets. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.workerFilter">WorkerFilter</a></code> | <code>*string</code> | Boolean expression to filter the workers for this target. |
 
 ---
@@ -1084,7 +1146,7 @@ ScopeId *string
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#scope_id Target#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#scope_id Target#scope_id}
 
 ---
 
@@ -1098,7 +1160,7 @@ Type *string
 
 The target resource type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#type Target#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#type Target#type}
 
 ---
 
@@ -1112,7 +1174,7 @@ Address *string
 
 Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#address Target#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#address Target#address}
 
 ---
 
@@ -1126,7 +1188,7 @@ BrokeredCredentialSourceIds *[]*string
 
 A list of brokered credential source ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
 
 ---
 
@@ -1140,7 +1202,7 @@ DefaultClientPort *f64
 
 The default client port for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#default_client_port Target#default_client_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#default_client_port Target#default_client_port}
 
 ---
 
@@ -1154,7 +1216,7 @@ DefaultPort *f64
 
 The default port for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#default_port Target#default_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#default_port Target#default_port}
 
 ---
 
@@ -1168,7 +1230,7 @@ Description *string
 
 The target description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#description Target#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#description Target#description}
 
 ---
 
@@ -1182,7 +1244,21 @@ EgressWorkerFilter *string
 
 Boolean expression to filter the workers used to access this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
+
+---
+
+##### `EnableSessionRecording`<sup>Optional</sup> <a name="EnableSessionRecording" id="@cdktf/provider-boundary.target.TargetConfig.property.enableSessionRecording"></a>
+
+```go
+EnableSessionRecording interface{}
+```
+
+- *Type:* interface{}
+
+HCP/Ent Only. Enable sessions recording for this target. Only applicable for SSH targets.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#enable_session_recording Target#enable_session_recording}
 
 ---
 
@@ -1196,7 +1272,7 @@ HostSourceIds *[]*string
 
 A list of host source ID's. Cannot be used alongside address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#host_source_ids Target#host_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#host_source_ids Target#host_source_ids}
 
 ---
 
@@ -1212,7 +1288,7 @@ HCP Only.
 
 Boolean expression to filter the workers a user will connect to when initiating a session against this target
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
 
 ---
 
@@ -1226,7 +1302,7 @@ InjectedApplicationCredentialSourceIds *[]*string
 
 A list of injected application credential source ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
 
 ---
 
@@ -1240,7 +1316,7 @@ Name *string
 
 The target name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#name Target#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#name Target#name}
 
 ---
 
@@ -1252,7 +1328,7 @@ SessionConnectionLimit *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_connection_limit Target#session_connection_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#session_connection_limit Target#session_connection_limit}.
 
 ---
 
@@ -1264,7 +1340,21 @@ SessionMaxSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#session_max_seconds Target#session_max_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#session_max_seconds Target#session_max_seconds}.
+
+---
+
+##### `StorageBucketId`<sup>Optional</sup> <a name="StorageBucketId" id="@cdktf/provider-boundary.target.TargetConfig.property.storageBucketId"></a>
+
+```go
+StorageBucketId *string
+```
+
+- *Type:* *string
+
+HCP/Ent Only. Storage bucket for this target. Only applicable for SSH targets.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#storage_bucket_id Target#storage_bucket_id}
 
 ---
 
@@ -1278,7 +1368,7 @@ WorkerFilter *string
 
 Boolean expression to filter the workers for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/target#worker_filter Target#worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#worker_filter Target#worker_filter}
 
 ---
 

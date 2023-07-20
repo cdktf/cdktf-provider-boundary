@@ -32,6 +32,7 @@ export * as managedGroup from './managed-group';
 export * as managedGroupLdap from './managed-group-ldap';
 export * as role from './role';
 export * as scope from './scope';
+export * as storageBucket from './storage-bucket';
 export * as target from './target';
 export * as user from './user';
 export * as worker from './worker';

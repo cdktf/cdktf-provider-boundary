@@ -30,6 +30,7 @@ The following submodules are available:
 - [provider](./provider.typescript.md)
 - [role](./role.typescript.md)
 - [scope](./scope.typescript.md)
+- [storageBucket](./storageBucket.typescript.md)
 - [target](./target.typescript.md)
 - [user](./user.typescript.md)
 - [worker](./worker.typescript.md)
