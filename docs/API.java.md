@@ -30,6 +30,7 @@ The following submodules are available:
 - [provider](./provider.java.md)
 - [role](./role.java.md)
 - [scope](./scope.java.md)
+- [storageBucket](./storageBucket.java.md)
 - [target](./target.java.md)
 - [user](./user.java.md)
 - [worker](./worker.java.md)

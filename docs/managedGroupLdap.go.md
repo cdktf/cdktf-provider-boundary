@@ -1,6 +1,6 @@
 # `boundary_managed_group_ldap`
 
-Refer to the Terraform Registory for docs: [`boundary_managed_group_ldap`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/managed_group_ldap).
+Refer to the Terraform Registory for docs: [`boundary_managed_group_ldap`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap).
 
 # `managedGroupLdap` Submodule <a name="`managedGroupLdap` Submodule" id="@cdktf/provider-boundary.managedGroupLdap"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`boundary_managed_group_ldap`](https
 
 ### ManagedGroupLdap <a name="ManagedGroupLdap" id="@cdktf/provider-boundary.managedGroupLdap.ManagedGroupLdap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/managed_group_ldap boundary_managed_group_ldap}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap boundary_managed_group_ldap}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.managedGroupLdap.ManagedGroupLdap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/managedgroupldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/managedgroupldap"
 
 managedgroupldap.NewManagedGroupLdap(scope Construct, id *string, config ManagedGroupLdapConfig) ManagedGroupLdap
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.managedGroupLdap.ManagedGroupLdap.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/managedgroupldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/managedgroupldap"
 
 managedgroupldap.ManagedGroupLdap_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.managedGroupLdap.ManagedGroupLdap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/managedgroupldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/managedgroupldap"
 
 managedgroupldap.ManagedGroupLdap_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ managedgroupldap.ManagedGroupLdap_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.managedGroupLdap.ManagedGroupLdap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/managedgroupldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/managedgroupldap"
 
 managedgroupldap.ManagedGroupLdap_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.managedGroupLdap.ManagedGroupLdapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/managedgroupldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/managedgroupldap"
 
 &managedgroupldap.ManagedGroupLdapConfig {
 	Connection: interface{},
@@ -743,7 +743,7 @@ AuthMethodId *string
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
 
 ---
 
@@ -757,7 +757,7 @@ GroupNames *[]*string
 
 The list of groups that make up the managed group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
 
 ---
 
@@ -771,7 +771,7 @@ Description *string
 
 The managed group description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
 
 ---
 
@@ -785,7 +785,7 @@ Name *string
 
 The managed group name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.8/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
 
 ---
 

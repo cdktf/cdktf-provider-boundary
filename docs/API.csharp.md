@@ -30,6 +30,7 @@ The following submodules are available:
 - [provider](./provider.csharp.md)
 - [role](./role.csharp.md)
 - [scope](./scope.csharp.md)
+- [storageBucket](./storageBucket.csharp.md)
 - [target](./target.csharp.md)
 - [user](./user.csharp.md)
 - [worker](./worker.csharp.md)

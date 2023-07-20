@@ -30,6 +30,7 @@ The following submodules are available:
 - [provider](./provider.go.md)
 - [role](./role.go.md)
 - [scope](./scope.go.md)
+- [storageBucket](./storageBucket.go.md)
 - [target](./target.go.md)
 - [user](./user.go.md)
 - [worker](./worker.go.md)

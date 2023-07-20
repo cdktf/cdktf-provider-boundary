@@ -30,6 +30,7 @@ The following submodules are available:
 - [provider](./provider.python.md)
 - [role](./role.python.md)
 - [scope](./scope.python.md)
+- [storageBucket](./storageBucket.python.md)
 - [target](./target.python.md)
 - [user](./user.python.md)
 - [worker](./worker.python.md)
