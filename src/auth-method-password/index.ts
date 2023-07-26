@@ -14,37 +14,37 @@ import * as cdktf from 'cdktf';
 export interface AuthMethodPasswordConfig extends cdktf.TerraformMetaArguments {
   /**
   * The auth method description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_password#description AuthMethodPassword#description}
   */
   readonly description?: string;
   /**
   * The minimum login name length.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
   */
   readonly minLoginNameLength?: number;
   /**
   * The minimum password length.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
   */
   readonly minPasswordLength?: number;
   /**
   * The auth method name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_password#name AuthMethodPassword#name}
   */
   readonly name?: string;
   /**
   * The scope ID.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_password#scope_id AuthMethodPassword#scope_id}
   */
   readonly scopeId: string;
   /**
   * The resource type, hardcoded per resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_password#type AuthMethodPassword#type}
   */
   readonly type?: string;

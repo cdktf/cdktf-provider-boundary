@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface ManagedGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID for the auth method.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group#auth_method_id ManagedGroup#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The managed group description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group#description ManagedGroup#description}
   */
   readonly description?: string;
   /**
   * Boolean expression to filter the workers for this managed group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group#filter ManagedGroup#filter}
   */
   readonly filter: string;
   /**
   * The managed group name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group#name ManagedGroup#name}
   */
   readonly name?: string;

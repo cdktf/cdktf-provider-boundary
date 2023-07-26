@@ -14,67 +14,67 @@ import * as cdktf from 'cdktf';
 export interface HostCatalogPluginConfig extends cdktf.TerraformMetaArguments {
   /**
   * The attributes for the host catalog. Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" or remove the block to clear all attributes in the host catalog.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#attributes_json HostCatalogPlugin#attributes_json}
   */
   readonly attributesJson?: string;
   /**
   * The host catalog description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#description HostCatalogPlugin#description}
   */
   readonly description?: string;
   /**
   * Internal only. Used to force update so that we can always check the value of secrets.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#internal_force_update HostCatalogPlugin#internal_force_update}
   */
   readonly internalForceUpdate?: string;
   /**
   * Internal only. The Boundary-provided HMAC used to calculate the current value of the HMAC'd config. Used for drift detection.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#internal_hmac_used_for_secrets_config_hmac HostCatalogPlugin#internal_hmac_used_for_secrets_config_hmac}
   */
   readonly internalHmacUsedForSecretsConfigHmac?: string;
   /**
   * Internal only. HMAC of (serverSecretsHmac + config secrets). Used for proper secrets handling.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#internal_secrets_config_hmac HostCatalogPlugin#internal_secrets_config_hmac}
   */
   readonly internalSecretsConfigHmac?: string;
   /**
   * The host catalog name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#name HostCatalogPlugin#name}
   */
   readonly name?: string;
   /**
   * The ID of the plugin that should back the resource. This or plugin_name must be defined.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#plugin_id HostCatalogPlugin#plugin_id}
   */
   readonly pluginId?: string;
   /**
   * The name of the plugin that should back the resource. This or plugin_id must be defined.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#plugin_name HostCatalogPlugin#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * The scope ID in which the resource is created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#scope_id HostCatalogPlugin#scope_id}
   */
   readonly scopeId: string;
   /**
   * The HMAC'd secrets value returned from the server.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#secrets_hmac HostCatalogPlugin#secrets_hmac}
   */
   readonly secretsHmac?: string;
   /**
   * The secrets for the host catalog. Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" to clear any existing values. NOTE: Unlike "attributes_json", removing this block will NOT clear secrets from the host catalog; this allows injecting secrets for one call, then removing them for storage.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_plugin#secrets_json HostCatalogPlugin#secrets_json}
   */
   readonly secretsJson?: string;

@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface HostCatalogStaticConfig extends cdktf.TerraformMetaArguments {
   /**
   * The host catalog description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_static#description HostCatalogStatic#description}
   */
   readonly description?: string;
   /**
   * The host catalog name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_static#name HostCatalogStatic#name}
   */
   readonly name?: string;
   /**
   * The scope ID in which the resource is created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_catalog_static#scope_id HostCatalogStatic#scope_id}
   */
   readonly scopeId: string;

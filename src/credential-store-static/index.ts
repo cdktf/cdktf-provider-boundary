@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface CredentialStoreStaticConfig extends cdktf.TerraformMetaArguments {
   /**
   * The static credential store description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_static#description CredentialStoreStatic#description}
   */
   readonly description?: string;
   /**
   * The static credential store name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_static#name CredentialStoreStatic#name}
   */
   readonly name?: string;
   /**
   * The scope for this credential store.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
   */
   readonly scopeId: string;

@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface HostSetStaticConfig extends cdktf.TerraformMetaArguments {
   /**
   * The host set description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_static#description HostSetStatic#description}
   */
   readonly description?: string;
   /**
   * The catalog for the host set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_static#host_catalog_id HostSetStatic#host_catalog_id}
   */
   readonly hostCatalogId: string;
   /**
   * The list of host IDs contained in this set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_static#host_ids HostSetStatic#host_ids}
   */
   readonly hostIds?: string[];
   /**
   * The host set name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_static#name HostSetStatic#name}
   */
   readonly name?: string;
   /**
   * The type of host set
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_static#type HostSetStatic#type}
   */
   readonly type?: string;

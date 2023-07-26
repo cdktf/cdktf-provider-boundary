@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface HostStaticConfig extends cdktf.TerraformMetaArguments {
   /**
   * The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_static#address HostStatic#address}
   */
   readonly address?: string;
   /**
   * The host description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_static#description HostStatic#description}
   */
   readonly description?: string;
@@ -30,13 +30,13 @@ export interface HostStaticConfig extends cdktf.TerraformMetaArguments {
   readonly hostCatalogId: string;
   /**
   * The host name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_static#name HostStatic#name}
   */
   readonly name?: string;
   /**
   * The type of host
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_static#type HostStatic#type}
   */
   readonly type?: string;

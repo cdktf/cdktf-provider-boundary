@@ -14,43 +14,43 @@ import * as cdktf from 'cdktf';
 export interface HostSetPluginConfig extends cdktf.TerraformMetaArguments {
   /**
   * The attributes for the host set. Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" or remove the block to clear all attributes in the host set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_plugin#attributes_json HostSetPlugin#attributes_json}
   */
   readonly attributesJson?: string;
   /**
   * The host set description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_plugin#description HostSetPlugin#description}
   */
   readonly description?: string;
   /**
   * The catalog for the host set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_plugin#host_catalog_id HostSetPlugin#host_catalog_id}
   */
   readonly hostCatalogId: string;
   /**
   * The host set name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_plugin#name HostSetPlugin#name}
   */
   readonly name?: string;
   /**
   * The ordered list of preferred endpoints.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_plugin#preferred_endpoints HostSetPlugin#preferred_endpoints}
   */
   readonly preferredEndpoints?: string[];
   /**
   * The value to set for the sync interval seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_plugin#sync_interval_seconds HostSetPlugin#sync_interval_seconds}
   */
   readonly syncIntervalSeconds?: number;
   /**
   * The type of host set
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set_plugin#type HostSetPlugin#type}
   */
   readonly type?: string;

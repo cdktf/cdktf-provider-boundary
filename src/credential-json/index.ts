@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface CredentialJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The credential store in which to save this json credential.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_json#credential_store_id CredentialJson#credential_store_id}
   */
   readonly credentialStoreId: string;
   /**
   * The description of this json credential.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_json#description CredentialJson#description}
   */
   readonly description?: string;
   /**
   * The name of this json credential. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_json#name CredentialJson#name}
   */
   readonly name?: string;
   /**
   * The object for the this json credential. Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_json#object CredentialJson#object}
   */
   readonly object: string;

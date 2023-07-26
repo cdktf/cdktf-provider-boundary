@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface UserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account ID's to associate with this user resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/user#account_ids User#account_ids}
   */
   readonly accountIds?: string[];
   /**
   * The user description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/user#description User#description}
   */
   readonly description?: string;
   /**
   * The username. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/user#name User#name}
   */
   readonly name?: string;
   /**
   * The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/user#scope_id User#scope_id}
   */
   readonly scopeId: string;

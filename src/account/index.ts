@@ -14,37 +14,37 @@ import * as cdktf from 'cdktf';
 export interface AccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID for the auth method.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#auth_method_id Account#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The account description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#description Account#description}
   */
   readonly description?: string;
   /**
   * The login name for this account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#login_name Account#login_name}
   */
   readonly loginName?: string;
   /**
   * The account name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#name Account#name}
   */
   readonly name?: string;
   /**
   * The account password. Only set on create, changes will not be reflected when updating account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#password Account#password}
   */
   readonly password?: string;
   /**
   * The resource type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account#type Account#type}
   */
   readonly type: string;

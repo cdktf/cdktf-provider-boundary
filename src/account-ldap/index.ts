@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface AccountLdapConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID for the auth method.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap#auth_method_id AccountLdap#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The account description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap#description AccountLdap#description}
   */
   readonly description?: string;
   /**
   * The login name for this account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap#login_name AccountLdap#login_name}
   */
   readonly loginName?: string;
   /**
   * The account name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap#name AccountLdap#name}
   */
   readonly name?: string;
   /**
   * The resource type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_ldap#type AccountLdap#type}
   */
   readonly type?: string;
