@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/group
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The group description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/group#description Group#description}
   */
   readonly description?: string;
   /**
   * Resource IDs for group members, these are most likely boundary users.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/group#member_ids Group#member_ids}
   */
   readonly memberIds?: string[];
   /**
   * The group name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/group#name Group#name}
   */
   readonly name?: string;
   /**
   * The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/group#scope_id Group#scope_id}
   */
   readonly scopeId: string;

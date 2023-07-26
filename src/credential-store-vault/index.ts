@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault
 // generated from terraform resource schema
 
@@ -14,73 +9,73 @@ import * as cdktf from 'cdktf';
 export interface CredentialStoreVaultConfig extends cdktf.TerraformMetaArguments {
   /**
   * The address to Vault server. This should be a complete URL such as 'https://127.0.0.1:8200'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#address CredentialStoreVault#address}
   */
   readonly address: string;
   /**
   * A PEM-encoded CA certificate to verify the Vault server's TLS certificate.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#ca_cert CredentialStoreVault#ca_cert}
   */
   readonly caCert?: string;
   /**
   * A PEM-encoded client certificate to use for TLS authentication to the Vault server.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#client_certificate CredentialStoreVault#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
   * A PEM-encoded private key matching the client certificate from 'client_certificate'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#client_certificate_key CredentialStoreVault#client_certificate_key}
   */
   readonly clientCertificateKey?: string;
   /**
   * The Vault credential store description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#description CredentialStoreVault#description}
   */
   readonly description?: string;
   /**
   * The Vault credential store name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#name CredentialStoreVault#name}
   */
   readonly name?: string;
   /**
   * The namespace within Vault to use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#namespace CredentialStoreVault#namespace}
   */
   readonly namespace?: string;
   /**
   * The scope for this credential store.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#scope_id CredentialStoreVault#scope_id}
   */
   readonly scopeId: string;
   /**
   * Name to use as the SNI host when connecting to Vault via TLS.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#tls_server_name CredentialStoreVault#tls_server_name}
   */
   readonly tlsServerName?: string;
   /**
   * Whether or not to skip TLS verification.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#tls_skip_verify CredentialStoreVault#tls_skip_verify}
   */
   readonly tlsSkipVerify?: boolean | cdktf.IResolvable;
   /**
   * A token used for accessing Vault.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#token CredentialStoreVault#token}
   */
   readonly token: string;
   /**
   * HCP Only. A filter used to control which PKI workers can handle Vault requests. This allows the use of private Vault instances with Boundary.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_store_vault#worker_filter CredentialStoreVault#worker_filter}
   */
   readonly workerFilter?: string;

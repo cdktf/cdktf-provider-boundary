@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_ssh_private_key
 // generated from terraform resource schema
 
@@ -14,37 +9,37 @@ import * as cdktf from 'cdktf';
 export interface CredentialSshPrivateKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * ID of the credential store this credential belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_ssh_private_key#credential_store_id CredentialSshPrivateKey#credential_store_id}
   */
   readonly credentialStoreId: string;
   /**
   * The description of the credential.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_ssh_private_key#description CredentialSshPrivateKey#description}
   */
   readonly description?: string;
   /**
   * The name of the credential. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_ssh_private_key#name CredentialSshPrivateKey#name}
   */
   readonly name?: string;
   /**
   * The private key associated with the credential.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_ssh_private_key#private_key CredentialSshPrivateKey#private_key}
   */
   readonly privateKey: string;
   /**
   * The passphrase of the private key associated with the credential.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_ssh_private_key#private_key_passphrase CredentialSshPrivateKey#private_key_passphrase}
   */
   readonly privateKeyPassphrase?: string;
   /**
   * The username associated with the credential.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_ssh_private_key#username CredentialSshPrivateKey#username}
   */
   readonly username: string;

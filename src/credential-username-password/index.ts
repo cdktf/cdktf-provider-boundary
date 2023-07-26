@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_username_password
 // generated from terraform resource schema
 
@@ -14,31 +9,31 @@ import * as cdktf from 'cdktf';
 export interface CredentialUsernamePasswordConfig extends cdktf.TerraformMetaArguments {
   /**
   * The credential store in which to save this username/password credential.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
   */
   readonly credentialStoreId: string;
   /**
   * The description of this username/password credential.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
   */
   readonly description?: string;
   /**
   * The name of this username/password credential. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
   */
   readonly name?: string;
   /**
   * The password of this username/password credential.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
   */
   readonly password: string;
   /**
   * The username of this username/password credential.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
   */
   readonly username: string;

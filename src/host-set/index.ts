@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set
 // generated from terraform resource schema
 
@@ -14,31 +9,31 @@ import * as cdktf from 'cdktf';
 export interface HostSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The host set description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set#description HostSet#description}
   */
   readonly description?: string;
   /**
   * The catalog for the host set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set#host_catalog_id HostSet#host_catalog_id}
   */
   readonly hostCatalogId: string;
   /**
   * The list of host IDs contained in this set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set#host_ids HostSet#host_ids}
   */
   readonly hostIds?: string[];
   /**
   * The host set name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set#name HostSet#name}
   */
   readonly name?: string;
   /**
   * The type of host set
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set#type HostSet#type}
   */
   readonly type: string;

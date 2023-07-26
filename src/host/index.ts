@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface HostConfig extends cdktf.TerraformMetaArguments {
   /**
   * The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host#address Host#address}
   */
   readonly address?: string;
   /**
   * The host description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host#description Host#description}
   */
   readonly description?: string;
@@ -30,13 +25,13 @@ export interface HostConfig extends cdktf.TerraformMetaArguments {
   readonly hostCatalogId: string;
   /**
   * The host name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host#name Host#name}
   */
   readonly name?: string;
   /**
   * The type of host
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host#type Host#type}
   */
   readonly type: string;

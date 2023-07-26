@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/role
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface RoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The role description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/role#description Role#description}
   */
   readonly description?: string;
@@ -24,25 +19,25 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   readonly grantScopeId?: string;
   /**
   *  A list of stringified grants for the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/role#grant_strings Role#grant_strings}
   */
   readonly grantStrings?: string[];
   /**
   * The role name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/role#name Role#name}
   */
   readonly name?: string;
   /**
   * A list of principal (user or group) IDs to add as principals on the role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/role#principal_ids Role#principal_ids}
   */
   readonly principalIds?: string[];
   /**
   * The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/role#scope_id Role#scope_id}
   */
   readonly scopeId: string;

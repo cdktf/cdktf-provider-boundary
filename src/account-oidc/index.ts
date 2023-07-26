@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc
 // generated from terraform resource schema
 
@@ -14,31 +9,31 @@ import * as cdktf from 'cdktf';
 export interface AccountOidcConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID for the auth method.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc#auth_method_id AccountOidc#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The account description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc#description AccountOidc#description}
   */
   readonly description?: string;
   /**
   * The OIDC issuer.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc#issuer AccountOidc#issuer}
   */
   readonly issuer?: string;
   /**
   * The account name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc#name AccountOidc#name}
   */
   readonly name?: string;
   /**
   * The OIDC subject.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/account_oidc#subject AccountOidc#subject}
   */
   readonly subject?: string;

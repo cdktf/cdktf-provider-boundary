@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface ManagedGroupLdapConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID for the auth method.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The managed group description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
   */
   readonly description?: string;
   /**
   * The list of groups that make up the managed group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
   */
   readonly groupNames: string[];
   /**
   * The managed group name. Defaults to the resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
   */
   readonly name?: string;
