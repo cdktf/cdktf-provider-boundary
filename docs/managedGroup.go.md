@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/managedgroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/managedgroup"
 
 managedgroup.NewManagedGroup(scope Construct, id *string, config ManagedGroupConfig) ManagedGroup
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/managedgroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/managedgroup"
 
 managedgroup.ManagedGroup_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/managedgroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/managedgroup"
 
 managedgroup.ManagedGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ managedgroup.ManagedGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/managedgroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/managedgroup"
 
 managedgroup.ManagedGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.managedGroup.ManagedGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v6/managedgroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/managedgroup"
 
 &managedgroup.ManagedGroupConfig {
 	Connection: interface{},
