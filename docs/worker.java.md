@@ -1,6 +1,6 @@
 # `boundary_worker`
 
-Refer to the Terraform Registory for docs: [`boundary_worker`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker).
+Refer to the Terraform Registory for docs: [`boundary_worker`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker).
 
 # `worker` Submodule <a name="`worker` Submodule" id="@cdktf/provider-boundary.worker"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_worker`](https://registry.
 
 ### Worker <a name="Worker" id="@cdktf/provider-boundary.worker.Worker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker boundary_worker}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker boundary_worker}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.worker.Worker.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The description for the worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#description Worker#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#description Worker#description}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name for the worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#name Worker#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The scope for the worker. Defaults to `global`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#scope_id Worker#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#scope_id Worker#scope_id}
 
 ---
 
@@ -150,7 +150,7 @@ The worker authentication token required to register the worker for the worker-l
 
 Leaving this blank will result in a controller generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
 
 ---
 
@@ -909,7 +909,7 @@ public java.lang.String getDescription();
 
 The description for the worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#description Worker#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#description Worker#description}
 
 ---
 
@@ -923,7 +923,7 @@ public java.lang.String getName();
 
 The name for the worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#name Worker#name}
 
 ---
 
@@ -937,7 +937,7 @@ public java.lang.String getScopeId();
 
 The scope for the worker. Defaults to `global`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#scope_id Worker#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#scope_id Worker#scope_id}
 
 ---
 
@@ -953,7 +953,7 @@ The worker authentication token required to register the worker for the worker-l
 
 Leaving this blank will result in a controller generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
 
 ---
 

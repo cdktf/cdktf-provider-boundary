@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface HostSetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The host set description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set#description HostSet#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set#description HostSet#description}
   */
   readonly description?: string;
   /**
   * The catalog for the host set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set#host_catalog_id HostSet#host_catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set#host_catalog_id HostSet#host_catalog_id}
   */
   readonly hostCatalogId: string;
   /**
   * The list of host IDs contained in this set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set#host_ids HostSet#host_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set#host_ids HostSet#host_ids}
   */
   readonly hostIds?: string[];
   /**
   * The host set name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set#name HostSet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set#name HostSet#name}
   */
   readonly name?: string;
   /**
   * The type of host set
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set#type HostSet#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set#type HostSet#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set boundary_host_set}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set boundary_host_set}
 */
 export class HostSet extends cdktf.TerraformResource {
 
@@ -59,7 +59,7 @@ export class HostSet extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host_set boundary_host_set} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set boundary_host_set} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class HostSet extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_host_set',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.9',
+        providerVersion: '1.1.10',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

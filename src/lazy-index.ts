@@ -36,5 +36,6 @@ Object.defineProperty(exports, 'storageBucket', { get: function () { return requ
 Object.defineProperty(exports, 'target', { get: function () { return require('./target'); } });
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'worker', { get: function () { return require('./worker'); } });
+Object.defineProperty(exports, 'dataBoundaryScope', { get: function () { return require('./data-boundary-scope'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 

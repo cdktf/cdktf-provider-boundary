@@ -1,6 +1,6 @@
 # `boundary_target`
 
-Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target).
+Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target).
 
 # `target` Submodule <a name="`target` Submodule" id="@cdktf/provider-boundary.target"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.
 
 ### Target <a name="Target" id="@cdktf/provider-boundary.target.Target"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target boundary_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target boundary_target}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.target.Target.Initializer"></a>
 
@@ -1034,8 +1034,8 @@ const targetConfig: target.TargetConfig = { ... }
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.ingressWorkerFilter">ingressWorkerFilter</a></code> | <code>string</code> | HCP Only. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.injectedApplicationCredentialSourceIds">injectedApplicationCredentialSourceIds</a></code> | <code>string[]</code> | A list of injected application credential source ID's. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.name">name</a></code> | <code>string</code> | The target name. Defaults to the resource name. |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionConnectionLimit">sessionConnectionLimit</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#session_connection_limit Target#session_connection_limit}. |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionMaxSeconds">sessionMaxSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#session_max_seconds Target#session_max_seconds}. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionConnectionLimit">sessionConnectionLimit</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#session_connection_limit Target#session_connection_limit}. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.sessionMaxSeconds">sessionMaxSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#session_max_seconds Target#session_max_seconds}. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.storageBucketId">storageBucketId</a></code> | <code>string</code> | HCP/Ent Only. Storage bucket for this target. Only applicable for SSH targets. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.workerFilter">workerFilter</a></code> | <code>string</code> | Boolean expression to filter the workers for this target. |
 
@@ -1121,7 +1121,7 @@ public readonly scopeId: string;
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#scope_id Target#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#scope_id Target#scope_id}
 
 ---
 
@@ -1135,7 +1135,7 @@ public readonly type: string;
 
 The target resource type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#type Target#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#type Target#type}
 
 ---
 
@@ -1149,7 +1149,7 @@ public readonly address: string;
 
 Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#address Target#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#address Target#address}
 
 ---
 
@@ -1163,7 +1163,7 @@ public readonly brokeredCredentialSourceIds: string[];
 
 A list of brokered credential source ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
 
 ---
 
@@ -1177,7 +1177,7 @@ public readonly defaultClientPort: number;
 
 The default client port for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#default_client_port Target#default_client_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#default_client_port Target#default_client_port}
 
 ---
 
@@ -1191,7 +1191,7 @@ public readonly defaultPort: number;
 
 The default port for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#default_port Target#default_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#default_port Target#default_port}
 
 ---
 
@@ -1205,7 +1205,7 @@ public readonly description: string;
 
 The target description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#description Target#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#description Target#description}
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly egressWorkerFilter: string;
 
 Boolean expression to filter the workers used to access this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
 
 ---
 
@@ -1233,7 +1233,7 @@ public readonly enableSessionRecording: boolean | IResolvable;
 
 HCP/Ent Only. Enable sessions recording for this target. Only applicable for SSH targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#enable_session_recording Target#enable_session_recording}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#enable_session_recording Target#enable_session_recording}
 
 ---
 
@@ -1247,7 +1247,7 @@ public readonly hostSourceIds: string[];
 
 A list of host source ID's. Cannot be used alongside address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#host_source_ids Target#host_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#host_source_ids Target#host_source_ids}
 
 ---
 
@@ -1263,7 +1263,7 @@ HCP Only.
 
 Boolean expression to filter the workers a user will connect to when initiating a session against this target
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
 
 ---
 
@@ -1277,7 +1277,7 @@ public readonly injectedApplicationCredentialSourceIds: string[];
 
 A list of injected application credential source ID's.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
 
 ---
 
@@ -1291,7 +1291,7 @@ public readonly name: string;
 
 The target name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#name Target#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#name Target#name}
 
 ---
 
@@ -1303,7 +1303,7 @@ public readonly sessionConnectionLimit: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#session_connection_limit Target#session_connection_limit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#session_connection_limit Target#session_connection_limit}.
 
 ---
 
@@ -1315,7 +1315,7 @@ public readonly sessionMaxSeconds: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#session_max_seconds Target#session_max_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#session_max_seconds Target#session_max_seconds}.
 
 ---
 
@@ -1329,7 +1329,7 @@ public readonly storageBucketId: string;
 
 HCP/Ent Only. Storage bucket for this target. Only applicable for SSH targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#storage_bucket_id Target#storage_bucket_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#storage_bucket_id Target#storage_bucket_id}
 
 ---
 
@@ -1343,7 +1343,7 @@ public readonly workerFilter: string;
 
 Boolean expression to filter the workers for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/target#worker_filter Target#worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#worker_filter Target#worker_filter}
 
 ---
 
