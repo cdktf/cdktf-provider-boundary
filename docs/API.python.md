@@ -16,6 +16,7 @@ The following submodules are available:
 - [credentialStoreStatic](./credentialStoreStatic.python.md)
 - [credentialStoreVault](./credentialStoreVault.python.md)
 - [credentialUsernamePassword](./credentialUsernamePassword.python.md)
+- [dataBoundaryScope](./dataBoundaryScope.python.md)
 - [group](./group.python.md)
 - [host](./host.python.md)
 - [hostCatalog](./hostCatalog.python.md)

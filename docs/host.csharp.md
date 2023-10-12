@@ -1,6 +1,6 @@
 # `boundary_host`
 
-Refer to the Terraform Registory for docs: [`boundary_host`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host).
+Refer to the Terraform Registory for docs: [`boundary_host`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host).
 
 # `host` Submodule <a name="`host` Submodule" id="@cdktf/provider-boundary.host"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_host`](https://registry.te
 
 ### Host <a name="Host" id="@cdktf/provider-boundary.host.Host"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host boundary_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host boundary_host}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.host.Host.Initializer"></a>
 
@@ -686,7 +686,7 @@ new HostConfig {
 | <code><a href="#@cdktf/provider-boundary.host.HostConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.host.HostConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.host.HostConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.host.HostConfig.property.hostCatalogId">HostCatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host#host_catalog_id Host#host_catalog_id}. |
+| <code><a href="#@cdktf/provider-boundary.host.HostConfig.property.hostCatalogId">HostCatalogId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host#host_catalog_id Host#host_catalog_id}. |
 | <code><a href="#@cdktf/provider-boundary.host.HostConfig.property.type">Type</a></code> | <code>string</code> | The type of host. |
 | <code><a href="#@cdktf/provider-boundary.host.HostConfig.property.address">Address</a></code> | <code>string</code> | The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name. |
 | <code><a href="#@cdktf/provider-boundary.host.HostConfig.property.description">Description</a></code> | <code>string</code> | The host description. |
@@ -772,7 +772,7 @@ public string HostCatalogId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host#host_catalog_id Host#host_catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host#host_catalog_id Host#host_catalog_id}.
 
 ---
 
@@ -786,7 +786,7 @@ public string Type { get; set; }
 
 The type of host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host#type Host#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host#type Host#type}
 
 ---
 
@@ -800,7 +800,7 @@ public string Address { get; set; }
 
 The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host#address Host#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host#address Host#address}
 
 ---
 
@@ -814,7 +814,7 @@ public string Description { get; set; }
 
 The host description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host#description Host#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host#description Host#description}
 
 ---
 
@@ -828,7 +828,7 @@ public string Name { get; set; }
 
 The host name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/host#name Host#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host#name Host#name}
 
 ---
 

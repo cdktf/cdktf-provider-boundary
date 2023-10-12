@@ -1,6 +1,6 @@
 # `boundary_auth_method_ldap`
 
-Refer to the Terraform Registory for docs: [`boundary_auth_method_ldap`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap).
+Refer to the Terraform Registory for docs: [`boundary_auth_method_ldap`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap).
 
 # `authMethodLdap` Submodule <a name="`authMethodLdap` Submodule" id="@cdktf/provider-boundary.authMethodLdap"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`boundary_auth_method_ldap`](https:/
 
 ### AuthMethodLdap <a name="AuthMethodLdap" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap boundary_auth_method_ldap}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap boundary_auth_method_ldap}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetClientCertificate">ResetClientCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetClientCertificateKey">ResetClientCertificateKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetClientCertificateKeyHmac">ResetClientCertificateKeyHmac</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetDereferenceAliases">ResetDereferenceAliases</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetDiscoverDn">ResetDiscoverDn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetEnableGroups">ResetEnableGroups</a></code> | *No description.* |
@@ -87,6 +88,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetGroupFilter">ResetGroupFilter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetInsecureTls">ResetInsecureTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetIsPrimaryForScope">ResetIsPrimaryForScope</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetMaximumPageSize">ResetMaximumPageSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetStartTls">ResetStartTls</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetState">ResetState</a></code> | *No description.* |
@@ -338,6 +340,12 @@ private void ResetClientCertificateKey()
 private void ResetClientCertificateKeyHmac()
 ```
 
+##### `ResetDereferenceAliases` <a name="ResetDereferenceAliases" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetDereferenceAliases"></a>
+
+```csharp
+private void ResetDereferenceAliases()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetDescription"></a>
 
 ```csharp
@@ -384,6 +392,12 @@ private void ResetInsecureTls()
 
 ```csharp
 private void ResetIsPrimaryForScope()
+```
+
+##### `ResetMaximumPageSize` <a name="ResetMaximumPageSize" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetMaximumPageSize"></a>
+
+```csharp
+private void ResetMaximumPageSize()
 ```
 
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetName"></a>
@@ -544,6 +558,7 @@ AuthMethodLdap.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.clientCertificateInput">ClientCertificateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.clientCertificateKeyHmacInput">ClientCertificateKeyHmacInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.clientCertificateKeyInput">ClientCertificateKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.dereferenceAliasesInput">DereferenceAliasesInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDnInput">DiscoverDnInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroupsInput">EnableGroupsInput</a></code> | <code>object</code> | *No description.* |
@@ -552,6 +567,7 @@ AuthMethodLdap.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupFilterInput">GroupFilterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScopeInput">IsPrimaryForScopeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.maximumPageSizeInput">MaximumPageSizeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.scopeIdInput">ScopeIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTlsInput">StartTlsInput</a></code> | <code>object</code> | *No description.* |
@@ -572,6 +588,7 @@ AuthMethodLdap.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.clientCertificate">ClientCertificate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.clientCertificateKey">ClientCertificateKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.clientCertificateKeyHmac">ClientCertificateKeyHmac</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.dereferenceAliases">DereferenceAliases</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDn">DiscoverDn</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroups">EnableGroups</a></code> | <code>object</code> | *No description.* |
@@ -580,6 +597,7 @@ AuthMethodLdap.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupFilter">GroupFilter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTls">InsecureTls</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScope">IsPrimaryForScope</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.maximumPageSize">MaximumPageSize</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.scopeId">ScopeId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTls">StartTls</a></code> | <code>object</code> | *No description.* |
@@ -836,6 +854,16 @@ public string ClientCertificateKeyInput { get; }
 
 ---
 
+##### `DereferenceAliasesInput`<sup>Optional</sup> <a name="DereferenceAliasesInput" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.dereferenceAliasesInput"></a>
+
+```csharp
+public string DereferenceAliasesInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.descriptionInput"></a>
 
 ```csharp
@@ -913,6 +941,16 @@ public object IsPrimaryForScopeInput { get; }
 ```
 
 - *Type:* object
+
+---
+
+##### `MaximumPageSizeInput`<sup>Optional</sup> <a name="MaximumPageSizeInput" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.maximumPageSizeInput"></a>
+
+```csharp
+public double MaximumPageSizeInput { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -1116,6 +1154,16 @@ public string ClientCertificateKeyHmac { get; }
 
 ---
 
+##### `DereferenceAliases`<sup>Required</sup> <a name="DereferenceAliases" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.dereferenceAliases"></a>
+
+```csharp
+public string DereferenceAliases { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.description"></a>
 
 ```csharp
@@ -1193,6 +1241,16 @@ public object IsPrimaryForScope { get; }
 ```
 
 - *Type:* object
+
+---
+
+##### `MaximumPageSize`<sup>Required</sup> <a name="MaximumPageSize" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.maximumPageSize"></a>
+
+```csharp
+public double MaximumPageSize { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -1351,6 +1409,7 @@ new AuthMethodLdapConfig {
     string ClientCertificate = null,
     string ClientCertificateKey = null,
     string ClientCertificateKeyHmac = null,
+    string DereferenceAliases = null,
     string Description = null,
     object DiscoverDn = null,
     object EnableGroups = null,
@@ -1359,6 +1418,7 @@ new AuthMethodLdapConfig {
     string GroupFilter = null,
     object InsecureTls = null,
     object IsPrimaryForScope = null,
+    double MaximumPageSize = null,
     string Name = null,
     object StartTls = null,
     string State = null,
@@ -1393,6 +1453,7 @@ new AuthMethodLdapConfig {
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.clientCertificate">ClientCertificate</a></code> | <code>string</code> | PEM-encoded X.509 client certificate in ASN.1 DER form that can be used to authenticate against an LDAP server(optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.clientCertificateKey">ClientCertificateKey</a></code> | <code>string</code> | PEM-encoded X.509 client certificate key in PKCS #8, ASN.1 DER form used with the client certificate (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.clientCertificateKeyHmac">ClientCertificateKeyHmac</a></code> | <code>string</code> | The HMAC of the client certificate key returned by the Boundary controller, which is used for comparison after initial setting of the value. |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.dereferenceAliases">DereferenceAliases</a></code> | <code>string</code> | Control how aliases are dereferenced when performing the search. Can be one of: NeverDerefAliases, DerefInSearching, DerefFindingBaseObj, and DerefAlways (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.description">Description</a></code> | <code>string</code> | The auth method description. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.discoverDn">DiscoverDn</a></code> | <code>object</code> | Use anon bind to discover the bind DN of a user (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.enableGroups">EnableGroups</a></code> | <code>object</code> | Find the authenticated user's groups during authentication (optional). |
@@ -1401,6 +1462,7 @@ new AuthMethodLdapConfig {
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.groupFilter">GroupFilter</a></code> | <code>string</code> | A go template used to construct a LDAP group search filter (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.insecureTls">InsecureTls</a></code> | <code>object</code> | Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.isPrimaryForScope">IsPrimaryForScope</a></code> | <code>object</code> | When true, makes this auth method the primary auth method for the scope in which it resides. |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.maximumPageSize">MaximumPageSize</a></code> | <code>double</code> | MaximumPageSize specifies a maximum search result size to use when retrieving the authenticated user's groups (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.name">Name</a></code> | <code>string</code> | The auth method name. Defaults to the resource name. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.startTls">StartTls</a></code> | <code>object</code> | Issue StartTLS command after connecting (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.state">State</a></code> | <code>string</code> | Can be one of 'inactive', 'active-private', or 'active-public'. Defaults to active-public. |
@@ -1494,7 +1556,7 @@ public string ScopeId { get; set; }
 
 The scope ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#scope_id AuthMethodLdap#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#scope_id AuthMethodLdap#scope_id}
 
 ---
 
@@ -1508,7 +1570,7 @@ public string[] AccountAttributeMaps { get; set; }
 
 Account attribute maps fullname and email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#account_attribute_maps AuthMethodLdap#account_attribute_maps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#account_attribute_maps AuthMethodLdap#account_attribute_maps}
 
 ---
 
@@ -1522,7 +1584,7 @@ public object AnonGroupSearch { get; set; }
 
 Use anon bind when performing LDAP group searches (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#anon_group_search AuthMethodLdap#anon_group_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#anon_group_search AuthMethodLdap#anon_group_search}
 
 ---
 
@@ -1536,7 +1598,7 @@ public string BindDn { get; set; }
 
 The distinguished name of entry to bind when performing user and group searches (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#bind_dn AuthMethodLdap#bind_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#bind_dn AuthMethodLdap#bind_dn}
 
 ---
 
@@ -1550,7 +1612,7 @@ public string BindPassword { get; set; }
 
 The password to use along with bind-dn performing user and group searches (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#bind_password AuthMethodLdap#bind_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#bind_password AuthMethodLdap#bind_password}
 
 ---
 
@@ -1564,7 +1626,7 @@ public string BindPasswordHmac { get; set; }
 
 The HMAC of the bind password returned by the Boundary controller, which is used for comparison after initial setting of the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#bind_password_hmac AuthMethodLdap#bind_password_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#bind_password_hmac AuthMethodLdap#bind_password_hmac}
 
 ---
 
@@ -1578,7 +1640,7 @@ public string[] Certificates { get; set; }
 
 PEM-encoded X.509 CA certificate in ASN.1 DER form that can be used as a trust anchor when connecting to an LDAP server(optional).  This may be specified multiple times.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#certificates AuthMethodLdap#certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#certificates AuthMethodLdap#certificates}
 
 ---
 
@@ -1592,7 +1654,7 @@ public string ClientCertificate { get; set; }
 
 PEM-encoded X.509 client certificate in ASN.1 DER form that can be used to authenticate against an LDAP server(optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#client_certificate AuthMethodLdap#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#client_certificate AuthMethodLdap#client_certificate}
 
 ---
 
@@ -1606,7 +1668,7 @@ public string ClientCertificateKey { get; set; }
 
 PEM-encoded X.509 client certificate key in PKCS #8, ASN.1 DER form used with the client certificate (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#client_certificate_key AuthMethodLdap#client_certificate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#client_certificate_key AuthMethodLdap#client_certificate_key}
 
 ---
 
@@ -1620,7 +1682,21 @@ public string ClientCertificateKeyHmac { get; set; }
 
 The HMAC of the client certificate key returned by the Boundary controller, which is used for comparison after initial setting of the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#client_certificate_key_hmac AuthMethodLdap#client_certificate_key_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#client_certificate_key_hmac AuthMethodLdap#client_certificate_key_hmac}
+
+---
+
+##### `DereferenceAliases`<sup>Optional</sup> <a name="DereferenceAliases" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.dereferenceAliases"></a>
+
+```csharp
+public string DereferenceAliases { get; set; }
+```
+
+- *Type:* string
+
+Control how aliases are dereferenced when performing the search. Can be one of: NeverDerefAliases, DerefInSearching, DerefFindingBaseObj, and DerefAlways (optional).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#dereference_aliases AuthMethodLdap#dereference_aliases}
 
 ---
 
@@ -1634,7 +1710,7 @@ public string Description { get; set; }
 
 The auth method description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#description AuthMethodLdap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#description AuthMethodLdap#description}
 
 ---
 
@@ -1648,7 +1724,7 @@ public object DiscoverDn { get; set; }
 
 Use anon bind to discover the bind DN of a user (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#discover_dn AuthMethodLdap#discover_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#discover_dn AuthMethodLdap#discover_dn}
 
 ---
 
@@ -1662,7 +1738,7 @@ public object EnableGroups { get; set; }
 
 Find the authenticated user's groups during authentication (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#enable_groups AuthMethodLdap#enable_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#enable_groups AuthMethodLdap#enable_groups}
 
 ---
 
@@ -1676,7 +1752,7 @@ public string GroupAttr { get; set; }
 
 The attribute that enumerates a user's group membership from entries returned by a group search (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#group_attr AuthMethodLdap#group_attr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#group_attr AuthMethodLdap#group_attr}
 
 ---
 
@@ -1690,7 +1766,7 @@ public string GroupDn { get; set; }
 
 The base DN under which to perform group search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#group_dn AuthMethodLdap#group_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#group_dn AuthMethodLdap#group_dn}
 
 ---
 
@@ -1704,7 +1780,7 @@ public string GroupFilter { get; set; }
 
 A go template used to construct a LDAP group search filter (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#group_filter AuthMethodLdap#group_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#group_filter AuthMethodLdap#group_filter}
 
 ---
 
@@ -1718,7 +1794,7 @@ public object InsecureTls { get; set; }
 
 Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#insecure_tls AuthMethodLdap#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#insecure_tls AuthMethodLdap#insecure_tls}
 
 ---
 
@@ -1734,7 +1810,21 @@ When true, makes this auth method the primary auth method for the scope in which
 
 The primary auth method for a scope means the the user will be automatically created when they login using an LDAP account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#is_primary_for_scope AuthMethodLdap#is_primary_for_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#is_primary_for_scope AuthMethodLdap#is_primary_for_scope}
+
+---
+
+##### `MaximumPageSize`<sup>Optional</sup> <a name="MaximumPageSize" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.maximumPageSize"></a>
+
+```csharp
+public double MaximumPageSize { get; set; }
+```
+
+- *Type:* double
+
+MaximumPageSize specifies a maximum search result size to use when retrieving the authenticated user's groups (optional).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#maximum_page_size AuthMethodLdap#maximum_page_size}
 
 ---
 
@@ -1748,7 +1838,7 @@ public string Name { get; set; }
 
 The auth method name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#name AuthMethodLdap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#name AuthMethodLdap#name}
 
 ---
 
@@ -1762,7 +1852,7 @@ public object StartTls { get; set; }
 
 Issue StartTLS command after connecting (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#start_tls AuthMethodLdap#start_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#start_tls AuthMethodLdap#start_tls}
 
 ---
 
@@ -1776,7 +1866,7 @@ public string State { get; set; }
 
 Can be one of 'inactive', 'active-private', or 'active-public'. Defaults to active-public.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#state AuthMethodLdap#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#state AuthMethodLdap#state}
 
 ---
 
@@ -1790,7 +1880,7 @@ public string Type { get; set; }
 
 The type of auth method; hardcoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#type AuthMethodLdap#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#type AuthMethodLdap#type}
 
 ---
 
@@ -1804,7 +1894,7 @@ public string UpnDomain { get; set; }
 
 The userPrincipalDomain used to construct the UPN string for the authenticating user (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#upn_domain AuthMethodLdap#upn_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#upn_domain AuthMethodLdap#upn_domain}
 
 ---
 
@@ -1818,7 +1908,7 @@ public string[] Urls { get; set; }
 
 The LDAP URLs that specify LDAP servers to connect to (required).  May be specified multiple times.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#urls AuthMethodLdap#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#urls AuthMethodLdap#urls}
 
 ---
 
@@ -1832,7 +1922,7 @@ public string UserAttr { get; set; }
 
 The attribute on user entry matching the username passed when authenticating (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#user_attr AuthMethodLdap#user_attr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#user_attr AuthMethodLdap#user_attr}
 
 ---
 
@@ -1846,7 +1936,7 @@ public string UserDn { get; set; }
 
 The base DN under which to perform user search (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#user_dn AuthMethodLdap#user_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#user_dn AuthMethodLdap#user_dn}
 
 ---
 
@@ -1860,7 +1950,7 @@ public string UserFilter { get; set; }
 
 A go template used to construct a LDAP user search filter (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#user_filter AuthMethodLdap#user_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#user_filter AuthMethodLdap#user_filter}
 
 ---
 
@@ -1874,7 +1964,7 @@ public object UseTokenGroups { get; set; }
 
 Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/auth_method_ldap#use_token_groups AuthMethodLdap#use_token_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#use_token_groups AuthMethodLdap#use_token_groups}
 
 ---
 

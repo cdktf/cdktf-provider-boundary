@@ -16,6 +16,7 @@ The following submodules are available:
 - [credentialStoreStatic](./credentialStoreStatic.typescript.md)
 - [credentialStoreVault](./credentialStoreVault.typescript.md)
 - [credentialUsernamePassword](./credentialUsernamePassword.typescript.md)
+- [dataBoundaryScope](./dataBoundaryScope.typescript.md)
 - [group](./group.typescript.md)
 - [host](./host.typescript.md)
 - [hostCatalog](./hostCatalog.typescript.md)

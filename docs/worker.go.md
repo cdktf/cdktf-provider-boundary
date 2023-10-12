@@ -1,6 +1,6 @@
 # `boundary_worker`
 
-Refer to the Terraform Registory for docs: [`boundary_worker`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker).
+Refer to the Terraform Registory for docs: [`boundary_worker`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker).
 
 # `worker` Submodule <a name="`worker` Submodule" id="@cdktf/provider-boundary.worker"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`boundary_worker`](https://registry.
 
 ### Worker <a name="Worker" id="@cdktf/provider-boundary.worker.Worker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker boundary_worker}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker boundary_worker}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.worker.Worker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 worker.NewWorker(scope Construct, id *string, config WorkerConfig) Worker
 ```
@@ -298,7 +298,7 @@ func ResetWorkerGeneratedAuthToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.worker.Worker.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 worker.Worker_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.worker.Worker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 worker.Worker_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ worker.Worker_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.worker.Worker.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 worker.Worker_IsTerraformResource(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.worker.WorkerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v7/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 &worker.WorkerConfig {
 	Connection: interface{},
@@ -801,7 +801,7 @@ Description *string
 
 The description for the worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#description Worker#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#description Worker#description}
 
 ---
 
@@ -815,7 +815,7 @@ Name *string
 
 The name for the worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#name Worker#name}
 
 ---
 
@@ -829,7 +829,7 @@ ScopeId *string
 
 The scope for the worker. Defaults to `global`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#scope_id Worker#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#scope_id Worker#scope_id}
 
 ---
 
@@ -845,7 +845,7 @@ The worker authentication token required to register the worker for the worker-l
 
 Leaving this blank will result in a controller generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.9/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
 
 ---
 
