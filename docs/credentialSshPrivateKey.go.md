@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
 
 credentialsshprivatekey.NewCredentialSshPrivateKey(scope Construct, id *string, config CredentialSshPrivateKeyConfig) CredentialSshPrivateKey
 ```
@@ -353,7 +353,7 @@ func ResetPrivateKeyPassphrase()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
 
 credentialsshprivatekey.CredentialSshPrivateKey_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
 
 credentialsshprivatekey.CredentialSshPrivateKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ credentialsshprivatekey.CredentialSshPrivateKey_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
 
 credentialsshprivatekey.CredentialSshPrivateKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ credentialsshprivatekey.CredentialSshPrivateKey_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
 
 credentialsshprivatekey.CredentialSshPrivateKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -807,7 +807,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
 
 &credentialsshprivatekey.CredentialSshPrivateKeyConfig {
 	Connection: interface{},
