@@ -36,6 +36,20 @@ export class DataBoundaryScope extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "boundary_scope";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataBoundaryScope resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataBoundaryScope to import
+  * @param importFromId The id of the existing DataBoundaryScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/data-sources/scope#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataBoundaryScope to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "boundary_scope", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
