@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_json
 // generated from terraform resource schema
 
@@ -47,6 +42,20 @@ export class CredentialJson extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "boundary_credential_json";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a CredentialJson resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the CredentialJson to import
+  * @param importFromId The id of the existing CredentialJson that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_json#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the CredentialJson to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "boundary_credential_json", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
