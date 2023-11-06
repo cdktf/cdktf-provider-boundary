@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.worker.Worker.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 worker.NewWorker(scope Construct, id *string, config WorkerConfig) Worker
 ```
@@ -360,7 +360,7 @@ func ResetWorkerGeneratedAuthToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.worker.Worker.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 worker.Worker_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.worker.Worker.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 worker.Worker_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ worker.Worker_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.worker.Worker.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 worker.Worker_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ worker.Worker_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.worker.Worker.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 worker.Worker_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.worker.WorkerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/worker"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/worker"
 
 &worker.WorkerConfig {
 	Connection: interface{},
