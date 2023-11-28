@@ -1,7 +1,3 @@
-# `boundary_host_catalog`
-
-Refer to the Terraform Registory for docs: [`boundary_host_catalog`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_catalog).
-
 # `hostCatalog` Submodule <a name="`hostCatalog` Submodule" id="@cdktf/provider-boundary.hostCatalog"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

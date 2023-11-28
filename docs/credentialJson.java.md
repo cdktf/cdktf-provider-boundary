@@ -1,7 +1,3 @@
-# `boundary_credential_json`
-
-Refer to the Terraform Registory for docs: [`boundary_credential_json`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_json).
-
 # `credentialJson` Submodule <a name="`credentialJson` Submodule" id="@cdktf/provider-boundary.credentialJson"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

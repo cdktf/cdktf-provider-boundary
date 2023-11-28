@@ -1,7 +1,3 @@
-# `boundary_account_password`
-
-Refer to the Terraform Registory for docs: [`boundary_account_password`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/account_password).
-
 # `accountPassword` Submodule <a name="`accountPassword` Submodule" id="@cdktf/provider-boundary.accountPassword"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

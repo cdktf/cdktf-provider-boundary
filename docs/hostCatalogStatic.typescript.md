@@ -1,7 +1,3 @@
-# `boundary_host_catalog_static`
-
-Refer to the Terraform Registory for docs: [`boundary_host_catalog_static`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_catalog_static).
-
 # `hostCatalogStatic` Submodule <a name="`hostCatalogStatic` Submodule" id="@cdktf/provider-boundary.hostCatalogStatic"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

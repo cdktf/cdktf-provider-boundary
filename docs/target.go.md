@@ -1,7 +1,3 @@
-# `boundary_target`
-
-Refer to the Terraform Registory for docs: [`boundary_target`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target).
-
 # `target` Submodule <a name="`target` Submodule" id="@cdktf/provider-boundary.target"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
