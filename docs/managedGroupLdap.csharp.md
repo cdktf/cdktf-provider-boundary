@@ -1,7 +1,3 @@
-# `boundary_managed_group_ldap`
-
-Refer to the Terraform Registory for docs: [`boundary_managed_group_ldap`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/managed_group_ldap).
-
 # `managedGroupLdap` Submodule <a name="`managedGroupLdap` Submodule" id="@cdktf/provider-boundary.managedGroupLdap"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `boundary_host_set`
-
-Refer to the Terraform Registory for docs: [`boundary_host_set`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set).
-
 # `hostSet` Submodule <a name="`hostSet` Submodule" id="@cdktf/provider-boundary.hostSet"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

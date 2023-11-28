@@ -1,7 +1,3 @@
-# `boundary_auth_method`
-
-Refer to the Terraform Registory for docs: [`boundary_auth_method`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method).
-
 # `authMethod` Submodule <a name="`authMethod` Submodule" id="@cdktf/provider-boundary.authMethod"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `boundary_credential_store_static`
-
-Refer to the Terraform Registory for docs: [`boundary_credential_store_static`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_store_static).
-
 # `credentialStoreStatic` Submodule <a name="`credentialStoreStatic` Submodule" id="@cdktf/provider-boundary.credentialStoreStatic"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

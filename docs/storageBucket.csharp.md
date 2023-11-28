@@ -1,7 +1,3 @@
-# `boundary_storage_bucket`
-
-Refer to the Terraform Registory for docs: [`boundary_storage_bucket`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/storage_bucket).
-
 # `storageBucket` Submodule <a name="`storageBucket` Submodule" id="@cdktf/provider-boundary.storageBucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

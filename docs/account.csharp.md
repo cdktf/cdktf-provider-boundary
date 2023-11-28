@@ -1,7 +1,3 @@
-# `boundary_account`
-
-Refer to the Terraform Registory for docs: [`boundary_account`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/account).
-
 # `account` Submodule <a name="`account` Submodule" id="@cdktf/provider-boundary.account"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

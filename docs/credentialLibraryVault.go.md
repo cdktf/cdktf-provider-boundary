@@ -1,7 +1,3 @@
-# `boundary_credential_library_vault`
-
-Refer to the Terraform Registory for docs: [`boundary_credential_library_vault`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_library_vault).
-
 # `credentialLibraryVault` Submodule <a name="`credentialLibraryVault` Submodule" id="@cdktf/provider-boundary.credentialLibraryVault"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvault"
 
 credentiallibraryvault.NewCredentialLibraryVault(scope Construct, id *string, config CredentialLibraryVaultConfig) CredentialLibraryVault
 ```
@@ -374,7 +370,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvault"
 
 credentiallibraryvault.CredentialLibraryVault_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvault"
 
 credentiallibraryvault.CredentialLibraryVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ credentiallibraryvault.CredentialLibraryVault_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvault"
 
 credentiallibraryvault.CredentialLibraryVault_IsTerraformResource(x interface{}) *bool
 ```
@@ -434,7 +430,7 @@ credentiallibraryvault.CredentialLibraryVault_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvault"
 
 credentiallibraryvault.CredentialLibraryVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -850,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.credentialLibraryVault.CredentialLibraryVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvault"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvault"
 
 &credentiallibraryvault.CredentialLibraryVaultConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `boundary_worker`
-
-Refer to the Terraform Registory for docs: [`boundary_worker`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/worker).
-
 # `worker` Submodule <a name="`worker` Submodule" id="@cdktf/provider-boundary.worker"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `boundary_auth_method_ldap`
-
-Refer to the Terraform Registory for docs: [`boundary_auth_method_ldap`](https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap).
-
 # `authMethodLdap` Submodule <a name="`authMethodLdap` Submodule" id="@cdktf/provider-boundary.authMethodLdap"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodldap"
 
 authmethodldap.NewAuthMethodLdap(scope Construct, id *string, config AuthMethodLdapConfig) AuthMethodLdap
 ```
@@ -535,7 +531,7 @@ func ResetUseTokenGroups()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodldap"
 
 authmethodldap.AuthMethodLdap_IsConstruct(x interface{}) *bool
 ```
@@ -567,7 +563,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodldap"
 
 authmethodldap.AuthMethodLdap_IsTerraformElement(x interface{}) *bool
 ```
@@ -581,7 +577,7 @@ authmethodldap.AuthMethodLdap_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodldap"
 
 authmethodldap.AuthMethodLdap_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +591,7 @@ authmethodldap.AuthMethodLdap_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodldap"
 
 authmethodldap.AuthMethodLdap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1495,7 +1491,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodldap"
 
 &authmethodldap.AuthMethodLdapConfig {
 	Connection: interface{},
