@@ -36,6 +36,10 @@ export * as storageBucket from './storage-bucket';
 export * as target from './target';
 export * as user from './user';
 export * as worker from './worker';
+export * as dataBoundaryAccount from './data-boundary-account';
+export * as dataBoundaryAuthMethod from './data-boundary-auth-method';
+export * as dataBoundaryGroup from './data-boundary-group';
 export * as dataBoundaryScope from './data-boundary-scope';
+export * as dataBoundaryUser from './data-boundary-user';
 export * as provider from './provider';
 

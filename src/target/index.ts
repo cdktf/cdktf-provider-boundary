@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,105 +15,105 @@ export interface TargetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#address Target#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#address Target#address}
   */
   readonly address?: string;
   /**
   * A list of brokered credential source ID's.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#brokered_credential_source_ids Target#brokered_credential_source_ids}
   */
   readonly brokeredCredentialSourceIds?: string[];
   /**
   * The default client port for this target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#default_client_port Target#default_client_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#default_client_port Target#default_client_port}
   */
   readonly defaultClientPort?: number;
   /**
   * The default port for this target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#default_port Target#default_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#default_port Target#default_port}
   */
   readonly defaultPort?: number;
   /**
   * The target description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#description Target#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#description Target#description}
   */
   readonly description?: string;
   /**
   * Boolean expression to filter the workers used to access this target
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#egress_worker_filter Target#egress_worker_filter}
   */
   readonly egressWorkerFilter?: string;
   /**
   * HCP/Ent Only. Enable sessions recording for this target. Only applicable for SSH targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#enable_session_recording Target#enable_session_recording}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#enable_session_recording Target#enable_session_recording}
   */
   readonly enableSessionRecording?: boolean | cdktf.IResolvable;
   /**
   * A list of host source ID's. Cannot be used alongside address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#host_source_ids Target#host_source_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#host_source_ids Target#host_source_ids}
   */
   readonly hostSourceIds?: string[];
   /**
   * HCP Only. Boolean expression to filter the workers a user will connect to when initiating a session against this target
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#ingress_worker_filter Target#ingress_worker_filter}
   */
   readonly ingressWorkerFilter?: string;
   /**
   * A list of injected application credential source ID's.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#injected_application_credential_source_ids Target#injected_application_credential_source_ids}
   */
   readonly injectedApplicationCredentialSourceIds?: string[];
   /**
   * The target name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#name Target#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#name Target#name}
   */
   readonly name?: string;
   /**
   * The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#scope_id Target#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#scope_id Target#scope_id}
   */
   readonly scopeId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#session_connection_limit Target#session_connection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#session_connection_limit Target#session_connection_limit}
   */
   readonly sessionConnectionLimit?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#session_max_seconds Target#session_max_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#session_max_seconds Target#session_max_seconds}
   */
   readonly sessionMaxSeconds?: number;
   /**
   * HCP/Ent Only. Storage bucket for this target. Only applicable for SSH targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#storage_bucket_id Target#storage_bucket_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#storage_bucket_id Target#storage_bucket_id}
   */
   readonly storageBucketId?: string;
   /**
   * The target resource type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#type Target#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#type Target#type}
   */
   readonly type: string;
   /**
   * Boolean expression to filter the workers for this target
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#worker_filter Target#worker_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#worker_filter Target#worker_filter}
   */
   readonly workerFilter?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target boundary_target}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target boundary_target}
 */
 export class Target extends cdktf.TerraformResource {
 
@@ -129,7 +129,7 @@ export class Target extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Target resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Target to import
-  * @param importFromId The id of the existing Target that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Target that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Target to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -141,7 +141,7 @@ export class Target extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/target boundary_target} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/target boundary_target} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -152,7 +152,7 @@ export class Target extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_target',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.10',
+        providerVersion: '1.1.11',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

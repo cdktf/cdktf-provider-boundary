@@ -4,7 +4,7 @@
 
 ### AuthMethodLdap <a name="AuthMethodLdap" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap boundary_auth_method_ldap}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap boundary_auth_method_ldap}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer"></a>
 
@@ -663,7 +663,7 @@ The construct id used in the generated config for the AuthMethodLdap to import.
 
 The id of the existing AuthMethodLdap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1701,7 +1701,7 @@ public string ScopeId { get; set; }
 
 The scope ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#scope_id AuthMethodLdap#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#scope_id AuthMethodLdap#scope_id}
 
 ---
 
@@ -1715,7 +1715,7 @@ public string[] AccountAttributeMaps { get; set; }
 
 Account attribute maps fullname and email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#account_attribute_maps AuthMethodLdap#account_attribute_maps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#account_attribute_maps AuthMethodLdap#account_attribute_maps}
 
 ---
 
@@ -1729,7 +1729,7 @@ public object AnonGroupSearch { get; set; }
 
 Use anon bind when performing LDAP group searches (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#anon_group_search AuthMethodLdap#anon_group_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#anon_group_search AuthMethodLdap#anon_group_search}
 
 ---
 
@@ -1743,7 +1743,7 @@ public string BindDn { get; set; }
 
 The distinguished name of entry to bind when performing user and group searches (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#bind_dn AuthMethodLdap#bind_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#bind_dn AuthMethodLdap#bind_dn}
 
 ---
 
@@ -1757,7 +1757,7 @@ public string BindPassword { get; set; }
 
 The password to use along with bind-dn performing user and group searches (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#bind_password AuthMethodLdap#bind_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#bind_password AuthMethodLdap#bind_password}
 
 ---
 
@@ -1771,7 +1771,7 @@ public string BindPasswordHmac { get; set; }
 
 The HMAC of the bind password returned by the Boundary controller, which is used for comparison after initial setting of the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#bind_password_hmac AuthMethodLdap#bind_password_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#bind_password_hmac AuthMethodLdap#bind_password_hmac}
 
 ---
 
@@ -1785,7 +1785,7 @@ public string[] Certificates { get; set; }
 
 PEM-encoded X.509 CA certificate in ASN.1 DER form that can be used as a trust anchor when connecting to an LDAP server(optional).  This may be specified multiple times.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#certificates AuthMethodLdap#certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#certificates AuthMethodLdap#certificates}
 
 ---
 
@@ -1799,7 +1799,7 @@ public string ClientCertificate { get; set; }
 
 PEM-encoded X.509 client certificate in ASN.1 DER form that can be used to authenticate against an LDAP server(optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#client_certificate AuthMethodLdap#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#client_certificate AuthMethodLdap#client_certificate}
 
 ---
 
@@ -1813,7 +1813,7 @@ public string ClientCertificateKey { get; set; }
 
 PEM-encoded X.509 client certificate key in PKCS #8, ASN.1 DER form used with the client certificate (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#client_certificate_key AuthMethodLdap#client_certificate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#client_certificate_key AuthMethodLdap#client_certificate_key}
 
 ---
 
@@ -1827,7 +1827,7 @@ public string ClientCertificateKeyHmac { get; set; }
 
 The HMAC of the client certificate key returned by the Boundary controller, which is used for comparison after initial setting of the value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#client_certificate_key_hmac AuthMethodLdap#client_certificate_key_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#client_certificate_key_hmac AuthMethodLdap#client_certificate_key_hmac}
 
 ---
 
@@ -1841,7 +1841,7 @@ public string DereferenceAliases { get; set; }
 
 Control how aliases are dereferenced when performing the search. Can be one of: NeverDerefAliases, DerefInSearching, DerefFindingBaseObj, and DerefAlways (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#dereference_aliases AuthMethodLdap#dereference_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#dereference_aliases AuthMethodLdap#dereference_aliases}
 
 ---
 
@@ -1855,7 +1855,7 @@ public string Description { get; set; }
 
 The auth method description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#description AuthMethodLdap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#description AuthMethodLdap#description}
 
 ---
 
@@ -1869,7 +1869,7 @@ public object DiscoverDn { get; set; }
 
 Use anon bind to discover the bind DN of a user (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#discover_dn AuthMethodLdap#discover_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#discover_dn AuthMethodLdap#discover_dn}
 
 ---
 
@@ -1883,7 +1883,7 @@ public object EnableGroups { get; set; }
 
 Find the authenticated user's groups during authentication (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#enable_groups AuthMethodLdap#enable_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#enable_groups AuthMethodLdap#enable_groups}
 
 ---
 
@@ -1897,7 +1897,7 @@ public string GroupAttr { get; set; }
 
 The attribute that enumerates a user's group membership from entries returned by a group search (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#group_attr AuthMethodLdap#group_attr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#group_attr AuthMethodLdap#group_attr}
 
 ---
 
@@ -1911,7 +1911,7 @@ public string GroupDn { get; set; }
 
 The base DN under which to perform group search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#group_dn AuthMethodLdap#group_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#group_dn AuthMethodLdap#group_dn}
 
 ---
 
@@ -1925,7 +1925,7 @@ public string GroupFilter { get; set; }
 
 A go template used to construct a LDAP group search filter (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#group_filter AuthMethodLdap#group_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#group_filter AuthMethodLdap#group_filter}
 
 ---
 
@@ -1939,7 +1939,7 @@ public object InsecureTls { get; set; }
 
 Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#insecure_tls AuthMethodLdap#insecure_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#insecure_tls AuthMethodLdap#insecure_tls}
 
 ---
 
@@ -1955,7 +1955,7 @@ When true, makes this auth method the primary auth method for the scope in which
 
 The primary auth method for a scope means the the user will be automatically created when they login using an LDAP account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#is_primary_for_scope AuthMethodLdap#is_primary_for_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#is_primary_for_scope AuthMethodLdap#is_primary_for_scope}
 
 ---
 
@@ -1969,7 +1969,7 @@ public double MaximumPageSize { get; set; }
 
 MaximumPageSize specifies a maximum search result size to use when retrieving the authenticated user's groups (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#maximum_page_size AuthMethodLdap#maximum_page_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#maximum_page_size AuthMethodLdap#maximum_page_size}
 
 ---
 
@@ -1983,7 +1983,7 @@ public string Name { get; set; }
 
 The auth method name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#name AuthMethodLdap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#name AuthMethodLdap#name}
 
 ---
 
@@ -1997,7 +1997,7 @@ public object StartTls { get; set; }
 
 Issue StartTLS command after connecting (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#start_tls AuthMethodLdap#start_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#start_tls AuthMethodLdap#start_tls}
 
 ---
 
@@ -2011,7 +2011,7 @@ public string State { get; set; }
 
 Can be one of 'inactive', 'active-private', or 'active-public'. Defaults to active-public.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#state AuthMethodLdap#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#state AuthMethodLdap#state}
 
 ---
 
@@ -2025,7 +2025,7 @@ public string Type { get; set; }
 
 The type of auth method; hardcoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#type AuthMethodLdap#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#type AuthMethodLdap#type}
 
 ---
 
@@ -2039,7 +2039,7 @@ public string UpnDomain { get; set; }
 
 The userPrincipalDomain used to construct the UPN string for the authenticating user (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#upn_domain AuthMethodLdap#upn_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#upn_domain AuthMethodLdap#upn_domain}
 
 ---
 
@@ -2053,7 +2053,7 @@ public string[] Urls { get; set; }
 
 The LDAP URLs that specify LDAP servers to connect to (required).  May be specified multiple times.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#urls AuthMethodLdap#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#urls AuthMethodLdap#urls}
 
 ---
 
@@ -2067,7 +2067,7 @@ public string UserAttr { get; set; }
 
 The attribute on user entry matching the username passed when authenticating (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#user_attr AuthMethodLdap#user_attr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#user_attr AuthMethodLdap#user_attr}
 
 ---
 
@@ -2081,7 +2081,7 @@ public string UserDn { get; set; }
 
 The base DN under which to perform user search (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#user_dn AuthMethodLdap#user_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#user_dn AuthMethodLdap#user_dn}
 
 ---
 
@@ -2095,7 +2095,7 @@ public string UserFilter { get; set; }
 
 A go template used to construct a LDAP user search filter (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#user_filter AuthMethodLdap#user_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#user_filter AuthMethodLdap#user_filter}
 
 ---
 
@@ -2109,7 +2109,7 @@ public object UseTokenGroups { get; set; }
 
 Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_ldap#use_token_groups AuthMethodLdap#use_token_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_ldap#use_token_groups AuthMethodLdap#use_token_groups}
 
 ---
 

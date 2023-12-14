@@ -36,6 +36,10 @@ Object.defineProperty(exports, 'storageBucket', { get: function () { return requ
 Object.defineProperty(exports, 'target', { get: function () { return require('./target'); } });
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'worker', { get: function () { return require('./worker'); } });
+Object.defineProperty(exports, 'dataBoundaryAccount', { get: function () { return require('./data-boundary-account'); } });
+Object.defineProperty(exports, 'dataBoundaryAuthMethod', { get: function () { return require('./data-boundary-auth-method'); } });
+Object.defineProperty(exports, 'dataBoundaryGroup', { get: function () { return require('./data-boundary-group'); } });
 Object.defineProperty(exports, 'dataBoundaryScope', { get: function () { return require('./data-boundary-scope'); } });
+Object.defineProperty(exports, 'dataBoundaryUser', { get: function () { return require('./data-boundary-user'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 
