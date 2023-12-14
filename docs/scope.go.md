@@ -4,12 +4,12 @@
 
 ### Scope <a name="Scope" id="@cdktf/provider-boundary.scope.Scope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/scope boundary_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/scope boundary_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.scope.Scope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
 
 scope.NewScope(scope Construct, id *string, config ScopeConfig) Scope
 ```
@@ -406,7 +406,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.scope.Scope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
 
 scope.Scope_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.scope.Scope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
 
 scope.Scope_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ scope.Scope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.scope.Scope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
 
 scope.Scope_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ scope.Scope_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.scope.Scope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
 
 scope.Scope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the Scope to import.
 
 The id of the existing Scope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.scope.ScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/scope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scope"
 
 &scope.ScopeConfig {
 	Connection: interface{},
@@ -957,7 +957,7 @@ ScopeId *string
 
 The scope ID containing the sub scope resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/scope#scope_id Scope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/scope#scope_id Scope#scope_id}
 
 ---
 
@@ -973,7 +973,7 @@ If set, when a new scope is created, the provider will not disable the functiona
 
 Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/scope#auto_create_admin_role Scope#auto_create_admin_role}
 
 ---
 
@@ -989,7 +989,7 @@ Only relevant when creating an org scope.
 
 If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives listing of scopes and auth methods and the ability to authenticate to the anonymous user. Marking this true makes for simpler HCL but results in role resources that are unmanaged by Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/scope#auto_create_default_role Scope#auto_create_default_role}
 
 ---
 
@@ -1003,7 +1003,7 @@ Description *string
 
 The scope description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/scope#description Scope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/scope#description Scope#description}
 
 ---
 
@@ -1017,7 +1017,7 @@ GlobalScope interface{}
 
 Indicates that the scope containing this value is the global scope, which triggers some specialized behavior to allow it to be imported and managed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/scope#global_scope Scope#global_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/scope#global_scope Scope#global_scope}
 
 ---
 
@@ -1031,7 +1031,7 @@ Name *string
 
 The scope name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/scope#name Scope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/scope#name Scope#name}
 
 ---
 

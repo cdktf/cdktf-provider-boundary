@@ -4,12 +4,12 @@
 
 ### HostSetStatic <a name="HostSetStatic" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static boundary_host_set_static}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static boundary_host_set_static}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/hostsetstatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetstatic"
 
 hostsetstatic.NewHostSetStatic(scope Construct, id *string, config HostSetStaticConfig) HostSetStatic
 ```
@@ -399,7 +399,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/hostsetstatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetstatic"
 
 hostsetstatic.HostSetStatic_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/hostsetstatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetstatic"
 
 hostsetstatic.HostSetStatic_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ hostsetstatic.HostSetStatic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/hostsetstatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetstatic"
 
 hostsetstatic.HostSetStatic_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ hostsetstatic.HostSetStatic_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.hostSetStatic.HostSetStatic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/hostsetstatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetstatic"
 
 hostsetstatic.HostSetStatic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the HostSetStatic to import.
 
 The id of the existing HostSetStatic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.hostSetStatic.HostSetStaticConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/hostsetstatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostsetstatic"
 
 &hostsetstatic.HostSetStaticConfig {
 	Connection: interface{},
@@ -926,7 +926,7 @@ HostCatalogId *string
 
 The catalog for the host set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#host_catalog_id HostSetStatic#host_catalog_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#host_catalog_id HostSetStatic#host_catalog_id}
 
 ---
 
@@ -940,7 +940,7 @@ Description *string
 
 The host set description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#description HostSetStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#description HostSetStatic#description}
 
 ---
 
@@ -954,7 +954,7 @@ HostIds *[]*string
 
 The list of host IDs contained in this set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#host_ids HostSetStatic#host_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#host_ids HostSetStatic#host_ids}
 
 ---
 
@@ -968,7 +968,7 @@ Name *string
 
 The host set name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#name HostSetStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#name HostSetStatic#name}
 
 ---
 
@@ -982,7 +982,7 @@ Type *string
 
 The type of host set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/host_set_static#type HostSetStatic#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/host_set_static#type HostSetStatic#type}
 
 ---
 

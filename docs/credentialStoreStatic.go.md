@@ -4,12 +4,12 @@
 
 ### CredentialStoreStatic <a name="CredentialStoreStatic" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_store_static boundary_credential_store_static}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static boundary_credential_store_static}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialstorestatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorestatic"
 
 credentialstorestatic.NewCredentialStoreStatic(scope Construct, id *string, config CredentialStoreStaticConfig) CredentialStoreStatic
 ```
@@ -385,7 +385,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialstorestatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorestatic"
 
 credentialstorestatic.CredentialStoreStatic_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialstorestatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorestatic"
 
 credentialstorestatic.CredentialStoreStatic_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ credentialstorestatic.CredentialStoreStatic_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialstorestatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorestatic"
 
 credentialstorestatic.CredentialStoreStatic_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ credentialstorestatic.CredentialStoreStatic_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialstorestatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorestatic"
 
 credentialstorestatic.CredentialStoreStatic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the CredentialStoreStatic to i
 
 The id of the existing CredentialStoreStatic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_store_static#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStaticConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialstorestatic"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialstorestatic"
 
 &credentialstorestatic.CredentialStoreStaticConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ ScopeId *string
 
 The scope for this credential store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
 
 ---
 
@@ -878,7 +878,7 @@ Description *string
 
 The static credential store description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_store_static#description CredentialStoreStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#description CredentialStoreStatic#description}
 
 ---
 
@@ -892,7 +892,7 @@ Name *string
 
 The static credential store name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_store_static#name CredentialStoreStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#name CredentialStoreStatic#name}
 
 ---
 

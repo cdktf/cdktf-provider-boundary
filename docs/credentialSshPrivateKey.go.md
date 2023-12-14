@@ -4,12 +4,12 @@
 
 ### CredentialSshPrivateKey <a name="CredentialSshPrivateKey" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_ssh_private_key boundary_credential_ssh_private_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
 
 credentialsshprivatekey.NewCredentialSshPrivateKey(scope Construct, id *string, config CredentialSshPrivateKeyConfig) CredentialSshPrivateKey
 ```
@@ -392,7 +392,7 @@ func ResetPrivateKeyPassphrase()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
 
 credentialsshprivatekey.CredentialSshPrivateKey_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
 
 credentialsshprivatekey.CredentialSshPrivateKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ credentialsshprivatekey.CredentialSshPrivateKey_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
 
 credentialsshprivatekey.CredentialSshPrivateKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ credentialsshprivatekey.CredentialSshPrivateKey_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
 
 credentialsshprivatekey.CredentialSshPrivateKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the CredentialSshPrivateKey to
 
 The id of the existing CredentialSshPrivateKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_ssh_private_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_ssh_private_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.credentialSshPrivateKey.CredentialSshPrivateKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentialsshprivatekey"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialsshprivatekey"
 
 &credentialsshprivatekey.CredentialSshPrivateKeyConfig {
 	Connection: interface{},
@@ -965,7 +965,7 @@ CredentialStoreId *string
 
 ID of the credential store this credential belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_ssh_private_key#credential_store_id CredentialSshPrivateKey#credential_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_ssh_private_key#credential_store_id CredentialSshPrivateKey#credential_store_id}
 
 ---
 
@@ -979,7 +979,7 @@ PrivateKey *string
 
 The private key associated with the credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_ssh_private_key#private_key CredentialSshPrivateKey#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_ssh_private_key#private_key CredentialSshPrivateKey#private_key}
 
 ---
 
@@ -993,7 +993,7 @@ Username *string
 
 The username associated with the credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_ssh_private_key#username CredentialSshPrivateKey#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_ssh_private_key#username CredentialSshPrivateKey#username}
 
 ---
 
@@ -1007,7 +1007,7 @@ Description *string
 
 The description of the credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_ssh_private_key#description CredentialSshPrivateKey#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_ssh_private_key#description CredentialSshPrivateKey#description}
 
 ---
 
@@ -1021,7 +1021,7 @@ Name *string
 
 The name of the credential. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_ssh_private_key#name CredentialSshPrivateKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_ssh_private_key#name CredentialSshPrivateKey#name}
 
 ---
 
@@ -1035,7 +1035,7 @@ PrivateKeyPassphrase *string
 
 The passphrase of the private key associated with the credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/credential_ssh_private_key#private_key_passphrase CredentialSshPrivateKey#private_key_passphrase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_ssh_private_key#private_key_passphrase CredentialSshPrivateKey#private_key_passphrase}
 
 ---
 

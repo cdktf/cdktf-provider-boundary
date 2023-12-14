@@ -4,12 +4,12 @@
 
 ### AuthMethodPassword <a name="AuthMethodPassword" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_password boundary_auth_method_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password boundary_auth_method_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodpassword"
 
 authmethodpassword.NewAuthMethodPassword(scope Construct, id *string, config AuthMethodPasswordConfig) AuthMethodPassword
 ```
@@ -406,7 +406,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodpassword"
 
 authmethodpassword.AuthMethodPassword_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodpassword"
 
 authmethodpassword.AuthMethodPassword_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ authmethodpassword.AuthMethodPassword_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodpassword"
 
 authmethodpassword.AuthMethodPassword_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ authmethodpassword.AuthMethodPassword_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPassword.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodpassword"
 
 authmethodpassword.AuthMethodPassword_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the AuthMethodPassword to impo
 
 The id of the existing AuthMethodPassword that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_password#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.authMethodPassword.AuthMethodPasswordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodpassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/authmethodpassword"
 
 &authmethodpassword.AuthMethodPasswordConfig {
 	Connection: interface{},
@@ -957,7 +957,7 @@ ScopeId *string
 
 The scope ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_password#scope_id AuthMethodPassword#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#scope_id AuthMethodPassword#scope_id}
 
 ---
 
@@ -971,7 +971,7 @@ Description *string
 
 The auth method description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_password#description AuthMethodPassword#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#description AuthMethodPassword#description}
 
 ---
 
@@ -985,7 +985,7 @@ MinLoginNameLength *f64
 
 The minimum login name length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
 
 ---
 
@@ -999,7 +999,7 @@ MinPasswordLength *f64
 
 The minimum password length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
 
 ---
 
@@ -1013,7 +1013,7 @@ Name *string
 
 The auth method name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_password#name AuthMethodPassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#name AuthMethodPassword#name}
 
 ---
 
@@ -1027,7 +1027,7 @@ Type *string
 
 The resource type, hardcoded per resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.10/docs/resources/auth_method_password#type AuthMethodPassword#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#type AuthMethodPassword#type}
 
 ---
 
