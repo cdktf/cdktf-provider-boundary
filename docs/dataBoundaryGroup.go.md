@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.NewDataBoundaryGroup(scope Construct, id *string, config DataBoundaryGroupConfig) DataBoundaryGroup
 ```
@@ -274,7 +274,7 @@ func ResetScopeId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ databoundarygroup.DataBoundaryGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ databoundarygroup.DataBoundaryGroup_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 &databoundarygroup.DataBoundaryGroupConfig {
 	Connection: interface{},
@@ -763,7 +763,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 &databoundarygroup.DataBoundaryGroupScope {
 
@@ -778,7 +778,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygrou
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.NewDataBoundaryGroupScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataBoundaryGroupScopeList
 ```
@@ -910,7 +910,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.NewDataBoundaryGroupScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataBoundaryGroupScopeOutputReference
 ```
