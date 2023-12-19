@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.host.Host.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
 
 host.NewHost(scope Construct, id *string, config HostConfig) Host
 ```
@@ -392,7 +392,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.host.Host.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
 
 host.Host_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.host.Host.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
 
 host.Host_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ host.Host_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.host.Host.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
 
 host.Host_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ host.Host_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.host.Host.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
 
 host.Host_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.host.HostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
 
 &host.HostConfig {
 	Connection: interface{},
