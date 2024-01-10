@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.NewDataBoundaryGroup(scope Construct, id *string, config DataBoundaryGroupConfig) DataBoundaryGroup
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetScopeId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ databoundarygroup.DataBoundaryGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ databoundarygroup.DataBoundaryGroup_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 &databoundarygroup.DataBoundaryGroupConfig {
 	Connection: interface{},
@@ -763,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 &databoundarygroup.DataBoundaryGroupScope {
 
@@ -778,7 +787,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygrou
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.NewDataBoundaryGroupScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataBoundaryGroupScopeList
 ```
@@ -819,10 +828,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -910,7 +936,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.NewDataBoundaryGroupScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataBoundaryGroupScopeOutputReference
 ```

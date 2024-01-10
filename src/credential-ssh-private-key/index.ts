@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_ssh_private_key
 // generated from terraform resource schema
 
@@ -228,5 +223,49 @@ export class CredentialSshPrivateKey extends cdktf.TerraformResource {
       private_key_passphrase: cdktf.stringToTerraform(this._privateKeyPassphrase),
       username: cdktf.stringToTerraform(this._username),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      credential_store_id: {
+        value: cdktf.stringToHclTerraform(this._credentialStoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key: {
+        value: cdktf.stringToHclTerraform(this._privateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_key_passphrase: {
+        value: cdktf.stringToHclTerraform(this._privateKeyPassphrase),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

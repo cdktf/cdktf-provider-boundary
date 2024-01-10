@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/worker
 // generated from terraform resource schema
 
@@ -199,5 +194,37 @@ export class Worker extends cdktf.TerraformResource {
       scope_id: cdktf.stringToTerraform(this._scopeId),
       worker_generated_auth_token: cdktf.stringToTerraform(this._workerGeneratedAuthToken),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_id: {
+        value: cdktf.stringToHclTerraform(this._scopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      worker_generated_auth_token: {
+        value: cdktf.stringToHclTerraform(this._workerGeneratedAuthToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

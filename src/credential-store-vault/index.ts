@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_vault
 // generated from terraform resource schema
 
@@ -372,5 +367,85 @@ export class CredentialStoreVault extends cdktf.TerraformResource {
       token: cdktf.stringToTerraform(this._token),
       worker_filter: cdktf.stringToTerraform(this._workerFilter),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address: {
+        value: cdktf.stringToHclTerraform(this._address),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ca_cert: {
+        value: cdktf.stringToHclTerraform(this._caCert),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_certificate: {
+        value: cdktf.stringToHclTerraform(this._clientCertificate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_certificate_key: {
+        value: cdktf.stringToHclTerraform(this._clientCertificateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_id: {
+        value: cdktf.stringToHclTerraform(this._scopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls_server_name: {
+        value: cdktf.stringToHclTerraform(this._tlsServerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls_skip_verify: {
+        value: cdktf.booleanToHclTerraform(this._tlsSkipVerify),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      worker_filter: {
+        value: cdktf.stringToHclTerraform(this._workerFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc
 // generated from terraform resource schema
 
@@ -200,5 +195,43 @@ export class AccountOidc extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       subject: cdktf.stringToTerraform(this._subject),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auth_method_id: {
+        value: cdktf.stringToHclTerraform(this._authMethodId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      issuer: {
+        value: cdktf.stringToHclTerraform(this._issuer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subject: {
+        value: cdktf.stringToHclTerraform(this._subject),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

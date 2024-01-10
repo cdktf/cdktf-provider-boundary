@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/target
 // generated from terraform resource schema
 
@@ -481,5 +476,115 @@ export class Target extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       worker_filter: cdktf.stringToTerraform(this._workerFilter),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      address: {
+        value: cdktf.stringToHclTerraform(this._address),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      brokered_credential_source_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._brokeredCredentialSourceIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      default_client_port: {
+        value: cdktf.numberToHclTerraform(this._defaultClientPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      default_port: {
+        value: cdktf.numberToHclTerraform(this._defaultPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      egress_worker_filter: {
+        value: cdktf.stringToHclTerraform(this._egressWorkerFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_session_recording: {
+        value: cdktf.booleanToHclTerraform(this._enableSessionRecording),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      host_source_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostSourceIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      ingress_worker_filter: {
+        value: cdktf.stringToHclTerraform(this._ingressWorkerFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      injected_application_credential_source_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._injectedApplicationCredentialSourceIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_id: {
+        value: cdktf.stringToHclTerraform(this._scopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      session_connection_limit: {
+        value: cdktf.numberToHclTerraform(this._sessionConnectionLimit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      session_max_seconds: {
+        value: cdktf.numberToHclTerraform(this._sessionMaxSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_bucket_id: {
+        value: cdktf.stringToHclTerraform(this._storageBucketId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      worker_filter: {
+        value: cdktf.stringToHclTerraform(this._workerFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

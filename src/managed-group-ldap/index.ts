@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap
 // generated from terraform resource schema
 
@@ -173,5 +168,37 @@ export class ManagedGroupLdap extends cdktf.TerraformResource {
       group_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupNames),
       name: cdktf.stringToTerraform(this._name),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auth_method_id: {
+        value: cdktf.stringToHclTerraform(this._authMethodId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_names: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

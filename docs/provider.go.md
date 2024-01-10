@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.provider.BoundaryProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 provider.NewBoundaryProvider(scope Construct, id *string, config BoundaryProviderConfig) BoundaryProvider
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.resetAlias">ResetAlias</a></code> | *No description.* |
@@ -119,6 +120,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-boundary.provider.BoundaryProvider.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-boundary.provider.BoundaryProvider.toMetadata"></a>
 
@@ -214,7 +221,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.provider.BoundaryProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 provider.BoundaryProvider_IsConstruct(x interface{}) *bool
 ```
@@ -246,7 +253,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 provider.BoundaryProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -260,7 +267,7 @@ provider.BoundaryProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 provider.BoundaryProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -274,7 +281,7 @@ provider.BoundaryProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.provider.BoundaryProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 provider.BoundaryProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -701,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.provider.BoundaryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 &provider.BoundaryProviderConfig {
 	Addr: *string,

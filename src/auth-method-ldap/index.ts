@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_ldap
 // generated from terraform resource schema
 
@@ -800,5 +795,193 @@ export class AuthMethodLdap extends cdktf.TerraformResource {
       user_dn: cdktf.stringToTerraform(this._userDn),
       user_filter: cdktf.stringToTerraform(this._userFilter),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_attribute_maps: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._accountAttributeMaps),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      anon_group_search: {
+        value: cdktf.booleanToHclTerraform(this._anonGroupSearch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      bind_dn: {
+        value: cdktf.stringToHclTerraform(this._bindDn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bind_password: {
+        value: cdktf.stringToHclTerraform(this._bindPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bind_password_hmac: {
+        value: cdktf.stringToHclTerraform(this._bindPasswordHmac),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      certificates: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._certificates),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      client_certificate: {
+        value: cdktf.stringToHclTerraform(this._clientCertificate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_certificate_key: {
+        value: cdktf.stringToHclTerraform(this._clientCertificateKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_certificate_key_hmac: {
+        value: cdktf.stringToHclTerraform(this._clientCertificateKeyHmac),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dereference_aliases: {
+        value: cdktf.stringToHclTerraform(this._dereferenceAliases),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      discover_dn: {
+        value: cdktf.booleanToHclTerraform(this._discoverDn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_groups: {
+        value: cdktf.booleanToHclTerraform(this._enableGroups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      group_attr: {
+        value: cdktf.stringToHclTerraform(this._groupAttr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_dn: {
+        value: cdktf.stringToHclTerraform(this._groupDn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group_filter: {
+        value: cdktf.stringToHclTerraform(this._groupFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insecure_tls: {
+        value: cdktf.booleanToHclTerraform(this._insecureTls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_primary_for_scope: {
+        value: cdktf.booleanToHclTerraform(this._isPrimaryForScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      maximum_page_size: {
+        value: cdktf.numberToHclTerraform(this._maximumPageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_id: {
+        value: cdktf.stringToHclTerraform(this._scopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_tls: {
+        value: cdktf.booleanToHclTerraform(this._startTls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      upn_domain: {
+        value: cdktf.stringToHclTerraform(this._upnDomain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      urls: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._urls),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      use_token_groups: {
+        value: cdktf.booleanToHclTerraform(this._useTokenGroups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      user_attr: {
+        value: cdktf.stringToHclTerraform(this._userAttr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_dn: {
+        value: cdktf.stringToHclTerraform(this._userDn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_filter: {
+        value: cdktf.stringToHclTerraform(this._userFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/group
 // generated from terraform resource schema
 
@@ -176,5 +171,37 @@ export class Group extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       scope_id: cdktf.stringToTerraform(this._scopeId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._memberIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_id: {
+        value: cdktf.stringToHclTerraform(this._scopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

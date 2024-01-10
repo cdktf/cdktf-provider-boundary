@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.host.Host.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
 
 host.NewHost(scope Construct, id *string, config HostConfig) Host
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.host.Host.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.host.Host.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-boundary.host.Host.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-boundary.host.Host.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.host.Host.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.host.Host.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-boundary.host.Host.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-boundary.host.Host.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-boundary.host.Host.toMetadata"></a>
 
@@ -392,7 +399,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.host.Host.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
 
 host.Host_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.host.Host.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
 
 host.Host_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ host.Host_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.host.Host.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
 
 host.Host_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ host.Host_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.host.Host.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
 
 host.Host_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.host.HostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/host"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/host"
 
 &host.HostConfig {
 	Connection: interface{},

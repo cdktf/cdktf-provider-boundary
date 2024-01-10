@@ -142,6 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.addOverride">add_override</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.toMetadata">to_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -219,6 +220,12 @@ def reset_override_logical_id() -> None
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.toHclTerraform"></a>
+
+```python
+def to_hcl_terraform() -> typing.Any
+```
 
 ##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.toMetadata"></a>
 
