@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_password
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +10,43 @@ export interface AuthMethodPasswordConfig extends cdktf.TerraformMetaArguments {
   /**
   * The auth method description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#description AuthMethodPassword#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_password#description AuthMethodPassword#description}
   */
   readonly description?: string;
   /**
   * The minimum login name length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_password#min_login_name_length AuthMethodPassword#min_login_name_length}
   */
   readonly minLoginNameLength?: number;
   /**
   * The minimum password length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_password#min_password_length AuthMethodPassword#min_password_length}
   */
   readonly minPasswordLength?: number;
   /**
   * The auth method name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#name AuthMethodPassword#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_password#name AuthMethodPassword#name}
   */
   readonly name?: string;
   /**
   * The scope ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#scope_id AuthMethodPassword#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_password#scope_id AuthMethodPassword#scope_id}
   */
   readonly scopeId: string;
   /**
   * The resource type, hardcoded per resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#type AuthMethodPassword#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_password#type AuthMethodPassword#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password boundary_auth_method_password}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_password boundary_auth_method_password}
 */
 export class AuthMethodPassword extends cdktf.TerraformResource {
 
@@ -67,7 +62,7 @@ export class AuthMethodPassword extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AuthMethodPassword resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuthMethodPassword to import
-  * @param importFromId The id of the existing AuthMethodPassword that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AuthMethodPassword that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_password#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuthMethodPassword to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -79,7 +74,7 @@ export class AuthMethodPassword extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/auth_method_password boundary_auth_method_password} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/auth_method_password boundary_auth_method_password} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +85,7 @@ export class AuthMethodPassword extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_auth_method_password',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.11',
+        providerVersion: '1.1.12',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

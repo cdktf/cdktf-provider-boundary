@@ -4,7 +4,7 @@
 
 ### CredentialStoreStatic <a name="CredentialStoreStatic" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static boundary_credential_store_static}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static boundary_credential_store_static}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The scope for this credential store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The static credential store description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#description CredentialStoreStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static#description CredentialStoreStatic#description}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The static credential store name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#name CredentialStoreStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static#name CredentialStoreStatic#name}
 
 ---
 
@@ -610,7 +610,7 @@ The construct id used in the generated config for the CredentialStoreStatic to i
 
 The id of the existing CredentialStoreStatic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1000,7 +1000,7 @@ scope_id: str
 
 The scope for this credential store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
 
 ---
 
@@ -1014,7 +1014,7 @@ description: str
 
 The static credential store description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#description CredentialStoreStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static#description CredentialStoreStatic#description}
 
 ---
 
@@ -1028,7 +1028,7 @@ name: str
 
 The static credential store name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_store_static#name CredentialStoreStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_store_static#name CredentialStoreStatic#name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ManagedGroupLdap <a name="ManagedGroupLdap" id="@cdktf/provider-boundary.managedGroupLdap.ManagedGroupLdap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/managed_group_ldap boundary_managed_group_ldap}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap boundary_managed_group_ldap}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.managedGroupLdap.ManagedGroupLdap.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of groups that make up the managed group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The managed group description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The managed group name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
 
 ---
 
@@ -622,7 +622,7 @@ The construct id used in the generated config for the ManagedGroupLdap to import
 
 The id of the existing ManagedGroupLdap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/managed_group_ldap#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1036,7 +1036,7 @@ auth_method_id: str
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
 
 ---
 
@@ -1050,7 +1050,7 @@ group_names: typing.List[str]
 
 The list of groups that make up the managed group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
 
 ---
 
@@ -1064,7 +1064,7 @@ description: str
 
 The managed group description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
 
 ---
 
@@ -1078,7 +1078,7 @@ name: str
 
 The managed group name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
 
 ---
 

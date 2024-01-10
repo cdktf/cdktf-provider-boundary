@@ -4,12 +4,12 @@
 
 ### Account <a name="Account" id="@cdktf/provider-boundary.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/account boundary_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account boundary_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.account.Account.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/account"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/account"
 
 account.NewAccount(scope Construct, id *string, config AccountConfig) Account
 ```
@@ -399,7 +399,7 @@ func ResetPassword()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.account.Account.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/account"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/account"
 
 account.Account_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.account.Account.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/account"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/account"
 
 account.Account_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ account.Account_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.account.Account.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/account"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/account"
 
 account.Account_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ account.Account_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.account.Account.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/account"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/account"
 
 account.Account_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.account.AccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/account"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/account"
 
 &account.AccountConfig {
 	Connection: interface{},
@@ -950,7 +950,7 @@ AuthMethodId *string
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/account#auth_method_id Account#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account#auth_method_id Account#auth_method_id}
 
 ---
 
@@ -964,7 +964,7 @@ Type *string
 
 The resource type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account#type Account#type}
 
 ---
 
@@ -978,7 +978,7 @@ Description *string
 
 The account description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/account#description Account#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account#description Account#description}
 
 ---
 
@@ -992,7 +992,7 @@ LoginName *string
 
 The login name for this account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/account#login_name Account#login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account#login_name Account#login_name}
 
 ---
 
@@ -1006,7 +1006,7 @@ Name *string
 
 The account name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account#name Account#name}
 
 ---
 
@@ -1020,7 +1020,7 @@ Password *string
 
 The account password. Only set on create, changes will not be reflected when updating account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/account#password Account#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account#password Account#password}
 
 ---
 

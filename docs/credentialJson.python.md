@@ -4,7 +4,7 @@
 
 ### CredentialJson <a name="CredentialJson" id="@cdktf/provider-boundary.credentialJson.CredentialJson"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_json boundary_credential_json}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_json boundary_credential_json}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialJson.CredentialJson.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The credential store in which to save this json credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_json#credential_store_id CredentialJson#credential_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_json#credential_store_id CredentialJson#credential_store_id}
 
 ---
 
@@ -124,7 +124,7 @@ The object for the this json credential.
 
 Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_json#object CredentialJson#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_json#object CredentialJson#object}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of this json credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_json#description CredentialJson#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_json#description CredentialJson#description}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of this json credential. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_json#name CredentialJson#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_json#name CredentialJson#name}
 
 ---
 
@@ -624,7 +624,7 @@ The construct id used in the generated config for the CredentialJson to import.
 
 The id of the existing CredentialJson that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_json#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_json#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1049,7 +1049,7 @@ credential_store_id: str
 
 The credential store in which to save this json credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_json#credential_store_id CredentialJson#credential_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_json#credential_store_id CredentialJson#credential_store_id}
 
 ---
 
@@ -1065,7 +1065,7 @@ The object for the this json credential.
 
 Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_json#object CredentialJson#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_json#object CredentialJson#object}
 
 ---
 
@@ -1079,7 +1079,7 @@ description: str
 
 The description of this json credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_json#description CredentialJson#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_json#description CredentialJson#description}
 
 ---
 
@@ -1093,7 +1093,7 @@ name: str
 
 The name of this json credential. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_json#name CredentialJson#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_json#name CredentialJson#name}
 
 ---
 

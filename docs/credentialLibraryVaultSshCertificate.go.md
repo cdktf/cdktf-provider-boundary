@@ -4,12 +4,12 @@
 
 ### CredentialLibraryVaultSshCertificate <a name="CredentialLibraryVaultSshCertificate" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate boundary_credential_library_vault_ssh_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 credentiallibraryvaultsshcertificate.NewCredentialLibraryVaultSshCertificate(scope Construct, id *string, config CredentialLibraryVaultSshCertificateConfig) CredentialLibraryVaultSshCertificate
 ```
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.resetAdditionalValidPrincipals">ResetAdditionalValidPrincipals</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.resetCriticalOptions">ResetCriticalOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.resetExtensions">ResetExtensions</a></code> | *No description.* |
@@ -365,6 +366,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAdditionalValidPrincipals` <a name="ResetAdditionalValidPrincipals" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.resetAdditionalValidPrincipals"></a>
+
+```go
+func ResetAdditionalValidPrincipals()
+```
+
 ##### `ResetCriticalOptions` <a name="ResetCriticalOptions" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.resetCriticalOptions"></a>
 
 ```go
@@ -427,7 +434,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +480,7 @@ credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificate_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +494,7 @@ credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificate_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +523,7 @@ The construct id used in the generated config for the CredentialLibraryVaultSshC
 
 The id of the existing CredentialLibraryVaultSshCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -547,6 +554,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.additionalValidPrincipalsInput">AdditionalValidPrincipalsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.credentialStoreIdInput">CredentialStoreIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.criticalOptionsInput">CriticalOptionsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
@@ -558,6 +566,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.pathInput">PathInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.ttlInput">TtlInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.additionalValidPrincipals">AdditionalValidPrincipals</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.credentialStoreId">CredentialStoreId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.criticalOptions">CriticalOptions</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.description">Description</a></code> | <code>*string</code> | *No description.* |
@@ -724,6 +733,16 @@ func Id() *string
 
 ---
 
+##### `AdditionalValidPrincipalsInput`<sup>Optional</sup> <a name="AdditionalValidPrincipalsInput" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.additionalValidPrincipalsInput"></a>
+
+```go
+func AdditionalValidPrincipalsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `CredentialStoreIdInput`<sup>Optional</sup> <a name="CredentialStoreIdInput" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.credentialStoreIdInput"></a>
 
 ```go
@@ -831,6 +850,16 @@ func UsernameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `AdditionalValidPrincipals`<sup>Required</sup> <a name="AdditionalValidPrincipals" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificate.property.additionalValidPrincipals"></a>
+
+```go
+func AdditionalValidPrincipals() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -969,7 +998,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibraryvaultsshcertificate"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentiallibraryvaultsshcertificate"
 
 &credentiallibraryvaultsshcertificate.CredentialLibraryVaultSshCertificateConfig {
 	Connection: interface{},
@@ -982,6 +1011,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibrar
 	CredentialStoreId: *string,
 	Path: *string,
 	Username: *string,
+	AdditionalValidPrincipals: *[]*string,
 	CriticalOptions: *map[string]*string,
 	Description: *string,
 	Extensions: *map[string]*string,
@@ -1007,6 +1037,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/credentiallibrar
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificateConfig.property.credentialStoreId">CredentialStoreId</a></code> | <code>*string</code> | The ID of the credential store that this library belongs to. |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificateConfig.property.path">Path</a></code> | <code>*string</code> | The path in Vault to request credentials from. |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificateConfig.property.username">Username</a></code> | <code>*string</code> | The username to use with the certificate returned by the library. |
+| <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificateConfig.property.additionalValidPrincipals">AdditionalValidPrincipals</a></code> | <code>*[]*string</code> | Principals to be signed as "valid_principles" in addition to username. |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificateConfig.property.criticalOptions">CriticalOptions</a></code> | <code>*map[string]*string</code> | Specifies a map of the critical options that the certificate should be signed for. |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificateConfig.property.description">Description</a></code> | <code>*string</code> | The Vault credential library description. |
 | <code><a href="#@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificateConfig.property.extensions">Extensions</a></code> | <code>*map[string]*string</code> | Specifies a map of the extensions that the certificate should be signed for. |
@@ -1098,7 +1129,7 @@ CredentialStoreId *string
 
 The ID of the credential store that this library belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#credential_store_id CredentialLibraryVaultSshCertificate#credential_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#credential_store_id CredentialLibraryVaultSshCertificate#credential_store_id}
 
 ---
 
@@ -1112,7 +1143,7 @@ Path *string
 
 The path in Vault to request credentials from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#path CredentialLibraryVaultSshCertificate#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#path CredentialLibraryVaultSshCertificate#path}
 
 ---
 
@@ -1126,7 +1157,21 @@ Username *string
 
 The username to use with the certificate returned by the library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#username CredentialLibraryVaultSshCertificate#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#username CredentialLibraryVaultSshCertificate#username}
+
+---
+
+##### `AdditionalValidPrincipals`<sup>Optional</sup> <a name="AdditionalValidPrincipals" id="@cdktf/provider-boundary.credentialLibraryVaultSshCertificate.CredentialLibraryVaultSshCertificateConfig.property.additionalValidPrincipals"></a>
+
+```go
+AdditionalValidPrincipals *[]*string
+```
+
+- *Type:* *[]*string
+
+Principals to be signed as "valid_principles" in addition to username.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#additional_valid_principals CredentialLibraryVaultSshCertificate#additional_valid_principals}
 
 ---
 
@@ -1140,7 +1185,7 @@ CriticalOptions *map[string]*string
 
 Specifies a map of the critical options that the certificate should be signed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#critical_options CredentialLibraryVaultSshCertificate#critical_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#critical_options CredentialLibraryVaultSshCertificate#critical_options}
 
 ---
 
@@ -1154,7 +1199,7 @@ Description *string
 
 The Vault credential library description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#description CredentialLibraryVaultSshCertificate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#description CredentialLibraryVaultSshCertificate#description}
 
 ---
 
@@ -1168,7 +1213,7 @@ Extensions *map[string]*string
 
 Specifies a map of the extensions that the certificate should be signed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#extensions CredentialLibraryVaultSshCertificate#extensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#extensions CredentialLibraryVaultSshCertificate#extensions}
 
 ---
 
@@ -1182,7 +1227,7 @@ KeyBits *f64
 
 Specifies the number of bits to use for the generated keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#key_bits CredentialLibraryVaultSshCertificate#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#key_bits CredentialLibraryVaultSshCertificate#key_bits}
 
 ---
 
@@ -1196,7 +1241,7 @@ KeyId *string
 
 Specifies the key id a certificate should have.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#key_id CredentialLibraryVaultSshCertificate#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#key_id CredentialLibraryVaultSshCertificate#key_id}
 
 ---
 
@@ -1210,7 +1255,7 @@ KeyType *string
 
 Specifies the desired key type; must be ed25519, ecdsa, or rsa.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#key_type CredentialLibraryVaultSshCertificate#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#key_type CredentialLibraryVaultSshCertificate#key_type}
 
 ---
 
@@ -1224,7 +1269,7 @@ Name *string
 
 The Vault credential library name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#name CredentialLibraryVaultSshCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#name CredentialLibraryVaultSshCertificate#name}
 
 ---
 
@@ -1238,7 +1283,7 @@ Ttl *string
 
 Specifies the requested time to live for a certificate returned from the library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/resources/credential_library_vault_ssh_certificate#ttl CredentialLibraryVaultSshCertificate#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/credential_library_vault_ssh_certificate#ttl CredentialLibraryVaultSshCertificate#ttl}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataBoundaryAccount <a name="DataBoundaryAccount" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/account boundary_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/account boundary_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryaccount"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryaccount"
 
 databoundaryaccount.NewDataBoundaryAccount(scope Construct, id *string, config DataBoundaryAccountConfig) DataBoundaryAccount
 ```
@@ -267,7 +267,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryaccount"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryaccount"
 
 databoundaryaccount.DataBoundaryAccount_IsConstruct(x interface{}) *bool
 ```
@@ -299,7 +299,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryaccount"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryaccount"
 
 databoundaryaccount.DataBoundaryAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ databoundaryaccount.DataBoundaryAccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryaccount"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryaccount"
 
 databoundaryaccount.DataBoundaryAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ databoundaryaccount.DataBoundaryAccount_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryaccount"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryaccount"
 
 databoundaryaccount.DataBoundaryAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -356,7 +356,7 @@ The construct id used in the generated config for the DataBoundaryAccount to imp
 
 The id of the existing DataBoundaryAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryaccount"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryaccount"
 
 &databoundaryaccount.DataBoundaryAccountConfig {
 	Connection: interface{},
@@ -733,7 +733,7 @@ AuthMethodId *string
 
 The auth method ID that will be queried for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/account#auth_method_id DataBoundaryAccount#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/account#auth_method_id DataBoundaryAccount#auth_method_id}
 
 ---
 
@@ -747,7 +747,7 @@ Name *string
 
 The name of the account to retrieve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.11/docs/data-sources/account#name DataBoundaryAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/account#name DataBoundaryAccount#name}
 
 ---
 
@@ -756,7 +756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccountScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryaccount"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryaccount"
 
 &databoundaryaccount.DataBoundaryAccountScope {
 
@@ -771,7 +771,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryacco
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccountScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryaccount"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryaccount"
 
 databoundaryaccount.NewDataBoundaryAccountScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataBoundaryAccountScopeList
 ```
@@ -903,7 +903,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccountScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/databoundaryaccount"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryaccount"
 
 databoundaryaccount.NewDataBoundaryAccountScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataBoundaryAccountScopeOutputReference
 ```
