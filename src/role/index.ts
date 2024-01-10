@@ -223,4 +223,48 @@ export class Role extends cdktf.TerraformResource {
       scope_id: cdktf.stringToTerraform(this._scopeId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      grant_scope_id: {
+        value: cdktf.stringToHclTerraform(this._grantScopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      grant_strings: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._grantStrings),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      principal_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._principalIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      scope_id: {
+        value: cdktf.stringToHclTerraform(this._scopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

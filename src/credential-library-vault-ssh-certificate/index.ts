@@ -363,4 +363,84 @@ export class CredentialLibraryVaultSshCertificate extends cdktf.TerraformResourc
       username: cdktf.stringToTerraform(this._username),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      additional_valid_principals: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._additionalValidPrincipals),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      credential_store_id: {
+        value: cdktf.stringToHclTerraform(this._credentialStoreId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      critical_options: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._criticalOptions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      extensions: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._extensions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      key_bits: {
+        value: cdktf.numberToHclTerraform(this._keyBits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      key_id: {
+        value: cdktf.stringToHclTerraform(this._keyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_type: {
+        value: cdktf.stringToHclTerraform(this._keyType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktf.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ttl: {
+        value: cdktf.stringToHclTerraform(this._ttl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

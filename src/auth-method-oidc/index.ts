@@ -561,4 +561,132 @@ export class AuthMethodOidc extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      account_claim_maps: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._accountClaimMaps),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      allowed_audiences: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedAudiences),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      api_url_prefix: {
+        value: cdktf.stringToHclTerraform(this._apiUrlPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      callback_url: {
+        value: cdktf.stringToHclTerraform(this._callbackUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      claims_scopes: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._claimsScopes),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      client_id: {
+        value: cdktf.stringToHclTerraform(this._clientId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret: {
+        value: cdktf.stringToHclTerraform(this._clientSecret),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret_hmac: {
+        value: cdktf.stringToHclTerraform(this._clientSecretHmac),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_discovered_config_validation: {
+        value: cdktf.booleanToHclTerraform(this._disableDiscoveredConfigValidation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      idp_ca_certs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._idpCaCerts),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      is_primary_for_scope: {
+        value: cdktf.booleanToHclTerraform(this._isPrimaryForScope),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      issuer: {
+        value: cdktf.stringToHclTerraform(this._issuer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_age: {
+        value: cdktf.numberToHclTerraform(this._maxAge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prompts: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._prompts),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      scope_id: {
+        value: cdktf.stringToHclTerraform(this._scopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      signing_algorithms: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._signingAlgorithms),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

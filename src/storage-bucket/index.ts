@@ -332,4 +332,72 @@ export class StorageBucket extends cdktf.TerraformResource {
       worker_filter: cdktf.stringToTerraform(this._workerFilter),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      attributes_json: {
+        value: cdktf.stringToHclTerraform(this._attributesJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket_name: {
+        value: cdktf.stringToHclTerraform(this._bucketName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket_prefix: {
+        value: cdktf.stringToHclTerraform(this._bucketPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_id: {
+        value: cdktf.stringToHclTerraform(this._pluginId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_name: {
+        value: cdktf.stringToHclTerraform(this._pluginName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_id: {
+        value: cdktf.stringToHclTerraform(this._scopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secrets_json: {
+        value: cdktf.stringToHclTerraform(this._secretsJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      worker_filter: {
+        value: cdktf.stringToHclTerraform(this._workerFilter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -345,4 +345,78 @@ export class HostCatalogPlugin extends cdktf.TerraformResource {
       secrets_json: cdktf.stringToTerraform(this._secretsJson),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      attributes_json: {
+        value: cdktf.stringToHclTerraform(this._attributesJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      internal_force_update: {
+        value: cdktf.stringToHclTerraform(this._internalForceUpdate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      internal_hmac_used_for_secrets_config_hmac: {
+        value: cdktf.stringToHclTerraform(this._internalHmacUsedForSecretsConfigHmac),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      internal_secrets_config_hmac: {
+        value: cdktf.stringToHclTerraform(this._internalSecretsConfigHmac),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_id: {
+        value: cdktf.stringToHclTerraform(this._pluginId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_name: {
+        value: cdktf.stringToHclTerraform(this._pluginName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_id: {
+        value: cdktf.stringToHclTerraform(this._scopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secrets_hmac: {
+        value: cdktf.stringToHclTerraform(this._secretsHmac),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secrets_json: {
+        value: cdktf.stringToHclTerraform(this._secretsJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

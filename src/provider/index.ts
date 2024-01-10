@@ -358,4 +358,84 @@ export class BoundaryProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      addr: {
+        value: cdktf.stringToHclTerraform(this._addr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_method_id: {
+        value: cdktf.stringToHclTerraform(this._authMethodId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_method_login_name: {
+        value: cdktf.stringToHclTerraform(this._authMethodLoginName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auth_method_password: {
+        value: cdktf.stringToHclTerraform(this._authMethodPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_auth_method_login_name: {
+        value: cdktf.stringToHclTerraform(this._passwordAuthMethodLoginName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_auth_method_password: {
+        value: cdktf.stringToHclTerraform(this._passwordAuthMethodPassword),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_execution_dir: {
+        value: cdktf.stringToHclTerraform(this._pluginExecutionDir),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      recovery_kms_hcl: {
+        value: cdktf.stringToHclTerraform(this._recoveryKmsHcl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scope_id: {
+        value: cdktf.stringToHclTerraform(this._scopeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls_insecure: {
+        value: cdktf.booleanToHclTerraform(this._tlsInsecure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

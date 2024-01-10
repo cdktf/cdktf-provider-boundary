@@ -249,4 +249,54 @@ export class HostSetPlugin extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      attributes_json: {
+        value: cdktf.stringToHclTerraform(this._attributesJson),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host_catalog_id: {
+        value: cdktf.stringToHclTerraform(this._hostCatalogId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      preferred_endpoints: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._preferredEndpoints),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      sync_interval_seconds: {
+        value: cdktf.numberToHclTerraform(this._syncIntervalSeconds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

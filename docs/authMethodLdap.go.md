@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/authmethodldap"
 
 authmethodldap.NewAuthMethodLdap(scope Construct, id *string, config AuthMethodLdapConfig) AuthMethodLdap
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -153,6 +154,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.toMetadata"></a>
 
@@ -574,7 +581,7 @@ func ResetUseTokenGroups()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/authmethodldap"
 
 authmethodldap.AuthMethodLdap_IsConstruct(x interface{}) *bool
 ```
@@ -606,7 +613,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/authmethodldap"
 
 authmethodldap.AuthMethodLdap_IsTerraformElement(x interface{}) *bool
 ```
@@ -620,7 +627,7 @@ authmethodldap.AuthMethodLdap_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/authmethodldap"
 
 authmethodldap.AuthMethodLdap_IsTerraformResource(x interface{}) *bool
 ```
@@ -634,7 +641,7 @@ authmethodldap.AuthMethodLdap_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/authmethodldap"
 
 authmethodldap.AuthMethodLdap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1534,7 +1541,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v8/authmethodldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/authmethodldap"
 
 &authmethodldap.AuthMethodLdapConfig {
 	Connection: interface{},
