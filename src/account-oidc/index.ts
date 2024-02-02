@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +10,37 @@ export interface AccountOidcConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID for the auth method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc#auth_method_id AccountOidc#auth_method_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc#auth_method_id AccountOidc#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The account description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc#description AccountOidc#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc#description AccountOidc#description}
   */
   readonly description?: string;
   /**
   * The OIDC issuer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc#issuer AccountOidc#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc#issuer AccountOidc#issuer}
   */
   readonly issuer?: string;
   /**
   * The account name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc#name AccountOidc#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc#name AccountOidc#name}
   */
   readonly name?: string;
   /**
   * The OIDC subject.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc#subject AccountOidc#subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc#subject AccountOidc#subject}
   */
   readonly subject?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc boundary_account_oidc}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc boundary_account_oidc}
 */
 export class AccountOidc extends cdktf.TerraformResource {
 
@@ -61,7 +56,7 @@ export class AccountOidc extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccountOidc resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountOidc to import
-  * @param importFromId The id of the existing AccountOidc that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountOidc that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountOidc to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +68,7 @@ export class AccountOidc extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/account_oidc boundary_account_oidc} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_oidc boundary_account_oidc} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +79,7 @@ export class AccountOidc extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_account_oidc',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.12',
+        providerVersion: '1.1.13',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/account
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface DataBoundaryAccountConfig extends cdktf.TerraformMetaArguments 
   /**
   * The auth method ID that will be queried for the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/account#auth_method_id DataBoundaryAccount#auth_method_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/account#auth_method_id DataBoundaryAccount#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The name of the account to retrieve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/account#name DataBoundaryAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/account#name DataBoundaryAccount#name}
   */
   readonly name: string;
 }
@@ -122,7 +117,7 @@ export class DataBoundaryAccountScopeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/account boundary_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/account boundary_account}
 */
 export class DataBoundaryAccount extends cdktf.TerraformDataSource {
 
@@ -138,7 +133,7 @@ export class DataBoundaryAccount extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataBoundaryAccount resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataBoundaryAccount to import
-  * @param importFromId The id of the existing DataBoundaryAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataBoundaryAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataBoundaryAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -150,7 +145,7 @@ export class DataBoundaryAccount extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/account boundary_account} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/account boundary_account} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +156,7 @@ export class DataBoundaryAccount extends cdktf.TerraformDataSource {
       terraformResourceType: 'boundary_account',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.12',
+        providerVersion: '1.1.13',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

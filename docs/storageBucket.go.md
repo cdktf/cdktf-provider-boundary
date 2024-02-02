@@ -4,12 +4,12 @@
 
 ### StorageBucket <a name="StorageBucket" id="@cdktf/provider-boundary.storageBucket.StorageBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket boundary_storage_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket boundary_storage_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.storageBucket.StorageBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/storagebucket"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/storagebucket"
 
 storagebucket.NewStorageBucket(scope Construct, id *string, config StorageBucketConfig) StorageBucket
 ```
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucket.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucket.resetPluginId">ResetPluginId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucket.resetPluginName">ResetPluginName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucket.resetSecretsJson">ResetSecretsJson</a></code> | *No description.* |
 
 ---
 
@@ -406,6 +407,12 @@ func ResetPluginId()
 func ResetPluginName()
 ```
 
+##### `ResetSecretsJson` <a name="ResetSecretsJson" id="@cdktf/provider-boundary.storageBucket.StorageBucket.resetSecretsJson"></a>
+
+```go
+func ResetSecretsJson()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -420,7 +427,7 @@ func ResetPluginName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.storageBucket.StorageBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/storagebucket"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/storagebucket"
 
 storagebucket.StorageBucket_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.storageBucket.StorageBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/storagebucket"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/storagebucket"
 
 storagebucket.StorageBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +473,7 @@ storagebucket.StorageBucket_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.storageBucket.StorageBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/storagebucket"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/storagebucket"
 
 storagebucket.StorageBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +487,7 @@ storagebucket.StorageBucket_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.storageBucket.StorageBucket.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/storagebucket"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/storagebucket"
 
 storagebucket.StorageBucket_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +516,7 @@ The construct id used in the generated config for the StorageBucket to import.
 
 The id of the existing StorageBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -984,7 +991,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.storageBucket.StorageBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/storagebucket"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/storagebucket"
 
 &storagebucket.StorageBucketConfig {
 	Connection: interface{},
@@ -996,7 +1003,6 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/storagebucket"
 	Provisioners: *[]interface{},
 	BucketName: *string,
 	ScopeId: *string,
-	SecretsJson: *string,
 	WorkerFilter: *string,
 	AttributesJson: *string,
 	BucketPrefix: *string,
@@ -1004,6 +1010,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/storagebucket"
 	Name: *string,
 	PluginId: *string,
 	PluginName: *string,
+	SecretsJson: *string,
 }
 ```
 
@@ -1020,7 +1027,6 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/storagebucket"
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.bucketName">BucketName</a></code> | <code>*string</code> | The name of the bucket within the external object store service. |
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.scopeId">ScopeId</a></code> | <code>*string</code> | The scope for this storage bucket. |
-| <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.secretsJson">SecretsJson</a></code> | <code>*string</code> | The secrets for the storage bucket. |
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.workerFilter">WorkerFilter</a></code> | <code>*string</code> | Filters to the worker(s) that can handle requests for this storage bucket. |
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.attributesJson">AttributesJson</a></code> | <code>*string</code> | The attributes for the storage bucket. |
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.bucketPrefix">BucketPrefix</a></code> | <code>*string</code> | The prefix used to organize the data held within the external object store. |
@@ -1028,6 +1034,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/storagebucket"
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.name">Name</a></code> | <code>*string</code> | The storage bucket name. Defaults to the resource name. |
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.pluginId">PluginId</a></code> | <code>*string</code> | The ID of the plugin that should back the resource. This or plugin_name must be defined. |
 | <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.pluginName">PluginName</a></code> | <code>*string</code> | The name of the plugin that should back the resource. This or plugin_id must be defined. |
+| <code><a href="#@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.secretsJson">SecretsJson</a></code> | <code>*string</code> | The secrets for the storage bucket. |
 
 ---
 
@@ -1111,7 +1118,7 @@ BucketName *string
 
 The name of the bucket within the external object store service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#bucket_name StorageBucket#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#bucket_name StorageBucket#bucket_name}
 
 ---
 
@@ -1125,23 +1132,7 @@ ScopeId *string
 
 The scope for this storage bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#scope_id StorageBucket#scope_id}
-
----
-
-##### `SecretsJson`<sup>Required</sup> <a name="SecretsJson" id="@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.secretsJson"></a>
-
-```go
-SecretsJson *string
-```
-
-- *Type:* *string
-
-The secrets for the storage bucket.
-
-Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" to clear any existing values. NOTE: Unlike "attributes_json", removing this block will NOT clear secrets from the storage bucket; this allows injecting secrets for one call, then removing them for storage.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#secrets_json StorageBucket#secrets_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#scope_id StorageBucket#scope_id}
 
 ---
 
@@ -1157,7 +1148,7 @@ Filters to the worker(s) that can handle requests for this storage bucket.
 
 The filter must match an existing worker in order to create a storage bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#worker_filter StorageBucket#worker_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#worker_filter StorageBucket#worker_filter}
 
 ---
 
@@ -1173,7 +1164,7 @@ The attributes for the storage bucket.
 
 The "region" attribute field is required when creating an AWS storage bucket. Values are either encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" or remove the block to clear all attributes in the storage bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#attributes_json StorageBucket#attributes_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#attributes_json StorageBucket#attributes_json}
 
 ---
 
@@ -1187,7 +1178,7 @@ BucketPrefix *string
 
 The prefix used to organize the data held within the external object store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#bucket_prefix StorageBucket#bucket_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#bucket_prefix StorageBucket#bucket_prefix}
 
 ---
 
@@ -1201,7 +1192,7 @@ Description *string
 
 The storage bucket description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#description StorageBucket#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#description StorageBucket#description}
 
 ---
 
@@ -1215,7 +1206,7 @@ Name *string
 
 The storage bucket name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#name StorageBucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#name StorageBucket#name}
 
 ---
 
@@ -1229,7 +1220,7 @@ PluginId *string
 
 The ID of the plugin that should back the resource. This or plugin_name must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#plugin_id StorageBucket#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#plugin_id StorageBucket#plugin_id}
 
 ---
 
@@ -1243,7 +1234,23 @@ PluginName *string
 
 The name of the plugin that should back the resource. This or plugin_id must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/storage_bucket#plugin_name StorageBucket#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#plugin_name StorageBucket#plugin_name}
+
+---
+
+##### `SecretsJson`<sup>Optional</sup> <a name="SecretsJson" id="@cdktf/provider-boundary.storageBucket.StorageBucketConfig.property.secretsJson"></a>
+
+```go
+SecretsJson *string
+```
+
+- *Type:* *string
+
+The secrets for the storage bucket.
+
+Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" to clear any existing values. NOTE: Unlike "attributes_json", removing this block will NOT clear secrets from the storage bucket; this allows injecting secrets for one call, then removing them for storage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/storage_bucket#secrets_json StorageBucket#secrets_json}
 
 ---
 

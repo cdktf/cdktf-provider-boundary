@@ -4,12 +4,12 @@
 
 ### DataBoundaryGroup <a name="DataBoundaryGroup" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/group boundary_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/group boundary_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.NewDataBoundaryGroup(scope Construct, id *string, config DataBoundaryGroupConfig) DataBoundaryGroup
 ```
@@ -283,7 +283,7 @@ func ResetScopeId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ databoundarygroup.DataBoundaryGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ databoundarygroup.DataBoundaryGroup_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.DataBoundaryGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataBoundaryGroup to impor
 
 The id of the existing DataBoundaryGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 &databoundarygroup.DataBoundaryGroupConfig {
 	Connection: interface{},
@@ -749,7 +749,7 @@ Name *string
 
 The name of the group to retrieve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/group#name DataBoundaryGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/group#name DataBoundaryGroup#name}
 
 ---
 
@@ -763,7 +763,7 @@ ScopeId *string
 
 The scope ID in which the resource is created. Defaults `global` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/data-sources/group#scope_id DataBoundaryGroup#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/group#scope_id DataBoundaryGroup#scope_id}
 
 ---
 
@@ -772,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 &databoundarygroup.DataBoundaryGroupScope {
 
@@ -787,7 +787,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundarygrou
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.NewDataBoundaryGroupScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataBoundaryGroupScopeList
 ```
@@ -936,7 +936,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryGroup.DataBoundaryGroupScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundarygroup"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundarygroup"
 
 databoundarygroup.NewDataBoundaryGroupScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataBoundaryGroupScopeOutputReference
 ```

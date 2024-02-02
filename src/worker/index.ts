@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/worker
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/worker
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface WorkerConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description for the worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/worker#description Worker#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/worker#description Worker#description}
   */
   readonly description?: string;
   /**
   * The name for the worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/worker#name Worker#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/worker#name Worker#name}
   */
   readonly name?: string;
   /**
   * The scope for the worker. Defaults to `global`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/worker#scope_id Worker#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/worker#scope_id Worker#scope_id}
   */
   readonly scopeId?: string;
   /**
   * The worker authentication token required to register the worker for the worker-led authentication flow. Leaving this blank will result in a controller generated token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/worker#worker_generated_auth_token Worker#worker_generated_auth_token}
   */
   readonly workerGeneratedAuthToken?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/worker boundary_worker}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/worker boundary_worker}
 */
 export class Worker extends cdktf.TerraformResource {
 
@@ -55,7 +50,7 @@ export class Worker extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Worker resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Worker to import
-  * @param importFromId The id of the existing Worker that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/worker#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Worker that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/worker#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Worker to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +62,7 @@ export class Worker extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/worker boundary_worker} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/worker boundary_worker} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +73,7 @@ export class Worker extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_worker',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.12',
+        providerVersion: '1.1.13',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
