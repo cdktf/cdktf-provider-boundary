@@ -4,7 +4,7 @@
 
 ### HostSetPlugin <a name="HostSetPlugin" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin boundary_host_set_plugin}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin boundary_host_set_plugin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostSetPlugin.HostSetPlugin.Initializer"></a>
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The catalog for the host set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#host_catalog_id HostSetPlugin#host_catalog_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#host_catalog_id HostSetPlugin#host_catalog_id}
 
 ---
 
@@ -132,7 +132,7 @@ The attributes for the host set.
 
 Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" or remove the block to clear all attributes in the host set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#attributes_json HostSetPlugin#attributes_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#attributes_json HostSetPlugin#attributes_json}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The host set description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#description HostSetPlugin#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#description HostSetPlugin#description}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The host set name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#name HostSetPlugin#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#name HostSetPlugin#name}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ordered list of preferred endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#preferred_endpoints HostSetPlugin#preferred_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#preferred_endpoints HostSetPlugin#preferred_endpoints}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The value to set for the sync interval seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#sync_interval_seconds HostSetPlugin#sync_interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#sync_interval_seconds HostSetPlugin#sync_interval_seconds}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of host set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#type HostSetPlugin#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#type HostSetPlugin#type}
 
 ---
 
@@ -651,7 +651,7 @@ The construct id used in the generated config for the HostSetPlugin to import.
 
 The id of the existing HostSetPlugin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.String getHostCatalogId();
 
 The catalog for the host set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#host_catalog_id HostSetPlugin#host_catalog_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#host_catalog_id HostSetPlugin#host_catalog_id}
 
 ---
 
@@ -1157,7 +1157,7 @@ The attributes for the host set.
 
 Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" or remove the block to clear all attributes in the host set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#attributes_json HostSetPlugin#attributes_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#attributes_json HostSetPlugin#attributes_json}
 
 ---
 
@@ -1171,7 +1171,7 @@ public java.lang.String getDescription();
 
 The host set description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#description HostSetPlugin#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#description HostSetPlugin#description}
 
 ---
 
@@ -1185,7 +1185,7 @@ public java.lang.String getName();
 
 The host set name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#name HostSetPlugin#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#name HostSetPlugin#name}
 
 ---
 
@@ -1199,7 +1199,7 @@ public java.util.List<java.lang.String> getPreferredEndpoints();
 
 The ordered list of preferred endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#preferred_endpoints HostSetPlugin#preferred_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#preferred_endpoints HostSetPlugin#preferred_endpoints}
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.Number getSyncIntervalSeconds();
 
 The value to set for the sync interval seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#sync_interval_seconds HostSetPlugin#sync_interval_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#sync_interval_seconds HostSetPlugin#sync_interval_seconds}
 
 ---
 
@@ -1227,7 +1227,7 @@ public java.lang.String getType();
 
 The type of host set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.12/docs/resources/host_set_plugin#type HostSetPlugin#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_set_plugin#type HostSetPlugin#type}
 
 ---
 
