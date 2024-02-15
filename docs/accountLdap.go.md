@@ -4,12 +4,12 @@
 
 ### AccountLdap <a name="AccountLdap" id="@cdktf/provider-boundary.accountLdap.AccountLdap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_ldap boundary_account_ldap}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/account_ldap boundary_account_ldap}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.accountLdap.AccountLdap.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/accountldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountldap"
 
 accountldap.NewAccountLdap(scope Construct, id *string, config AccountLdapConfig) AccountLdap
 ```
@@ -406,7 +406,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.accountLdap.AccountLdap.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/accountldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountldap"
 
 accountldap.AccountLdap_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.accountLdap.AccountLdap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/accountldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountldap"
 
 accountldap.AccountLdap_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ accountldap.AccountLdap_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.accountLdap.AccountLdap.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/accountldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountldap"
 
 accountldap.AccountLdap_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ accountldap.AccountLdap_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.accountLdap.AccountLdap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/accountldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountldap"
 
 accountldap.AccountLdap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the AccountLdap to import.
 
 The id of the existing AccountLdap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_ldap#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/account_ldap#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -816,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.accountLdap.AccountLdapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/accountldap"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/accountldap"
 
 &accountldap.AccountLdapConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ AuthMethodId *string
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_ldap#auth_method_id AccountLdap#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/account_ldap#auth_method_id AccountLdap#auth_method_id}
 
 ---
 
@@ -947,7 +947,7 @@ Description *string
 
 The account description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_ldap#description AccountLdap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/account_ldap#description AccountLdap#description}
 
 ---
 
@@ -961,7 +961,7 @@ LoginName *string
 
 The login name for this account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_ldap#login_name AccountLdap#login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/account_ldap#login_name AccountLdap#login_name}
 
 ---
 
@@ -975,7 +975,7 @@ Name *string
 
 The account name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_ldap#name AccountLdap#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/account_ldap#name AccountLdap#name}
 
 ---
 
@@ -989,7 +989,7 @@ Type *string
 
 The resource type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/account_ldap#type AccountLdap#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/account_ldap#type AccountLdap#type}
 
 ---
 

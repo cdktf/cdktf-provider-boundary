@@ -4,12 +4,12 @@
 
 ### HostCatalog <a name="HostCatalog" id="@cdktf/provider-boundary.hostCatalog.HostCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_catalog boundary_host_catalog}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog boundary_host_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/hostcatalog"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalog"
 
 hostcatalog.NewHostCatalog(scope Construct, id *string, config HostCatalogConfig) HostCatalog
 ```
@@ -392,7 +392,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/hostcatalog"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalog"
 
 hostcatalog.HostCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/hostcatalog"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalog"
 
 hostcatalog.HostCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ hostcatalog.HostCatalog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/hostcatalog"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalog"
 
 hostcatalog.HostCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ hostcatalog.HostCatalog_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.hostCatalog.HostCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/hostcatalog"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalog"
 
 hostcatalog.HostCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the HostCatalog to import.
 
 The id of the existing HostCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.hostCatalog.HostCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/hostcatalog"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalog"
 
 &hostcatalog.HostCatalogConfig {
 	Connection: interface{},
@@ -895,7 +895,7 @@ ScopeId *string
 
 The scope ID in which the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_catalog#scope_id HostCatalog#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog#scope_id HostCatalog#scope_id}
 
 ---
 
@@ -909,7 +909,7 @@ Type *string
 
 The host catalog type. Only `static` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_catalog#type HostCatalog#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog#type HostCatalog#type}
 
 ---
 
@@ -923,7 +923,7 @@ Description *string
 
 The host catalog description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_catalog#description HostCatalog#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog#description HostCatalog#description}
 
 ---
 
@@ -937,7 +937,7 @@ Name *string
 
 The host catalog name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/resources/host_catalog#name HostCatalog#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_catalog#name HostCatalog#name}
 
 ---
 
