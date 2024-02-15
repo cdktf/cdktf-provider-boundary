@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for hashicorp/boundary provider version 1.1.13
+# CDKTF prebuilt bindings for hashicorp/boundary provider version 1.1.14
 
-This repo builds and publishes the [Terraform boundary provider](https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform boundary provider](https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform boundary provider version 
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform boundary provider](https://registry.terraform.io/providers/hashicorp/boundary/1.1.13)
+- [Terraform boundary provider](https://registry.terraform.io/providers/hashicorp/boundary/1.1.14)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

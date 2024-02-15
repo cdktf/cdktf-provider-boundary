@@ -4,7 +4,7 @@
 
 ### DataBoundaryUser <a name="DataBoundaryUser" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/user boundary_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/user boundary_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUser.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataBoundaryUser to import
 
 The id of the existing DataBoundaryUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ public string Name { get; set; }
 
 The username to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/user#name DataBoundaryUser#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/user#name DataBoundaryUser#name}
 
 ---
 
@@ -796,7 +796,7 @@ public string ScopeId { get; set; }
 
 The scope ID in which the resource is created. Defaults `global` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.13/docs/data-sources/user#scope_id DataBoundaryUser#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/user#scope_id DataBoundaryUser#scope_id}
 
 ---
 
