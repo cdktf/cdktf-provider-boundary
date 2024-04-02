@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryuser"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryuser"
 
 databoundaryuser.NewDataBoundaryUser(scope Construct, id *string, config DataBoundaryUserConfig) DataBoundaryUser
 ```
@@ -283,7 +283,7 @@ func ResetScopeId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryuser"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryuser"
 
 databoundaryuser.DataBoundaryUser_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryuser"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryuser"
 
 databoundaryuser.DataBoundaryUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ databoundaryuser.DataBoundaryUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryuser"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryuser"
 
 databoundaryuser.DataBoundaryUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ databoundaryuser.DataBoundaryUser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryuser"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryuser"
 
 databoundaryuser.DataBoundaryUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryuser"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryuser"
 
 &databoundaryuser.DataBoundaryUserConfig {
 	Connection: interface{},
@@ -805,7 +805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUserScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryuser"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryuser"
 
 &databoundaryuser.DataBoundaryUserScope {
 
@@ -820,7 +820,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryuser"
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUserScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryuser"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryuser"
 
 databoundaryuser.NewDataBoundaryUserScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataBoundaryUserScopeList
 ```
@@ -969,7 +969,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryUser.DataBoundaryUserScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryuser"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryuser"
 
 databoundaryuser.NewDataBoundaryUserScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataBoundaryUserScopeOutputReference
 ```
