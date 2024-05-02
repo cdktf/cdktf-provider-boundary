@@ -8,6 +8,7 @@ export * as account from './account';
 export * as accountLdap from './account-ldap';
 export * as accountOidc from './account-oidc';
 export * as accountPassword from './account-password';
+export * as aliasTarget from './alias-target';
 export * as authMethod from './auth-method';
 export * as authMethodLdap from './auth-method-ldap';
 export * as authMethodOidc from './auth-method-oidc';

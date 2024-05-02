@@ -8,6 +8,7 @@ The following submodules are available:
 - [accountLdap](./accountLdap.go.md)
 - [accountOidc](./accountOidc.go.md)
 - [accountPassword](./accountPassword.go.md)
+- [aliasTarget](./aliasTarget.go.md)
 - [authMethod](./authMethod.go.md)
 - [authMethodLdap](./authMethodLdap.go.md)
 - [authMethodOidc](./authMethodOidc.go.md)

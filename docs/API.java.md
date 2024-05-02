@@ -8,6 +8,7 @@ The following submodules are available:
 - [accountLdap](./accountLdap.java.md)
 - [accountOidc](./accountOidc.java.md)
 - [accountPassword](./accountPassword.java.md)
+- [aliasTarget](./aliasTarget.java.md)
 - [authMethod](./authMethod.java.md)
 - [authMethodLdap](./authMethodLdap.java.md)
 - [authMethodOidc](./authMethodOidc.java.md)

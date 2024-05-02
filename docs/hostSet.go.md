@@ -4,7 +4,7 @@
 
 ### HostSet <a name="HostSet" id="@cdktf/provider-boundary.hostSet.HostSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_set boundary_host_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set boundary_host_set}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostSet.HostSet.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the HostSet to import.
 
 The id of the existing HostSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -926,7 +926,7 @@ HostCatalogId *string
 
 The catalog for the host set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_set#host_catalog_id HostSet#host_catalog_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set#host_catalog_id HostSet#host_catalog_id}
 
 ---
 
@@ -940,7 +940,7 @@ Type *string
 
 The type of host set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_set#type HostSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set#type HostSet#type}
 
 ---
 
@@ -954,7 +954,7 @@ Description *string
 
 The host set description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_set#description HostSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set#description HostSet#description}
 
 ---
 
@@ -968,7 +968,7 @@ HostIds *[]*string
 
 The list of host IDs contained in this set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_set#host_ids HostSet#host_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set#host_ids HostSet#host_ids}
 
 ---
 
@@ -982,7 +982,7 @@ Name *string
 
 The host set name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/host_set#name HostSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set#name HostSet#name}
 
 ---
 
