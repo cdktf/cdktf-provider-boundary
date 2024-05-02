@@ -8,6 +8,7 @@ The following submodules are available:
 - [accountLdap](./accountLdap.typescript.md)
 - [accountOidc](./accountOidc.typescript.md)
 - [accountPassword](./accountPassword.typescript.md)
+- [aliasTarget](./aliasTarget.typescript.md)
 - [authMethod](./authMethod.typescript.md)
 - [authMethodLdap](./authMethodLdap.typescript.md)
 - [authMethodOidc](./authMethodOidc.typescript.md)

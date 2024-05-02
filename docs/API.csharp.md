@@ -8,6 +8,7 @@ The following submodules are available:
 - [accountLdap](./accountLdap.csharp.md)
 - [accountOidc](./accountOidc.csharp.md)
 - [accountPassword](./accountPassword.csharp.md)
+- [aliasTarget](./aliasTarget.csharp.md)
 - [authMethod](./authMethod.csharp.md)
 - [authMethodLdap](./authMethodLdap.csharp.md)
 - [authMethodOidc](./authMethodOidc.csharp.md)

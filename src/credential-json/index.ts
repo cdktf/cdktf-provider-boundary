@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_json
+// https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_json
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +10,31 @@ export interface CredentialJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The credential store in which to save this json credential.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_json#credential_store_id CredentialJson#credential_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_json#credential_store_id CredentialJson#credential_store_id}
   */
   readonly credentialStoreId: string;
   /**
   * The description of this json credential.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_json#description CredentialJson#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_json#description CredentialJson#description}
   */
   readonly description?: string;
   /**
   * The name of this json credential. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_json#name CredentialJson#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_json#name CredentialJson#name}
   */
   readonly name?: string;
   /**
   * The object for the this json credential. Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_json#object CredentialJson#object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_json#object CredentialJson#object}
   */
   readonly object: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_json boundary_credential_json}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_json boundary_credential_json}
 */
 export class CredentialJson extends cdktf.TerraformResource {
 
@@ -55,7 +50,7 @@ export class CredentialJson extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CredentialJson resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CredentialJson to import
-  * @param importFromId The id of the existing CredentialJson that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_json#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CredentialJson that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_json#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CredentialJson to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +62,7 @@ export class CredentialJson extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_json boundary_credential_json} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_json boundary_credential_json} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +73,7 @@ export class CredentialJson extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_credential_json',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.14',
+        providerVersion: '1.1.15',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### ManagedGroup <a name="ManagedGroup" id="@cdktf/provider-boundary.managedGroup.ManagedGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/managed_group boundary_managed_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/managed_group boundary_managed_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.managedGroup.ManagedGroup.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/managed_group#auth_method_id ManagedGroup#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/managed_group#auth_method_id ManagedGroup#auth_method_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Boolean expression to filter the workers for this managed group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/managed_group#filter ManagedGroup#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/managed_group#filter ManagedGroup#filter}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The managed group description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/managed_group#description ManagedGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/managed_group#description ManagedGroup#description}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The managed group name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/managed_group#name ManagedGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/managed_group#name ManagedGroup#name}
 
 ---
 
@@ -585,7 +585,7 @@ The construct id used in the generated config for the ManagedGroup to import.
 
 The id of the existing ManagedGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/managed_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/managed_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1003,7 +1003,7 @@ public java.lang.String getAuthMethodId();
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/managed_group#auth_method_id ManagedGroup#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/managed_group#auth_method_id ManagedGroup#auth_method_id}
 
 ---
 
@@ -1017,7 +1017,7 @@ public java.lang.String getFilter();
 
 Boolean expression to filter the workers for this managed group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/managed_group#filter ManagedGroup#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/managed_group#filter ManagedGroup#filter}
 
 ---
 
@@ -1031,7 +1031,7 @@ public java.lang.String getDescription();
 
 The managed group description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/managed_group#description ManagedGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/managed_group#description ManagedGroup#description}
 
 ---
 
@@ -1045,7 +1045,7 @@ public java.lang.String getName();
 
 The managed group name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/managed_group#name ManagedGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/managed_group#name ManagedGroup#name}
 
 ---
 

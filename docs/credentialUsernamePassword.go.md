@@ -4,12 +4,12 @@
 
 ### CredentialUsernamePassword <a name="CredentialUsernamePassword" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_username_password boundary_credential_username_password}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_username_password boundary_credential_username_password}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
 
 credentialusernamepassword.NewCredentialUsernamePassword(scope Construct, id *string, config CredentialUsernamePasswordConfig) CredentialUsernamePassword
 ```
@@ -392,7 +392,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
 
 credentialusernamepassword.CredentialUsernamePassword_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
 
 credentialusernamepassword.CredentialUsernamePassword_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ credentialusernamepassword.CredentialUsernamePassword_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
 
 credentialusernamepassword.CredentialUsernamePassword_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ credentialusernamepassword.CredentialUsernamePassword_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePassword.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
 
 credentialusernamepassword.CredentialUsernamePassword_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the CredentialUsernamePassword
 
 The id of the existing CredentialUsernamePassword that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_username_password#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_username_password#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.credentialUsernamePassword.CredentialUsernamePasswordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/credentialusernamepassword"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/credentialusernamepassword"
 
 &credentialusernamepassword.CredentialUsernamePasswordConfig {
 	Connection: interface{},
@@ -930,7 +930,7 @@ CredentialStoreId *string
 
 The credential store in which to save this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
 
 ---
 
@@ -944,7 +944,7 @@ Password *string
 
 The password of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
 
 ---
 
@@ -958,7 +958,7 @@ Username *string
 
 The username of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
 
 ---
 
@@ -972,7 +972,7 @@ Description *string
 
 The description of this username/password credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
 
 ---
 
@@ -986,7 +986,7 @@ Name *string
 
 The name of this username/password credential. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
 
 ---
 

@@ -8,6 +8,7 @@ The following submodules are available:
 - [accountLdap](./accountLdap.python.md)
 - [accountOidc](./accountOidc.python.md)
 - [accountPassword](./accountPassword.python.md)
+- [aliasTarget](./aliasTarget.python.md)
 - [authMethod](./authMethod.python.md)
 - [authMethodLdap](./authMethodLdap.python.md)
 - [authMethodOidc](./authMethodOidc.python.md)

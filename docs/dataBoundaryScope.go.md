@@ -4,12 +4,12 @@
 
 ### DataBoundaryScope <a name="DataBoundaryScope" id="@cdktf/provider-boundary.dataBoundaryScope.DataBoundaryScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/scope boundary_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/scope boundary_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryScope.DataBoundaryScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryscope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryscope"
 
 databoundaryscope.NewDataBoundaryScope(scope Construct, id *string, config DataBoundaryScopeConfig) DataBoundaryScope
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.dataBoundaryScope.DataBoundaryScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryscope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryscope"
 
 databoundaryscope.DataBoundaryScope_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.dataBoundaryScope.DataBoundaryScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryscope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryscope"
 
 databoundaryscope.DataBoundaryScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ databoundaryscope.DataBoundaryScope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-boundary.dataBoundaryScope.DataBoundaryScope.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryscope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryscope"
 
 databoundaryscope.DataBoundaryScope_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ databoundaryscope.DataBoundaryScope_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.dataBoundaryScope.DataBoundaryScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryscope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryscope"
 
 databoundaryscope.DataBoundaryScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataBoundaryScope to impor
 
 The id of the existing DataBoundaryScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryScope.DataBoundaryScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/databoundaryscope"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryscope"
 
 &databoundaryscope.DataBoundaryScopeConfig {
 	Connection: interface{},
@@ -720,7 +720,7 @@ Name *string
 
 The name of the scope to retrieve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/scope#name DataBoundaryScope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/scope#name DataBoundaryScope#name}
 
 ---
 
@@ -734,7 +734,7 @@ ScopeId *string
 
 The parent scope ID that will be queried for the scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/data-sources/scope#scope_id DataBoundaryScope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/scope#scope_id DataBoundaryScope#scope_id}
 
 ---
 

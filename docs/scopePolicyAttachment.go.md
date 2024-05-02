@@ -4,12 +4,12 @@
 
 ### ScopePolicyAttachment <a name="ScopePolicyAttachment" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment boundary_scope_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment boundary_scope_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
 
 scopepolicyattachment.NewScopePolicyAttachment(scope Construct, id *string, config ScopePolicyAttachmentConfig) ScopePolicyAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
 
 scopepolicyattachment.ScopePolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
 
 scopepolicyattachment.ScopePolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ scopepolicyattachment.ScopePolicyAttachment_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
 
 scopepolicyattachment.ScopePolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ scopepolicyattachment.ScopePolicyAttachment_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
 
 scopepolicyattachment.ScopePolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ScopePolicyAttachment to i
 
 The id of the existing ScopePolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
 
 &scopepolicyattachment.ScopePolicyAttachmentConfig {
 	Connection: interface{},
@@ -767,9 +767,9 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattac
 | <code><a href="#@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment#policy_id ScopePolicyAttachment#policy_id}. |
-| <code><a href="#@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.property.scopeId">ScopeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment#scope_id ScopePolicyAttachment#scope_id}. |
-| <code><a href="#@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment#id ScopePolicyAttachment#id}. |
+| <code><a href="#@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment#policy_id ScopePolicyAttachment#policy_id}. |
+| <code><a href="#@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.property.scopeId">ScopeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment#scope_id ScopePolicyAttachment#scope_id}. |
+| <code><a href="#@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment#id ScopePolicyAttachment#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment#policy_id ScopePolicyAttachment#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment#policy_id ScopePolicyAttachment#policy_id}.
 
 ---
 
@@ -863,7 +863,7 @@ ScopeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment#scope_id ScopePolicyAttachment#scope_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment#scope_id ScopePolicyAttachment#scope_id}.
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.14/docs/resources/scope_policy_attachment#id ScopePolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/scope_policy_attachment#id ScopePolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
