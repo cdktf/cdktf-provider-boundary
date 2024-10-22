@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set_static
+// https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_set_static
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +10,37 @@ export interface HostSetStaticConfig extends cdktf.TerraformMetaArguments {
   /**
   * The host set description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set_static#description HostSetStatic#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_set_static#description HostSetStatic#description}
   */
   readonly description?: string;
   /**
   * The catalog for the host set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set_static#host_catalog_id HostSetStatic#host_catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_set_static#host_catalog_id HostSetStatic#host_catalog_id}
   */
   readonly hostCatalogId: string;
   /**
   * The list of host IDs contained in this set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set_static#host_ids HostSetStatic#host_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_set_static#host_ids HostSetStatic#host_ids}
   */
   readonly hostIds?: string[];
   /**
   * The host set name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set_static#name HostSetStatic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_set_static#name HostSetStatic#name}
   */
   readonly name?: string;
   /**
   * The type of host set
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set_static#type HostSetStatic#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_set_static#type HostSetStatic#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set_static boundary_host_set_static}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_set_static boundary_host_set_static}
 */
 export class HostSetStatic extends cdktf.TerraformResource {
 
@@ -61,7 +56,7 @@ export class HostSetStatic extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a HostSetStatic resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HostSetStatic to import
-  * @param importFromId The id of the existing HostSetStatic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set_static#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HostSetStatic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_set_static#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HostSetStatic to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -73,7 +68,7 @@ export class HostSetStatic extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_set_static boundary_host_set_static} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_set_static boundary_host_set_static} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +79,7 @@ export class HostSetStatic extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_host_set_static',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.15',
+        providerVersion: '1.2.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

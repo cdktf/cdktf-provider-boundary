@@ -4,7 +4,7 @@
 
 ### HostCatalogPlugin <a name="HostCatalogPlugin" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin boundary_host_catalog_plugin}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin boundary_host_catalog_plugin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.Initializer"></a>
 
@@ -31,7 +31,8 @@ hostCatalogPlugin.HostCatalogPlugin(
   plugin_id: str = None,
   plugin_name: str = None,
   secrets_hmac: str = None,
-  secrets_json: str = None
+  secrets_json: str = None,
+  worker_filter: str = None
 )
 ```
 
@@ -57,6 +58,7 @@ hostCatalogPlugin.HostCatalogPlugin(
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.Initializer.parameter.pluginName">plugin_name</a></code> | <code>str</code> | The name of the plugin that should back the resource. This or plugin_id must be defined. |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.Initializer.parameter.secretsHmac">secrets_hmac</a></code> | <code>str</code> | The HMAC'd secrets value returned from the server. |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.Initializer.parameter.secretsJson">secrets_json</a></code> | <code>str</code> | The secrets for the host catalog. |
+| <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.Initializer.parameter.workerFilter">worker_filter</a></code> | <code>str</code> | HCP Only. A filter used to control which PKI workers can handle dynamic host catalog requests. |
 
 ---
 
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The scope ID in which the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#scope_id HostCatalogPlugin#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#scope_id HostCatalogPlugin#scope_id}
 
 ---
 
@@ -138,7 +140,7 @@ The attributes for the host catalog.
 
 Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" or remove the block to clear all attributes in the host catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#attributes_json HostCatalogPlugin#attributes_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#attributes_json HostCatalogPlugin#attributes_json}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The host catalog description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#description HostCatalogPlugin#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#description HostCatalogPlugin#description}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Internal only. Used to force update so that we can always check the value of secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#internal_force_update HostCatalogPlugin#internal_force_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#internal_force_update HostCatalogPlugin#internal_force_update}
 
 ---
 
@@ -168,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Internal only. The Boundary-provided HMAC used to calculate the current value of the HMAC'd config. Used for drift detection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#internal_hmac_used_for_secrets_config_hmac HostCatalogPlugin#internal_hmac_used_for_secrets_config_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#internal_hmac_used_for_secrets_config_hmac HostCatalogPlugin#internal_hmac_used_for_secrets_config_hmac}
 
 ---
 
@@ -178,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Internal only. HMAC of (serverSecretsHmac + config secrets). Used for proper secrets handling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#internal_secrets_config_hmac HostCatalogPlugin#internal_secrets_config_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#internal_secrets_config_hmac HostCatalogPlugin#internal_secrets_config_hmac}
 
 ---
 
@@ -188,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The host catalog name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#name HostCatalogPlugin#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#name HostCatalogPlugin#name}
 
 ---
 
@@ -198,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the plugin that should back the resource. This or plugin_name must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#plugin_id HostCatalogPlugin#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#plugin_id HostCatalogPlugin#plugin_id}
 
 ---
 
@@ -208,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the plugin that should back the resource. This or plugin_id must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#plugin_name HostCatalogPlugin#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#plugin_name HostCatalogPlugin#plugin_name}
 
 ---
 
@@ -218,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The HMAC'd secrets value returned from the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#secrets_hmac HostCatalogPlugin#secrets_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#secrets_hmac HostCatalogPlugin#secrets_hmac}
 
 ---
 
@@ -230,7 +232,17 @@ The secrets for the host catalog.
 
 Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" to clear any existing values. NOTE: Unlike "attributes_json", removing this block will NOT clear secrets from the host catalog; this allows injecting secrets for one call, then removing them for storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#secrets_json HostCatalogPlugin#secrets_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#secrets_json HostCatalogPlugin#secrets_json}
+
+---
+
+##### `worker_filter`<sup>Optional</sup> <a name="worker_filter" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.Initializer.parameter.workerFilter"></a>
+
+- *Type:* str
+
+HCP Only. A filter used to control which PKI workers can handle dynamic host catalog requests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#worker_filter HostCatalogPlugin#worker_filter}
 
 ---
 
@@ -271,6 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.resetPluginName">reset_plugin_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.resetSecretsHmac">reset_secrets_hmac</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.resetSecretsJson">reset_secrets_json</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.resetWorkerFilter">reset_worker_filter</a></code> | *No description.* |
 
 ---
 
@@ -659,6 +672,12 @@ def reset_secrets_hmac() -> None
 def reset_secrets_json() -> None
 ```
 
+##### `reset_worker_filter` <a name="reset_worker_filter" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.resetWorkerFilter"></a>
+
+```python
+def reset_worker_filter() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -773,7 +792,7 @@ The construct id used in the generated config for the HostCatalogPlugin to impor
 
 The id of the existing HostCatalogPlugin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,6 +834,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.scopeIdInput">scope_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.secretsHmacInput">secrets_hmac_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.secretsJsonInput">secrets_json_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.workerFilterInput">worker_filter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.attributesJson">attributes_json</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.internalForceUpdate">internal_force_update</a></code> | <code>str</code> | *No description.* |
@@ -826,6 +846,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.scopeId">scope_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.secretsHmac">secrets_hmac</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.secretsJson">secrets_json</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.workerFilter">worker_filter</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -1091,6 +1112,16 @@ secrets_json_input: str
 
 ---
 
+##### `worker_filter_input`<sup>Optional</sup> <a name="worker_filter_input" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.workerFilterInput"></a>
+
+```python
+worker_filter_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `attributes_json`<sup>Required</sup> <a name="attributes_json" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.attributesJson"></a>
 
 ```python
@@ -1201,6 +1232,16 @@ secrets_json: str
 
 ---
 
+##### `worker_filter`<sup>Required</sup> <a name="worker_filter" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.property.workerFilter"></a>
+
+```python
+worker_filter: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1246,7 +1287,8 @@ hostCatalogPlugin.HostCatalogPluginConfig(
   plugin_id: str = None,
   plugin_name: str = None,
   secrets_hmac: str = None,
-  secrets_json: str = None
+  secrets_json: str = None,
+  worker_filter: str = None
 )
 ```
 
@@ -1272,6 +1314,7 @@ hostCatalogPlugin.HostCatalogPluginConfig(
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPluginConfig.property.pluginName">plugin_name</a></code> | <code>str</code> | The name of the plugin that should back the resource. This or plugin_id must be defined. |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPluginConfig.property.secretsHmac">secrets_hmac</a></code> | <code>str</code> | The HMAC'd secrets value returned from the server. |
 | <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPluginConfig.property.secretsJson">secrets_json</a></code> | <code>str</code> | The secrets for the host catalog. |
+| <code><a href="#@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPluginConfig.property.workerFilter">worker_filter</a></code> | <code>str</code> | HCP Only. A filter used to control which PKI workers can handle dynamic host catalog requests. |
 
 ---
 
@@ -1355,7 +1398,7 @@ scope_id: str
 
 The scope ID in which the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#scope_id HostCatalogPlugin#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#scope_id HostCatalogPlugin#scope_id}
 
 ---
 
@@ -1371,7 +1414,7 @@ The attributes for the host catalog.
 
 Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" or remove the block to clear all attributes in the host catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#attributes_json HostCatalogPlugin#attributes_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#attributes_json HostCatalogPlugin#attributes_json}
 
 ---
 
@@ -1385,7 +1428,7 @@ description: str
 
 The host catalog description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#description HostCatalogPlugin#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#description HostCatalogPlugin#description}
 
 ---
 
@@ -1399,7 +1442,7 @@ internal_force_update: str
 
 Internal only. Used to force update so that we can always check the value of secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#internal_force_update HostCatalogPlugin#internal_force_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#internal_force_update HostCatalogPlugin#internal_force_update}
 
 ---
 
@@ -1413,7 +1456,7 @@ internal_hmac_used_for_secrets_config_hmac: str
 
 Internal only. The Boundary-provided HMAC used to calculate the current value of the HMAC'd config. Used for drift detection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#internal_hmac_used_for_secrets_config_hmac HostCatalogPlugin#internal_hmac_used_for_secrets_config_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#internal_hmac_used_for_secrets_config_hmac HostCatalogPlugin#internal_hmac_used_for_secrets_config_hmac}
 
 ---
 
@@ -1427,7 +1470,7 @@ internal_secrets_config_hmac: str
 
 Internal only. HMAC of (serverSecretsHmac + config secrets). Used for proper secrets handling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#internal_secrets_config_hmac HostCatalogPlugin#internal_secrets_config_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#internal_secrets_config_hmac HostCatalogPlugin#internal_secrets_config_hmac}
 
 ---
 
@@ -1441,7 +1484,7 @@ name: str
 
 The host catalog name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#name HostCatalogPlugin#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#name HostCatalogPlugin#name}
 
 ---
 
@@ -1455,7 +1498,7 @@ plugin_id: str
 
 The ID of the plugin that should back the resource. This or plugin_name must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#plugin_id HostCatalogPlugin#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#plugin_id HostCatalogPlugin#plugin_id}
 
 ---
 
@@ -1469,7 +1512,7 @@ plugin_name: str
 
 The name of the plugin that should back the resource. This or plugin_id must be defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#plugin_name HostCatalogPlugin#plugin_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#plugin_name HostCatalogPlugin#plugin_name}
 
 ---
 
@@ -1483,7 +1526,7 @@ secrets_hmac: str
 
 The HMAC'd secrets value returned from the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#secrets_hmac HostCatalogPlugin#secrets_hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#secrets_hmac HostCatalogPlugin#secrets_hmac}
 
 ---
 
@@ -1499,7 +1542,21 @@ The secrets for the host catalog.
 
 Either values encoded with the "jsonencode" function, pre-escaped JSON string, or a file:// or env:// path. Set to a string "null" to clear any existing values. NOTE: Unlike "attributes_json", removing this block will NOT clear secrets from the host catalog; this allows injecting secrets for one call, then removing them for storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/host_catalog_plugin#secrets_json HostCatalogPlugin#secrets_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#secrets_json HostCatalogPlugin#secrets_json}
+
+---
+
+##### `worker_filter`<sup>Optional</sup> <a name="worker_filter" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPluginConfig.property.workerFilter"></a>
+
+```python
+worker_filter: str
+```
+
+- *Type:* str
+
+HCP Only. A filter used to control which PKI workers can handle dynamic host catalog requests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/host_catalog_plugin#worker_filter HostCatalogPlugin#worker_filter}
 
 ---
 

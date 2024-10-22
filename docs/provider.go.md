@@ -4,12 +4,12 @@
 
 ### BoundaryProvider <a name="BoundaryProvider" id="@cdktf/provider-boundary.provider.BoundaryProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs boundary}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs boundary}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.provider.BoundaryProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 provider.NewBoundaryProvider(scope Construct, id *string, config BoundaryProviderConfig) BoundaryProvider
 ```
@@ -221,7 +221,7 @@ func ResetToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.provider.BoundaryProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 provider.BoundaryProvider_IsConstruct(x interface{}) *bool
 ```
@@ -253,7 +253,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 provider.BoundaryProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -267,7 +267,7 @@ provider.BoundaryProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-boundary.provider.BoundaryProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 provider.BoundaryProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -281,7 +281,7 @@ provider.BoundaryProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.provider.BoundaryProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 provider.BoundaryProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -310,7 +310,7 @@ The construct id used in the generated config for the BoundaryProvider to import
 
 The id of the existing BoundaryProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.provider.BoundaryProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/provider"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/provider"
 
 &provider.BoundaryProviderConfig {
 	Addr: *string,
@@ -755,7 +755,7 @@ Addr *string
 
 The base url of the Boundary API, e.g. "http://127.0.0.1:9200". If not set, it will be read from the "BOUNDARY_ADDR" env var.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#addr BoundaryProvider#addr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#addr BoundaryProvider#addr}
 
 ---
 
@@ -769,7 +769,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#alias BoundaryProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#alias BoundaryProvider#alias}
 
 ---
 
@@ -783,7 +783,7 @@ AuthMethodId *string
 
 The auth method ID e.g. ampw_1234567890. If not set, the default auth method for the given scope ID will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#auth_method_id BoundaryProvider#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#auth_method_id BoundaryProvider#auth_method_id}
 
 ---
 
@@ -797,7 +797,7 @@ AuthMethodLoginName *string
 
 The auth method login name for password-style or ldap-style auth methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#auth_method_login_name BoundaryProvider#auth_method_login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#auth_method_login_name BoundaryProvider#auth_method_login_name}
 
 ---
 
@@ -811,7 +811,7 @@ AuthMethodPassword *string
 
 The auth method password for password-style or ldap-style auth methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#auth_method_password BoundaryProvider#auth_method_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#auth_method_password BoundaryProvider#auth_method_password}
 
 ---
 
@@ -825,7 +825,7 @@ PasswordAuthMethodLoginName *string
 
 The auth method login name for password-style auth methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#password_auth_method_login_name BoundaryProvider#password_auth_method_login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#password_auth_method_login_name BoundaryProvider#password_auth_method_login_name}
 
 ---
 
@@ -839,7 +839,7 @@ PasswordAuthMethodPassword *string
 
 The auth method password for password-style auth methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#password_auth_method_password BoundaryProvider#password_auth_method_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#password_auth_method_password BoundaryProvider#password_auth_method_password}
 
 ---
 
@@ -853,7 +853,7 @@ PluginExecutionDir *string
 
 Specifies a directory that the Boundary provider can use to write and execute its built-in plugins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#plugin_execution_dir BoundaryProvider#plugin_execution_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#plugin_execution_dir BoundaryProvider#plugin_execution_dir}
 
 ---
 
@@ -869,7 +869,7 @@ Can be a heredoc string or a path on disk.
 
 If set, the string/file will be parsed as HCL and used with the recovery KMS mechanism. While this is set, it will override any other authentication information; the KMS mechanism will always be used. See Boundary's KMS docs for examples: https://boundaryproject.io/docs/configuration/kms
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#recovery_kms_hcl BoundaryProvider#recovery_kms_hcl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#recovery_kms_hcl BoundaryProvider#recovery_kms_hcl}
 
 ---
 
@@ -883,7 +883,7 @@ ScopeId *string
 
 The scope ID for the default auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#scope_id BoundaryProvider#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#scope_id BoundaryProvider#scope_id}
 
 ---
 
@@ -897,7 +897,7 @@ TlsInsecure interface{}
 
 When set to true, does not validate the Boundary API endpoint certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#tls_insecure BoundaryProvider#tls_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#tls_insecure BoundaryProvider#tls_insecure}
 
 ---
 
@@ -913,7 +913,7 @@ The Boundary token to use, as a string or path on disk containing just the strin
 
 If set, the token read here will be used in place of authenticating with the auth method specified in "auth_method_id", although the recovery KMS mechanism will still override this. Can also be set with the BOUNDARY_TOKEN environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs#token BoundaryProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs#token BoundaryProvider#token}
 
 ---
 

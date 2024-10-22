@@ -4,7 +4,7 @@
 
 ### Role <a name="Role" id="@cdktf/provider-boundary.role.Role"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role boundary_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role boundary_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.role.Role.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-boundary.role.Role.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-boundary.role.Role.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-boundary.role.Role.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.role.Role.resetGrantScopeId">resetGrantScopeId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.resetGrantScopeIds">resetGrantScopeIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.resetGrantStrings">resetGrantStrings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.resetName">resetName</a></code> | *No description.* |
@@ -376,12 +375,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetDescription(): void
 ```
 
-##### `resetGrantScopeId` <a name="resetGrantScopeId" id="@cdktf/provider-boundary.role.Role.resetGrantScopeId"></a>
-
-```typescript
-public resetGrantScopeId(): void
-```
-
 ##### `resetGrantScopeIds` <a name="resetGrantScopeIds" id="@cdktf/provider-boundary.role.Role.resetGrantScopeIds"></a>
 
 ```typescript
@@ -509,7 +502,7 @@ The construct id used in the generated config for the Role to import.
 
 The id of the existing Role that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -541,14 +534,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.role.Role.property.grantScopeIdInput">grantScopeIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.grantScopeIdsInput">grantScopeIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.grantStringsInput">grantStringsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.principalIdsInput">principalIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.scopeIdInput">scopeIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.role.Role.property.grantScopeId">grantScopeId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.grantScopeIds">grantScopeIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.grantStrings">grantStrings</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -719,16 +710,6 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `grantScopeIdInput`<sup>Optional</sup> <a name="grantScopeIdInput" id="@cdktf/provider-boundary.role.Role.property.grantScopeIdInput"></a>
-
-```typescript
-public readonly grantScopeIdInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `grantScopeIdsInput`<sup>Optional</sup> <a name="grantScopeIdsInput" id="@cdktf/provider-boundary.role.Role.property.grantScopeIdsInput"></a>
 
 ```typescript
@@ -783,16 +764,6 @@ public readonly scopeIdInput: string;
 
 ```typescript
 public readonly description: string;
-```
-
-- *Type:* string
-
----
-
-##### `grantScopeId`<sup>Required</sup> <a name="grantScopeId" id="@cdktf/provider-boundary.role.Role.property.grantScopeId"></a>
-
-```typescript
-public readonly grantScopeId: string;
 ```
 
 - *Type:* string
@@ -892,7 +863,6 @@ const roleConfig: role.RoleConfig = { ... }
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.scopeId">scopeId</a></code> | <code>string</code> | The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.description">description</a></code> | <code>string</code> | The role description. |
-| <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantScopeId">grantScopeId</a></code> | <code>string</code> | For Boundary 0.15+, use `grant_scope_ids` instead. The scope for which the grants in the role should apply. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantScopeIds">grantScopeIds</a></code> | <code>string[]</code> | A list of scopes for which the grants in this role should apply, which can include the special values "this", "children", or "descendants". |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantStrings">grantStrings</a></code> | <code>string[]</code> | A list of stringified grants for the role. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.name">name</a></code> | <code>string</code> | The role name. Defaults to the resource name. |
@@ -980,7 +950,7 @@ public readonly scopeId: string;
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#scope_id Role#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#scope_id Role#scope_id}
 
 ---
 
@@ -994,21 +964,7 @@ public readonly description: string;
 
 The role description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#description Role#description}
-
----
-
-##### `grantScopeId`<sup>Optional</sup> <a name="grantScopeId" id="@cdktf/provider-boundary.role.RoleConfig.property.grantScopeId"></a>
-
-```typescript
-public readonly grantScopeId: string;
-```
-
-- *Type:* string
-
-For Boundary 0.15+, use `grant_scope_ids` instead. The scope for which the grants in the role should apply.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#grant_scope_id Role#grant_scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#description Role#description}
 
 ---
 
@@ -1022,7 +978,7 @@ public readonly grantScopeIds: string[];
 
 A list of scopes for which the grants in this role should apply, which can include the special values "this", "children", or "descendants".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#grant_scope_ids Role#grant_scope_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#grant_scope_ids Role#grant_scope_ids}
 
 ---
 
@@ -1036,7 +992,7 @@ public readonly grantStrings: string[];
 
 A list of stringified grants for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#grant_strings Role#grant_strings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#grant_strings Role#grant_strings}
 
 ---
 
@@ -1050,7 +1006,7 @@ public readonly name: string;
 
 The role name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#name Role#name}
 
 ---
 
@@ -1064,7 +1020,7 @@ public readonly principalIds: string[];
 
 A list of principal (user or group) IDs to add as principals on the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#principal_ids Role#principal_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#principal_ids Role#principal_ids}
 
 ---
 
