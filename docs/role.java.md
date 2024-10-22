@@ -4,7 +4,7 @@
 
 ### Role <a name="Role" id="@cdktf/provider-boundary.role.Role"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role boundary_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role boundary_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.role.Role.Initializer"></a>
 
@@ -25,7 +25,6 @@ Role.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .scopeId(java.lang.String)
 //  .description(java.lang.String)
-//  .grantScopeId(java.lang.String)
 //  .grantScopeIds(java.util.List<java.lang.String>)
 //  .grantStrings(java.util.List<java.lang.String>)
 //  .name(java.lang.String)
@@ -46,7 +45,6 @@ Role.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-boundary.role.Role.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.Initializer.parameter.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset. |
 | <code><a href="#@cdktf/provider-boundary.role.Role.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The role description. |
-| <code><a href="#@cdktf/provider-boundary.role.Role.Initializer.parameter.grantScopeId">grantScopeId</a></code> | <code>java.lang.String</code> | For Boundary 0.15+, use `grant_scope_ids` instead. The scope for which the grants in the role should apply. |
 | <code><a href="#@cdktf/provider-boundary.role.Role.Initializer.parameter.grantScopeIds">grantScopeIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of scopes for which the grants in this role should apply, which can include the special values "this", "children", or "descendants". |
 | <code><a href="#@cdktf/provider-boundary.role.Role.Initializer.parameter.grantStrings">grantStrings</a></code> | <code>java.util.List<java.lang.String></code> | A list of stringified grants for the role. |
 | <code><a href="#@cdktf/provider-boundary.role.Role.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The role name. Defaults to the resource name. |
@@ -120,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#scope_id Role#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#scope_id Role#scope_id}
 
 ---
 
@@ -130,17 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The role description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#description Role#description}
-
----
-
-##### `grantScopeId`<sup>Optional</sup> <a name="grantScopeId" id="@cdktf/provider-boundary.role.Role.Initializer.parameter.grantScopeId"></a>
-
-- *Type:* java.lang.String
-
-For Boundary 0.15+, use `grant_scope_ids` instead. The scope for which the grants in the role should apply.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#grant_scope_id Role#grant_scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#description Role#description}
 
 ---
 
@@ -150,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of scopes for which the grants in this role should apply, which can include the special values "this", "children", or "descendants".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#grant_scope_ids Role#grant_scope_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#grant_scope_ids Role#grant_scope_ids}
 
 ---
 
@@ -160,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of stringified grants for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#grant_strings Role#grant_strings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#grant_strings Role#grant_strings}
 
 ---
 
@@ -170,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The role name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#name Role#name}
 
 ---
 
@@ -180,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of principal (user or group) IDs to add as principals on the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#principal_ids Role#principal_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#principal_ids Role#principal_ids}
 
 ---
 
@@ -212,7 +200,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-boundary.role.Role.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-boundary.role.Role.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-boundary.role.Role.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.role.Role.resetGrantScopeId">resetGrantScopeId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.resetGrantScopeIds">resetGrantScopeIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.resetGrantStrings">resetGrantStrings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.resetName">resetName</a></code> | *No description.* |
@@ -516,12 +503,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetDescription()
 ```
 
-##### `resetGrantScopeId` <a name="resetGrantScopeId" id="@cdktf/provider-boundary.role.Role.resetGrantScopeId"></a>
-
-```java
-public void resetGrantScopeId()
-```
-
 ##### `resetGrantScopeIds` <a name="resetGrantScopeIds" id="@cdktf/provider-boundary.role.Role.resetGrantScopeIds"></a>
 
 ```java
@@ -649,7 +630,7 @@ The construct id used in the generated config for the Role to import.
 
 The id of the existing Role that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -681,14 +662,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.role.Role.property.grantScopeIdInput">grantScopeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.grantScopeIdsInput">grantScopeIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.grantStringsInput">grantStringsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.principalIdsInput">principalIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.scopeIdInput">scopeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.role.Role.property.grantScopeId">grantScopeId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.grantScopeIds">grantScopeIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.grantStrings">grantStrings</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.Role.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -859,16 +838,6 @@ public java.lang.String getDescriptionInput();
 
 ---
 
-##### `grantScopeIdInput`<sup>Optional</sup> <a name="grantScopeIdInput" id="@cdktf/provider-boundary.role.Role.property.grantScopeIdInput"></a>
-
-```java
-public java.lang.String getGrantScopeIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `grantScopeIdsInput`<sup>Optional</sup> <a name="grantScopeIdsInput" id="@cdktf/provider-boundary.role.Role.property.grantScopeIdsInput"></a>
 
 ```java
@@ -923,16 +892,6 @@ public java.lang.String getScopeIdInput();
 
 ```java
 public java.lang.String getDescription();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `grantScopeId`<sup>Required</sup> <a name="grantScopeId" id="@cdktf/provider-boundary.role.Role.property.grantScopeId"></a>
-
-```java
-public java.lang.String getGrantScopeId();
 ```
 
 - *Type:* java.lang.String
@@ -1030,7 +989,6 @@ RoleConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .scopeId(java.lang.String)
 //  .description(java.lang.String)
-//  .grantScopeId(java.lang.String)
 //  .grantScopeIds(java.util.List<java.lang.String>)
 //  .grantStrings(java.util.List<java.lang.String>)
 //  .name(java.lang.String)
@@ -1051,7 +1009,6 @@ RoleConfig.builder()
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.description">description</a></code> | <code>java.lang.String</code> | The role description. |
-| <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantScopeId">grantScopeId</a></code> | <code>java.lang.String</code> | For Boundary 0.15+, use `grant_scope_ids` instead. The scope for which the grants in the role should apply. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantScopeIds">grantScopeIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of scopes for which the grants in this role should apply, which can include the special values "this", "children", or "descendants". |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.grantStrings">grantStrings</a></code> | <code>java.util.List<java.lang.String></code> | A list of stringified grants for the role. |
 | <code><a href="#@cdktf/provider-boundary.role.RoleConfig.property.name">name</a></code> | <code>java.lang.String</code> | The role name. Defaults to the resource name. |
@@ -1139,7 +1096,7 @@ public java.lang.String getScopeId();
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#scope_id Role#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#scope_id Role#scope_id}
 
 ---
 
@@ -1153,21 +1110,7 @@ public java.lang.String getDescription();
 
 The role description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#description Role#description}
-
----
-
-##### `grantScopeId`<sup>Optional</sup> <a name="grantScopeId" id="@cdktf/provider-boundary.role.RoleConfig.property.grantScopeId"></a>
-
-```java
-public java.lang.String getGrantScopeId();
-```
-
-- *Type:* java.lang.String
-
-For Boundary 0.15+, use `grant_scope_ids` instead. The scope for which the grants in the role should apply.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#grant_scope_id Role#grant_scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#description Role#description}
 
 ---
 
@@ -1181,7 +1124,7 @@ public java.util.List<java.lang.String> getGrantScopeIds();
 
 A list of scopes for which the grants in this role should apply, which can include the special values "this", "children", or "descendants".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#grant_scope_ids Role#grant_scope_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#grant_scope_ids Role#grant_scope_ids}
 
 ---
 
@@ -1195,7 +1138,7 @@ public java.util.List<java.lang.String> getGrantStrings();
 
 A list of stringified grants for the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#grant_strings Role#grant_strings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#grant_strings Role#grant_strings}
 
 ---
 
@@ -1209,7 +1152,7 @@ public java.lang.String getName();
 
 The role name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#name Role#name}
 
 ---
 
@@ -1223,7 +1166,7 @@ public java.util.List<java.lang.String> getPrincipalIds();
 
 A list of principal (user or group) IDs to add as principals on the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/role#principal_ids Role#principal_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/role#principal_ids Role#principal_ids}
 
 ---
 

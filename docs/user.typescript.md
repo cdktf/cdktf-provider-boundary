@@ -4,7 +4,7 @@
 
 ### User <a name="User" id="@cdktf/provider-boundary.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/user boundary_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/user boundary_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.user.User.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ public readonly scopeId: string;
 
 The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/user#scope_id User#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/user#scope_id User#scope_id}
 
 ---
 
@@ -904,7 +904,7 @@ public readonly accountIds: string[];
 
 Account ID's to associate with this user resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/user#account_ids User#account_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/user#account_ids User#account_ids}
 
 ---
 
@@ -918,7 +918,7 @@ public readonly description: string;
 
 The user description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/user#description User#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/user#description User#description}
 
 ---
 
@@ -932,7 +932,7 @@ public readonly name: string;
 
 The username. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/resources/user#name User#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/user#name User#name}
 
 ---
 

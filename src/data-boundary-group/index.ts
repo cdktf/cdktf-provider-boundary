@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/group
+// https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataBoundaryGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the group to retrieve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/group#name DataBoundaryGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/data-sources/group#name DataBoundaryGroup#name}
   */
   readonly name: string;
   /**
   * The scope ID in which the resource is created. Defaults `global` if unset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/group#scope_id DataBoundaryGroup#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/data-sources/group#scope_id DataBoundaryGroup#scope_id}
   */
   readonly scopeId?: string;
 }
@@ -122,7 +122,7 @@ export class DataBoundaryGroupScopeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/group boundary_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/data-sources/group boundary_group}
 */
 export class DataBoundaryGroup extends cdktf.TerraformDataSource {
 
@@ -138,7 +138,7 @@ export class DataBoundaryGroup extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataBoundaryGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataBoundaryGroup to import
-  * @param importFromId The id of the existing DataBoundaryGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataBoundaryGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataBoundaryGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -150,7 +150,7 @@ export class DataBoundaryGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.1.15/docs/data-sources/group boundary_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/data-sources/group boundary_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +161,7 @@ export class DataBoundaryGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'boundary_group',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.1.15',
+        providerVersion: '1.2.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
