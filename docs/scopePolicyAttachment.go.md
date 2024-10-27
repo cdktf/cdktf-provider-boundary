@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
 
 scopepolicyattachment.NewScopePolicyAttachment(scope Construct, id *string, config ScopePolicyAttachmentConfig) ScopePolicyAttachment
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
 
 scopepolicyattachment.ScopePolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
 
 scopepolicyattachment.ScopePolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ scopepolicyattachment.ScopePolicyAttachment_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
 
 scopepolicyattachment.ScopePolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ scopepolicyattachment.ScopePolicyAttachment_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
 
 scopepolicyattachment.ScopePolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.scopePolicyAttachment.ScopePolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/scopepolicyattachment"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v9/scopepolicyattachment"
 
 &scopepolicyattachment.ScopePolicyAttachmentConfig {
 	Connection: interface{},
