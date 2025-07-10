@@ -4,7 +4,7 @@
 
 ### CredentialStoreStatic <a name="CredentialStoreStatic" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/credential_store_static boundary_credential_store_static}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/credential_store_static boundary_credential_store_static}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.credentialStoreStatic.CredentialStoreStatic.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the CredentialStoreStatic to i
 
 The id of the existing CredentialStoreStatic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/credential_store_static#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/credential_store_static#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,7 +871,7 @@ ScopeId *string
 
 The scope for this credential store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/credential_store_static#scope_id CredentialStoreStatic#scope_id}
 
 ---
 
@@ -885,7 +885,7 @@ Description *string
 
 The static credential store description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/credential_store_static#description CredentialStoreStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/credential_store_static#description CredentialStoreStatic#description}
 
 ---
 
@@ -899,7 +899,7 @@ Name *string
 
 The static credential store name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/credential_store_static#name CredentialStoreStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/credential_store_static#name CredentialStoreStatic#name}
 
 ---
 
