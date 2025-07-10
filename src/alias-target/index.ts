@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target
+// https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface AliasTargetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The host id to pass to Boundary when performing an authorize session action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target#authorize_session_host_id AliasTarget#authorize_session_host_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#authorize_session_host_id AliasTarget#authorize_session_host_id}
   */
   readonly authorizeSessionHostId?: string;
   /**
   * The alias description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target#description AliasTarget#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#description AliasTarget#description}
   */
   readonly description?: string;
   /**
   * The destination of the alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target#destination_id AliasTarget#destination_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#destination_id AliasTarget#destination_id}
   */
   readonly destinationId?: string;
   /**
   * The alias name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target#name AliasTarget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#name AliasTarget#name}
   */
   readonly name?: string;
   /**
   * The scope ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target#scope_id AliasTarget#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#scope_id AliasTarget#scope_id}
   */
   readonly scopeId: string;
   /**
   * The type of alias; hardcoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target#type AliasTarget#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#type AliasTarget#type}
   */
   readonly type?: string;
   /**
   * The value of the alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target#value AliasTarget#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#value AliasTarget#value}
   */
   readonly value: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target boundary_alias_target}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target boundary_alias_target}
 */
 export class AliasTarget extends cdktf.TerraformResource {
 
@@ -73,7 +73,7 @@ export class AliasTarget extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AliasTarget resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AliasTarget to import
-  * @param importFromId The id of the existing AliasTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AliasTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AliasTarget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -85,7 +85,7 @@ export class AliasTarget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/alias_target boundary_alias_target} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target boundary_alias_target} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class AliasTarget extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_alias_target',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.2.0',
+        providerVersion: '1.3.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
