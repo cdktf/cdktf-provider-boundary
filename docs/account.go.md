@@ -4,7 +4,7 @@
 
 ### Account <a name="Account" id="@cdktf/provider-boundary.account.Account"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account boundary_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account boundary_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.account.Account.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the Account to import.
 
 The id of the existing Account that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,7 +957,7 @@ AuthMethodId *string
 
 The resource ID for the auth method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account#auth_method_id Account#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account#auth_method_id Account#auth_method_id}
 
 ---
 
@@ -971,7 +971,7 @@ Type *string
 
 The resource type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account#type Account#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account#type Account#type}
 
 ---
 
@@ -985,7 +985,7 @@ Description *string
 
 The account description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account#description Account#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account#description Account#description}
 
 ---
 
@@ -999,7 +999,7 @@ LoginName *string
 
 The login name for this account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account#login_name Account#login_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account#login_name Account#login_name}
 
 ---
 
@@ -1013,7 +1013,7 @@ Name *string
 
 The account name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account#name Account#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account#name Account#name}
 
 ---
 
@@ -1027,7 +1027,7 @@ Password *string
 
 The account password. Only set on create, changes will not be reflected when updating account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.2.0/docs/resources/account#password Account#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/account#password Account#password}
 
 ---
 
