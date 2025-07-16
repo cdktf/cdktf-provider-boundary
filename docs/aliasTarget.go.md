@@ -4,7 +4,7 @@
 
 ### AliasTarget <a name="AliasTarget" id="@cdktf/provider-boundary.aliasTarget.AliasTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target boundary_alias_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/alias_target boundary_alias_target}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.aliasTarget.AliasTarget.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the AliasTarget to import.
 
 The id of the existing AliasTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/alias_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,7 +988,7 @@ ScopeId *string
 
 The scope ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#scope_id AliasTarget#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/alias_target#scope_id AliasTarget#scope_id}
 
 ---
 
@@ -1002,7 +1002,7 @@ Value *string
 
 The value of the alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#value AliasTarget#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/alias_target#value AliasTarget#value}
 
 ---
 
@@ -1016,7 +1016,7 @@ AuthorizeSessionHostId *string
 
 The host id to pass to Boundary when performing an authorize session action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#authorize_session_host_id AliasTarget#authorize_session_host_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/alias_target#authorize_session_host_id AliasTarget#authorize_session_host_id}
 
 ---
 
@@ -1030,7 +1030,7 @@ Description *string
 
 The alias description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#description AliasTarget#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/alias_target#description AliasTarget#description}
 
 ---
 
@@ -1044,7 +1044,7 @@ DestinationId *string
 
 The destination of the alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#destination_id AliasTarget#destination_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/alias_target#destination_id AliasTarget#destination_id}
 
 ---
 
@@ -1058,7 +1058,7 @@ Name *string
 
 The alias name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#name AliasTarget#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/alias_target#name AliasTarget#name}
 
 ---
 
@@ -1072,7 +1072,7 @@ Type *string
 
 The type of alias; hardcoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/alias_target#type AliasTarget#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/alias_target#type AliasTarget#type}
 
 ---
 

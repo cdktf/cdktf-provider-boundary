@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap
+// https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group_ldap
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface ManagedGroupLdapConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID for the auth method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group_ldap#auth_method_id ManagedGroupLdap#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The managed group description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group_ldap#description ManagedGroupLdap#description}
   */
   readonly description?: string;
   /**
   * The list of groups that make up the managed group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group_ldap#group_names ManagedGroupLdap#group_names}
   */
   readonly groupNames: string[];
   /**
   * The managed group name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group_ldap#name ManagedGroupLdap#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap boundary_managed_group_ldap}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group_ldap boundary_managed_group_ldap}
 */
 export class ManagedGroupLdap extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ManagedGroupLdap extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedGroupLdap resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedGroupLdap to import
-  * @param importFromId The id of the existing ManagedGroupLdap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedGroupLdap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group_ldap#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedGroupLdap to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class ManagedGroupLdap extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/managed_group_ldap boundary_managed_group_ldap} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group_ldap boundary_managed_group_ldap} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class ManagedGroupLdap extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_managed_group_ldap',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.3.0',
+        providerVersion: '1.3.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
