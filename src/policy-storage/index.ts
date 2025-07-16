@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage
+// https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface PolicyStorageConfig extends cdktf.TerraformMetaArguments {
   /**
   * The number of days after which a session recording will be automatically deleted. Defaults to 0: never automatically delete. However, delete_after_days and retain_for_days cannot both be 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage#delete_after_days PolicyStorage#delete_after_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage#delete_after_days PolicyStorage#delete_after_days}
   */
   readonly deleteAfterDays?: number;
   /**
   * Whether or not the associated delete_after_days value can be overridden by org scopes. Note: if the associated delete_after_days value is 0, overridable is ignored
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage#delete_after_overridable PolicyStorage#delete_after_overridable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage#delete_after_overridable PolicyStorage#delete_after_overridable}
   */
   readonly deleteAfterOverridable?: boolean | cdktf.IResolvable;
   /**
   * The policy description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage#description PolicyStorage#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage#description PolicyStorage#description}
   */
   readonly description?: string;
   /**
   * The policy name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage#name PolicyStorage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage#name PolicyStorage#name}
   */
   readonly name?: string;
   /**
   * The number of days a session recording is required to be stored. Defaults to 0: allow deletions at any time. However, retain_for_days and delete_after_days cannot both be 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage#retain_for_days PolicyStorage#retain_for_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage#retain_for_days PolicyStorage#retain_for_days}
   */
   readonly retainForDays?: number;
   /**
   * Whether or not the associated retain_for_days value can be overridden by org scopes. Note: if the associated retain_for_days value is 0, overridable is ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage#retain_for_overridable PolicyStorage#retain_for_overridable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage#retain_for_overridable PolicyStorage#retain_for_overridable}
   */
   readonly retainForOverridable?: boolean | cdktf.IResolvable;
   /**
   * The scope for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage#scope_id PolicyStorage#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage#scope_id PolicyStorage#scope_id}
   */
   readonly scopeId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage boundary_policy_storage}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage boundary_policy_storage}
 */
 export class PolicyStorage extends cdktf.TerraformResource {
 
@@ -73,7 +73,7 @@ export class PolicyStorage extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PolicyStorage resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PolicyStorage to import
-  * @param importFromId The id of the existing PolicyStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PolicyStorage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PolicyStorage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -85,7 +85,7 @@ export class PolicyStorage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.0/docs/resources/policy_storage boundary_policy_storage} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/policy_storage boundary_policy_storage} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class PolicyStorage extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_policy_storage',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.3.0',
+        providerVersion: '1.3.1',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
