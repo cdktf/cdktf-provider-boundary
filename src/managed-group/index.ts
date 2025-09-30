@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group
+// https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/managed_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface ManagedGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID for the auth method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group#auth_method_id ManagedGroup#auth_method_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/managed_group#auth_method_id ManagedGroup#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The managed group description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group#description ManagedGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/managed_group#description ManagedGroup#description}
   */
   readonly description?: string;
   /**
   * Boolean expression to filter the workers for this managed group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group#filter ManagedGroup#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/managed_group#filter ManagedGroup#filter}
   */
   readonly filter: string;
   /**
   * The managed group name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group#name ManagedGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/managed_group#name ManagedGroup#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group boundary_managed_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/managed_group boundary_managed_group}
 */
 export class ManagedGroup extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ManagedGroup extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ManagedGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedGroup to import
-  * @param importFromId The id of the existing ManagedGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/managed_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class ManagedGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/managed_group boundary_managed_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/managed_group boundary_managed_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class ManagedGroup extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_managed_group',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.3.1',
+        providerVersion: '1.4.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
