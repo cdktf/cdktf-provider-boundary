@@ -4,7 +4,7 @@
 
 ### HostCatalogStatic <a name="HostCatalogStatic" id="@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_catalog_static boundary_host_catalog_static}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_catalog_static boundary_host_catalog_static}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostCatalogStatic.HostCatalogStatic.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The scope ID in which the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_catalog_static#scope_id HostCatalogStatic#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_catalog_static#scope_id HostCatalogStatic#scope_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The host catalog description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_catalog_static#description HostCatalogStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_catalog_static#description HostCatalogStatic#description}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The host catalog name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_catalog_static#name HostCatalogStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_catalog_static#name HostCatalogStatic#name}
 
 ---
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the HostCatalogStatic to impor
 
 The id of the existing HostCatalogStatic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_catalog_static#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_catalog_static#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1007,7 +1007,7 @@ scope_id: str
 
 The scope ID in which the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_catalog_static#scope_id HostCatalogStatic#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_catalog_static#scope_id HostCatalogStatic#scope_id}
 
 ---
 
@@ -1021,7 +1021,7 @@ description: str
 
 The host catalog description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_catalog_static#description HostCatalogStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_catalog_static#description HostCatalogStatic#description}
 
 ---
 
@@ -1035,7 +1035,7 @@ name: str
 
 The host catalog name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_catalog_static#name HostCatalogStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_catalog_static#name HostCatalogStatic#name}
 
 ---
 
