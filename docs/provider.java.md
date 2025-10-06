@@ -22,8 +22,7 @@ BoundaryProvider.Builder.create(Construct scope, java.lang.String id)
 //  .pluginExecutionDir(java.lang.String)
 //  .recoveryKmsHcl(java.lang.String)
 //  .scopeId(java.lang.String)
-//  .tlsInsecure(java.lang.Boolean)
-//  .tlsInsecure(IResolvable)
+//  .tlsInsecure(java.lang.Boolean|IResolvable)
 //  .token(java.lang.String)
     .build();
 ```
@@ -42,7 +41,7 @@ BoundaryProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.pluginExecutionDir">pluginExecutionDir</a></code> | <code>java.lang.String</code> | Specifies a directory that the Boundary provider can use to write and execute its built-in plugins. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.recoveryKmsHcl">recoveryKmsHcl</a></code> | <code>java.lang.String</code> | Can be a heredoc string or a path on disk. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The scope ID for the default auth method. |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.tlsInsecure">tlsInsecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true, does not validate the Boundary API endpoint certificate. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.tlsInsecure">tlsInsecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When set to true, does not validate the Boundary API endpoint certificate. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | The Boundary token to use, as a string or path on disk containing just the string. |
 
 ---
@@ -169,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `tlsInsecure`<sup>Optional</sup> <a name="tlsInsecure" id="@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.tlsInsecure"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 When set to true, does not validate the Boundary API endpoint certificate.
 
@@ -488,7 +487,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.pluginExecutionDirInput">pluginExecutionDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.recoveryKmsHclInput">recoveryKmsHclInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.scopeIdInput">scopeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput">tlsInsecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput">tlsInsecureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.addr">addr</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodId">authMethodId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -499,7 +498,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.pluginExecutionDir">pluginExecutionDir</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.recoveryKmsHcl">recoveryKmsHcl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.scopeId">scopeId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure">tlsInsecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure">tlsInsecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -699,10 +698,10 @@ public java.lang.String getScopeIdInput();
 ##### `tlsInsecureInput`<sup>Optional</sup> <a name="tlsInsecureInput" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput"></a>
 
 ```java
-public java.lang.Object getTlsInsecureInput();
+public java.lang.Boolean|IResolvable getTlsInsecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -809,10 +808,10 @@ public java.lang.String getScopeId();
 ##### `tlsInsecure`<sup>Optional</sup> <a name="tlsInsecure" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure"></a>
 
 ```java
-public java.lang.Object getTlsInsecure();
+public java.lang.Boolean|IResolvable getTlsInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -864,8 +863,7 @@ BoundaryProviderConfig.builder()
 //  .pluginExecutionDir(java.lang.String)
 //  .recoveryKmsHcl(java.lang.String)
 //  .scopeId(java.lang.String)
-//  .tlsInsecure(java.lang.Boolean)
-//  .tlsInsecure(IResolvable)
+//  .tlsInsecure(java.lang.Boolean|IResolvable)
 //  .token(java.lang.String)
     .build();
 ```
@@ -884,7 +882,7 @@ BoundaryProviderConfig.builder()
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.pluginExecutionDir">pluginExecutionDir</a></code> | <code>java.lang.String</code> | Specifies a directory that the Boundary provider can use to write and execute its built-in plugins. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.recoveryKmsHcl">recoveryKmsHcl</a></code> | <code>java.lang.String</code> | Can be a heredoc string or a path on disk. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The scope ID for the default auth method. |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.tlsInsecure">tlsInsecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | When set to true, does not validate the Boundary API endpoint certificate. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.tlsInsecure">tlsInsecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When set to true, does not validate the Boundary API endpoint certificate. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | The Boundary token to use, as a string or path on disk containing just the string. |
 
 ---
@@ -1034,10 +1032,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `tlsInsecure`<sup>Optional</sup> <a name="tlsInsecure" id="@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.tlsInsecure"></a>
 
 ```java
-public java.lang.Object getTlsInsecure();
+public java.lang.Boolean|IResolvable getTlsInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 When set to true, does not validate the Boundary API endpoint certificate.
 

@@ -24,7 +24,7 @@ provider.BoundaryProvider(
   plugin_execution_dir: str = None,
   recovery_kms_hcl: str = None,
   scope_id: str = None,
-  tls_insecure: typing.Union[bool, IResolvable] = None,
+  tls_insecure: bool | IResolvable = None,
   token: str = None
 )
 ```
@@ -43,7 +43,7 @@ provider.BoundaryProvider(
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.pluginExecutionDir">plugin_execution_dir</a></code> | <code>str</code> | Specifies a directory that the Boundary provider can use to write and execute its built-in plugins. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.recoveryKmsHcl">recovery_kms_hcl</a></code> | <code>str</code> | Can be a heredoc string or a path on disk. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.scopeId">scope_id</a></code> | <code>str</code> | The scope ID for the default auth method. |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.tlsInsecure">tls_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true, does not validate the Boundary API endpoint certificate. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.tlsInsecure">tls_insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to true, does not validate the Boundary API endpoint certificate. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.token">token</a></code> | <code>str</code> | The Boundary token to use, as a string or path on disk containing just the string. |
 
 ---
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `tls_insecure`<sup>Optional</sup> <a name="tls_insecure" id="@cdktf/provider-boundary.provider.BoundaryProvider.Initializer.parameter.tlsInsecure"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When set to true, does not validate the Boundary API endpoint certificate.
 
@@ -505,7 +505,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.pluginExecutionDirInput">plugin_execution_dir_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.recoveryKmsHclInput">recovery_kms_hcl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.scopeIdInput">scope_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput">tls_insecure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput">tls_insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tokenInput">token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.addr">addr</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodId">auth_method_id</a></code> | <code>str</code> | *No description.* |
@@ -516,7 +516,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.pluginExecutionDir">plugin_execution_dir</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.recoveryKmsHcl">recovery_kms_hcl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.scopeId">scope_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure">tls_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure">tls_insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.token">token</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -716,10 +716,10 @@ scope_id_input: str
 ##### `tls_insecure_input`<sup>Optional</sup> <a name="tls_insecure_input" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput"></a>
 
 ```python
-tls_insecure_input: typing.Union[bool, IResolvable]
+tls_insecure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -826,10 +826,10 @@ scope_id: str
 ##### `tls_insecure`<sup>Optional</sup> <a name="tls_insecure" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure"></a>
 
 ```python
-tls_insecure: typing.Union[bool, IResolvable]
+tls_insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -881,7 +881,7 @@ provider.BoundaryProviderConfig(
   plugin_execution_dir: str = None,
   recovery_kms_hcl: str = None,
   scope_id: str = None,
-  tls_insecure: typing.Union[bool, IResolvable] = None,
+  tls_insecure: bool | IResolvable = None,
   token: str = None
 )
 ```
@@ -900,7 +900,7 @@ provider.BoundaryProviderConfig(
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.pluginExecutionDir">plugin_execution_dir</a></code> | <code>str</code> | Specifies a directory that the Boundary provider can use to write and execute its built-in plugins. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.recoveryKmsHcl">recovery_kms_hcl</a></code> | <code>str</code> | Can be a heredoc string or a path on disk. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.scopeId">scope_id</a></code> | <code>str</code> | The scope ID for the default auth method. |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.tlsInsecure">tls_insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When set to true, does not validate the Boundary API endpoint certificate. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.tlsInsecure">tls_insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to true, does not validate the Boundary API endpoint certificate. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.token">token</a></code> | <code>str</code> | The Boundary token to use, as a string or path on disk containing just the string. |
 
 ---
@@ -1050,10 +1050,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `tls_insecure`<sup>Optional</sup> <a name="tls_insecure" id="@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.tlsInsecure"></a>
 
 ```python
-tls_insecure: typing.Union[bool, IResolvable]
+tls_insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When set to true, does not validate the Boundary API endpoint certificate.
 

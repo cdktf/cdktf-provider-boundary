@@ -345,7 +345,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.pluginExecutionDirInput">PluginExecutionDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.recoveryKmsHclInput">RecoveryKmsHclInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.scopeIdInput">ScopeIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput">TlsInsecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput">TlsInsecureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tokenInput">TokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.addr">Addr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.authMethodId">AuthMethodId</a></code> | <code>string</code> | *No description.* |
@@ -356,7 +356,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.pluginExecutionDir">PluginExecutionDir</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.recoveryKmsHcl">RecoveryKmsHcl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.scopeId">ScopeId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure">TlsInsecure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure">TlsInsecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProvider.property.token">Token</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -556,10 +556,10 @@ public string ScopeIdInput { get; }
 ##### `TlsInsecureInput`<sup>Optional</sup> <a name="TlsInsecureInput" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecureInput"></a>
 
 ```csharp
-public object TlsInsecureInput { get; }
+public bool|IResolvable TlsInsecureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -666,10 +666,10 @@ public string ScopeId { get; }
 ##### `TlsInsecure`<sup>Optional</sup> <a name="TlsInsecure" id="@cdktf/provider-boundary.provider.BoundaryProvider.property.tlsInsecure"></a>
 
 ```csharp
-public object TlsInsecure { get; }
+public bool|IResolvable TlsInsecure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -721,7 +721,7 @@ new BoundaryProviderConfig {
     string PluginExecutionDir = null,
     string RecoveryKmsHcl = null,
     string ScopeId = null,
-    object TlsInsecure = null,
+    bool|IResolvable TlsInsecure = null,
     string Token = null
 };
 ```
@@ -740,7 +740,7 @@ new BoundaryProviderConfig {
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.pluginExecutionDir">PluginExecutionDir</a></code> | <code>string</code> | Specifies a directory that the Boundary provider can use to write and execute its built-in plugins. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.recoveryKmsHcl">RecoveryKmsHcl</a></code> | <code>string</code> | Can be a heredoc string or a path on disk. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.scopeId">ScopeId</a></code> | <code>string</code> | The scope ID for the default auth method. |
-| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.tlsInsecure">TlsInsecure</a></code> | <code>object</code> | When set to true, does not validate the Boundary API endpoint certificate. |
+| <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.tlsInsecure">TlsInsecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When set to true, does not validate the Boundary API endpoint certificate. |
 | <code><a href="#@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.token">Token</a></code> | <code>string</code> | The Boundary token to use, as a string or path on disk containing just the string. |
 
 ---
@@ -890,10 +890,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `TlsInsecure`<sup>Optional</sup> <a name="TlsInsecure" id="@cdktf/provider-boundary.provider.BoundaryProviderConfig.property.tlsInsecure"></a>
 
 ```csharp
-public object TlsInsecure { get; set; }
+public bool|IResolvable TlsInsecure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When set to true, does not validate the Boundary API endpoint certificate.
 

@@ -14,16 +14,16 @@ from cdktf_cdktf_provider_boundary import auth_method_ldap
 authMethodLdap.AuthMethodLdap(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   scope_id: str,
   account_attribute_maps: typing.List[str] = None,
-  anon_group_search: typing.Union[bool, IResolvable] = None,
+  anon_group_search: bool | IResolvable = None,
   bind_dn: str = None,
   bind_password: str = None,
   bind_password_hmac: str = None,
@@ -33,16 +33,16 @@ authMethodLdap.AuthMethodLdap(
   client_certificate_key_hmac: str = None,
   dereference_aliases: str = None,
   description: str = None,
-  discover_dn: typing.Union[bool, IResolvable] = None,
-  enable_groups: typing.Union[bool, IResolvable] = None,
+  discover_dn: bool | IResolvable = None,
+  enable_groups: bool | IResolvable = None,
   group_attr: str = None,
   group_dn: str = None,
   group_filter: str = None,
-  insecure_tls: typing.Union[bool, IResolvable] = None,
-  is_primary_for_scope: typing.Union[bool, IResolvable] = None,
+  insecure_tls: bool | IResolvable = None,
+  is_primary_for_scope: bool | IResolvable = None,
   maximum_page_size: typing.Union[int, float] = None,
   name: str = None,
-  start_tls: typing.Union[bool, IResolvable] = None,
+  start_tls: bool | IResolvable = None,
   state: str = None,
   type: str = None,
   upn_domain: str = None,
@@ -50,7 +50,7 @@ authMethodLdap.AuthMethodLdap(
   user_attr: str = None,
   user_dn: str = None,
   user_filter: str = None,
-  use_token_groups: typing.Union[bool, IResolvable] = None
+  use_token_groups: bool | IResolvable = None
 )
 ```
 
@@ -58,16 +58,16 @@ authMethodLdap.AuthMethodLdap(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.scopeId">scope_id</a></code> | <code>str</code> | The scope ID. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.accountAttributeMaps">account_attribute_maps</a></code> | <code>typing.List[str]</code> | Account attribute maps fullname and email. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.anonGroupSearch">anon_group_search</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use anon bind when performing LDAP group searches (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.anonGroupSearch">anon_group_search</a></code> | <code>bool \| cdktf.IResolvable</code> | Use anon bind when performing LDAP group searches (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.bindDn">bind_dn</a></code> | <code>str</code> | The distinguished name of entry to bind when performing user and group searches (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.bindPassword">bind_password</a></code> | <code>str</code> | The password to use along with bind-dn performing user and group searches (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.bindPasswordHmac">bind_password_hmac</a></code> | <code>str</code> | The HMAC of the bind password returned by the Boundary controller, which is used for comparison after initial setting of the value. |
@@ -77,16 +77,16 @@ authMethodLdap.AuthMethodLdap(
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.clientCertificateKeyHmac">client_certificate_key_hmac</a></code> | <code>str</code> | The HMAC of the client certificate key returned by the Boundary controller, which is used for comparison after initial setting of the value. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.dereferenceAliases">dereference_aliases</a></code> | <code>str</code> | Control how aliases are dereferenced when performing the search. Can be one of: NeverDerefAliases, DerefInSearching, DerefFindingBaseObj, and DerefAlways (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.description">description</a></code> | <code>str</code> | The auth method description. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.discoverDn">discover_dn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use anon bind to discover the bind DN of a user (optional). |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.enableGroups">enable_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Find the authenticated user's groups during authentication (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.discoverDn">discover_dn</a></code> | <code>bool \| cdktf.IResolvable</code> | Use anon bind to discover the bind DN of a user (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.enableGroups">enable_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | Find the authenticated user's groups during authentication (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.groupAttr">group_attr</a></code> | <code>str</code> | The attribute that enumerates a user's group membership from entries returned by a group search (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.groupDn">group_dn</a></code> | <code>str</code> | The base DN under which to perform group search. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.groupFilter">group_filter</a></code> | <code>str</code> | A go template used to construct a LDAP group search filter (optional). |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.insecureTls">insecure_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.isPrimaryForScope">is_primary_for_scope</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true, makes this auth method the primary auth method for the scope in which it resides. |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.insecureTls">insecure_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution. |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.isPrimaryForScope">is_primary_for_scope</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, makes this auth method the primary auth method for the scope in which it resides. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.maximumPageSize">maximum_page_size</a></code> | <code>typing.Union[int, float]</code> | MaximumPageSize specifies a maximum search result size to use when retrieving the authenticated user's groups (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.name">name</a></code> | <code>str</code> | The auth method name. Defaults to the resource name. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.startTls">start_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Issue StartTLS command after connecting (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.startTls">start_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | Issue StartTLS command after connecting (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.state">state</a></code> | <code>str</code> | Can be one of 'inactive', 'active-private', or 'active-public'. Defaults to active-public. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of auth method; hardcoded. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.upnDomain">upn_domain</a></code> | <code>str</code> | The userPrincipalDomain used to construct the UPN string for the authenticating user (optional). |
@@ -94,7 +94,7 @@ authMethodLdap.AuthMethodLdap(
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.userAttr">user_attr</a></code> | <code>str</code> | The attribute on user entry matching the username passed when authenticating (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.userDn">user_dn</a></code> | <code>str</code> | The base DN under which to perform user search (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.userFilter">user_filter</a></code> | <code>str</code> | A go template used to construct a LDAP user search filter (optional). |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.useTokenGroups">use_token_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.useTokenGroups">use_token_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional). |
 
 ---
 
@@ -118,13 +118,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -154,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `anon_group_search`<sup>Optional</sup> <a name="anon_group_search" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.anonGroupSearch"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use anon bind when performing LDAP group searches (optional).
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `discover_dn`<sup>Optional</sup> <a name="discover_dn" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.discoverDn"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use anon bind to discover the bind DN of a user (optional).
 
@@ -290,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable_groups`<sup>Optional</sup> <a name="enable_groups" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.enableGroups"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Find the authenticated user's groups during authentication (optional).
 
@@ -330,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `insecure_tls`<sup>Optional</sup> <a name="insecure_tls" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.insecureTls"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution.
 
@@ -340,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `is_primary_for_scope`<sup>Optional</sup> <a name="is_primary_for_scope" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.isPrimaryForScope"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true, makes this auth method the primary auth method for the scope in which it resides.
 
@@ -372,7 +372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `start_tls`<sup>Optional</sup> <a name="start_tls" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.startTls"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Issue StartTLS command after connecting (optional).
 
@@ -452,7 +452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_token_groups`<sup>Optional</sup> <a name="use_token_groups" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.Initializer.parameter.useTokenGroups"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional).
 
@@ -741,7 +741,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.importFrom"></a>
@@ -804,7 +804,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -820,7 +820,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1155,16 +1155,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.accountAttributeMapsInput">account_attribute_maps_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearchInput">anon_group_search_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearchInput">anon_group_search_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindDnInput">bind_dn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindPasswordHmacInput">bind_password_hmac_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindPasswordInput">bind_password_input</a></code> | <code>str</code> | *No description.* |
@@ -1174,17 +1174,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.clientCertificateKeyInput">client_certificate_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.dereferenceAliasesInput">dereference_aliases_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDnInput">discover_dn_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroupsInput">enable_groups_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDnInput">discover_dn_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroupsInput">enable_groups_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupAttrInput">group_attr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupDnInput">group_dn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupFilterInput">group_filter_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTlsInput">insecure_tls_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScopeInput">is_primary_for_scope_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTlsInput">insecure_tls_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScopeInput">is_primary_for_scope_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.maximumPageSizeInput">maximum_page_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.scopeIdInput">scope_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTlsInput">start_tls_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTlsInput">start_tls_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.stateInput">state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.upnDomainInput">upn_domain_input</a></code> | <code>str</code> | *No description.* |
@@ -1192,9 +1192,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userAttrInput">user_attr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userDnInput">user_dn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userFilterInput">user_filter_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroupsInput">use_token_groups_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroupsInput">use_token_groups_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.accountAttributeMaps">account_attribute_maps</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearch">anon_group_search</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearch">anon_group_search</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindDn">bind_dn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindPassword">bind_password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindPasswordHmac">bind_password_hmac</a></code> | <code>str</code> | *No description.* |
@@ -1204,17 +1204,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.clientCertificateKeyHmac">client_certificate_key_hmac</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.dereferenceAliases">dereference_aliases</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDn">discover_dn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroups">enable_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDn">discover_dn</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroups">enable_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupAttr">group_attr</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupDn">group_dn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupFilter">group_filter</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTls">insecure_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScope">is_primary_for_scope</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTls">insecure_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScope">is_primary_for_scope</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.maximumPageSize">maximum_page_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.scopeId">scope_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTls">start_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTls">start_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.upnDomain">upn_domain</a></code> | <code>str</code> | *No description.* |
@@ -1222,7 +1222,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userAttr">user_attr</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userDn">user_dn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userFilter">user_filter</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroups">use_token_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroups">use_token_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1301,20 +1301,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1361,10 +1361,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1391,10 +1391,10 @@ account_attribute_maps_input: typing.List[str]
 ##### `anon_group_search_input`<sup>Optional</sup> <a name="anon_group_search_input" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearchInput"></a>
 
 ```python
-anon_group_search_input: typing.Union[bool, IResolvable]
+anon_group_search_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1491,20 +1491,20 @@ description_input: str
 ##### `discover_dn_input`<sup>Optional</sup> <a name="discover_dn_input" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDnInput"></a>
 
 ```python
-discover_dn_input: typing.Union[bool, IResolvable]
+discover_dn_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_groups_input`<sup>Optional</sup> <a name="enable_groups_input" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroupsInput"></a>
 
 ```python
-enable_groups_input: typing.Union[bool, IResolvable]
+enable_groups_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1541,20 +1541,20 @@ group_filter_input: str
 ##### `insecure_tls_input`<sup>Optional</sup> <a name="insecure_tls_input" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTlsInput"></a>
 
 ```python
-insecure_tls_input: typing.Union[bool, IResolvable]
+insecure_tls_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_primary_for_scope_input`<sup>Optional</sup> <a name="is_primary_for_scope_input" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScopeInput"></a>
 
 ```python
-is_primary_for_scope_input: typing.Union[bool, IResolvable]
+is_primary_for_scope_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1591,10 +1591,10 @@ scope_id_input: str
 ##### `start_tls_input`<sup>Optional</sup> <a name="start_tls_input" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTlsInput"></a>
 
 ```python
-start_tls_input: typing.Union[bool, IResolvable]
+start_tls_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1671,10 +1671,10 @@ user_filter_input: str
 ##### `use_token_groups_input`<sup>Optional</sup> <a name="use_token_groups_input" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroupsInput"></a>
 
 ```python
-use_token_groups_input: typing.Union[bool, IResolvable]
+use_token_groups_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1691,10 +1691,10 @@ account_attribute_maps: typing.List[str]
 ##### `anon_group_search`<sup>Required</sup> <a name="anon_group_search" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearch"></a>
 
 ```python
-anon_group_search: typing.Union[bool, IResolvable]
+anon_group_search: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1791,20 +1791,20 @@ description: str
 ##### `discover_dn`<sup>Required</sup> <a name="discover_dn" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDn"></a>
 
 ```python
-discover_dn: typing.Union[bool, IResolvable]
+discover_dn: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enable_groups`<sup>Required</sup> <a name="enable_groups" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroups"></a>
 
 ```python
-enable_groups: typing.Union[bool, IResolvable]
+enable_groups: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1841,20 +1841,20 @@ group_filter: str
 ##### `insecure_tls`<sup>Required</sup> <a name="insecure_tls" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTls"></a>
 
 ```python
-insecure_tls: typing.Union[bool, IResolvable]
+insecure_tls: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `is_primary_for_scope`<sup>Required</sup> <a name="is_primary_for_scope" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScope"></a>
 
 ```python
-is_primary_for_scope: typing.Union[bool, IResolvable]
+is_primary_for_scope: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1891,10 +1891,10 @@ scope_id: str
 ##### `start_tls`<sup>Required</sup> <a name="start_tls" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTls"></a>
 
 ```python
-start_tls: typing.Union[bool, IResolvable]
+start_tls: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1971,10 +1971,10 @@ user_filter: str
 ##### `use_token_groups`<sup>Required</sup> <a name="use_token_groups" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroups"></a>
 
 ```python
-use_token_groups: typing.Union[bool, IResolvable]
+use_token_groups: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2006,16 +2006,16 @@ tfResourceType: str
 from cdktf_cdktf_provider_boundary import auth_method_ldap
 
 authMethodLdap.AuthMethodLdapConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   scope_id: str,
   account_attribute_maps: typing.List[str] = None,
-  anon_group_search: typing.Union[bool, IResolvable] = None,
+  anon_group_search: bool | IResolvable = None,
   bind_dn: str = None,
   bind_password: str = None,
   bind_password_hmac: str = None,
@@ -2025,16 +2025,16 @@ authMethodLdap.AuthMethodLdapConfig(
   client_certificate_key_hmac: str = None,
   dereference_aliases: str = None,
   description: str = None,
-  discover_dn: typing.Union[bool, IResolvable] = None,
-  enable_groups: typing.Union[bool, IResolvable] = None,
+  discover_dn: bool | IResolvable = None,
+  enable_groups: bool | IResolvable = None,
   group_attr: str = None,
   group_dn: str = None,
   group_filter: str = None,
-  insecure_tls: typing.Union[bool, IResolvable] = None,
-  is_primary_for_scope: typing.Union[bool, IResolvable] = None,
+  insecure_tls: bool | IResolvable = None,
+  is_primary_for_scope: bool | IResolvable = None,
   maximum_page_size: typing.Union[int, float] = None,
   name: str = None,
-  start_tls: typing.Union[bool, IResolvable] = None,
+  start_tls: bool | IResolvable = None,
   state: str = None,
   type: str = None,
   upn_domain: str = None,
@@ -2042,7 +2042,7 @@ authMethodLdap.AuthMethodLdapConfig(
   user_attr: str = None,
   user_dn: str = None,
   user_filter: str = None,
-  use_token_groups: typing.Union[bool, IResolvable] = None
+  use_token_groups: bool | IResolvable = None
 )
 ```
 
@@ -2050,16 +2050,16 @@ authMethodLdap.AuthMethodLdapConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.scopeId">scope_id</a></code> | <code>str</code> | The scope ID. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.accountAttributeMaps">account_attribute_maps</a></code> | <code>typing.List[str]</code> | Account attribute maps fullname and email. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.anonGroupSearch">anon_group_search</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use anon bind when performing LDAP group searches (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.anonGroupSearch">anon_group_search</a></code> | <code>bool \| cdktf.IResolvable</code> | Use anon bind when performing LDAP group searches (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.bindDn">bind_dn</a></code> | <code>str</code> | The distinguished name of entry to bind when performing user and group searches (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.bindPassword">bind_password</a></code> | <code>str</code> | The password to use along with bind-dn performing user and group searches (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.bindPasswordHmac">bind_password_hmac</a></code> | <code>str</code> | The HMAC of the bind password returned by the Boundary controller, which is used for comparison after initial setting of the value. |
@@ -2069,16 +2069,16 @@ authMethodLdap.AuthMethodLdapConfig(
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.clientCertificateKeyHmac">client_certificate_key_hmac</a></code> | <code>str</code> | The HMAC of the client certificate key returned by the Boundary controller, which is used for comparison after initial setting of the value. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.dereferenceAliases">dereference_aliases</a></code> | <code>str</code> | Control how aliases are dereferenced when performing the search. Can be one of: NeverDerefAliases, DerefInSearching, DerefFindingBaseObj, and DerefAlways (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.description">description</a></code> | <code>str</code> | The auth method description. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.discoverDn">discover_dn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use anon bind to discover the bind DN of a user (optional). |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.enableGroups">enable_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Find the authenticated user's groups during authentication (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.discoverDn">discover_dn</a></code> | <code>bool \| cdktf.IResolvable</code> | Use anon bind to discover the bind DN of a user (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.enableGroups">enable_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | Find the authenticated user's groups during authentication (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.groupAttr">group_attr</a></code> | <code>str</code> | The attribute that enumerates a user's group membership from entries returned by a group search (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.groupDn">group_dn</a></code> | <code>str</code> | The base DN under which to perform group search. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.groupFilter">group_filter</a></code> | <code>str</code> | A go template used to construct a LDAP group search filter (optional). |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.insecureTls">insecure_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.isPrimaryForScope">is_primary_for_scope</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | When true, makes this auth method the primary auth method for the scope in which it resides. |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.insecureTls">insecure_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution. |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.isPrimaryForScope">is_primary_for_scope</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, makes this auth method the primary auth method for the scope in which it resides. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.maximumPageSize">maximum_page_size</a></code> | <code>typing.Union[int, float]</code> | MaximumPageSize specifies a maximum search result size to use when retrieving the authenticated user's groups (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.name">name</a></code> | <code>str</code> | The auth method name. Defaults to the resource name. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.startTls">start_tls</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Issue StartTLS command after connecting (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.startTls">start_tls</a></code> | <code>bool \| cdktf.IResolvable</code> | Issue StartTLS command after connecting (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.state">state</a></code> | <code>str</code> | Can be one of 'inactive', 'active-private', or 'active-public'. Defaults to active-public. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.type">type</a></code> | <code>str</code> | The type of auth method; hardcoded. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.upnDomain">upn_domain</a></code> | <code>str</code> | The userPrincipalDomain used to construct the UPN string for the authenticating user (optional). |
@@ -2086,27 +2086,27 @@ authMethodLdap.AuthMethodLdapConfig(
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.userAttr">user_attr</a></code> | <code>str</code> | The attribute on user entry matching the username passed when authenticating (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.userDn">user_dn</a></code> | <code>str</code> | The base DN under which to perform user search (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.userFilter">user_filter</a></code> | <code>str</code> | A go template used to construct a LDAP user search filter (optional). |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.useTokenGroups">use_token_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.useTokenGroups">use_token_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional). |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2153,10 +2153,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2191,10 +2191,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `anon_group_search`<sup>Optional</sup> <a name="anon_group_search" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.anonGroupSearch"></a>
 
 ```python
-anon_group_search: typing.Union[bool, IResolvable]
+anon_group_search: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use anon bind when performing LDAP group searches (optional).
 
@@ -2331,10 +2331,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `discover_dn`<sup>Optional</sup> <a name="discover_dn" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.discoverDn"></a>
 
 ```python
-discover_dn: typing.Union[bool, IResolvable]
+discover_dn: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use anon bind to discover the bind DN of a user (optional).
 
@@ -2345,10 +2345,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enable_groups`<sup>Optional</sup> <a name="enable_groups" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.enableGroups"></a>
 
 ```python
-enable_groups: typing.Union[bool, IResolvable]
+enable_groups: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Find the authenticated user's groups during authentication (optional).
 
@@ -2401,10 +2401,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `insecure_tls`<sup>Optional</sup> <a name="insecure_tls" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.insecureTls"></a>
 
 ```python
-insecure_tls: typing.Union[bool, IResolvable]
+insecure_tls: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution.
 
@@ -2415,10 +2415,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `is_primary_for_scope`<sup>Optional</sup> <a name="is_primary_for_scope" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.isPrimaryForScope"></a>
 
 ```python
-is_primary_for_scope: typing.Union[bool, IResolvable]
+is_primary_for_scope: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 When true, makes this auth method the primary auth method for the scope in which it resides.
 
@@ -2459,10 +2459,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `start_tls`<sup>Optional</sup> <a name="start_tls" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.startTls"></a>
 
 ```python
-start_tls: typing.Union[bool, IResolvable]
+start_tls: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Issue StartTLS command after connecting (optional).
 
@@ -2571,10 +2571,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `use_token_groups`<sup>Optional</sup> <a name="use_token_groups" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.useTokenGroups"></a>
 
 ```python
-use_token_groups: typing.Union[bool, IResolvable]
+use_token_groups: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional).
 

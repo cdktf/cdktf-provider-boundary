@@ -302,7 +302,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.importFrom"></a>
@@ -356,7 +356,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -371,7 +371,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -693,16 +693,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.accountAttributeMapsInput">AccountAttributeMapsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearchInput">AnonGroupSearchInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearchInput">AnonGroupSearchInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindDnInput">BindDnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindPasswordHmacInput">BindPasswordHmacInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindPasswordInput">BindPasswordInput</a></code> | <code>string</code> | *No description.* |
@@ -712,17 +712,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.clientCertificateKeyInput">ClientCertificateKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.dereferenceAliasesInput">DereferenceAliasesInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDnInput">DiscoverDnInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroupsInput">EnableGroupsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDnInput">DiscoverDnInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroupsInput">EnableGroupsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupAttrInput">GroupAttrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupDnInput">GroupDnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupFilterInput">GroupFilterInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScopeInput">IsPrimaryForScopeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTlsInput">InsecureTlsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScopeInput">IsPrimaryForScopeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.maximumPageSizeInput">MaximumPageSizeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.scopeIdInput">ScopeIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTlsInput">StartTlsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTlsInput">StartTlsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.stateInput">StateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.upnDomainInput">UpnDomainInput</a></code> | <code>string</code> | *No description.* |
@@ -730,9 +730,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userAttrInput">UserAttrInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userDnInput">UserDnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userFilterInput">UserFilterInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroupsInput">UseTokenGroupsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroupsInput">UseTokenGroupsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.accountAttributeMaps">AccountAttributeMaps</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearch">AnonGroupSearch</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearch">AnonGroupSearch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindDn">BindDn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindPassword">BindPassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.bindPasswordHmac">BindPasswordHmac</a></code> | <code>string</code> | *No description.* |
@@ -742,17 +742,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.clientCertificateKeyHmac">ClientCertificateKeyHmac</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.dereferenceAliases">DereferenceAliases</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDn">DiscoverDn</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroups">EnableGroups</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDn">DiscoverDn</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroups">EnableGroups</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupAttr">GroupAttr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupDn">GroupDn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.groupFilter">GroupFilter</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTls">InsecureTls</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScope">IsPrimaryForScope</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScope">IsPrimaryForScope</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.maximumPageSize">MaximumPageSize</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.scopeId">ScopeId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTls">StartTls</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTls">StartTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.upnDomain">UpnDomain</a></code> | <code>string</code> | *No description.* |
@@ -760,7 +760,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userAttr">UserAttr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userDn">UserDn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.userFilter">UserFilter</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroups">UseTokenGroups</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroups">UseTokenGroups</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -839,20 +839,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -899,10 +899,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -929,10 +929,10 @@ public string[] AccountAttributeMapsInput { get; }
 ##### `AnonGroupSearchInput`<sup>Optional</sup> <a name="AnonGroupSearchInput" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearchInput"></a>
 
 ```csharp
-public object AnonGroupSearchInput { get; }
+public bool|IResolvable AnonGroupSearchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1029,20 +1029,20 @@ public string DescriptionInput { get; }
 ##### `DiscoverDnInput`<sup>Optional</sup> <a name="DiscoverDnInput" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDnInput"></a>
 
 ```csharp
-public object DiscoverDnInput { get; }
+public bool|IResolvable DiscoverDnInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableGroupsInput`<sup>Optional</sup> <a name="EnableGroupsInput" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroupsInput"></a>
 
 ```csharp
-public object EnableGroupsInput { get; }
+public bool|IResolvable EnableGroupsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1079,20 +1079,20 @@ public string GroupFilterInput { get; }
 ##### `InsecureTlsInput`<sup>Optional</sup> <a name="InsecureTlsInput" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTlsInput"></a>
 
 ```csharp
-public object InsecureTlsInput { get; }
+public bool|IResolvable InsecureTlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsPrimaryForScopeInput`<sup>Optional</sup> <a name="IsPrimaryForScopeInput" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScopeInput"></a>
 
 ```csharp
-public object IsPrimaryForScopeInput { get; }
+public bool|IResolvable IsPrimaryForScopeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1129,10 +1129,10 @@ public string ScopeIdInput { get; }
 ##### `StartTlsInput`<sup>Optional</sup> <a name="StartTlsInput" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTlsInput"></a>
 
 ```csharp
-public object StartTlsInput { get; }
+public bool|IResolvable StartTlsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1209,10 +1209,10 @@ public string UserFilterInput { get; }
 ##### `UseTokenGroupsInput`<sup>Optional</sup> <a name="UseTokenGroupsInput" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroupsInput"></a>
 
 ```csharp
-public object UseTokenGroupsInput { get; }
+public bool|IResolvable UseTokenGroupsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1229,10 +1229,10 @@ public string[] AccountAttributeMaps { get; }
 ##### `AnonGroupSearch`<sup>Required</sup> <a name="AnonGroupSearch" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.anonGroupSearch"></a>
 
 ```csharp
-public object AnonGroupSearch { get; }
+public bool|IResolvable AnonGroupSearch { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1329,20 +1329,20 @@ public string Description { get; }
 ##### `DiscoverDn`<sup>Required</sup> <a name="DiscoverDn" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.discoverDn"></a>
 
 ```csharp
-public object DiscoverDn { get; }
+public bool|IResolvable DiscoverDn { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `EnableGroups`<sup>Required</sup> <a name="EnableGroups" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.enableGroups"></a>
 
 ```csharp
-public object EnableGroups { get; }
+public bool|IResolvable EnableGroups { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1379,20 +1379,20 @@ public string GroupFilter { get; }
 ##### `InsecureTls`<sup>Required</sup> <a name="InsecureTls" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.insecureTls"></a>
 
 ```csharp
-public object InsecureTls { get; }
+public bool|IResolvable InsecureTls { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsPrimaryForScope`<sup>Required</sup> <a name="IsPrimaryForScope" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.isPrimaryForScope"></a>
 
 ```csharp
-public object IsPrimaryForScope { get; }
+public bool|IResolvable IsPrimaryForScope { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1429,10 +1429,10 @@ public string ScopeId { get; }
 ##### `StartTls`<sup>Required</sup> <a name="StartTls" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.startTls"></a>
 
 ```csharp
-public object StartTls { get; }
+public bool|IResolvable StartTls { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1509,10 +1509,10 @@ public string UserFilter { get; }
 ##### `UseTokenGroups`<sup>Required</sup> <a name="UseTokenGroups" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdap.property.useTokenGroups"></a>
 
 ```csharp
-public object UseTokenGroups { get; }
+public bool|IResolvable UseTokenGroups { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1544,16 +1544,16 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Boundary;
 
 new AuthMethodLdapConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string ScopeId,
     string[] AccountAttributeMaps = null,
-    object AnonGroupSearch = null,
+    bool|IResolvable AnonGroupSearch = null,
     string BindDn = null,
     string BindPassword = null,
     string BindPasswordHmac = null,
@@ -1563,16 +1563,16 @@ new AuthMethodLdapConfig {
     string ClientCertificateKeyHmac = null,
     string DereferenceAliases = null,
     string Description = null,
-    object DiscoverDn = null,
-    object EnableGroups = null,
+    bool|IResolvable DiscoverDn = null,
+    bool|IResolvable EnableGroups = null,
     string GroupAttr = null,
     string GroupDn = null,
     string GroupFilter = null,
-    object InsecureTls = null,
-    object IsPrimaryForScope = null,
+    bool|IResolvable InsecureTls = null,
+    bool|IResolvable IsPrimaryForScope = null,
     double MaximumPageSize = null,
     string Name = null,
-    object StartTls = null,
+    bool|IResolvable StartTls = null,
     string State = null,
     string Type = null,
     string UpnDomain = null,
@@ -1580,7 +1580,7 @@ new AuthMethodLdapConfig {
     string UserAttr = null,
     string UserDn = null,
     string UserFilter = null,
-    object UseTokenGroups = null
+    bool|IResolvable UseTokenGroups = null
 };
 ```
 
@@ -1588,16 +1588,16 @@ new AuthMethodLdapConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.scopeId">ScopeId</a></code> | <code>string</code> | The scope ID. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.accountAttributeMaps">AccountAttributeMaps</a></code> | <code>string[]</code> | Account attribute maps fullname and email. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.anonGroupSearch">AnonGroupSearch</a></code> | <code>object</code> | Use anon bind when performing LDAP group searches (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.anonGroupSearch">AnonGroupSearch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use anon bind when performing LDAP group searches (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.bindDn">BindDn</a></code> | <code>string</code> | The distinguished name of entry to bind when performing user and group searches (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.bindPassword">BindPassword</a></code> | <code>string</code> | The password to use along with bind-dn performing user and group searches (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.bindPasswordHmac">BindPasswordHmac</a></code> | <code>string</code> | The HMAC of the bind password returned by the Boundary controller, which is used for comparison after initial setting of the value. |
@@ -1607,16 +1607,16 @@ new AuthMethodLdapConfig {
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.clientCertificateKeyHmac">ClientCertificateKeyHmac</a></code> | <code>string</code> | The HMAC of the client certificate key returned by the Boundary controller, which is used for comparison after initial setting of the value. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.dereferenceAliases">DereferenceAliases</a></code> | <code>string</code> | Control how aliases are dereferenced when performing the search. Can be one of: NeverDerefAliases, DerefInSearching, DerefFindingBaseObj, and DerefAlways (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.description">Description</a></code> | <code>string</code> | The auth method description. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.discoverDn">DiscoverDn</a></code> | <code>object</code> | Use anon bind to discover the bind DN of a user (optional). |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.enableGroups">EnableGroups</a></code> | <code>object</code> | Find the authenticated user's groups during authentication (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.discoverDn">DiscoverDn</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use anon bind to discover the bind DN of a user (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.enableGroups">EnableGroups</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Find the authenticated user's groups during authentication (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.groupAttr">GroupAttr</a></code> | <code>string</code> | The attribute that enumerates a user's group membership from entries returned by a group search (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.groupDn">GroupDn</a></code> | <code>string</code> | The base DN under which to perform group search. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.groupFilter">GroupFilter</a></code> | <code>string</code> | A go template used to construct a LDAP group search filter (optional). |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.insecureTls">InsecureTls</a></code> | <code>object</code> | Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.isPrimaryForScope">IsPrimaryForScope</a></code> | <code>object</code> | When true, makes this auth method the primary auth method for the scope in which it resides. |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.insecureTls">InsecureTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution. |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.isPrimaryForScope">IsPrimaryForScope</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | When true, makes this auth method the primary auth method for the scope in which it resides. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.maximumPageSize">MaximumPageSize</a></code> | <code>double</code> | MaximumPageSize specifies a maximum search result size to use when retrieving the authenticated user's groups (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.name">Name</a></code> | <code>string</code> | The auth method name. Defaults to the resource name. |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.startTls">StartTls</a></code> | <code>object</code> | Issue StartTLS command after connecting (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.startTls">StartTls</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Issue StartTLS command after connecting (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.state">State</a></code> | <code>string</code> | Can be one of 'inactive', 'active-private', or 'active-public'. Defaults to active-public. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.type">Type</a></code> | <code>string</code> | The type of auth method; hardcoded. |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.upnDomain">UpnDomain</a></code> | <code>string</code> | The userPrincipalDomain used to construct the UPN string for the authenticating user (optional). |
@@ -1624,27 +1624,27 @@ new AuthMethodLdapConfig {
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.userAttr">UserAttr</a></code> | <code>string</code> | The attribute on user entry matching the username passed when authenticating (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.userDn">UserDn</a></code> | <code>string</code> | The base DN under which to perform user search (optional). |
 | <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.userFilter">UserFilter</a></code> | <code>string</code> | A go template used to construct a LDAP user search filter (optional). |
-| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.useTokenGroups">UseTokenGroups</a></code> | <code>object</code> | Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional). |
+| <code><a href="#@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.useTokenGroups">UseTokenGroups</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional). |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1691,10 +1691,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1729,10 +1729,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AnonGroupSearch`<sup>Optional</sup> <a name="AnonGroupSearch" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.anonGroupSearch"></a>
 
 ```csharp
-public object AnonGroupSearch { get; set; }
+public bool|IResolvable AnonGroupSearch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use anon bind when performing LDAP group searches (optional).
 
@@ -1869,10 +1869,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DiscoverDn`<sup>Optional</sup> <a name="DiscoverDn" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.discoverDn"></a>
 
 ```csharp
-public object DiscoverDn { get; set; }
+public bool|IResolvable DiscoverDn { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use anon bind to discover the bind DN of a user (optional).
 
@@ -1883,10 +1883,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `EnableGroups`<sup>Optional</sup> <a name="EnableGroups" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.enableGroups"></a>
 
 ```csharp
-public object EnableGroups { get; set; }
+public bool|IResolvable EnableGroups { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Find the authenticated user's groups during authentication (optional).
 
@@ -1939,10 +1939,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `InsecureTls`<sup>Optional</sup> <a name="InsecureTls" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.insecureTls"></a>
 
 ```csharp
-public object InsecureTls { get; set; }
+public bool|IResolvable InsecureTls { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Skip the LDAP server SSL certificate validation (optional) - insecure and use with caution.
 
@@ -1953,10 +1953,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IsPrimaryForScope`<sup>Optional</sup> <a name="IsPrimaryForScope" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.isPrimaryForScope"></a>
 
 ```csharp
-public object IsPrimaryForScope { get; set; }
+public bool|IResolvable IsPrimaryForScope { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 When true, makes this auth method the primary auth method for the scope in which it resides.
 
@@ -1997,10 +1997,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `StartTls`<sup>Optional</sup> <a name="StartTls" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.startTls"></a>
 
 ```csharp
-public object StartTls { get; set; }
+public bool|IResolvable StartTls { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Issue StartTLS command after connecting (optional).
 
@@ -2109,10 +2109,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `UseTokenGroups`<sup>Optional</sup> <a name="UseTokenGroups" id="@cdktf/provider-boundary.authMethodLdap.AuthMethodLdapConfig.property.useTokenGroups"></a>
 
 ```csharp
-public object UseTokenGroups { get; set; }
+public bool|IResolvable UseTokenGroups { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Use the Active Directory tokenGroups constructed attribute of the user to find the group memberships (optional).
 
