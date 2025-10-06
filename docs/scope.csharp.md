@@ -278,7 +278,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-boundary.scope.Scope.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-boundary.scope.Scope.importFrom"></a>
@@ -332,7 +332,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-boundary.scope.Scope.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-boundary.scope.Scope.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -525,24 +525,24 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.autoCreateAdminRoleInput">AutoCreateAdminRoleInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.autoCreateDefaultRoleInput">AutoCreateDefaultRoleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.autoCreateAdminRoleInput">AutoCreateAdminRoleInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.autoCreateDefaultRoleInput">AutoCreateDefaultRoleInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.globalScopeInput">GlobalScopeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.globalScopeInput">GlobalScopeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.scopeIdInput">ScopeIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.autoCreateAdminRole">AutoCreateAdminRole</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.autoCreateDefaultRole">AutoCreateDefaultRole</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.autoCreateAdminRole">AutoCreateAdminRole</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.autoCreateDefaultRole">AutoCreateDefaultRole</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.description">Description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.globalScope">GlobalScope</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.Scope.property.globalScope">GlobalScope</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.Scope.property.scopeId">ScopeId</a></code> | <code>string</code> | *No description.* |
 
@@ -623,20 +623,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-boundary.scope.Scope.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.scope.Scope.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -683,10 +683,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-boundary.scope.Scope.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -703,20 +703,20 @@ public string Id { get; }
 ##### `AutoCreateAdminRoleInput`<sup>Optional</sup> <a name="AutoCreateAdminRoleInput" id="@cdktf/provider-boundary.scope.Scope.property.autoCreateAdminRoleInput"></a>
 
 ```csharp
-public object AutoCreateAdminRoleInput { get; }
+public bool|IResolvable AutoCreateAdminRoleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoCreateDefaultRoleInput`<sup>Optional</sup> <a name="AutoCreateDefaultRoleInput" id="@cdktf/provider-boundary.scope.Scope.property.autoCreateDefaultRoleInput"></a>
 
 ```csharp
-public object AutoCreateDefaultRoleInput { get; }
+public bool|IResolvable AutoCreateDefaultRoleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -733,10 +733,10 @@ public string DescriptionInput { get; }
 ##### `GlobalScopeInput`<sup>Optional</sup> <a name="GlobalScopeInput" id="@cdktf/provider-boundary.scope.Scope.property.globalScopeInput"></a>
 
 ```csharp
-public object GlobalScopeInput { get; }
+public bool|IResolvable GlobalScopeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -763,20 +763,20 @@ public string ScopeIdInput { get; }
 ##### `AutoCreateAdminRole`<sup>Required</sup> <a name="AutoCreateAdminRole" id="@cdktf/provider-boundary.scope.Scope.property.autoCreateAdminRole"></a>
 
 ```csharp
-public object AutoCreateAdminRole { get; }
+public bool|IResolvable AutoCreateAdminRole { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoCreateDefaultRole`<sup>Required</sup> <a name="AutoCreateDefaultRole" id="@cdktf/provider-boundary.scope.Scope.property.autoCreateDefaultRole"></a>
 
 ```csharp
-public object AutoCreateDefaultRole { get; }
+public bool|IResolvable AutoCreateDefaultRole { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -793,10 +793,10 @@ public string Description { get; }
 ##### `GlobalScope`<sup>Required</sup> <a name="GlobalScope" id="@cdktf/provider-boundary.scope.Scope.property.globalScope"></a>
 
 ```csharp
-public object GlobalScope { get; }
+public bool|IResolvable GlobalScope { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -848,18 +848,18 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Boundary;
 
 new ScopeConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string ScopeId,
-    object AutoCreateAdminRole = null,
-    object AutoCreateDefaultRole = null,
+    bool|IResolvable AutoCreateAdminRole = null,
+    bool|IResolvable AutoCreateDefaultRole = null,
     string Description = null,
-    object GlobalScope = null,
+    bool|IResolvable GlobalScope = null,
     string Name = null
 };
 ```
@@ -868,18 +868,18 @@ new ScopeConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.scopeId">ScopeId</a></code> | <code>string</code> | The scope ID containing the sub scope resource. |
-| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.autoCreateAdminRole">AutoCreateAdminRole</a></code> | <code>object</code> | If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives permissions to manage the scope to the provider's user. |
-| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.autoCreateDefaultRole">AutoCreateDefaultRole</a></code> | <code>object</code> | Only relevant when creating an org scope. |
+| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.autoCreateAdminRole">AutoCreateAdminRole</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives permissions to manage the scope to the provider's user. |
+| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.autoCreateDefaultRole">AutoCreateDefaultRole</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Only relevant when creating an org scope. |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.description">Description</a></code> | <code>string</code> | The scope description. |
-| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.globalScope">GlobalScope</a></code> | <code>object</code> | Indicates that the scope containing this value is the global scope, which triggers some specialized behavior to allow it to be imported and managed. |
+| <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.globalScope">GlobalScope</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Indicates that the scope containing this value is the global scope, which triggers some specialized behavior to allow it to be imported and managed. |
 | <code><a href="#@cdktf/provider-boundary.scope.ScopeConfig.property.name">Name</a></code> | <code>string</code> | The scope name. Defaults to the resource name. |
 
 ---
@@ -887,20 +887,20 @@ new ScopeConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-boundary.scope.ScopeConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-boundary.scope.ScopeConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -947,10 +947,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-boundary.scope.ScopeConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -971,10 +971,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AutoCreateAdminRole`<sup>Optional</sup> <a name="AutoCreateAdminRole" id="@cdktf/provider-boundary.scope.ScopeConfig.property.autoCreateAdminRole"></a>
 
 ```csharp
-public object AutoCreateAdminRole { get; set; }
+public bool|IResolvable AutoCreateAdminRole { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If set, when a new scope is created, the provider will not disable the functionality that automatically creates a role in the new scope and gives permissions to manage the scope to the provider's user.
 
@@ -987,10 +987,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `AutoCreateDefaultRole`<sup>Optional</sup> <a name="AutoCreateDefaultRole" id="@cdktf/provider-boundary.scope.ScopeConfig.property.autoCreateDefaultRole"></a>
 
 ```csharp
-public object AutoCreateDefaultRole { get; set; }
+public bool|IResolvable AutoCreateDefaultRole { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Only relevant when creating an org scope.
 
@@ -1017,10 +1017,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `GlobalScope`<sup>Optional</sup> <a name="GlobalScope" id="@cdktf/provider-boundary.scope.ScopeConfig.property.globalScope"></a>
 
 ```csharp
-public object GlobalScope { get; set; }
+public bool|IResolvable GlobalScope { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Indicates that the scope containing this value is the global scope, which triggers some specialized behavior to allow it to be imported and managed.
 

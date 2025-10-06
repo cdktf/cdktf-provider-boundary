@@ -12,17 +12,13 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 import com.hashicorp.cdktf.providers.boundary.target.Target;
 
 Target.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .scopeId(java.lang.String)
     .type(java.lang.String)
 //  .address(java.lang.String)
@@ -31,8 +27,7 @@ Target.Builder.create(Construct scope, java.lang.String id)
 //  .defaultPort(java.lang.Number)
 //  .description(java.lang.String)
 //  .egressWorkerFilter(java.lang.String)
-//  .enableSessionRecording(java.lang.Boolean)
-//  .enableSessionRecording(IResolvable)
+//  .enableSessionRecording(java.lang.Boolean|IResolvable)
 //  .hostSourceIds(java.util.List<java.lang.String>)
 //  .ingressWorkerFilter(java.lang.String)
 //  .injectedApplicationCredentialSourceIds(java.util.List<java.lang.String>)
@@ -48,13 +43,13 @@ Target.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The target resource type. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.address">address</a></code> | <code>java.lang.String</code> | Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids. |
@@ -63,7 +58,7 @@ Target.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.defaultPort">defaultPort</a></code> | <code>java.lang.Number</code> | The default port for this target. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The target description. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.egressWorkerFilter">egressWorkerFilter</a></code> | <code>java.lang.String</code> | Boolean expression to filter the workers used to access this target. |
-| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.enableSessionRecording">enableSessionRecording</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | HCP/Ent Only. Enable sessions recording for this target. Only applicable for SSH targets. |
+| <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.enableSessionRecording">enableSessionRecording</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | HCP/Ent Only. Enable sessions recording for this target. Only applicable for SSH targets. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.hostSourceIds">hostSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of host source ID's. Cannot be used alongside address. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.ingressWorkerFilter">ingressWorkerFilter</a></code> | <code>java.lang.String</code> | HCP Only. |
 | <code><a href="#@cdktf/provider-boundary.target.Target.Initializer.parameter.injectedApplicationCredentialSourceIds">injectedApplicationCredentialSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of injected application credential source ID's. |
@@ -95,13 +90,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-boundary.target.Target.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.target.Target.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -131,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-boundary.target.Target.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -217,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enableSessionRecording`<sup>Optional</sup> <a name="enableSessionRecording" id="@cdktf/provider-boundary.target.Target.Initializer.parameter.enableSessionRecording"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 HCP/Ent Only. Enable sessions recording for this target. Only applicable for SSH targets.
 
@@ -545,7 +540,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-boundary.target.Target.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-boundary.target.Target.importFrom"></a>
@@ -601,7 +596,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -616,7 +611,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-boundary.target.Target.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -854,13 +849,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.target.Target.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.target.Target.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.target.Target.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.addressInput">addressInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.brokeredCredentialSourceIdsInput">brokeredCredentialSourceIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -868,7 +863,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultPortInput">defaultPortInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.egressWorkerFilterInput">egressWorkerFilterInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.target.Target.property.enableSessionRecordingInput">enableSessionRecordingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.enableSessionRecordingInput">enableSessionRecordingInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.hostSourceIdsInput">hostSourceIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.ingressWorkerFilterInput">ingressWorkerFilterInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.injectedApplicationCredentialSourceIdsInput">injectedApplicationCredentialSourceIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -885,7 +880,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.defaultPort">defaultPort</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.egressWorkerFilter">egressWorkerFilter</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.target.Target.property.enableSessionRecording">enableSessionRecording</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.Target.property.enableSessionRecording">enableSessionRecording</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.hostSourceIds">hostSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.ingressWorkerFilter">ingressWorkerFilter</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.Target.property.injectedApplicationCredentialSourceIds">injectedApplicationCredentialSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -974,20 +969,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-boundary.target.Target.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.target.Target.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1034,10 +1029,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-boundary.target.Target.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1114,10 +1109,10 @@ public java.lang.String getEgressWorkerFilterInput();
 ##### `enableSessionRecordingInput`<sup>Optional</sup> <a name="enableSessionRecordingInput" id="@cdktf/provider-boundary.target.Target.property.enableSessionRecordingInput"></a>
 
 ```java
-public java.lang.Object getEnableSessionRecordingInput();
+public java.lang.Boolean|IResolvable getEnableSessionRecordingInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1284,10 +1279,10 @@ public java.lang.String getEgressWorkerFilter();
 ##### `enableSessionRecording`<sup>Required</sup> <a name="enableSessionRecording" id="@cdktf/provider-boundary.target.Target.property.enableSessionRecording"></a>
 
 ```java
-public java.lang.Object getEnableSessionRecording();
+public java.lang.Boolean|IResolvable getEnableSessionRecording();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1419,17 +1414,13 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.boundary.target.TargetConfig;
 
 TargetConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .scopeId(java.lang.String)
     .type(java.lang.String)
 //  .address(java.lang.String)
@@ -1438,8 +1429,7 @@ TargetConfig.builder()
 //  .defaultPort(java.lang.Number)
 //  .description(java.lang.String)
 //  .egressWorkerFilter(java.lang.String)
-//  .enableSessionRecording(java.lang.Boolean)
-//  .enableSessionRecording(IResolvable)
+//  .enableSessionRecording(java.lang.Boolean|IResolvable)
 //  .hostSourceIds(java.util.List<java.lang.String>)
 //  .ingressWorkerFilter(java.lang.String)
 //  .injectedApplicationCredentialSourceIds(java.util.List<java.lang.String>)
@@ -1455,13 +1445,13 @@ TargetConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.scopeId">scopeId</a></code> | <code>java.lang.String</code> | The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.type">type</a></code> | <code>java.lang.String</code> | The target resource type. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.address">address</a></code> | <code>java.lang.String</code> | Optionally, a valid network address to connect to for this target. Cannot be used alongside host_source_ids. |
@@ -1470,7 +1460,7 @@ TargetConfig.builder()
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.defaultPort">defaultPort</a></code> | <code>java.lang.Number</code> | The default port for this target. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.description">description</a></code> | <code>java.lang.String</code> | The target description. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.egressWorkerFilter">egressWorkerFilter</a></code> | <code>java.lang.String</code> | Boolean expression to filter the workers used to access this target. |
-| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.enableSessionRecording">enableSessionRecording</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | HCP/Ent Only. Enable sessions recording for this target. Only applicable for SSH targets. |
+| <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.enableSessionRecording">enableSessionRecording</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | HCP/Ent Only. Enable sessions recording for this target. Only applicable for SSH targets. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.hostSourceIds">hostSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of host source ID's. Cannot be used alongside address. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.ingressWorkerFilter">ingressWorkerFilter</a></code> | <code>java.lang.String</code> | HCP Only. |
 | <code><a href="#@cdktf/provider-boundary.target.TargetConfig.property.injectedApplicationCredentialSourceIds">injectedApplicationCredentialSourceIds</a></code> | <code>java.util.List<java.lang.String></code> | A list of injected application credential source ID's. |
@@ -1485,20 +1475,20 @@ TargetConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-boundary.target.TargetConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-boundary.target.TargetConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1545,10 +1535,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-boundary.target.TargetConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1667,10 +1657,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `enableSessionRecording`<sup>Optional</sup> <a name="enableSessionRecording" id="@cdktf/provider-boundary.target.TargetConfig.property.enableSessionRecording"></a>
 
 ```java
-public java.lang.Object getEnableSessionRecording();
+public java.lang.Boolean|IResolvable getEnableSessionRecording();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 HCP/Ent Only. Enable sessions recording for this target. Only applicable for SSH targets.
 
