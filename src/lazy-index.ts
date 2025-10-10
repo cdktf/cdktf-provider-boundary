@@ -20,6 +20,7 @@ Object.defineProperty(exports, 'credentialSshPrivateKey', { get: function () { r
 Object.defineProperty(exports, 'credentialStoreStatic', { get: function () { return require('./credential-store-static'); } });
 Object.defineProperty(exports, 'credentialStoreVault', { get: function () { return require('./credential-store-vault'); } });
 Object.defineProperty(exports, 'credentialUsernamePassword', { get: function () { return require('./credential-username-password'); } });
+Object.defineProperty(exports, 'credentialUsernamePasswordDomain', { get: function () { return require('./credential-username-password-domain'); } });
 Object.defineProperty(exports, 'group', { get: function () { return require('./group'); } });
 Object.defineProperty(exports, 'host', { get: function () { return require('./host'); } });
 Object.defineProperty(exports, 'hostCatalog', { get: function () { return require('./host-catalog'); } });

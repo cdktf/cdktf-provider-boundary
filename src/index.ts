@@ -20,6 +20,7 @@ export * as credentialSshPrivateKey from './credential-ssh-private-key';
 export * as credentialStoreStatic from './credential-store-static';
 export * as credentialStoreVault from './credential-store-vault';
 export * as credentialUsernamePassword from './credential-username-password';
+export * as credentialUsernamePasswordDomain from './credential-username-password-domain';
 export * as group from './group';
 export * as host from './host';
 export * as hostCatalog from './host-catalog';
