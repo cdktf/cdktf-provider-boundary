@@ -4,7 +4,7 @@
 
 ### DataBoundaryScope <a name="DataBoundaryScope" id="@cdktf/provider-boundary.dataBoundaryScope.DataBoundaryScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/scope boundary_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/scope boundary_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryScope.DataBoundaryScope.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the scope to retrieve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/scope#name DataBoundaryScope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/scope#name DataBoundaryScope#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The parent scope ID that will be queried for the scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/scope#scope_id DataBoundaryScope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/scope#scope_id DataBoundaryScope#scope_id}
 
 ---
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the DataBoundaryScope to impor
 
 The id of the existing DataBoundaryScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,7 +832,7 @@ name: str
 
 The name of the scope to retrieve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/scope#name DataBoundaryScope#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/scope#name DataBoundaryScope#name}
 
 ---
 
@@ -846,7 +846,7 @@ scope_id: str
 
 The parent scope ID that will be queried for the scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/scope#scope_id DataBoundaryScope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/scope#scope_id DataBoundaryScope#scope_id}
 
 ---
 
