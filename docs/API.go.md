@@ -20,6 +20,7 @@ The following submodules are available:
 - [credentialStoreStatic](./credentialStoreStatic.go.md)
 - [credentialStoreVault](./credentialStoreVault.go.md)
 - [credentialUsernamePassword](./credentialUsernamePassword.go.md)
+- [credentialUsernamePasswordDomain](./credentialUsernamePasswordDomain.go.md)
 - [dataBoundaryAccount](./dataBoundaryAccount.go.md)
 - [dataBoundaryAuthMethod](./dataBoundaryAuthMethod.go.md)
 - [dataBoundaryGroup](./dataBoundaryGroup.go.md)
