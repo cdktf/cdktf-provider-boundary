@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/role
+// https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface RoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The role description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/role#description Role#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/role#description Role#description}
   */
   readonly description?: string;
   /**
   * A list of scopes for which the grants in this role should apply, which can include the special values "this", "children", or "descendants"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/role#grant_scope_ids Role#grant_scope_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/role#grant_scope_ids Role#grant_scope_ids}
   */
   readonly grantScopeIds?: string[];
   /**
   * A list of stringified grants for the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/role#grant_strings Role#grant_strings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/role#grant_strings Role#grant_strings}
   */
   readonly grantStrings?: string[];
   /**
   * The role name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/role#name Role#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/role#name Role#name}
   */
   readonly name?: string;
   /**
   * A list of principal (user or group) IDs to add as principals on the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/role#principal_ids Role#principal_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/role#principal_ids Role#principal_ids}
   */
   readonly principalIds?: string[];
   /**
   * The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/role#scope_id Role#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/role#scope_id Role#scope_id}
   */
   readonly scopeId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/role boundary_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/role boundary_role}
 */
 export class Role extends cdktf.TerraformResource {
 
@@ -67,7 +67,7 @@ export class Role extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Role resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Role to import
-  * @param importFromId The id of the existing Role that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Role that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Role to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -79,7 +79,7 @@ export class Role extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/role boundary_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/role boundary_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class Role extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_role',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.3.1',
+        providerVersion: '1.4.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
