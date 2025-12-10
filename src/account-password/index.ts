@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/account_password
+// https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/account_password
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface AccountPasswordConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID for the auth method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/account_password#auth_method_id AccountPassword#auth_method_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/account_password#auth_method_id AccountPassword#auth_method_id}
   */
   readonly authMethodId: string;
   /**
   * The account description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/account_password#description AccountPassword#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/account_password#description AccountPassword#description}
   */
   readonly description?: string;
   /**
   * The login name for this account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/account_password#login_name AccountPassword#login_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/account_password#login_name AccountPassword#login_name}
   */
   readonly loginName?: string;
   /**
   * The account name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/account_password#name AccountPassword#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/account_password#name AccountPassword#name}
   */
   readonly name?: string;
   /**
   * The account password. Only set on create, changes will not be reflected when updating account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/account_password#password AccountPassword#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/account_password#password AccountPassword#password}
   */
   readonly password?: string;
   /**
   * The resource type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/account_password#type AccountPassword#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/account_password#type AccountPassword#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/account_password boundary_account_password}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/account_password boundary_account_password}
 */
 export class AccountPassword extends cdktf.TerraformResource {
 
@@ -67,7 +67,7 @@ export class AccountPassword extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AccountPassword resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountPassword to import
-  * @param importFromId The id of the existing AccountPassword that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/account_password#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountPassword that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/account_password#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountPassword to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -79,7 +79,7 @@ export class AccountPassword extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/account_password boundary_account_password} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/account_password boundary_account_password} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class AccountPassword extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_account_password',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.3.1',
+        providerVersion: '1.4.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,
