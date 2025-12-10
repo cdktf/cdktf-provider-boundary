@@ -20,6 +20,7 @@ The following submodules are available:
 - [credentialStoreStatic](./credentialStoreStatic.java.md)
 - [credentialStoreVault](./credentialStoreVault.java.md)
 - [credentialUsernamePassword](./credentialUsernamePassword.java.md)
+- [credentialUsernamePasswordDomain](./credentialUsernamePasswordDomain.java.md)
 - [dataBoundaryAccount](./dataBoundaryAccount.java.md)
 - [dataBoundaryAuthMethod](./dataBoundaryAuthMethod.java.md)
 - [dataBoundaryGroup](./dataBoundaryGroup.java.md)
