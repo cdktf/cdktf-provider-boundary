@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/user
+// https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Account ID's to associate with this user resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/user#account_ids User#account_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/user#account_ids User#account_ids}
   */
   readonly accountIds?: string[];
   /**
   * The user description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/user#description User#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/user#description User#description}
   */
   readonly description?: string;
   /**
   * The username. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/user#name User#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/user#name User#name}
   */
   readonly name?: string;
   /**
   * The scope ID in which the resource is created. Defaults to the provider's `default_scope` if unset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/user#scope_id User#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/user#scope_id User#scope_id}
   */
   readonly scopeId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/user boundary_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/user boundary_user}
 */
 export class User extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class User extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the User to import
-  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the User to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -67,7 +67,7 @@ export class User extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/user boundary_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/user boundary_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_user',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.3.1',
+        providerVersion: '1.4.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

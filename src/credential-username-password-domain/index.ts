@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password
+// https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,61 +11,67 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface CredentialUsernamePasswordConfig extends cdktf.TerraformMetaArguments {
+export interface CredentialUsernamePasswordDomainConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The credential store in which to save this username/password credential.
+  * The credential store in which to save this username-password-domain credential.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password#credential_store_id CredentialUsernamePassword#credential_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password_domain#credential_store_id CredentialUsernamePasswordDomain#credential_store_id}
   */
   readonly credentialStoreId: string;
   /**
-  * The description of this username/password credential.
+  * The description of this username-password-domain credential.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password#description CredentialUsernamePassword#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password_domain#description CredentialUsernamePasswordDomain#description}
   */
   readonly description?: string;
   /**
-  * The name of this username/password credential. Defaults to the resource name.
+  * The domain of this username-password-domain credential. This field is required unless provided as part of the username field instead (see username field description).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password#name CredentialUsernamePassword#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password_domain#domain CredentialUsernamePasswordDomain#domain}
+  */
+  readonly domain?: string;
+  /**
+  * The name of this username-password-domain credential. Defaults to the resource name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password_domain#name CredentialUsernamePasswordDomain#name}
   */
   readonly name?: string;
   /**
-  * The password of this username/password credential.
+  * The password of this username-password-domain credential.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password#password CredentialUsernamePassword#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password_domain#password CredentialUsernamePasswordDomain#password}
   */
   readonly password: string;
   /**
-  * The username of this username/password credential.
+  * This field is required even though it is marked as optional. The username of this username-password-domain credential. Can also contain a domain if provided as username@domain or domain\username
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password#username CredentialUsernamePassword#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password_domain#username CredentialUsernamePasswordDomain#username}
   */
-  readonly username: string;
+  readonly username?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password boundary_credential_username_password}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password_domain boundary_credential_username_password_domain}
 */
-export class CredentialUsernamePassword extends cdktf.TerraformResource {
+export class CredentialUsernamePasswordDomain extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "boundary_credential_username_password";
+  public static readonly tfResourceType = "boundary_credential_username_password_domain";
 
   // ==============
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CredentialUsernamePassword resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTF code for importing a CredentialUsernamePasswordDomain resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
-  * @param importToId The construct id used in the generated config for the CredentialUsernamePassword to import
-  * @param importFromId The id of the existing CredentialUsernamePassword that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password#import import section} in the documentation of this resource for the id to use
-  * @param provider? Optional instance of the provider where the CredentialUsernamePassword to import is found
+  * @param importToId The construct id used in the generated config for the CredentialUsernamePasswordDomain to import
+  * @param importFromId The id of the existing CredentialUsernamePasswordDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password_domain#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the CredentialUsernamePasswordDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "boundary_credential_username_password", importId: importFromId, provider });
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "boundary_credential_username_password_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -73,15 +79,15 @@ export class CredentialUsernamePassword extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password boundary_credential_username_password} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/credential_username_password_domain boundary_credential_username_password_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options CredentialUsernamePasswordConfig
+  * @param options CredentialUsernamePasswordDomainConfig
   */
-  public constructor(scope: Construct, id: string, config: CredentialUsernamePasswordConfig) {
+  public constructor(scope: Construct, id: string, config: CredentialUsernamePasswordDomainConfig) {
     super(scope, id, {
-      terraformResourceType: 'boundary_credential_username_password',
+      terraformResourceType: 'boundary_credential_username_password_domain',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
         providerVersion: '1.4.0',
@@ -97,6 +103,7 @@ export class CredentialUsernamePassword extends cdktf.TerraformResource {
     });
     this._credentialStoreId = config.credentialStoreId;
     this._description = config.description;
+    this._domain = config.domain;
     this._name = config.name;
     this._password = config.password;
     this._username = config.username;
@@ -133,6 +140,22 @@ export class CredentialUsernamePassword extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // domain - computed: true, optional: true, required: false
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  public resetDomain() {
+    this._domain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
   }
 
   // id - computed: true, optional: false, required: false
@@ -174,13 +197,16 @@ export class CredentialUsernamePassword extends cdktf.TerraformResource {
     return this.getStringAttribute('password_hmac');
   }
 
-  // username - computed: false, optional: false, required: true
+  // username - computed: true, optional: true, required: false
   private _username?: string; 
   public get username() {
     return this.getStringAttribute('username');
   }
   public set username(value: string) {
     this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {
@@ -195,6 +221,7 @@ export class CredentialUsernamePassword extends cdktf.TerraformResource {
     return {
       credential_store_id: cdktf.stringToTerraform(this._credentialStoreId),
       description: cdktf.stringToTerraform(this._description),
+      domain: cdktf.stringToTerraform(this._domain),
       name: cdktf.stringToTerraform(this._name),
       password: cdktf.stringToTerraform(this._password),
       username: cdktf.stringToTerraform(this._username),
@@ -211,6 +238,12 @@ export class CredentialUsernamePassword extends cdktf.TerraformResource {
       },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
