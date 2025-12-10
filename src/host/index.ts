@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host
+// https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface HostConfig extends cdktf.TerraformMetaArguments {
   /**
   * The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host#address Host#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host#address Host#address}
   */
   readonly address?: string;
   /**
   * The host description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host#description Host#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host#description Host#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host#host_catalog_id Host#host_catalog_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host#host_catalog_id Host#host_catalog_id}
   */
   readonly hostCatalogId: string;
   /**
   * The host name. Defaults to the resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host#name Host#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host#name Host#name}
   */
   readonly name?: string;
   /**
   * The type of host
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host#type Host#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host#type Host#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host boundary_host}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host boundary_host}
 */
 export class Host extends cdktf.TerraformResource {
 
@@ -59,7 +59,7 @@ export class Host extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Host resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Host to import
-  * @param importFromId The id of the existing Host that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Host that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Host to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -71,7 +71,7 @@ export class Host extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host boundary_host} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host boundary_host} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -82,7 +82,7 @@ export class Host extends cdktf.TerraformResource {
       terraformResourceType: 'boundary_host',
       terraformGeneratorMetadata: {
         providerName: 'boundary',
-        providerVersion: '1.3.1',
+        providerVersion: '1.4.0',
         providerVersionConstraint: '~> 1.0'
       },
       provider: config.provider,

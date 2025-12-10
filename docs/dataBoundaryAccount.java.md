@@ -4,7 +4,7 @@
 
 ### DataBoundaryAccount <a name="DataBoundaryAccount" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/account boundary_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/account boundary_account}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryAccount.DataBoundaryAccount.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The auth method ID that will be queried for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/account#auth_method_id DataBoundaryAccount#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/account#auth_method_id DataBoundaryAccount#auth_method_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the account to retrieve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/account#name DataBoundaryAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/account#name DataBoundaryAccount#name}
 
 ---
 
@@ -439,7 +439,7 @@ The construct id used in the generated config for the DataBoundaryAccount to imp
 
 The id of the existing DataBoundaryAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -816,7 +816,7 @@ public java.lang.String getAuthMethodId();
 
 The auth method ID that will be queried for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/account#auth_method_id DataBoundaryAccount#auth_method_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/account#auth_method_id DataBoundaryAccount#auth_method_id}
 
 ---
 
@@ -830,7 +830,7 @@ public java.lang.String getName();
 
 The name of the account to retrieve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/data-sources/account#name DataBoundaryAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/data-sources/account#name DataBoundaryAccount#name}
 
 ---
 
