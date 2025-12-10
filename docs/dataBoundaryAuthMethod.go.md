@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryAuthMethod.DataBoundaryAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryauthmethod"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/databoundaryauthmethod"
 
 databoundaryauthmethod.NewDataBoundaryAuthMethod(scope Construct, id *string, config DataBoundaryAuthMethodConfig) DataBoundaryAuthMethod
 ```
@@ -283,7 +283,7 @@ func ResetScopeId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.dataBoundaryAuthMethod.DataBoundaryAuthMethod.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryauthmethod"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/databoundaryauthmethod"
 
 databoundaryauthmethod.DataBoundaryAuthMethod_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.dataBoundaryAuthMethod.DataBoundaryAuthMethod.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryauthmethod"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/databoundaryauthmethod"
 
 databoundaryauthmethod.DataBoundaryAuthMethod_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ databoundaryauthmethod.DataBoundaryAuthMethod_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-boundary.dataBoundaryAuthMethod.DataBoundaryAuthMethod.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryauthmethod"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/databoundaryauthmethod"
 
 databoundaryauthmethod.DataBoundaryAuthMethod_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ databoundaryauthmethod.DataBoundaryAuthMethod_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.dataBoundaryAuthMethod.DataBoundaryAuthMethod.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryauthmethod"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/databoundaryauthmethod"
 
 databoundaryauthmethod.DataBoundaryAuthMethod_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryAuthMethod.DataBoundaryAuthMethodConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryauthmethod"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/databoundaryauthmethod"
 
 &databoundaryauthmethod.DataBoundaryAuthMethodConfig {
 	Connection: interface{},
@@ -772,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.dataBoundaryAuthMethod.DataBoundaryAuthMethodScope.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryauthmethod"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/databoundaryauthmethod"
 
 &databoundaryauthmethod.DataBoundaryAuthMethodScope {
 
@@ -787,7 +787,7 @@ import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryauthmet
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryAuthMethod.DataBoundaryAuthMethodScopeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryauthmethod"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/databoundaryauthmethod"
 
 databoundaryauthmethod.NewDataBoundaryAuthMethodScopeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataBoundaryAuthMethodScopeList
 ```
@@ -936,7 +936,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.dataBoundaryAuthMethod.DataBoundaryAuthMethodScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/databoundaryauthmethod"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/databoundaryauthmethod"
 
 databoundaryauthmethod.NewDataBoundaryAuthMethodScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataBoundaryAuthMethodScopeOutputReference
 ```

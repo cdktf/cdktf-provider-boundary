@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalogplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/hostcatalogplugin"
 
 hostcatalogplugin.NewHostCatalogPlugin(scope Construct, id *string, config HostCatalogPluginConfig) HostCatalogPlugin
 ```
@@ -455,7 +455,7 @@ func ResetWorkerFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalogplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/hostcatalogplugin"
 
 hostcatalogplugin.HostCatalogPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalogplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/hostcatalogplugin"
 
 hostcatalogplugin.HostCatalogPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ hostcatalogplugin.HostCatalogPlugin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalogplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/hostcatalogplugin"
 
 hostcatalogplugin.HostCatalogPlugin_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ hostcatalogplugin.HostCatalogPlugin_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPlugin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalogplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/hostcatalogplugin"
 
 hostcatalogplugin.HostCatalogPlugin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1019,7 +1019,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-boundary.hostCatalogPlugin.HostCatalogPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-boundary-go/boundary/hostcatalogplugin"
+import "github.com/cdktf/cdktf-provider-boundary-go/boundary/v10/hostcatalogplugin"
 
 &hostcatalogplugin.HostCatalogPluginConfig {
 	Connection: interface{},
