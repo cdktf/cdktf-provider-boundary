@@ -4,7 +4,7 @@
 
 ### HostStatic <a name="HostStatic" id="@cdktf/provider-boundary.hostStatic.HostStatic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static boundary_host_static}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static boundary_host_static}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-boundary.hostStatic.HostStatic.Initializer"></a>
 
@@ -38,7 +38,7 @@ HostStatic.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.Initializer.parameter.hostCatalogId">hostCatalogId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}. |
+| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.Initializer.parameter.hostCatalogId">hostCatalogId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}. |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.Initializer.parameter.address">address</a></code> | <code>java.lang.String</code> | The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name. |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The host description. |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStatic.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The host name. Defaults to the resource name. |
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#address HostStatic#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#address HostStatic#address}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The host description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#description HostStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#description HostStatic#description}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The host name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#name HostStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#name HostStatic#name}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#type HostStatic#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#type HostStatic#type}
 
 ---
 
@@ -605,7 +605,7 @@ The construct id used in the generated config for the HostStatic to import.
 
 The id of the existing HostStatic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -955,7 +955,7 @@ HostStaticConfig.builder()
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.hostCatalogId">hostCatalogId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}. |
+| <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.hostCatalogId">hostCatalogId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}. |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.address">address</a></code> | <code>java.lang.String</code> | The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name. |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.description">description</a></code> | <code>java.lang.String</code> | The host description. |
 | <code><a href="#@cdktf/provider-boundary.hostStatic.HostStaticConfig.property.name">name</a></code> | <code>java.lang.String</code> | The host name. Defaults to the resource name. |
@@ -1041,7 +1041,7 @@ public java.lang.String getHostCatalogId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#host_catalog_id HostStatic#host_catalog_id}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public java.lang.String getAddress();
 
 The static address of the host resource as `<IP>` (note: port assignment occurs in the target resource definition, do not add :port here) or a domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#address HostStatic#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#address HostStatic#address}
 
 ---
 
@@ -1069,7 +1069,7 @@ public java.lang.String getDescription();
 
 The host description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#description HostStatic#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#description HostStatic#description}
 
 ---
 
@@ -1083,7 +1083,7 @@ public java.lang.String getName();
 
 The host name. Defaults to the resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#name HostStatic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#name HostStatic#name}
 
 ---
 
@@ -1097,7 +1097,7 @@ public java.lang.String getType();
 
 The type of host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.3.1/docs/resources/host_static#type HostStatic#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/boundary/1.4.0/docs/resources/host_static#type HostStatic#type}
 
 ---
 
