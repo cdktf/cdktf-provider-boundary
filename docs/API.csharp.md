@@ -20,6 +20,7 @@ The following submodules are available:
 - [credentialStoreStatic](./credentialStoreStatic.csharp.md)
 - [credentialStoreVault](./credentialStoreVault.csharp.md)
 - [credentialUsernamePassword](./credentialUsernamePassword.csharp.md)
+- [credentialUsernamePasswordDomain](./credentialUsernamePasswordDomain.csharp.md)
 - [dataBoundaryAccount](./dataBoundaryAccount.csharp.md)
 - [dataBoundaryAuthMethod](./dataBoundaryAuthMethod.csharp.md)
 - [dataBoundaryGroup](./dataBoundaryGroup.csharp.md)
