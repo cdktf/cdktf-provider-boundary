@@ -20,6 +20,7 @@ The following submodules are available:
 - [credentialStoreStatic](./credentialStoreStatic.typescript.md)
 - [credentialStoreVault](./credentialStoreVault.typescript.md)
 - [credentialUsernamePassword](./credentialUsernamePassword.typescript.md)
+- [credentialUsernamePasswordDomain](./credentialUsernamePasswordDomain.typescript.md)
 - [dataBoundaryAccount](./dataBoundaryAccount.typescript.md)
 - [dataBoundaryAuthMethod](./dataBoundaryAuthMethod.typescript.md)
 - [dataBoundaryGroup](./dataBoundaryGroup.typescript.md)
